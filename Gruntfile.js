@@ -78,14 +78,17 @@ module.exports = function (grunt) {
 		var done = this.async();
 		var all = (process.env.TRAVIS === 'true');
 		runner.bulk('./repo', './docs', function(dir) {
+			var allow = [
+				/^jquery$/,
+			];
 			if (all) {
+				allow =  [
+					/^angular/,
+					/^jquery/,
+					/^node/
+				];
 				return true;
 			}
-			var allow = [
-				/^angular/,
-				/^jquery/,
-				/^node/
-			];
 			var base = path.basename(dir);
 			return allow.some(function(exp) {
 				return exp.test(base);
