@@ -79,7 +79,7 @@ module.exports = function (grunt) {
 		var all = (process.env.TRAVIS === 'true');
 		runner.bulk('./repo', './docs', function(dir) {
 			if (all) {
-				return /^node/.test(dir);
+				// return true;
 			}
 			var allow = [
 				/^angular/,
