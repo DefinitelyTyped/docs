@@ -1,5 +1,6 @@
 /.idea
 /.vagrant
+/.grunt
 
 /node_modules
 

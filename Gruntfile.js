@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 				options: {
 					repo: 'https://' + process.env.GH_TOKEN + '@github.com/DefinitelyTyped/docs.git',
 					message: 'publish (auto)' + getDeployMessage(),
-					silent: true,
+					silent: false,
 					user: {
 						name: 'dt-bot',
 						email: 'definitelytypedbot@gmail.com'
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
 		var all = (process.env.TRAVIS === 'true');
 		runner.bulk('./repo', './docs', function(dir) {
 			if (all) {
-				return /^a/.test(dir) || /^j/.test(dir) || /^node/.test(dir);
+				return /^node/.test(dir);
 			}
 			return /^jquery\.d\.ts$/.test(path.basename(dir));
 		}).then(function(defs) {
