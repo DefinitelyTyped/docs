@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "0.10"
-
+- '0.10'
 before_install:
-  - npm install -g grunt-cli
-
+- npm install -g grunt-cli
 notifications:
   email:
-    - bartvanderschoor@gmail.com
+  - bartvanderschoor@gmail.com
+env:
+  global:
+    secure: Mh83owYpIvOOYGLzEZq7394n0ZEnGGnhJbdauYgH4vZaoQumjU9JXIDZaE/OYeWyERGcT2F8q+tvzMJ4fbUFzd4Xt9aUbo5R8GTv/WxrCarjtRK4az4cYaDsOwzSWjy+lOIjmPoKyO9ivpwXKlPExQiDW+HACVOzlR5gljz1a10=
