@@ -1,0 +1,274 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSTreeStaticDefaultsContextMenu | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="jstreestaticdefaultscontextmenu.html">JSTreeStaticDefaultsContextMenu</a>
+    </li>
+
+            </ul>
+            <h1>Interface JSTreeStaticDefaultsContextMenu</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="jstreestaticdefaultscontextmenu.html#items" class="tsd-kind-icon">items</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="jstreestaticdefaultscontextmenu.html#select_node" class="tsd-kind-icon">select_node</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="jstreestaticdefaultscontextmenu.html#show_at_node" class="tsd-kind-icon">show_at_node</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="items" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> items<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in jstree.d.ts:387</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>an object of actions, or a function that accepts a node and a callback function and calls the callback function with an object of actions available for that node (you can also return the items too).</p>
+
+
+
+
+    <p>Each action consists of a key (a unique name) and a value which is an object with the following properties (only label and action are required):</p>
+<ul>
+<li><code>separator_before</code> - a boolean indicating if there should be a separator before this item</li>
+<li><code>separator_after</code> - a boolean indicating if there should be a separator after this item</li>
+<li><code>_disabled</code> - a boolean indicating if this action should be disabled</li>
+<li><code>label</code> - a string - the name of the action (could be a function returning a string)</li>
+<li><code>action</code> - a function to be executed if this item is chosen</li>
+<li><code>icon</code> - a string, can be a path to an icon or a className, if using an image that is in the current directory use a <code>./</code> prefix, otherwise it will be detected as a class</li>
+<li><code>shortcut</code> - keyCode which will trigger the action if the menu is open (for example <code>113</code> for rename, which equals F2)</li>
+<li><code>shortcut_label</code> - shortcut label (like for example <code>F2</code> for rename)</li>
+</ul>
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>name</dt>
+            <dd><p>$.jstree.defaults.contextmenu.items</p>
+</dd>
+        
+            <dt>plugin</dt>
+            <dd><p>contextmenu</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="select_node" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> select_node<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in jstree.d.ts:363</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>a boolean indicating if the node should be selected when the context menu is invoked on it. Defaults to <code>true</code>.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>name</dt>
+            <dd><p>$.jstree.defaults.contextmenu.select_node</p>
+</dd>
+        
+            <dt>plugin</dt>
+            <dd><p>contextmenu</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="show_at_node" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> show_at_node<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in jstree.d.ts:369</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>a boolean indicating if the menu should be shown aligned with the node. Defaults to <code>true</code>, otherwise the mouse coordinates are used.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>name</dt>
+            <dd><p>$.jstree.defaults.contextmenu.show_at_node</p>
+</dd>
+        
+            <dt>plugin</dt>
+            <dd><p>contextmenu</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/jquery.html">jquery</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

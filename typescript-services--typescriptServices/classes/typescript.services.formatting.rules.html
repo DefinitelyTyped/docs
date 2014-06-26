@@ -1,0 +1,5801 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rules | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    
+    <li>
+        <a href="../modules/typescript.html">TypeScript</a>
+    </li>
+
+    <li>
+        <a href="../modules/typescript.services.html">Services</a>
+    </li>
+
+    <li>
+        <a href="../modules/typescript.services.formatting.html">Formatting</a>
+    </li>
+
+    <li>
+        <a href="typescript.services.formatting.rules.html">Rules</a>
+    </li>
+
+            </ul>
+            <h1>Class Rules</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Index signatures</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-index-signature tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#" class="tsd-kind-icon"></a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#controlopenbracelefttokenrange" class="tsd-kind-icon">ControlOpenBraceLeftTokenRange</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#functionopenbracelefttokenrange" class="tsd-kind-icon">FunctionOpenBraceLeftTokenRange</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#highprioritycommonrules" class="tsd-kind-icon">HighPriorityCommonRules</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#ignoreafterlinecomment" class="tsd-kind-icon">IgnoreAfterLineComment</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#ignorebeforecomment" class="tsd-kind-icon">IgnoreBeforeComment</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#lowprioritycommonrules" class="tsd-kind-icon">LowPriorityCommonRules</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#newlineafteropenbraceinblockcontext" class="tsd-kind-icon">NewLineAfterOpenBraceInBlockContext</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#newlinebeforeclosebraceinblockcontext" class="tsd-kind-icon">NewLineBeforeCloseBraceInBlockContext</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceincontrol" class="tsd-kind-icon">NewLineBeforeOpenBraceInControl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceinfunction" class="tsd-kind-icon">NewLineBeforeOpenBraceInFunction</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceintypescriptdeclwithblock" class="tsd-kind-icon">NewLineBeforeOpenBraceInTypeScriptDeclWithBlock</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafteranonymousfunctionkeyword" class="tsd-kind-icon">NoSpaceAfterAnonymousFunctionKeyword</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterbinaryoperator" class="tsd-kind-icon">NoSpaceAfterBinaryOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceaftercloseangularbracket" class="tsd-kind-icon">NoSpaceAfterCloseAngularBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterclosebrace" class="tsd-kind-icon">NoSpaceAfterCloseBrace</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterclosebracket" class="tsd-kind-icon">NoSpaceAfterCloseBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceaftercomma" class="tsd-kind-icon">NoSpaceAfterComma</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterconstructor" class="tsd-kind-icon">NoSpaceAfterConstructor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterdot" class="tsd-kind-icon">NoSpaceAfterDot</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterellipsis" class="tsd-kind-icon">NoSpaceAfterEllipsis</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterkeywordincontrol" class="tsd-kind-icon">NoSpaceAfterKeywordInControl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceaftermoduleimport" class="tsd-kind-icon">NoSpaceAfterModuleImport</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafteropenangularbracket" class="tsd-kind-icon">NoSpaceAfterOpenAngularBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafteropenbracket" class="tsd-kind-icon">NoSpaceAfterOpenBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafteropenparen" class="tsd-kind-icon">NoSpaceAfterOpenParen</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafteroptionalparameters" class="tsd-kind-icon">NoSpaceAfterOptionalParameters</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceaftersemicoloninfor" class="tsd-kind-icon">NoSpaceAfterSemicolonInFor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterunarypredecrementoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPredecrementOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterunaryprefixoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPrefixOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospaceafterunarypreincrementoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPreincrementOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforebinaryoperator" class="tsd-kind-icon">NoSpaceBeforeBinaryOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforecloseangularbracket" class="tsd-kind-icon">NoSpaceBeforeCloseAngularBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeclosebracket" class="tsd-kind-icon">NoSpaceBeforeCloseBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforecloseparen" class="tsd-kind-icon">NoSpaceBeforeCloseParen</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforecolon" class="tsd-kind-icon">NoSpaceBeforeColon</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforecomma" class="tsd-kind-icon">NoSpaceBeforeComma</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforedot" class="tsd-kind-icon">NoSpaceBeforeDot</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeopenangularbracket" class="tsd-kind-icon">NoSpaceBeforeOpenAngularBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeopenbracket" class="tsd-kind-icon">NoSpaceBeforeOpenBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeopenpareninfunccall" class="tsd-kind-icon">NoSpaceBeforeOpenParenInFuncCall</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeopenpareninfuncdecl" class="tsd-kind-icon">NoSpaceBeforeOpenParenInFuncDecl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeqmark" class="tsd-kind-icon">NoSpaceBeforeQMark</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforesemicolon" class="tsd-kind-icon">NoSpaceBeforeSemicolon</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeunarypostdecrementoperator" class="tsd-kind-icon">NoSpaceBeforeUnaryPostdecrementOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebeforeunarypostincrementoperator" class="tsd-kind-icon">NoSpaceBeforeUnaryPostincrementOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebetweencloseparenandangularbracket" class="tsd-kind-icon">NoSpaceBetweenCloseParenAndAngularBracket</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebetweenemptybracebrackets" class="tsd-kind-icon">NoSpaceBetweenEmptyBraceBrackets</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebetweenemptyinterfacebracebrackets" class="tsd-kind-icon">NoSpaceBetweenEmptyInterfaceBraceBrackets</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebetweenparens" class="tsd-kind-icon">NoSpaceBetweenParens</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#nospacebetweenreturnandsemicolon" class="tsd-kind-icon">NoSpaceBetweenReturnAndSemicolon</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafteraddwhenfollowedbypreincrement" class="tsd-kind-icon">SpaceAfterAddWhenFollowedByPreincrement</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafteraddwhenfollowedbyunaryplus" class="tsd-kind-icon">SpaceAfterAddWhenFollowedByUnaryPlus</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafteranonymousfunctionkeyword" class="tsd-kind-icon">SpaceAfterAnonymousFunctionKeyword</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterarrow" class="tsd-kind-icon">SpaceAfterArrow</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterbinarykeywordoperator" class="tsd-kind-icon">SpaceAfterBinaryKeywordOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterbinaryoperator" class="tsd-kind-icon">SpaceAfterBinaryOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftercertainkeywords" class="tsd-kind-icon">SpaceAfterCertainKeywords</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftercertaintypescriptkeywords" class="tsd-kind-icon">SpaceAfterCertainTypeScriptKeywords</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterclosebrace" class="tsd-kind-icon">SpaceAfterCloseBrace</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftercolon" class="tsd-kind-icon">SpaceAfterColon</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftercomma" class="tsd-kind-icon">SpaceAfterComma</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterfunctioninfuncdecl" class="tsd-kind-icon">SpaceAfterFunctionInFuncDecl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftergetsetinmember" class="tsd-kind-icon">SpaceAfterGetSetInMember</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterkeywordincontrol" class="tsd-kind-icon">SpaceAfterKeywordInControl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftermodulename" class="tsd-kind-icon">SpaceAfterModuleName</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafteropenbrace" class="tsd-kind-icon">SpaceAfterOpenBrace</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafteropenparen" class="tsd-kind-icon">SpaceAfterOpenParen</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterpostdecrementwhenfollowedbysubtract" class="tsd-kind-icon">SpaceAfterPostdecrementWhenFollowedBySubtract</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterpostincrementwhenfollowedbyadd" class="tsd-kind-icon">SpaceAfterPostincrementWhenFollowedByAdd</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceafterqmark" class="tsd-kind-icon">SpaceAfterQMark</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftersemicolon" class="tsd-kind-icon">SpaceAfterSemicolon</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftersemicoloninfor" class="tsd-kind-icon">SpaceAfterSemicolonInFor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftersubtractwhenfollowedbypredecrement" class="tsd-kind-icon">SpaceAfterSubtractWhenFollowedByPredecrement</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftersubtractwhenfollowedbyunaryminus" class="tsd-kind-icon">SpaceAfterSubtractWhenFollowedByUnaryMinus</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftertryfinally" class="tsd-kind-icon">SpaceAfterTryFinally</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spaceaftervoidoperator" class="tsd-kind-icon">SpaceAfterVoidOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforebinarykeywordoperator" class="tsd-kind-icon">SpaceBeforeBinaryKeywordOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforebinaryoperator" class="tsd-kind-icon">SpaceBeforeBinaryOperator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforecertaintypescriptkeywords" class="tsd-kind-icon">SpaceBeforeCertainTypeScriptKeywords</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforeclosebrace" class="tsd-kind-icon">SpaceBeforeCloseBrace</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforecloseparen" class="tsd-kind-icon">SpaceBeforeCloseParen</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforeopenbraceincontrol" class="tsd-kind-icon">SpaceBeforeOpenBraceInControl</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforeopenbraceinfunction" class="tsd-kind-icon">SpaceBeforeOpenBraceInFunction</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebeforeopenbraceintypescriptdeclwithblock" class="tsd-kind-icon">SpaceBeforeOpenBraceInTypeScriptDeclWithBlock</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebetweenclosebraceandelse" class="tsd-kind-icon">SpaceBetweenCloseBraceAndElse</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebetweenclosebraceandwhile" class="tsd-kind-icon">SpaceBetweenCloseBraceAndWhile</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#spacebetweenstatements" class="tsd-kind-icon">SpaceBetweenStatements</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#typescriptopenbracelefttokenrange" class="tsd-kind-icon">TypeScriptOpenBraceLeftTokenRange</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isaftercodeblockcontext" class="tsd-kind-icon">IsAfterCodeBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isbeforeblockcontext" class="tsd-kind-icon">IsBeforeBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isbeforemultilineblockcontext" class="tsd-kind-icon">IsBeforeMultilineBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isbinaryopcontext" class="tsd-kind-icon">IsBinaryOpContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isblockcontext" class="tsd-kind-icon">IsBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-iscontroldeclcontext" class="tsd-kind-icon">IsControlDeclContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isforcontext" class="tsd-kind-icon">IsForContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isfunctioncallcontext" class="tsd-kind-icon">IsFunctionCallContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isfunctioncallornewcontext" class="tsd-kind-icon">IsFunctionCallOrNewContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isfunctiondeclcontext" class="tsd-kind-icon">IsFunctionDeclContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-ismoduledeclcontext" class="tsd-kind-icon">IsModuleDeclContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-ismultilineblockcontext" class="tsd-kind-icon">IsMultilineBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isnewcontext" class="tsd-kind-icon">IsNewContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isnotbinaryopcontext" class="tsd-kind-icon">IsNotBinaryOpContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isnotforcontext" class="tsd-kind-icon">IsNotForContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isnotformatonenter" class="tsd-kind-icon">IsNotFormatOnEnter</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isobjectcontext" class="tsd-kind-icon">IsObjectContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isobjecttypecontext" class="tsd-kind-icon">IsObjectTypeContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-issamelinetokencontext" class="tsd-kind-icon">IsSameLineTokenContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-issamelinetokenorbeforemultilineblockcontext" class="tsd-kind-icon">IsSameLineTokenOrBeforeMultilineBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-issinglelineblockcontext" class="tsd-kind-icon">IsSingleLineBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-istypeargumentorparameter" class="tsd-kind-icon">IsTypeArgumentOrParameter</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-istypeargumentorparametercontext" class="tsd-kind-icon">IsTypeArgumentOrParameterContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-istypescriptdeclwithblockcontext" class="tsd-kind-icon">IsTypeScriptDeclWithBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-isvoidopcontext" class="tsd-kind-icon">IsVoidOpContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-nodeisblockcontext" class="tsd-kind-icon">NodeIsBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typescript.services.formatting.rules.html#static-nodeistypescriptdeclwithblockcontext" class="tsd-kind-icon">NodeIsTypeScriptDeclWithBlockContext</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.formatting.rules.html#getrulename" class="tsd-kind-icon">getRuleName</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Index signatures</h2>
+    
+        
+            <section class="tsd-member tsd-kind-index-signature tsd-parent-kind-class">
+    <a name="" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8507</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.rules.html" class="tsd-signature-type">Rules</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8596</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.formatting.rules.html" class="tsd-signature-type">Rules</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="controlopenbracelefttokenrange" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ControlOpenBraceLeftTokenRange<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.shared.tokenrange.html" class="tsd-signature-type">TokenRange</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8584</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="functionopenbracelefttokenrange" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> FunctionOpenBraceLeftTokenRange<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.shared.tokenrange.html" class="tsd-signature-type">TokenRange</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8578</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="highprioritycommonrules" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> HighPriorityCommonRules<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8568</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="ignoreafterlinecomment" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> IgnoreAfterLineComment<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8509</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="ignorebeforecomment" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> IgnoreBeforeComment<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8508</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="lowprioritycommonrules" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> LowPriorityCommonRules<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8569</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="newlineafteropenbraceinblockcontext" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NewLineAfterOpenBraceInBlockContext<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8529</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="newlinebeforeclosebraceinblockcontext" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NewLineBeforeCloseBraceInBlockContext<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8530</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="newlinebeforeopenbraceincontrol" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NewLineBeforeOpenBraceInControl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8586</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="newlinebeforeopenbraceinfunction" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NewLineBeforeOpenBraceInFunction<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8580</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="newlinebeforeopenbraceintypescriptdeclwithblock" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NewLineBeforeOpenBraceInTypeScriptDeclWithBlock<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8583</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafteranonymousfunctionkeyword" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterAnonymousFunctionKeyword<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8595</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterbinaryoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterBinaryOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8575</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceaftercloseangularbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterCloseAngularBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8566</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterclosebrace" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterCloseBrace<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8519</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterclosebracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterCloseBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8525</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceaftercomma" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterComma<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8571</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterconstructor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterConstructor<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8554</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterdot" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterDot<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8521</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterellipsis" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterEllipsis<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8560</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterkeywordincontrol" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterKeywordInControl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8577</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceaftermoduleimport" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterModuleImport<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8555</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafteropenangularbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterOpenAngularBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8564</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafteropenbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterOpenBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8523</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafteropenparen" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterOpenParen<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8592</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafteroptionalparameters" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterOptionalParameters<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8561</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceaftersemicoloninfor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterSemicolonInFor<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8588</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterunarypredecrementoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterUnaryPredecrementOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8533</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterunaryprefixoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterUnaryPrefixOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8531</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospaceafterunarypreincrementoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceAfterUnaryPreincrementOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8532</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforebinaryoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeBinaryOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8574</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforecloseangularbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeCloseAngularBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8565</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeclosebracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeCloseBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8524</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforecloseparen" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeCloseParen<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8593</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforecolon" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeColon<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8511</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforecomma" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeComma<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8542</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforedot" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeDot<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8520</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeopenangularbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeOpenAngularBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8562</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeopenbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeOpenBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8522</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeopenpareninfunccall" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeOpenParenInFuncCall<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8544</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeopenpareninfuncdecl" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeOpenParenInFuncDecl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8546</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeqmark" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeQMark<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8512</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforesemicolon" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeSemicolon<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8510</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeunarypostdecrementoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeUnaryPostdecrementOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8535</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebeforeunarypostincrementoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBeforeUnaryPostincrementOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8534</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebetweencloseparenandangularbracket" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBetweenCloseParenAndAngularBracket<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8563</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebetweenemptybracebrackets" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBetweenEmptyBraceBrackets<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8528</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebetweenemptyinterfacebracebrackets" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBetweenEmptyInterfaceBraceBrackets<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8567</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebetweenparens" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBetweenParens<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8591</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nospacebetweenreturnandsemicolon" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> NoSpaceBetweenReturnAndSemicolon<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8548</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafteraddwhenfollowedbypreincrement" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterAddWhenFollowedByPreincrement<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8538</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafteraddwhenfollowedbyunaryplus" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterAddWhenFollowedByUnaryPlus<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8537</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafteranonymousfunctionkeyword" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterAnonymousFunctionKeyword<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8594</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterarrow" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterArrow<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8559</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterbinarykeywordoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterBinaryKeywordOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8553</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterbinaryoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterBinaryOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8573</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftercertainkeywords" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterCertainKeywords<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8543</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftercertaintypescriptkeywords" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterCertainTypeScriptKeywords<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8556</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterclosebrace" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterCloseBrace<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8516</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftercolon" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterColon<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8513</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftercomma" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterComma<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8570</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterfunctioninfuncdecl" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterFunctionInFuncDecl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8545</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftergetsetinmember" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterGetSetInMember<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8551</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterkeywordincontrol" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterKeywordInControl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8576</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftermodulename" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterModuleName<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8558</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafteropenbrace" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterOpenBrace<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8526</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafteropenparen" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterOpenParen<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8589</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterpostdecrementwhenfollowedbysubtract" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterPostdecrementWhenFollowedBySubtract<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8539</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterpostincrementwhenfollowedbyadd" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterPostincrementWhenFollowedByAdd<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8536</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceafterqmark" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterQMark<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8514</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftersemicolon" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterSemicolon<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8515</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftersemicoloninfor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterSemicolonInFor<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8587</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftersubtractwhenfollowedbypredecrement" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterSubtractWhenFollowedByPredecrement<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8541</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftersubtractwhenfollowedbyunaryminus" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterSubtractWhenFollowedByUnaryMinus<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8540</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftertryfinally" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterTryFinally<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8550</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spaceaftervoidoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceAfterVoidOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8547</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforebinarykeywordoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeBinaryKeywordOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8552</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforebinaryoperator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeBinaryOperator<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8572</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforecertaintypescriptkeywords" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeCertainTypeScriptKeywords<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8557</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforeclosebrace" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeCloseBrace<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8527</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforecloseparen" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeCloseParen<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8590</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforeopenbraceincontrol" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeOpenBraceInControl<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8585</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforeopenbraceinfunction" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeOpenBraceInFunction<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8579</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebeforeopenbraceintypescriptdeclwithblock" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBeforeOpenBraceInTypeScriptDeclWithBlock<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8582</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebetweenclosebraceandelse" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBetweenCloseBraceAndElse<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8517</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebetweenclosebraceandwhile" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBetweenCloseBraceAndWhile<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8518</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="spacebetweenstatements" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SpaceBetweenStatements<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8549</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="typescriptopenbracelefttokenrange" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> TypeScriptOpenBraceLeftTokenRange<span class="tsd-signature-symbols">:</span> <a href="typescript.services.formatting.shared.tokenrange.html" class="tsd-signature-type">TokenRange</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8581</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isaftercodeblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsAfterCodeBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8611</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isbeforeblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsBeforeBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8606</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isbeforemultilineblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsBeforeMultilineBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8602</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isbinaryopcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsBinaryOpContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8599</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8605</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-iscontroldeclcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsControlDeclContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8612</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isforcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsForContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8597</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isfunctioncallcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsFunctionCallContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8614</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isfunctioncallornewcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsFunctionCallOrNewContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8616</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isfunctiondeclcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsFunctionDeclContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8608</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-ismoduledeclcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsModuleDeclContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8619</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-ismultilineblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsMultilineBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8603</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isnewcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsNewContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8615</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isnotbinaryopcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsNotBinaryOpContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8600</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isnotforcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsNotForContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8598</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isnotformatonenter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsNotFormatOnEnter<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8618</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isobjectcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsObjectContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8613</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isobjecttypecontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsObjectTypeContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8620</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-issamelinetokencontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsSameLineTokenContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8617</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-issamelinetokenorbeforemultilineblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsSameLineTokenOrBeforeMultilineBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8601</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-issinglelineblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsSingleLineBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8604</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-istypeargumentorparameter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsTypeArgumentOrParameter<span class="tsd-signature-symbols">(</span>tokenKind<span class="tsd-signature-symbols">: </span><a href="../enums/typescript.syntaxkind.html" class="tsd-signature-type">SyntaxKind</a>, parentKind<span class="tsd-signature-symbols">: </span><a href="../enums/typescript.syntaxkind.html" class="tsd-signature-type">SyntaxKind</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8621</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tokenKind: <a href="../enums/typescript.syntaxkind.html" class="tsd-signature-type">SyntaxKind</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>parentKind: <a href="../enums/typescript.syntaxkind.html" class="tsd-signature-type">SyntaxKind</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-istypeargumentorparametercontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsTypeArgumentOrParameterContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8622</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-istypescriptdeclwithblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsTypeScriptDeclWithBlockContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8609</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-isvoidopcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> IsVoidOpContext<span class="tsd-signature-symbols">(</span>context<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8623</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>context: <a href="typescript.services.formatting.formattingcontext.html" class="tsd-signature-type">FormattingContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-nodeisblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> NodeIsBlockContext<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.indentationnodecontext.html" class="tsd-signature-type">IndentationNodeContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8607</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node: <a href="typescript.services.formatting.indentationnodecontext.html" class="tsd-signature-type">IndentationNodeContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-nodeistypescriptdeclwithblockcontext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> NodeIsTypeScriptDeclWithBlockContext<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.indentationnodecontext.html" class="tsd-signature-type">IndentationNodeContext</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8610</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node: <a href="typescript.services.formatting.indentationnodecontext.html" class="tsd-signature-type">IndentationNodeContext</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getrulename" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getRuleName<span class="tsd-signature-symbols">(</span>rule<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8506</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>rule: <a href="typescript.services.formatting.rule.html" class="tsd-signature-type">Rule</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/typescript.html">TypeScript</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.asthelpers.html">TypeScript.ASTHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.bitmatrix.html">TypeScript.BitMatrix</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.bitvector.html">TypeScript.BitVector</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.collections.html">TypeScript.Collections</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.compilerdiagnostics.html">TypeScript.CompilerDiagnostics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.declarationcreator.html">TypeScript.DeclarationCreator</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.indentation.html">TypeScript.Indentation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.integerutilities.html">TypeScript.IntegerUtilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.linemap1.html">TypeScript.LineMap1</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.parser.html">TypeScript.Parser</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.pullhelpers.html">TypeScript.PullHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.pullinstantiationhelpers.html">TypeScript.PullInstantiationHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.scriptsnapshot.html">TypeScript.ScriptSnapshot</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.html">TypeScript.Services</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.breakpoints.html">TypeScript.Services.Breakpoints</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.formatting.html">TypeScript.Services.Formatting</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.formatting.shared.html">TypeScript.Services.Formatting.Shared</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.simpletext.html">TypeScript.SimpleText</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.syntax.html">TypeScript.Syntax</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.syntaxfacts.html">TypeScript.SyntaxFacts</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.textfactory.html">TypeScript.TextFactory</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.textutilities.html">TypeScript.TextUtilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/typescript-services.html">typescript-services</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.formatting.formattingrequestkind.html" class="tsd-kind-icon">FormattingRequestKind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.formatting.ruleaction.html" class="tsd-kind-icon">RuleAction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.formatting.ruleflags.html" class="tsd-kind-icon">RuleFlags</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.formatting.rulesposition.html" class="tsd-kind-icon">RulesPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.formatting.itextsnapshot.html" class="tsd-kind-icon">ITextSnapshot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.formatting.itextsnapshotline.html" class="tsd-kind-icon">ITextSnapshotLine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.formatter.html" class="tsd-kind-icon">Formatter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.formattingcontext.html" class="tsd-kind-icon">FormattingContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.formattingmanager.html" class="tsd-kind-icon">FormattingManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.indentationnodecontext.html" class="tsd-kind-icon">IndentationNodeContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.indentationnodecontextpool.html" class="tsd-kind-icon">IndentationNodeContextPool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.indentationtrackingwalker.html" class="tsd-kind-icon">IndentationTrackingWalker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.multipletokenindenter.html" class="tsd-kind-icon">MultipleTokenIndenter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rule.html" class="tsd-kind-icon">Rule</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.ruledescriptor.html" class="tsd-kind-icon">RuleDescriptor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.ruleoperation.html" class="tsd-kind-icon">RuleOperation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.ruleoperationcontext.html" class="tsd-kind-icon">RuleOperationContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rules.html" class="tsd-kind-icon">Rules</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-index-signature tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#" class="tsd-kind-icon"></a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#controlopenbracelefttokenrange" class="tsd-kind-icon">ControlOpenBraceLeftTokenRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#functionopenbracelefttokenrange" class="tsd-kind-icon">FunctionOpenBraceLeftTokenRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#highprioritycommonrules" class="tsd-kind-icon">HighPriorityCommonRules</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#ignoreafterlinecomment" class="tsd-kind-icon">IgnoreAfterLineComment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#ignorebeforecomment" class="tsd-kind-icon">IgnoreBeforeComment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#lowprioritycommonrules" class="tsd-kind-icon">LowPriorityCommonRules</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#newlineafteropenbraceinblockcontext" class="tsd-kind-icon">NewLineAfterOpenBraceInBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#newlinebeforeclosebraceinblockcontext" class="tsd-kind-icon">NewLineBeforeCloseBraceInBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceincontrol" class="tsd-kind-icon">NewLineBeforeOpenBraceInControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceinfunction" class="tsd-kind-icon">NewLineBeforeOpenBraceInFunction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#newlinebeforeopenbraceintypescriptdeclwithblock" class="tsd-kind-icon">NewLineBeforeOpenBraceInTypeScriptDeclWithBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafteranonymousfunctionkeyword" class="tsd-kind-icon">NoSpaceAfterAnonymousFunctionKeyword</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterbinaryoperator" class="tsd-kind-icon">NoSpaceAfterBinaryOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceaftercloseangularbracket" class="tsd-kind-icon">NoSpaceAfterCloseAngularBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterclosebrace" class="tsd-kind-icon">NoSpaceAfterCloseBrace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterclosebracket" class="tsd-kind-icon">NoSpaceAfterCloseBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceaftercomma" class="tsd-kind-icon">NoSpaceAfterComma</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterconstructor" class="tsd-kind-icon">NoSpaceAfterConstructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterdot" class="tsd-kind-icon">NoSpaceAfterDot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterellipsis" class="tsd-kind-icon">NoSpaceAfterEllipsis</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterkeywordincontrol" class="tsd-kind-icon">NoSpaceAfterKeywordInControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceaftermoduleimport" class="tsd-kind-icon">NoSpaceAfterModuleImport</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafteropenangularbracket" class="tsd-kind-icon">NoSpaceAfterOpenAngularBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafteropenbracket" class="tsd-kind-icon">NoSpaceAfterOpenBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafteropenparen" class="tsd-kind-icon">NoSpaceAfterOpenParen</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafteroptionalparameters" class="tsd-kind-icon">NoSpaceAfterOptionalParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceaftersemicoloninfor" class="tsd-kind-icon">NoSpaceAfterSemicolonInFor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterunarypredecrementoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPredecrementOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterunaryprefixoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPrefixOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospaceafterunarypreincrementoperator" class="tsd-kind-icon">NoSpaceAfterUnaryPreincrementOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforebinaryoperator" class="tsd-kind-icon">NoSpaceBeforeBinaryOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforecloseangularbracket" class="tsd-kind-icon">NoSpaceBeforeCloseAngularBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeclosebracket" class="tsd-kind-icon">NoSpaceBeforeCloseBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforecloseparen" class="tsd-kind-icon">NoSpaceBeforeCloseParen</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforecolon" class="tsd-kind-icon">NoSpaceBeforeColon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforecomma" class="tsd-kind-icon">NoSpaceBeforeComma</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforedot" class="tsd-kind-icon">NoSpaceBeforeDot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeopenangularbracket" class="tsd-kind-icon">NoSpaceBeforeOpenAngularBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeopenbracket" class="tsd-kind-icon">NoSpaceBeforeOpenBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeopenpareninfunccall" class="tsd-kind-icon">NoSpaceBeforeOpenParenInFuncCall</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeopenpareninfuncdecl" class="tsd-kind-icon">NoSpaceBeforeOpenParenInFuncDecl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeqmark" class="tsd-kind-icon">NoSpaceBeforeQMark</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforesemicolon" class="tsd-kind-icon">NoSpaceBeforeSemicolon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeunarypostdecrementoperator" class="tsd-kind-icon">NoSpaceBeforeUnaryPostdecrementOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebeforeunarypostincrementoperator" class="tsd-kind-icon">NoSpaceBeforeUnaryPostincrementOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebetweencloseparenandangularbracket" class="tsd-kind-icon">NoSpaceBetweenCloseParenAndAngularBracket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebetweenemptybracebrackets" class="tsd-kind-icon">NoSpaceBetweenEmptyBraceBrackets</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebetweenemptyinterfacebracebrackets" class="tsd-kind-icon">NoSpaceBetweenEmptyInterfaceBraceBrackets</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebetweenparens" class="tsd-kind-icon">NoSpaceBetweenParens</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#nospacebetweenreturnandsemicolon" class="tsd-kind-icon">NoSpaceBetweenReturnAndSemicolon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafteraddwhenfollowedbypreincrement" class="tsd-kind-icon">SpaceAfterAddWhenFollowedByPreincrement</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafteraddwhenfollowedbyunaryplus" class="tsd-kind-icon">SpaceAfterAddWhenFollowedByUnaryPlus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafteranonymousfunctionkeyword" class="tsd-kind-icon">SpaceAfterAnonymousFunctionKeyword</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterarrow" class="tsd-kind-icon">SpaceAfterArrow</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterbinarykeywordoperator" class="tsd-kind-icon">SpaceAfterBinaryKeywordOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterbinaryoperator" class="tsd-kind-icon">SpaceAfterBinaryOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftercertainkeywords" class="tsd-kind-icon">SpaceAfterCertainKeywords</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftercertaintypescriptkeywords" class="tsd-kind-icon">SpaceAfterCertainTypeScriptKeywords</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterclosebrace" class="tsd-kind-icon">SpaceAfterCloseBrace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftercolon" class="tsd-kind-icon">SpaceAfterColon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftercomma" class="tsd-kind-icon">SpaceAfterComma</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterfunctioninfuncdecl" class="tsd-kind-icon">SpaceAfterFunctionInFuncDecl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftergetsetinmember" class="tsd-kind-icon">SpaceAfterGetSetInMember</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterkeywordincontrol" class="tsd-kind-icon">SpaceAfterKeywordInControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftermodulename" class="tsd-kind-icon">SpaceAfterModuleName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafteropenbrace" class="tsd-kind-icon">SpaceAfterOpenBrace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafteropenparen" class="tsd-kind-icon">SpaceAfterOpenParen</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterpostdecrementwhenfollowedbysubtract" class="tsd-kind-icon">SpaceAfterPostdecrementWhenFollowedBySubtract</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterpostincrementwhenfollowedbyadd" class="tsd-kind-icon">SpaceAfterPostincrementWhenFollowedByAdd</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceafterqmark" class="tsd-kind-icon">SpaceAfterQMark</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftersemicolon" class="tsd-kind-icon">SpaceAfterSemicolon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftersemicoloninfor" class="tsd-kind-icon">SpaceAfterSemicolonInFor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftersubtractwhenfollowedbypredecrement" class="tsd-kind-icon">SpaceAfterSubtractWhenFollowedByPredecrement</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftersubtractwhenfollowedbyunaryminus" class="tsd-kind-icon">SpaceAfterSubtractWhenFollowedByUnaryMinus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftertryfinally" class="tsd-kind-icon">SpaceAfterTryFinally</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spaceaftervoidoperator" class="tsd-kind-icon">SpaceAfterVoidOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforebinarykeywordoperator" class="tsd-kind-icon">SpaceBeforeBinaryKeywordOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforebinaryoperator" class="tsd-kind-icon">SpaceBeforeBinaryOperator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforecertaintypescriptkeywords" class="tsd-kind-icon">SpaceBeforeCertainTypeScriptKeywords</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforeclosebrace" class="tsd-kind-icon">SpaceBeforeCloseBrace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforecloseparen" class="tsd-kind-icon">SpaceBeforeCloseParen</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforeopenbraceincontrol" class="tsd-kind-icon">SpaceBeforeOpenBraceInControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforeopenbraceinfunction" class="tsd-kind-icon">SpaceBeforeOpenBraceInFunction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebeforeopenbraceintypescriptdeclwithblock" class="tsd-kind-icon">SpaceBeforeOpenBraceInTypeScriptDeclWithBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebetweenclosebraceandelse" class="tsd-kind-icon">SpaceBetweenCloseBraceAndElse</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebetweenclosebraceandwhile" class="tsd-kind-icon">SpaceBetweenCloseBraceAndWhile</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#spacebetweenstatements" class="tsd-kind-icon">SpaceBetweenStatements</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#typescriptopenbracelefttokenrange" class="tsd-kind-icon">TypeScriptOpenBraceLeftTokenRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isaftercodeblockcontext" class="tsd-kind-icon">IsAfterCodeBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isbeforeblockcontext" class="tsd-kind-icon">IsBeforeBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isbeforemultilineblockcontext" class="tsd-kind-icon">IsBeforeMultilineBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isbinaryopcontext" class="tsd-kind-icon">IsBinaryOpContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isblockcontext" class="tsd-kind-icon">IsBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-iscontroldeclcontext" class="tsd-kind-icon">IsControlDeclContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isforcontext" class="tsd-kind-icon">IsForContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isfunctioncallcontext" class="tsd-kind-icon">IsFunctionCallContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isfunctioncallornewcontext" class="tsd-kind-icon">IsFunctionCallOrNewContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isfunctiondeclcontext" class="tsd-kind-icon">IsFunctionDeclContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-ismoduledeclcontext" class="tsd-kind-icon">IsModuleDeclContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-ismultilineblockcontext" class="tsd-kind-icon">IsMultilineBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isnewcontext" class="tsd-kind-icon">IsNewContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isnotbinaryopcontext" class="tsd-kind-icon">IsNotBinaryOpContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isnotforcontext" class="tsd-kind-icon">IsNotForContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isnotformatonenter" class="tsd-kind-icon">IsNotFormatOnEnter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isobjectcontext" class="tsd-kind-icon">IsObjectContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isobjecttypecontext" class="tsd-kind-icon">IsObjectTypeContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-issamelinetokencontext" class="tsd-kind-icon">IsSameLineTokenContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-issamelinetokenorbeforemultilineblockcontext" class="tsd-kind-icon">IsSameLineTokenOrBeforeMultilineBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-issinglelineblockcontext" class="tsd-kind-icon">IsSingleLineBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-istypeargumentorparameter" class="tsd-kind-icon">IsTypeArgumentOrParameter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-istypeargumentorparametercontext" class="tsd-kind-icon">IsTypeArgumentOrParameterContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-istypescriptdeclwithblockcontext" class="tsd-kind-icon">IsTypeScriptDeclWithBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-isvoidopcontext" class="tsd-kind-icon">IsVoidOpContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-nodeisblockcontext" class="tsd-kind-icon">NodeIsBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="typescript.services.formatting.rules.html#static-nodeistypescriptdeclwithblockcontext" class="tsd-kind-icon">NodeIsTypeScriptDeclWithBlockContext</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.formatting.rules.html#getrulename" class="tsd-kind-icon">getRuleName</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rulesbucket.html" class="tsd-kind-icon">RulesBucket</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rulesbucketconstructionstate.html" class="tsd-kind-icon">RulesBucketConstructionState</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rulesmap.html" class="tsd-kind-icon">RulesMap</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.rulesprovider.html" class="tsd-kind-icon">RulesProvider</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.singletokenindenter.html" class="tsd-kind-icon">SingleTokenIndenter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.snapshotpoint.html" class="tsd-kind-icon">SnapshotPoint</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.texteditinfo.html" class="tsd-kind-icon">TextEditInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.textsnapshot.html" class="tsd-kind-icon">TextSnapshot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.textsnapshotline.html" class="tsd-kind-icon">TextSnapshotLine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatting.tokenspan.html" class="tsd-kind-icon">TokenSpan</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

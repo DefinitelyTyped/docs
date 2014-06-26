@@ -1,0 +1,1070 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Promise | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="promise.html">Promise</a>
+    </li>
+
+            </ul>
+            <h1>Class Promise</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported"><a href="promise.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="promise.html#catch" class="tsd-kind-icon">catch</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="promise.html#then" class="tsd-kind-icon">then</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Functions</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-function tsd-parent-kind-class"><a href="promise.html#all" class="tsd-kind-icon">all</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-class"><a href="promise.html#cast" class="tsd-kind-icon">cast</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-class"><a href="promise.html#race" class="tsd-kind-icon">race</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-class"><a href="promise.html#reject" class="tsd-kind-icon">reject</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-class"><a href="promise.html#resolve" class="tsd-kind-icon">resolve</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-not-exported">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(resolve: (result: R) =&gt; void, reject: (error: any) =&gt; void) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:22</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If you call resolve in the body of the callback passed to the constructor,
+your promise is fulfilled with result object passed to resolve.
+If you call reject your promise is rejected with the object passed to resolve.
+For consistency and debugging (eg stack traces), obj should be an instanceof Error.
+Any errors thrown in the constructor callback will be implicitly passed to reject().</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(resolve: (result: R) =&gt; void, reject: (error: any) =&gt; void) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(resolve: (thenable: Thenable&lt;R&gt;) =&gt; void, reject: (error: any) =&gt; void) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:30</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If you call resolve in the body of the callback passed to the constructor,
+your promise will be fulfilled/rejected with the outcome of thenable passed to resolve.
+If you call reject your promise is rejected with the object passed to resolve.
+For consistency and debugging (eg stack traces), obj should be an instanceof Error.
+Any errors thrown in the constructor callback will be implicitly passed to reject().</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(resolve: (thenable: Thenable&lt;R&gt;) =&gt; void, reject: (error: any) =&gt; void) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+    <a name="catch" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> catch<span class="tsd-signature-symbols">(</span>onReject<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:84</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sugar for promise.then(undefined, onRejected)</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onReject?: <span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> catch<span class="tsd-signature-symbols">(</span>onReject<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(error: any) =&gt; U</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:90</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sugar for promise.then(undefined, onRejected)</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onReject?: <span class="tsd-signature-type">(error: any) =&gt; U</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+    <a name="then" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> then<span class="tsd-signature-symbols">(</span>onFulfill<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: R) =&gt; Thenable&lt;U&gt;</span>, onReject<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:43</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>onFulFill is called when/if &quot;promise&quot; resolves. onRejected is called when/if &quot;promise&quot; rejects.
+Both are optional, if either/both are omitted the next onFulfilled/onRejected in the chain is called.
+Both callbacks have a single parameter , the fulfillment value or rejection reason.
+&quot;then&quot; returns a new promise equivalent to the value you return from onFulfilled/onRejected after being passed through Promise.resolve.
+If an error is thrown in the callback, the returned promise rejects with that error.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onFulfill: <span class="tsd-signature-type">(value: R) =&gt; Thenable&lt;U&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>onReject: <span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> then<span class="tsd-signature-symbols">(</span>onFulfill<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: R) =&gt; Thenable&lt;U&gt;</span>, onReject<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(error: any) =&gt; U</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:54</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>onFulFill is called when/if &quot;promise&quot; resolves. onRejected is called when/if &quot;promise&quot; rejects.
+Both are optional, if either/both are omitted the next onFulfilled/onRejected in the chain is called.
+Both callbacks have a single parameter , the fulfillment value or rejection reason.
+&quot;then&quot; returns a new promise equivalent to the value you return from onFulfilled/onRejected after being passed through Promise.resolve.
+If an error is thrown in the callback, the returned promise rejects with that error.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onFulfill: <span class="tsd-signature-type">(value: R) =&gt; Thenable&lt;U&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>onReject?: <span class="tsd-signature-type">(error: any) =&gt; U</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> then<span class="tsd-signature-symbols">(</span>onFulfill<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: R) =&gt; U</span>, onReject<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:65</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>onFulFill is called when/if &quot;promise&quot; resolves. onRejected is called when/if &quot;promise&quot; rejects.
+Both are optional, if either/both are omitted the next onFulfilled/onRejected in the chain is called.
+Both callbacks have a single parameter , the fulfillment value or rejection reason.
+&quot;then&quot; returns a new promise equivalent to the value you return from onFulfilled/onRejected after being passed through Promise.resolve.
+If an error is thrown in the callback, the returned promise rejects with that error.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onFulfill: <span class="tsd-signature-type">(value: R) =&gt; U</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>onReject: <span class="tsd-signature-type">(error: any) =&gt; Thenable&lt;U&gt;</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> then<span class="tsd-signature-symbols">(</span>onFulfill<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(value: R) =&gt; U</span>, onReject<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(error: any) =&gt; U</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:76</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>onFulFill is called when/if &quot;promise&quot; resolves. onRejected is called when/if &quot;promise&quot; rejects.
+Both are optional, if either/both are omitted the next onFulfilled/onRejected in the chain is called.
+Both callbacks have a single parameter , the fulfillment value or rejection reason.
+&quot;then&quot; returns a new promise equivalent to the value you return from onFulfilled/onRejected after being passed through Promise.resolve.
+If an error is thrown in the callback, the returned promise rejects with that error.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>onFulfill?: <span class="tsd-signature-type">(value: R) =&gt; U</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>onReject?: <span class="tsd-signature-type">(error: any) =&gt; U</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>called when/if &quot;promise&quot; rejects</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Functions</h2>
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-class">
+    <a name="all" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">all<span class="tsd-signature-symbols">(</span>promises<span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">[]</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:126</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a promise that fulfills when every item in the array fulfills, and rejects if (and when) any item rejects.
+the array passed to all can be a mixture of promise-like objects and other objects.
+The fulfillment value is an array (in order) of fulfillment values. The rejection value is the first rejection value.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>promises: <a href="promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">[]</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-class">
+    <a name="cast" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">cast<span class="tsd-signature-symbols">(</span>promise<span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:98</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns promise (only if promise.constructor == Promise)</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>promise: <a href="promise.html" class="tsd-signature-type">Promise</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">cast<span class="tsd-signature-symbols">(</span>object<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:102</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a promise that fulfills to obj.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>object?: <span class="tsd-signature-type">R</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-class">
+    <a name="race" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">race<span class="tsd-signature-symbols">(</span>promises<span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">[]</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:131</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>promises: <a href="promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">[]</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-class">
+    <a name="reject" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">reject<span class="tsd-signature-symbols">(</span>error<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:119</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>error?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-class">
+    <a name="resolve" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">resolve<span class="tsd-signature-symbols">(</span>thenable<span class="tsd-signature-symbols">: </span><a href="../interfaces/thenable.html" class="tsd-signature-type">Thenable</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:110</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a new promise from the thenable.
+A thenable is promise-like in as far as it has a &quot;then&quot; method.
+This also creates a new promise if you pass it a genuine JavaScript promise, making it less efficient for casting than Promise.cast.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>thenable: <a href="../interfaces/thenable.html" class="tsd-signature-type">Thenable</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">resolve<span class="tsd-signature-symbols">(</span>object<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in es6-promises.d.ts:114</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make a promise that fulfills to obj. Same as Promise.cast(obj) in this situation.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>object?: <span class="tsd-signature-type">R</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

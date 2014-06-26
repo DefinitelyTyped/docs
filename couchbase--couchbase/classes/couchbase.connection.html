@@ -1,0 +1,4876 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Connection | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/couchbase.html">couchbase</a>
+    </li>
+
+    <li>
+        <a href="couchbase.connection.html">Connection</a>
+    </li>
+
+            </ul>
+            <h1>Class Connection</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>class</dt>
+            <dd><p>A class representing a connection to a Couchbase cluster.
+Normally, your application should only need to create one of these per
+bucket and use it continuously.  Operations are executed asynchronously
+and pipelined when possible.</p>
+</dd>
+        
+            <dt>desc</dt>
+            <dd><p>Instantiate a new Connection object.  Note that it is safe to perform
+operations before the connect callback is invoked. In this case, the
+operations are queued until the connection is ready (or an unrecoverable
+error has taken place).</p>
+</dd>
+        
+            <dt>param</dt>
+            <dd><p>A dictionary of options to use.  You may pass
+other options than those defined below which correspond to the various
+options available on the Connection object (see their documentation).
+For example, it may be helpful to set timeout properties before connecting.
+ @param {string|string[]} [options.host=&quot;localhost:8091&quot;]
+ A string or array of strings indicating the hosts to connect to. If the
+ value is an array, all the hosts in the array will be tried until one of
+ them succeeds.
+ @param {string} [options.bucket=&quot;default&quot;]
+ The bucket to connect to. If not specified, the default is
+ &#39;default&#39;.
+ @param {string} [options.password=&quot;&quot;]
+ The password for a password protected bucket.</p>
+</dd>
+        
+            <dt>param</dt>
+            <dd><p>A callback that will be invoked when the instance has completed connecting
+to the server. Note that this isn&#39;t required - however if the connection
+fails, an exception will be thrown if the callback is not provided.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>var couchbase = require(&#39;couchbase&#39;);
+var db = new couchbase.Connection({}, function(err) {
+  if (err) {
+    console.log(&#39;Connection Error&#39;, err);
+  } else {
+    console.log(&#39;Connected!&#39;);
+  }
+});</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="couchbase.connection.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="couchbase.connection.html#clientversion" class="tsd-kind-icon">clientVersion</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="couchbase.connection.html#connectiontimeout" class="tsd-kind-icon">connectionTimeout</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="couchbase.connection.html#lcbversion" class="tsd-kind-icon">lcbVersion</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="couchbase.connection.html#operationtimeout" class="tsd-kind-icon">operationTimeout</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="couchbase.connection.html#servernodes" class="tsd-kind-icon">serverNodes</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#add" class="tsd-kind-icon">add</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#addmulti" class="tsd-kind-icon">addMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#append" class="tsd-kind-icon">append</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#appendmulti" class="tsd-kind-icon">appendMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#decr" class="tsd-kind-icon">decr</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#decrmulti" class="tsd-kind-icon">decrMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#get" class="tsd-kind-icon">get</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#getdesigndoc" class="tsd-kind-icon">getDesignDoc</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#getmulti" class="tsd-kind-icon">getMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#getreplica" class="tsd-kind-icon">getReplica</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#getreplicamulti" class="tsd-kind-icon">getReplicaMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#incr" class="tsd-kind-icon">incr</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#incrmulti" class="tsd-kind-icon">incrMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#lock" class="tsd-kind-icon">lock</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#lockmulti" class="tsd-kind-icon">lockMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#observe" class="tsd-kind-icon">observe</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#observemulti" class="tsd-kind-icon">observeMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#on" class="tsd-kind-icon">on</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#prepend" class="tsd-kind-icon">prepend</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#prependmulti" class="tsd-kind-icon">prependMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#remove" class="tsd-kind-icon">remove</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#removedesigndoc" class="tsd-kind-icon">removeDesignDoc</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#removemulti" class="tsd-kind-icon">removeMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#replace" class="tsd-kind-icon">replace</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#replacemulti" class="tsd-kind-icon">replaceMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#set" class="tsd-kind-icon">set</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#setdesigndoc" class="tsd-kind-icon">setDesignDoc</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#setmulti" class="tsd-kind-icon">setMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#shutdown" class="tsd-kind-icon">shutdown</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#stats" class="tsd-kind-icon">stats</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#strerror" class="tsd-kind-icon">strError</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#touch" class="tsd-kind-icon">touch</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#unlock" class="tsd-kind-icon">unlock</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#unlockmulti" class="tsd-kind-icon">unlockMulti</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="couchbase.connection.html#view" class="tsd-kind-icon">view</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.connectcallback.html" class="tsd-signature-type">ConnectCallback</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="couchbase.connection.html" class="tsd-signature-type">Connection</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:613</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.connectcallback.html" class="tsd-signature-type">ConnectCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="couchbase.connection.html" class="tsd-signature-type">Connection</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.connectionoptions.html" class="tsd-signature-type">ConnectionOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.connectcallback.html" class="tsd-signature-type">ConnectCallback</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="couchbase.connection.html" class="tsd-signature-type">Connection</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:614</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.connectionoptions.html" class="tsd-signature-type">ConnectionOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.connectcallback.html" class="tsd-signature-type">ConnectCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="couchbase.connection.html" class="tsd-signature-type">Connection</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="clientversion" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clientVersion<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:626</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get information about the Couchnode version (i.e. this library) as an array
+of [versionNumber, versionString].</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>member</dt>
+            <dd><p>{Mixed[]} Connection#clientVersion</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="connectiontimeout" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> connectionTimeout<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:628</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="lcbversion" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lcbVersion<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:630</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="operationtimeout" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> operationTimeout<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:632</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="servernodes" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> serverNodes<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;string&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:634</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="add" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:644</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.addoptions.html" class="tsd-signature-type">AddOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:645</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.addoptions.html" class="tsd-signature-type">AddOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="addmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.AddMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.addmultioptions.html" class="tsd-signature-type">AddMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:646</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.AddMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.addmultioptions.html" class="tsd-signature-type">AddMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="append" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> append<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:648</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> append<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.appendoptions.html" class="tsd-signature-type">AppendOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:649</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.appendoptions.html" class="tsd-signature-type">AppendOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> append<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:650</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> append<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.appendoptions.html" class="tsd-signature-type">AppendOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:651</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.appendoptions.html" class="tsd-signature-type">AppendOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> appendMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.AppendMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.appendmultioptions.html" class="tsd-signature-type">AppendMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:652</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.AppendMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.appendmultioptions.html" class="tsd-signature-type">AppendMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="decr" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> decr<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:654</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> decr<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.decroptions.html" class="tsd-signature-type">DecrOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:655</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.decroptions.html" class="tsd-signature-type">DecrOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="decrmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> decrMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.DecrMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.decrmultioptions.html" class="tsd-signature-type">DecrMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:656</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.DecrMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.decrmultioptions.html" class="tsd-signature-type">DecrMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="get" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> get<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:658</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> get<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.getoptions.html" class="tsd-signature-type">GetOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:659</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.getoptions.html" class="tsd-signature-type">GetOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getdesigndoc" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getDesignDoc<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:662</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.GetMultiOptions; }</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:660</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.GetMultiOptions; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getreplica" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getReplica<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:664</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getReplica<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.getreplicaoptions.html" class="tsd-signature-type">GetReplicaOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:665</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.getreplicaoptions.html" class="tsd-signature-type">GetReplicaOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getreplicamulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getReplicaMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.getreplicamultioptions.html" class="tsd-signature-type">GetReplicaMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:666</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.getreplicamultioptions.html" class="tsd-signature-type">GetReplicaMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="incr" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> incr<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:668</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> incr<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.incroptions.html" class="tsd-signature-type">IncrOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:669</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.incroptions.html" class="tsd-signature-type">IncrOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="incrmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> incrMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.IncrMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.incrmultioptions.html" class="tsd-signature-type">IncrMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:670</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.IncrMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.incrmultioptions.html" class="tsd-signature-type">IncrMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="lock" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lock<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:672</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lock<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.lockoptions.html" class="tsd-signature-type">LockOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:673</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.lockoptions.html" class="tsd-signature-type">LockOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="lockmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lockMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.LockMultiOptions; }</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:674</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.LockMultiOptions; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="observe" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> observe<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.observeoptions.html" class="tsd-signature-type">ObserveOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:676</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.observeoptions.html" class="tsd-signature-type">ObserveOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="observemulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> observeMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ObserveMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ObserveMultiOptions; }</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:677</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ObserveMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ObserveMultiOptions; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="on" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> on<span class="tsd-signature-symbols">(</span>event<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:679</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>event: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>listener: <span class="tsd-signature-type">Function</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> on<span class="tsd-signature-symbols">(</span>event<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">&quot;&#x27;connect&#x27;&quot;</span>, listener<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: Error) =&gt; any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:680</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>event: <span class="tsd-signature-type">&quot;&#x27;connect&#x27;&quot;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>listener: <span class="tsd-signature-type">(err: Error) =&gt; any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> on<span class="tsd-signature-symbols">(</span>event<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">&quot;&#x27;error&#x27;&quot;</span>, listener<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: Error) =&gt; any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:681</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>event: <span class="tsd-signature-type">&quot;&#x27;error&#x27;&quot;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>listener: <span class="tsd-signature-type">(err: Error) =&gt; any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="prepend" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> prepend<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:683</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> prepend<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.prependoptions.html" class="tsd-signature-type">PrependOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:684</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.prependoptions.html" class="tsd-signature-type">PrependOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> prepend<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:685</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> prepend<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, fragment<span class="tsd-signature-symbols">: </span><a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.prependoptions.html" class="tsd-signature-type">PrependOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:686</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fragment: <a href="../globals.html#buffer" class="tsd-signature-type">Buffer</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.prependoptions.html" class="tsd-signature-type">PrependOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="prependmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> prependMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.PrependMultiOptionsFoValue; }</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.PrependMultiOptions; }</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:687</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.PrependMultiOptionsFoValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.PrependMultiOptions; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="remove" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:689</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.removeoptions.html" class="tsd-signature-type">RemoveOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:690</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.removeoptions.html" class="tsd-signature-type">RemoveOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="removedesigndoc" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeDesignDoc<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:694</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="removemulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.RemoveMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.removemultioptions.html" class="tsd-signature-type">RemoveMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:691</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.RemoveMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.removemultioptions.html" class="tsd-signature-type">RemoveMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.removemultioptions.html" class="tsd-signature-type">RemoveMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:692</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.removemultioptions.html" class="tsd-signature-type">RemoveMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="replace" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> replace<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:696</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> replace<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.replaceoptions.html" class="tsd-signature-type">ReplaceOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:697</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.replaceoptions.html" class="tsd-signature-type">ReplaceOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="replacemulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> replaceMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ReplaceMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.replacemultioptions.html" class="tsd-signature-type">ReplaceMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:698</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.ReplaceMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.replacemultioptions.html" class="tsd-signature-type">ReplaceMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="set" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> set<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:700</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> set<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.setoptions.html" class="tsd-signature-type">SetOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:701</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.setoptions.html" class="tsd-signature-type">SetOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setdesigndoc" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setDesignDoc<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:704</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.ddoccallback.html" class="tsd-signature-type">DDocCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.SetMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.setmultioptions.html" class="tsd-signature-type">SetMultiOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:702</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.SetMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.setmultioptions.html" class="tsd-signature-type">SetMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.multicallback.html" class="tsd-signature-type">MultiCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="shutdown" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> shutdown<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:706</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="stats" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> stats<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.statscallback.html" class="tsd-signature-type">StatsCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:708</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.statscallback.html" class="tsd-signature-type">StatsCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> stats<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.statscallback.html" class="tsd-signature-type">StatsCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:709</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.statscallback.html" class="tsd-signature-type">StatsCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="strerror" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> strError<span class="tsd-signature-symbols">(</span>code<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:711</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>code: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="touch" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> touch<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:713</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> touch<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.touchoptions.html" class="tsd-signature-type">TouchOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:714</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.touchoptions.html" class="tsd-signature-type">TouchOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="unlock" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unlock<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.unlockoptions.html" class="tsd-signature-type">UnlockOptions</a>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:716</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/couchbase.unlockoptions.html" class="tsd-signature-type">UnlockOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.keycallback.html" class="tsd-signature-type">KeyCallback</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="unlockmulti" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unlockMulti<span class="tsd-signature-symbols">(</span>kv<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.UnlockMultiOptionsForValue; }</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.UnlockMultiOptions; }</span>, callback<span class="tsd-signature-symbols">: </span><a href="../interfaces/couchbase.unlockmultioptions.html" class="tsd-signature-type">UnlockMultiOptions</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:717</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kv: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.UnlockMultiOptionsForValue; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: &#x27;couchbase&#x27;.UnlockMultiOptions; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <a href="../interfaces/couchbase.unlockmultioptions.html" class="tsd-signature-type">UnlockMultiOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="view" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> view<span class="tsd-signature-symbols">(</span>ddoc<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="couchbase.viewquery.html" class="tsd-signature-type">ViewQuery</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:719</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ddoc: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="couchbase.viewquery.html" class="tsd-signature-type">ViewQuery</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> view<span class="tsd-signature-symbols">(</span>ddoc<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, query<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="couchbase.viewquery.html" class="tsd-signature-type">ViewQuery</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in base/couchbase.d.ts:720</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ddoc: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>query: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="couchbase.viewquery.html" class="tsd-signature-type">ViewQuery</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/nodejs.html">NodeJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/assert.html">assert</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/buffer.html">buffer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/child_process.html">child_process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/cluster.html">cluster</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-dynamic-module">
+    <a href="../modules/couchbase.html">couchbase</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/crypto.html">crypto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dgram.html">dgram</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dns.html">dns</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/domain.html">domain</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/events.html">events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/fs.html">fs</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/http.html">http</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/https.html">https</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/net.html">net</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/os.html">os</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/path.html">path</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/punycode.html">punycode</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/querystring.html">querystring</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/readline.html">readline</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/repl.html">repl</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/stream.html">stream</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/string_decoder.html">string_decoder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tls.html">tls</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tty.html">tty</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/url.html">url</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/util.html">util</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/vm.html">vm</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/zlib.html">zlib</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="../modules/couchbase.html#errors" class="tsd-kind-icon">errors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="../modules/couchbase.html#format" class="tsd-kind-icon">format</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.addmultioptions.html" class="tsd-kind-icon">AddMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.addmultioptionsforvalue.html" class="tsd-kind-icon">AddMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.addoptions.html" class="tsd-kind-icon">AddOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.appendmultioptions.html" class="tsd-kind-icon">AppendMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.appendmultioptionsforvalue.html" class="tsd-kind-icon">AppendMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.appendoptions.html" class="tsd-kind-icon">AppendOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.cas.html" class="tsd-kind-icon">CAS</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.connectcallback.html" class="tsd-kind-icon">ConnectCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.connectionoptions.html" class="tsd-kind-icon">ConnectionOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.couchbaseerror.html" class="tsd-kind-icon">CouchbaseError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.ddoccallback.html" class="tsd-kind-icon">DDocCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.decrmultioptions.html" class="tsd-kind-icon">DecrMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.decrmultioptionsforvalue.html" class="tsd-kind-icon">DecrMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.decroptions.html" class="tsd-kind-icon">DecrOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.getmultioptions.html" class="tsd-kind-icon">GetMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.getoptions.html" class="tsd-kind-icon">GetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.getreplicamultioptions.html" class="tsd-kind-icon">GetReplicaMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.getreplicaoptions.html" class="tsd-kind-icon">GetReplicaOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.incrmultioptions.html" class="tsd-kind-icon">IncrMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.incrmultioptionsforvalue.html" class="tsd-kind-icon">IncrMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.incroptions.html" class="tsd-kind-icon">IncrOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.keycallback.html" class="tsd-kind-icon">KeyCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.lockmultioptions.html" class="tsd-kind-icon">LockMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.lockoptions.html" class="tsd-kind-icon">LockOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.multicallback.html" class="tsd-kind-icon">MultiCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.observemultioptions.html" class="tsd-kind-icon">ObserveMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.observemultioptionsforvalue.html" class="tsd-kind-icon">ObserveMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.observeoptions.html" class="tsd-kind-icon">ObserveOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.prependmultioptions.html" class="tsd-kind-icon">PrependMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.prependmultioptionsfovalue.html" class="tsd-kind-icon">PrependMultiOptionsFoValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.prependoptions.html" class="tsd-kind-icon">PrependOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.querycallback.html" class="tsd-kind-icon">QueryCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.removemultioptions.html" class="tsd-kind-icon">RemoveMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.removemultioptionsforvalue.html" class="tsd-kind-icon">RemoveMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.removeoptions.html" class="tsd-kind-icon">RemoveOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.replacemultioptions.html" class="tsd-kind-icon">ReplaceMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.replacemultioptionsforvalue.html" class="tsd-kind-icon">ReplaceMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.replaceoptions.html" class="tsd-kind-icon">ReplaceOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.setmultioptions.html" class="tsd-kind-icon">SetMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.setmultioptionsforvalue.html" class="tsd-kind-icon">SetMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.setoptions.html" class="tsd-kind-icon">SetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.statscallback.html" class="tsd-kind-icon">StatsCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.touchoptions.html" class="tsd-kind-icon">TouchOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.unlockmultioptions.html" class="tsd-kind-icon">UnlockMultiOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.unlockmultioptionsforvalue.html" class="tsd-kind-icon">UnlockMultiOptionsForValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/couchbase.unlockoptions.html" class="tsd-kind-icon">UnlockOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-dynamic-module">
+                    <a href="couchbase.connection.html" class="tsd-kind-icon">Connection</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#clientversion" class="tsd-kind-icon">clientVersion</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#connectiontimeout" class="tsd-kind-icon">connectionTimeout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#lcbversion" class="tsd-kind-icon">lcbVersion</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#operationtimeout" class="tsd-kind-icon">operationTimeout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#servernodes" class="tsd-kind-icon">serverNodes</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#add" class="tsd-kind-icon">add</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#addmulti" class="tsd-kind-icon">addMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#append" class="tsd-kind-icon">append</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#appendmulti" class="tsd-kind-icon">appendMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#decr" class="tsd-kind-icon">decr</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#decrmulti" class="tsd-kind-icon">decrMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#get" class="tsd-kind-icon">get</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#getdesigndoc" class="tsd-kind-icon">getDesignDoc</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#getmulti" class="tsd-kind-icon">getMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#getreplica" class="tsd-kind-icon">getReplica</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#getreplicamulti" class="tsd-kind-icon">getReplicaMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#incr" class="tsd-kind-icon">incr</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#incrmulti" class="tsd-kind-icon">incrMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#lock" class="tsd-kind-icon">lock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#lockmulti" class="tsd-kind-icon">lockMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#observe" class="tsd-kind-icon">observe</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#observemulti" class="tsd-kind-icon">observeMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#on" class="tsd-kind-icon">on</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#prepend" class="tsd-kind-icon">prepend</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#prependmulti" class="tsd-kind-icon">prependMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#remove" class="tsd-kind-icon">remove</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#removedesigndoc" class="tsd-kind-icon">removeDesignDoc</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#removemulti" class="tsd-kind-icon">removeMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#replace" class="tsd-kind-icon">replace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#replacemulti" class="tsd-kind-icon">replaceMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#set" class="tsd-kind-icon">set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#setdesigndoc" class="tsd-kind-icon">setDesignDoc</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#setmulti" class="tsd-kind-icon">setMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#shutdown" class="tsd-kind-icon">shutdown</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#stats" class="tsd-kind-icon">stats</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#strerror" class="tsd-kind-icon">strError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#touch" class="tsd-kind-icon">touch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#unlock" class="tsd-kind-icon">unlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#unlockmulti" class="tsd-kind-icon">unlockMulti</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="couchbase.connection.html#view" class="tsd-kind-icon">view</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-dynamic-module">
+                    <a href="couchbase.result.html" class="tsd-kind-icon">Result</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-dynamic-module">
+                    <a href="couchbase.viewquery.html" class="tsd-kind-icon">ViewQuery</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

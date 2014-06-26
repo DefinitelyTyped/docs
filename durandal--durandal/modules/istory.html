@@ -1,0 +1,944 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>istory | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="istory.html">istory</a>
+    </li>
+
+            </ul>
+            <h1>Dynamic module istory</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Variables</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="istory.html#active" class="tsd-kind-icon">active</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="istory.html#interval" class="tsd-kind-icon">interval</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Functions</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#activate" class="tsd-kind-icon">activate</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#checkurl" class="tsd-kind-icon">checkUrl</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#deactivate" class="tsd-kind-icon">deactivate</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#getfragment" class="tsd-kind-icon">getFragment</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#gethash" class="tsd-kind-icon">getHash</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#loadurl" class="tsd-kind-icon">loadUrl</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#navigate" class="tsd-kind-icon">navigate</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-dynamic-module"><a href="istory.html#navigateback" class="tsd-kind-icon">navigateBack</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Variables</h2>
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="active" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">active<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:793</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Indicates whether or not the history module is actively tracking history.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="interval" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">interval<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:788</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The setTimeout interval used when the browser does not support hash change events.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>50</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Functions</h2>
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="activate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">activate<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><a href="../interfaces/durandalhistoryoptions.html" class="tsd-signature-type">DurandalHistoryOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:815</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Activate the hash change handling, returning <code>true</code> if the current URL matches an existing route, and <code>false</code> otherwise.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <a href="../interfaces/durandalhistoryoptions.html" class="tsd-signature-type">DurandalHistoryOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true/false from loading the url unless the silent option was selected.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="checkurl" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">checkUrl<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:826</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Checks the current URL to see if it has changed, and if it has, calls <code>loadUrl</code>, normalizing across the hidden iframe.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true/false from loading the url.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="deactivate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">deactivate<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:820</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Disable history, perhaps temporarily. Not useful in a real app, but possibly useful for unit testing Routers.</p>
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="getfragment" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">getFragment<span class="tsd-signature-symbols">(</span>fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, forcePushState<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:808</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the cross-browser normalized URL fragment, either from the URL, the hash, or the override.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The fragment.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>forcePushState: <span class="tsd-signature-type">boolean</span></h5>
+                
+    <p>Should we force push state?</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+        <p>he fragment.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="gethash" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">getHash<span class="tsd-signature-symbols">(</span>window<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:800</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the true hash value. Cannot use location.hash directly due to a bug in Firefox where location.hash will always be decoded.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>window?: <span class="tsd-signature-type">Window</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+        <p>The hash.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="loadurl" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">loadUrl<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:832</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Attempts to load the current URL fragment. A pass-through to options.routeHandler.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true/false from the route handler.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="navigate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">navigate<span class="tsd-signature-symbols">(</span>fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, trigger<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:845</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Save a fragment into the hash history, or replace the URL state if the
+&#39;replace&#39; option is passed. You are responsible for properly URL-encoding
+the fragment in advance.
+The options object can contain <code>trigger: false</code> if you wish to not have the
+route callback be fired, or <code>replace: true</code>, if
+you wish to modify the current URL without adding an entry to the history.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The url fragment to navigate to.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>trigger?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true/false from loading the url.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon">navigate<span class="tsd-signature-symbols">(</span>fragment<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="../interfaces/durandalnavigationoptions.html" class="tsd-signature-type">DurandalNavigationOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:858</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Save a fragment into the hash history, or replace the URL state if the
+&#39;replace&#39; option is passed. You are responsible for properly URL-encoding
+the fragment in advance.
+The options object can contain <code>trigger: false</code> if you wish to not have the
+route callback be fired, or <code>replace: true</code>, if
+you wish to modify the current URL without adding an entry to the history.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fragment: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The url fragment to navigate to.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="../interfaces/durandalnavigationoptions.html" class="tsd-signature-type">DurandalNavigationOptions</a></h5>
+                
+    <p>An options object with optional trigger and replace flags. You can also pass a boolean directly to set the trigger option. Trigger is <code>true</code> by default.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true/false from loading the url.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-dynamic-module">
+    <a name="navigateback" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">navigateBack<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal.d.ts:863</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Navigates back in the browser history.</p>
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="activator.html">activator</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="app.html">app</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="binder.html">binder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="bservable.html">bservable</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="composition.html">composition</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="erializer.html">erializer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="events.html">events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="ialog.html">ialog</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="idget.html">idget</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-dynamic-module">
+    <a href="istory.html">istory</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="jquery.html">jquery</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="knockout.html">knockout</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="outer.html">outer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="system.html">system</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="ttp.html">ttp</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewengine.html">viewEngine</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewlocator.html">viewLocator</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#active" class="tsd-kind-icon">active</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#interval" class="tsd-kind-icon">interval</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#activate" class="tsd-kind-icon">activate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#checkurl" class="tsd-kind-icon">checkUrl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#deactivate" class="tsd-kind-icon">deactivate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#getfragment" class="tsd-kind-icon">getFragment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#gethash" class="tsd-kind-icon">getHash</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#loadurl" class="tsd-kind-icon">loadUrl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#navigate" class="tsd-kind-icon">navigate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-dynamic-module">
+                    <a href="istory.html#navigateback" class="tsd-kind-icon">navigateBack</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

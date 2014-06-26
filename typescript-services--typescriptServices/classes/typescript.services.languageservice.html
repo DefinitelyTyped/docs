@@ -1,0 +1,5946 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LanguageService | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/typescript.html">TypeScript</a>
+    </li>
+
+    <li>
+        <a href="../modules/typescript.services.html">Services</a>
+    </li>
+
+    <li>
+        <a href="typescript.services.languageservice.html">LanguageService</a>
+    </li>
+
+            </ul>
+            <h1>Class LanguageService</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#_syntaxtreecache" class="tsd-kind-icon">_syntaxTreeCache</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#activecompletionsession" class="tsd-kind-icon">activeCompletionSession</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#compiler" class="tsd-kind-icon">compiler</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#formattingrulesprovider" class="tsd-kind-icon">formattingRulesProvider</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="typescript.services.languageservice.html#host" class="tsd-kind-icon">host</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#logger" class="tsd-kind-icon">logger</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#_gethostfilename" class="tsd-kind-icon">_getHostFileName</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#_gethostspecificdiagnosticwithfilename" class="tsd-kind-icon">_getHostSpecificDiagnosticWithFileName</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#adddeclaration" class="tsd-kind-icon">addDeclaration</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#adddeclarations" class="tsd-kind-icon">addDeclarations</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#cleanupsemanticcache" class="tsd-kind-icon">cleanupSemanticCache</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#containerrors" class="tsd-kind-icon">containErrors</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#findsearchvalueinpulldecl" class="tsd-kind-icon">findSearchValueInPullDecl</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getallsemanticdiagnostics" class="tsd-kind-icon">getAllSemanticDiagnostics</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getallsyntacticdiagnostics" class="tsd-kind-icon">getAllSyntacticDiagnostics</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getbracematchingatposition" class="tsd-kind-icon">getBraceMatchingAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getbreakpointstatementatposition" class="tsd-kind-icon">getBreakpointStatementAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getcompileroptionsdiagnostics" class="tsd-kind-icon">getCompilerOptionsDiagnostics</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getcompletionentriesforkeywords" class="tsd-kind-icon">getCompletionEntriesForKeywords</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getcompletionentriesfromdecls" class="tsd-kind-icon">getCompletionEntriesFromDecls</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getcompletionentriesfromsymbols" class="tsd-kind-icon">getCompletionEntriesFromSymbols</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getcompletionentrydetails" class="tsd-kind-icon">getCompletionEntryDetails</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getcompletionsatposition" class="tsd-kind-icon">getCompletionsAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getdefinitionatposition" class="tsd-kind-icon">getDefinitionAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getemitoutput" class="tsd-kind-icon">getEmitOutput</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getformattingeditsafterkeystroke" class="tsd-kind-icon">getFormattingEditsAfterKeystroke</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getformattingeditsfordocument" class="tsd-kind-icon">getFormattingEditsForDocument</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getformattingeditsforrange" class="tsd-kind-icon">getFormattingEditsForRange</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getformattingeditsonpaste" class="tsd-kind-icon">getFormattingEditsOnPaste</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getformattingmanager" class="tsd-kind-icon">getFormattingManager</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getfullnameofsymbol" class="tsd-kind-icon">getFullNameOfSymbol</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getimplementorsatposition" class="tsd-kind-icon">getImplementorsAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getimplementorsinfile" class="tsd-kind-icon">getImplementorsInFile</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getindentationatposition" class="tsd-kind-icon">getIndentationAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getmoduleorenumkind" class="tsd-kind-icon">getModuleOrEnumKind</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getnameordottednamespan" class="tsd-kind-icon">getNameOrDottedNameSpan</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getnavigatetoitems" class="tsd-kind-icon">getNavigateToItems</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getoccurrencesatposition" class="tsd-kind-icon">getOccurrencesAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getoutliningregions" class="tsd-kind-icon">getOutliningRegions</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getoverrides" class="tsd-kind-icon">getOverrides</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getpossiblesymbolreferencepositions" class="tsd-kind-icon">getPossibleSymbolReferencePositions</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getreferencesatposition" class="tsd-kind-icon">getReferencesAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getreferencesinfile" class="tsd-kind-icon">getReferencesInFile</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getresolvedcompletionentrydetailsfromsymbol" class="tsd-kind-icon">getResolvedCompletionEntryDetailsFromSymbol</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getscriptelementkindmodifiers" class="tsd-kind-icon">getScriptElementKindModifiers</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getscriptelementkindmodifiersfromdecl" class="tsd-kind-icon">getScriptElementKindModifiersFromDecl</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getscriptelementkindmodifiersfromflags" class="tsd-kind-icon">getScriptElementKindModifiersFromFlags</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getscriptlexicalstructure" class="tsd-kind-icon">getScriptLexicalStructure</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getsemanticdiagnostics" class="tsd-kind-icon">getSemanticDiagnostics</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getsignatureatposition" class="tsd-kind-icon">getSignatureAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getsinglenodereferenceatposition" class="tsd-kind-icon">getSingleNodeReferenceAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getsymbolinfoatposition" class="tsd-kind-icon">getSymbolInfoAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#getsymbolscopeast" class="tsd-kind-icon">getSymbolScopeAST</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getsyntacticdiagnostics" class="tsd-kind-icon">getSyntacticDiagnostics</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#getsyntaxtree" class="tsd-kind-icon">getSyntaxTree</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#gettypeatposition" class="tsd-kind-icon">getTypeAtPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#gettypeinfoeligiblepath" class="tsd-kind-icon">getTypeInfoEligiblePath</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#gettypeparametersignaturefrompartiallywrittenexpression" class="tsd-kind-icon">getTypeParameterSignatureFromPartiallyWrittenExpression</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#hasanyuppercasecharacter" class="tsd-kind-icon">hasAnyUpperCaseCharacter</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#iscontainerdeclaration" class="tsd-kind-icon">isContainerDeclaration</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#isletterordigit" class="tsd-kind-icon">isLetterOrDigit</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#iswriteaccess" class="tsd-kind-icon">isWriteAccess</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#mappullelementkind" class="tsd-kind-icon">mapPullElementKind</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="typescript.services.languageservice.html#refresh" class="tsd-kind-icon">refresh</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#shouldincludedeclarationinnavigationitems" class="tsd-kind-icon">shouldIncludeDeclarationInNavigationItems</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#tryaddconstructor" class="tsd-kind-icon">tryAddConstructor</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#tryadddefinition" class="tsd-kind-icon">tryAddDefinition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#tryaddsignatures" class="tsd-kind-icon">tryAddSignatures</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typescript.services.languageservice.html#tryfinddeclfrompreviouscompilerversion" class="tsd-kind-icon">tryFindDeclFromPreviousCompilerVersion</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>host<span class="tsd-signature-symbols">: </span><a href="../interfaces/typescript.services.ilanguageservicehost.html" class="tsd-signature-type">ILanguageServiceHost</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.languageservice.html" class="tsd-signature-type">LanguageService</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8993</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>host: <a href="../interfaces/typescript.services.ilanguageservicehost.html" class="tsd-signature-type">ILanguageServiceHost</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.languageservice.html" class="tsd-signature-type">LanguageService</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+    <a name="_syntaxtreecache" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> _syntaxTreeCache<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8990</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+    <a name="activecompletionsession" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> activeCompletionSession<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8992</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+    <a name="compiler" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> compiler<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8989</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+    <a name="formattingrulesprovider" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> formattingRulesProvider<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8991</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="host" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> host<span class="tsd-signature-symbols">:</span> <a href="../interfaces/typescript.services.ilanguageservicehost.html" class="tsd-signature-type">ILanguageServiceHost</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8987</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+    <a name="logger" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> logger<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8988</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="_gethostfilename" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> _getHostFileName<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9026</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="_gethostspecificdiagnosticwithfilename" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> _getHostSpecificDiagnosticWithFileName<span class="tsd-signature-symbols">(</span>diagnostic<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9024</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>diagnostic: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="adddeclaration" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> addDeclaration<span class="tsd-signature-symbols">(</span>symbolKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declaration<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9012</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declaration: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="adddeclarations" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> addDeclarations<span class="tsd-signature-symbols">(</span>symbolKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declarations<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9011</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declarations: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cleanupsemanticcache" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> cleanupSemanticCache<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8994</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="containerrors" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> containErrors<span class="tsd-signature-symbols">(</span>diagnostics<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9030</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>diagnostics: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="findsearchvalueinpulldecl" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> findSearchValueInPullDecl<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declarations<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, results<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, searchTerms<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, parentName<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, parentkindName<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9018</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declarations: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>results: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>searchTerms: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>parentName?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>parentkindName?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getallsemanticdiagnostics" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getAllSemanticDiagnostics<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9029</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getallsyntacticdiagnostics" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getAllSyntacticDiagnostics<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9028</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getbracematchingatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getBraceMatchingAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.textspan.html" class="tsd-signature-type">TextSpan</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9054</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.textspan.html" class="tsd-signature-type">TextSpan</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getbreakpointstatementatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getBreakpointStatementAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.spaninfo.html" class="tsd-signature-type">SpanInfo</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9046</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>pos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.spaninfo.html" class="tsd-signature-type">SpanInfo</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getcompileroptionsdiagnostics" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCompilerOptionsDiagnostics<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9025</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getcompletionentriesforkeywords" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getCompletionEntriesForKeywords<span class="tsd-signature-symbols">(</span>keywords<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9038</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>keywords: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getcompletionentriesfromdecls" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getCompletionEntriesFromDecls<span class="tsd-signature-symbols">(</span>decls<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9036</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>decls: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getcompletionentriesfromsymbols" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getCompletionEntriesFromSymbols<span class="tsd-signature-symbols">(</span>symbolInfo<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9035</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolInfo: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getcompletionentrydetails" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCompletionEntryDetails<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, entryName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../interfaces/typescript.services.completionentrydetails.html" class="tsd-signature-type">CompletionEntryDetails</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9039</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>entryName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../interfaces/typescript.services.completionentrydetails.html" class="tsd-signature-type">CompletionEntryDetails</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getcompletionsatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCompletionsAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, isMemberCompletion<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.completioninfo.html" class="tsd-signature-type">CompletionInfo</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9034</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>isMemberCompletion: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.completioninfo.html" class="tsd-signature-type">CompletionInfo</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getdefinitionatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getDefinitionAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.definitioninfo.html" class="tsd-signature-type">DefinitionInfo</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9010</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.definitioninfo.html" class="tsd-signature-type">DefinitionInfo</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getemitoutput" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getEmitOutput<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.emitoutput.html" class="tsd-signature-type">EmitOutput</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9027</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.emitoutput.html" class="tsd-signature-type">EmitOutput</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getformattingeditsafterkeystroke" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getFormattingEditsAfterKeystroke<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9050</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getformattingeditsfordocument" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getFormattingEditsForDocument<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, minChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, limChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9048</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>minChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>limChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getformattingeditsforrange" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getFormattingEditsForRange<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, minChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, limChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9047</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>minChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>limChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getformattingeditsonpaste" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getFormattingEditsOnPaste<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, minChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, limChar<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbols">: </span><a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9049</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>minChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>limChar: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <a href="typescript.services.formatcodeoptions.html" class="tsd-signature-type">FormatCodeOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.textedit.html" class="tsd-signature-type">TextEdit</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getformattingmanager" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getFormattingManager<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9051</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getfullnameofsymbol" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getFullNameOfSymbol<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, enclosingScopeSymbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9031</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>enclosingScopeSymbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getimplementorsatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getImplementorsAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9001</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>pos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getimplementorsinfile" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getImplementorsInFile<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9003</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getindentationatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getIndentationAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, editorOptions<span class="tsd-signature-symbols">: </span><a href="typescript.services.editoroptions.html" class="tsd-signature-type">EditorOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9053</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>editorOptions: <a href="typescript.services.editoroptions.html" class="tsd-signature-type">EditorOptions</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getmoduleorenumkind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getModuleOrEnumKind<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9041</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getnameordottednamespan" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getNameOrDottedNameSpan<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, startPos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, endPos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.spaninfo.html" class="tsd-signature-type">SpanInfo</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9045</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>startPos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>endPos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.spaninfo.html" class="tsd-signature-type">SpanInfo</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getnavigatetoitems" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getNavigateToItems<span class="tsd-signature-symbols">(</span>searchValue<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.navigatetoitem.html" class="tsd-signature-type">NavigateToItem</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9016</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>searchValue: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.navigatetoitem.html" class="tsd-signature-type">NavigateToItem</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getoccurrencesatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getOccurrencesAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8999</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>pos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getoutliningregions" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getOutliningRegions<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.textspan.html" class="tsd-signature-type">TextSpan</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9052</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.textspan.html" class="tsd-signature-type">TextSpan</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getoverrides" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getOverrides<span class="tsd-signature-symbols">(</span>container<span class="tsd-signature-symbols">: </span><a href="typescript.pulltypesymbol.html" class="tsd-signature-type">PullTypeSymbol</a>, memberSym<span class="tsd-signature-symbols">: </span><a href="typescript.pullsymbol.html" class="tsd-signature-type">PullSymbol</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.pulltypesymbol.html" class="tsd-signature-type">PullTypeSymbol</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9002</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>container: <a href="typescript.pulltypesymbol.html" class="tsd-signature-type">PullTypeSymbol</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>memberSym: <a href="typescript.pullsymbol.html" class="tsd-signature-type">PullSymbol</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.pulltypesymbol.html" class="tsd-signature-type">PullTypeSymbol</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getpossiblesymbolreferencepositions" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getPossibleSymbolReferencePositions<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9007</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getreferencesatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getReferencesAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, pos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8997</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>pos: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.referenceentry.html" class="tsd-signature-type">ReferenceEntry</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getreferencesinfile" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getReferencesInFile<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containingASTOpt<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9004</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containingASTOpt: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getresolvedcompletionentrydetailsfromsymbol" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getResolvedCompletionEntryDetailsFromSymbol<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, enclosingScopeSymbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9037</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>enclosingScopeSymbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getscriptelementkindmodifiers" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getScriptElementKindModifiers<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9043</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getscriptelementkindmodifiersfromdecl" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getScriptElementKindModifiersFromDecl<span class="tsd-signature-symbols">(</span>decl<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9019</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>decl: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getscriptelementkindmodifiersfromflags" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getScriptElementKindModifiersFromFlags<span class="tsd-signature-symbols">(</span>flags<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9044</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>flags: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getscriptlexicalstructure" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getScriptLexicalStructure<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.navigatetoitem.html" class="tsd-signature-type">NavigateToItem</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9055</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.navigatetoitem.html" class="tsd-signature-type">NavigateToItem</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsemanticdiagnostics" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSemanticDiagnostics<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9023</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsignatureatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSignatureAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.signatureinfo.html" class="tsd-signature-type">SignatureInfo</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9008</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.signatureinfo.html" class="tsd-signature-type">SignatureInfo</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getsinglenodereferenceatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getSingleNodeReferenceAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9000</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getsymbolinfoatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getSymbolInfoAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, pos<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, requireName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8996</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>pos: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>requireName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="getsymbolscopeast" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getSymbolScopeAST<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, ast<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8998</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbol: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>ast: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsyntacticdiagnostics" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSyntacticDiagnostics<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9022</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.diagnostic.html" class="tsd-signature-type">Diagnostic</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsyntaxtree" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSyntaxTree<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.syntaxtree.html" class="tsd-signature-type">SyntaxTree</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9056</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.syntaxtree.html" class="tsd-signature-type">SyntaxTree</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="gettypeatposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getTypeAtPosition<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typescript.services.typeinfo.html" class="tsd-signature-type">TypeInfo</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9033</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="typescript.services.typeinfo.html" class="tsd-signature-type">TypeInfo</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="gettypeinfoeligiblepath" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getTypeInfoEligiblePath<span class="tsd-signature-symbols">(</span>fileName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, isConstructorValidPosition<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9032</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fileName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>isConstructorValidPosition: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="gettypeparametersignaturefrompartiallywrittenexpression" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> getTypeParameterSignatureFromPartiallyWrittenExpression<span class="tsd-signature-symbols">(</span>document<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, genericTypeArgumentListInfo<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9009</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>document: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>genericTypeArgumentListInfo: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="hasanyuppercasecharacter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> hasAnyUpperCaseCharacter<span class="tsd-signature-symbols">(</span>s<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9017</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>s: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="iscontainerdeclaration" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> isContainerDeclaration<span class="tsd-signature-symbols">(</span>declaration<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9020</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>declaration: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="isletterordigit" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> isLetterOrDigit<span class="tsd-signature-symbols">(</span>char<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9006</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>char: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="iswriteaccess" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> isWriteAccess<span class="tsd-signature-symbols">(</span>current<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9005</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>current: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="mappullelementkind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> mapPullElementKind<span class="tsd-signature-symbols">(</span>kind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbol<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, useConstructorAsClass<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, varIsFunction<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, functionIsConstructor<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9042</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>kind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbol?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>useConstructorAsClass?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>varIsFunction?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>functionIsConstructor?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="refresh" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> refresh<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:8995</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="shouldincludedeclarationinnavigationitems" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> shouldIncludeDeclarationInNavigationItems<span class="tsd-signature-symbols">(</span>declaration<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9021</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>declaration: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="tryaddconstructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> tryAddConstructor<span class="tsd-signature-symbols">(</span>symbolKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declarations<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9015</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declarations: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="tryadddefinition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> tryAddDefinition<span class="tsd-signature-symbols">(</span>symbolKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declarations<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9013</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declarations: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="tryaddsignatures" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> tryAddSignatures<span class="tsd-signature-symbols">(</span>symbolKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, symbolName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerKind<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, containerName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, declarations<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, result<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9014</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>symbolKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>symbolName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerKind: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>containerName: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>declarations: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>result: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+    <a name="tryfinddeclfrompreviouscompilerversion" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagprivate">private</span> tryFindDeclFromPreviousCompilerVersion<span class="tsd-signature-symbols">(</span>invalidatedDecl<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in typescriptServices.d.ts:9040</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>invalidatedDecl: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/typescript.html">TypeScript</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.asthelpers.html">TypeScript.ASTHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.bitmatrix.html">TypeScript.BitMatrix</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.bitvector.html">TypeScript.BitVector</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.collections.html">TypeScript.Collections</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.compilerdiagnostics.html">TypeScript.CompilerDiagnostics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.declarationcreator.html">TypeScript.DeclarationCreator</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.indentation.html">TypeScript.Indentation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.integerutilities.html">TypeScript.IntegerUtilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.linemap1.html">TypeScript.LineMap1</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.parser.html">TypeScript.Parser</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.pullhelpers.html">TypeScript.PullHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.pullinstantiationhelpers.html">TypeScript.PullInstantiationHelpers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.scriptsnapshot.html">TypeScript.ScriptSnapshot</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.html">TypeScript.Services</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.breakpoints.html">TypeScript.Services.Breakpoints</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.formatting.html">TypeScript.Services.Formatting</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.services.formatting.shared.html">TypeScript.Services.Formatting.Shared</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.simpletext.html">TypeScript.SimpleText</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.syntax.html">TypeScript.Syntax</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.syntaxfacts.html">TypeScript.SyntaxFacts</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.textfactory.html">TypeScript.TextFactory</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/typescript.textutilities.html">TypeScript.TextUtilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/typescript-services.html">typescript-services</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.endoflinestate.html" class="tsd-kind-icon">EndOfLineState</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/typescript.services.tokenclass.html" class="tsd-kind-icon">TokenClass</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.cachedcompletionentrydetails.html" class="tsd-kind-icon">CachedCompletionEntryDetails</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.completionentry.html" class="tsd-kind-icon">CompletionEntry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.completionentrydetails.html" class="tsd-kind-icon">CompletionEntryDetails</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.iclassifierhost.html" class="tsd-kind-icon">IClassifierHost</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.icoreserviceshost.html" class="tsd-kind-icon">ICoreServicesHost</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ilanguageservice.html" class="tsd-kind-icon">ILanguageService</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ilanguageservicehost.html" class="tsd-kind-icon">ILanguageServiceHost</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ilanguageserviceshim.html" class="tsd-kind-icon">ILanguageServiceShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ilanguageserviceshimhost.html" class="tsd-kind-icon">ILanguageServiceShimHost</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ilanguageservicesdiagnostics.html" class="tsd-kind-icon">ILanguageServicesDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ipartiallywrittentypeargumentlistinformation.html" class="tsd-kind-icon">IPartiallyWrittenTypeArgumentListInformation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.iscriptsnapshotshim.html" class="tsd-kind-icon">IScriptSnapshotShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ishim.html" class="tsd-kind-icon">IShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/typescript.services.ishimfactory.html" class="tsd-kind-icon">IShimFactory</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.actualsignatureinfo.html" class="tsd-kind-icon">ActualSignatureInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.bracematcher.html" class="tsd-kind-icon">BraceMatcher</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.classificationinfo.html" class="tsd-kind-icon">ClassificationInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.classificationresult.html" class="tsd-kind-icon">ClassificationResult</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.classifier.html" class="tsd-kind-icon">Classifier</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.classifiershim.html" class="tsd-kind-icon">ClassifierShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.completionhelpers.html" class="tsd-kind-icon">CompletionHelpers</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.completioninfo.html" class="tsd-kind-icon">CompletionInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.completionsession.html" class="tsd-kind-icon">CompletionSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.coreservices.html" class="tsd-kind-icon">CoreServices</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.coreservicesshim.html" class="tsd-kind-icon">CoreServicesShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.declreferencecompletionentry.html" class="tsd-kind-icon">DeclReferenceCompletionEntry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.definitioninfo.html" class="tsd-kind-icon">DefinitionInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.diagnosticcategory.html" class="tsd-kind-icon">DiagnosticCategory</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.editoroptions.html" class="tsd-kind-icon">EditorOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.findreferencehelpers.html" class="tsd-kind-icon">FindReferenceHelpers</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formalparameterinfo.html" class="tsd-kind-icon">FormalParameterInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formalsignatureiteminfo.html" class="tsd-kind-icon">FormalSignatureItemInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formaltypeparameterinfo.html" class="tsd-kind-icon">FormalTypeParameterInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.formatcodeoptions.html" class="tsd-kind-icon">FormatCodeOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.getscriptlexicalstructurewalker.html" class="tsd-kind-icon">GetScriptLexicalStructureWalker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.indenter.html" class="tsd-kind-icon">Indenter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.keywordcompletions.html" class="tsd-kind-icon">KeywordCompletions</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.languageservice.html" class="tsd-kind-icon">LanguageService</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#_syntaxtreecache" class="tsd-kind-icon">_syntaxTreeCache</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#activecompletionsession" class="tsd-kind-icon">activeCompletionSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#compiler" class="tsd-kind-icon">compiler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#formattingrulesprovider" class="tsd-kind-icon">formattingRulesProvider</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#host" class="tsd-kind-icon">host</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#logger" class="tsd-kind-icon">logger</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#_gethostfilename" class="tsd-kind-icon">_getHostFileName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#_gethostspecificdiagnosticwithfilename" class="tsd-kind-icon">_getHostSpecificDiagnosticWithFileName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#adddeclaration" class="tsd-kind-icon">addDeclaration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#adddeclarations" class="tsd-kind-icon">addDeclarations</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#cleanupsemanticcache" class="tsd-kind-icon">cleanupSemanticCache</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#containerrors" class="tsd-kind-icon">containErrors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#findsearchvalueinpulldecl" class="tsd-kind-icon">findSearchValueInPullDecl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getallsemanticdiagnostics" class="tsd-kind-icon">getAllSemanticDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getallsyntacticdiagnostics" class="tsd-kind-icon">getAllSyntacticDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getbracematchingatposition" class="tsd-kind-icon">getBraceMatchingAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getbreakpointstatementatposition" class="tsd-kind-icon">getBreakpointStatementAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getcompileroptionsdiagnostics" class="tsd-kind-icon">getCompilerOptionsDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getcompletionentriesforkeywords" class="tsd-kind-icon">getCompletionEntriesForKeywords</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getcompletionentriesfromdecls" class="tsd-kind-icon">getCompletionEntriesFromDecls</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getcompletionentriesfromsymbols" class="tsd-kind-icon">getCompletionEntriesFromSymbols</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getcompletionentrydetails" class="tsd-kind-icon">getCompletionEntryDetails</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getcompletionsatposition" class="tsd-kind-icon">getCompletionsAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getdefinitionatposition" class="tsd-kind-icon">getDefinitionAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getemitoutput" class="tsd-kind-icon">getEmitOutput</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getformattingeditsafterkeystroke" class="tsd-kind-icon">getFormattingEditsAfterKeystroke</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getformattingeditsfordocument" class="tsd-kind-icon">getFormattingEditsForDocument</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getformattingeditsforrange" class="tsd-kind-icon">getFormattingEditsForRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getformattingeditsonpaste" class="tsd-kind-icon">getFormattingEditsOnPaste</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getformattingmanager" class="tsd-kind-icon">getFormattingManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getfullnameofsymbol" class="tsd-kind-icon">getFullNameOfSymbol</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getimplementorsatposition" class="tsd-kind-icon">getImplementorsAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getimplementorsinfile" class="tsd-kind-icon">getImplementorsInFile</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getindentationatposition" class="tsd-kind-icon">getIndentationAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getmoduleorenumkind" class="tsd-kind-icon">getModuleOrEnumKind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getnameordottednamespan" class="tsd-kind-icon">getNameOrDottedNameSpan</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getnavigatetoitems" class="tsd-kind-icon">getNavigateToItems</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getoccurrencesatposition" class="tsd-kind-icon">getOccurrencesAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getoutliningregions" class="tsd-kind-icon">getOutliningRegions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getoverrides" class="tsd-kind-icon">getOverrides</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getpossiblesymbolreferencepositions" class="tsd-kind-icon">getPossibleSymbolReferencePositions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getreferencesatposition" class="tsd-kind-icon">getReferencesAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getreferencesinfile" class="tsd-kind-icon">getReferencesInFile</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getresolvedcompletionentrydetailsfromsymbol" class="tsd-kind-icon">getResolvedCompletionEntryDetailsFromSymbol</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getscriptelementkindmodifiers" class="tsd-kind-icon">getScriptElementKindModifiers</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getscriptelementkindmodifiersfromdecl" class="tsd-kind-icon">getScriptElementKindModifiersFromDecl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getscriptelementkindmodifiersfromflags" class="tsd-kind-icon">getScriptElementKindModifiersFromFlags</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getscriptlexicalstructure" class="tsd-kind-icon">getScriptLexicalStructure</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getsemanticdiagnostics" class="tsd-kind-icon">getSemanticDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getsignatureatposition" class="tsd-kind-icon">getSignatureAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getsinglenodereferenceatposition" class="tsd-kind-icon">getSingleNodeReferenceAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getsymbolinfoatposition" class="tsd-kind-icon">getSymbolInfoAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#getsymbolscopeast" class="tsd-kind-icon">getSymbolScopeAST</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getsyntacticdiagnostics" class="tsd-kind-icon">getSyntacticDiagnostics</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#getsyntaxtree" class="tsd-kind-icon">getSyntaxTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#gettypeatposition" class="tsd-kind-icon">getTypeAtPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#gettypeinfoeligiblepath" class="tsd-kind-icon">getTypeInfoEligiblePath</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#gettypeparametersignaturefrompartiallywrittenexpression" class="tsd-kind-icon">getTypeParameterSignatureFromPartiallyWrittenExpression</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#hasanyuppercasecharacter" class="tsd-kind-icon">hasAnyUpperCaseCharacter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#iscontainerdeclaration" class="tsd-kind-icon">isContainerDeclaration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#isletterordigit" class="tsd-kind-icon">isLetterOrDigit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#iswriteaccess" class="tsd-kind-icon">isWriteAccess</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#mappullelementkind" class="tsd-kind-icon">mapPullElementKind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="typescript.services.languageservice.html#refresh" class="tsd-kind-icon">refresh</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#shouldincludedeclarationinnavigationitems" class="tsd-kind-icon">shouldIncludeDeclarationInNavigationItems</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#tryaddconstructor" class="tsd-kind-icon">tryAddConstructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#tryadddefinition" class="tsd-kind-icon">tryAddDefinition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#tryaddsignatures" class="tsd-kind-icon">tryAddSignatures</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+                    <a href="typescript.services.languageservice.html#tryfinddeclfrompreviouscompilerversion" class="tsd-kind-icon">tryFindDeclFromPreviousCompilerVersion</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.languageservicecompiler.html" class="tsd-kind-icon">LanguageServiceCompiler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.languageserviceshim.html" class="tsd-kind-icon">LanguageServiceShim</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.languageserviceshimhostadapter.html" class="tsd-kind-icon">LanguageServiceShimHostAdapter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.matchkind.html" class="tsd-kind-icon">MatchKind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.navigatetoitem.html" class="tsd-kind-icon">NavigateToItem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.outliningelementscollector.html" class="tsd-kind-icon">OutliningElementsCollector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.referenceentry.html" class="tsd-kind-icon">ReferenceEntry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.resolvedcompletionentry.html" class="tsd-kind-icon">ResolvedCompletionEntry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.scriptelementkind.html" class="tsd-kind-icon">ScriptElementKind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.scriptelementkindmodifier.html" class="tsd-kind-icon">ScriptElementKindModifier</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.shimbase.html" class="tsd-kind-icon">ShimBase</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.signatureinfo.html" class="tsd-kind-icon">SignatureInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.signatureinfohelpers.html" class="tsd-kind-icon">SignatureInfoHelpers</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.spaninfo.html" class="tsd-kind-icon">SpanInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.syntaxtreecache.html" class="tsd-kind-icon">SyntaxTreeCache</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.textedit.html" class="tsd-kind-icon">TextEdit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.typeinfo.html" class="tsd-kind-icon">TypeInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="typescript.services.typescriptservicesfactory.html" class="tsd-kind-icon">TypeScriptServicesFactory</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/typescript.services.html#copydataobject" class="tsd-kind-icon">copyDataObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/typescript.services.html#forwardjsoncall" class="tsd-kind-icon">forwardJSONCall</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/typescript.services.html#loginternalerror" class="tsd-kind-icon">logInternalError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/typescript.services.html#simpleforwardcall" class="tsd-kind-icon">simpleForwardCall</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

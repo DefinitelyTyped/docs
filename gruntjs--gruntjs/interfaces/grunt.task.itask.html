@@ -1,0 +1,1108 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ITask | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/grunt.html">grunt</a>
+    </li>
+
+    <li>
+        <a href="../modules/grunt.task.html">task</a>
+    </li>
+
+    <li>
+        <a href="grunt.task.itask.html">ITask</a>
+    </li>
+
+            </ul>
+            <h1>Interface ITask</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>link</dt>
+            <dd><p><a href="http://gruntjs.com/inside-tasks">http://gruntjs.com/inside-tasks</a></p>
+<p>Grunt version 0.4.x</p>
+</dd>
+        
+    </dl>
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li class="target">
+    
+        ITask
+    
+
+    
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="grunt.task.imultitask.html" class="tsd-signature-type">IMultiTask</a>
+    
+
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="grunt.task.itask.html#args" class="tsd-kind-icon">args</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="grunt.task.itask.html#errorcount" class="tsd-kind-icon">errorCount</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="grunt.task.itask.html#flags" class="tsd-kind-icon">flags</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="grunt.task.itask.html#name" class="tsd-kind-icon">name</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="grunt.task.itask.html#nameargs" class="tsd-kind-icon">nameArgs</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="grunt.task.itask.html#async" class="tsd-kind-icon">async</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="grunt.task.itask.html#options" class="tsd-kind-icon">options</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="grunt.task.itask.html#requires" class="tsd-kind-icon">requires</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="grunt.task.itask.html#requiresconfig" class="tsd-kind-icon">requiresConfig</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="args" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> args<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;string&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:893</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>An array of arguments passed to the task.
+For example, if a &quot;sample&quot; task was run as grunt sample:foo:bar,
+inside the task function, this.args would be [&quot;foo&quot;, &quot;bar&quot;].</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="errorcount" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> errorCount<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:906</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The number of grunt.log.error calls that occurred during this task.
+This can be used to fail a task if errors were logged during the task.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="flags" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> flags<span class="tsd-signature-symbols">:</span> <a href="grunt.iflag.html" class="tsd-signature-type">IFlag</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:900</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>An object generated from the arguments passed to the task.
+For example, if a &quot;sample&quot; task was run as grunt sample:foo:bar,
+inside the task function, this.flags would be {foo: true, bar: true}.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="name" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:879</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The name of the task, as defined in grunt.registerTask.
+For example, if a &quot;sample&quot; task was run as grunt sample or grunt sample:foo,
+inside the task function, this.name would be &quot;sample&quot;.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="nameargs" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> nameArgs<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:886</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The name of the task, including any colon-separated arguments or flags specified on the command-line.
+For example, if a &quot;sample&quot; task was run as grunt sample:foo,
+inside the task function, this.nameArgs would be &quot;sample:foo&quot;.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="async" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> async<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="grunt.task.asyncresultcatcher.html" class="tsd-signature-type">AsyncResultCatcher</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:852</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If a task is asynchronous, this method must be invoked to instruct Grunt to wait.
+It returns a handle to a &quot;done&quot; function that should be called when the task has completed.</p>
+
+
+
+
+    <p>  // Tell Grunt this task is asynchronous.
+  var done = this.async();
+  // Your async code.
+  setTimeout(function() {
+    // Let&#39;s simulate an error, sometimes.
+    var success = Math.random() &gt; 0.5;
+    // All done!
+    done(success);
+  }, 1000);</p>
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="grunt.task.asyncresultcatcher.html" class="tsd-signature-type">AsyncResultCatcher</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="options" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> options<span class="tsd-signature-symbols">(</span>defaultsObj<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="grunt.task.itaskoptions.html" class="tsd-signature-type">ITaskOptions</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:914</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns an options object.
+Properties of the optional defaultsObj argument will be overridden by any task-level options
+object properties, which will be further overridden in multi tasks by any target-level
+options object properties.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>defaultsObj: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="grunt.task.itaskoptions.html" class="tsd-signature-type">ITaskOptions</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> options<span class="tsd-signature-symbols">(</span>defaultsObj<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:915</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>defaultsObj: <span class="tsd-signature-type">T</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">T</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="requires" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> requires<span class="tsd-signature-symbols">(</span>tasks<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:863</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If one task depends on the successful completion of another task (or tasks),
+this method can be used to force Grunt to abort if the other task didn&#39;t run,
+or if the other task failed.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>note</dt>
+            <dd><p>that this won&#39;t actually run the specified task(s),
+it will just fail the current task if they haven&#39;t already run successfully.</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tasks: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+    <p>an array of task names or individual task names, as arguments.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> requires<span class="tsd-signature-symbols">(</span>tasks<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, otherTasks<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;string&gt;</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:864</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tasks: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>otherTasks?: <span class="tsd-signature-type">Array&lt;string&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> requires<span class="tsd-signature-symbols">(</span>tasks<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, otherTasks<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;string[]&gt;</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:865</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tasks: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>otherTasks?: <span class="tsd-signature-type">Array&lt;string[]&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="requiresconfig" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> requiresConfig<span class="tsd-signature-symbols">(</span>prop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, andProps<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;string&gt;</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js/gruntjs.d.ts:872</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Fail the current task if one or more required config properties is missing.
+One or more string or array config properties may be specified.
+this.requiresConfig(prop [, prop [, ...]])</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>prop: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>andProps?: <span class="tsd-signature-type">Array&lt;string&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/nodejs.html">NodeJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/assert.html">assert</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/buffer.html">buffer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/child_process.html">child_process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/cluster.html">cluster</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/crypto.html">crypto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dgram.html">dgram</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dns.html">dns</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/domain.html">domain</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/events.html">events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/fs.html">fs</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/grunt.html">grunt</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/grunt.html">grunt</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.config.html">grunt.config</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.event.html">grunt.event</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.fail.html">grunt.fail</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.file.html">grunt.file</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.log.html">grunt.log</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.option.html">grunt.option</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.task.html">grunt.task</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.template.html">grunt.template</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/grunt.util.html">grunt.util</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/http.html">http</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/https.html">https</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/minimatch.html">minimatch</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/net.html">net</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/node.html">node</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/os.html">os</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/path.html">path</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/punycode.html">punycode</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/querystring.html">querystring</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/readline.html">readline</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/repl.html">repl</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/stream.html">stream</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/string_decoder.html">string_decoder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tls.html">tls</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tty.html">tty</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/url.html">url</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/util.html">util</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/vm.html">vm</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/zlib.html">zlib</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.asyncresultcatcher.html" class="tsd-kind-icon">AsyncResultCatcher</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.commontaskmodule.html" class="tsd-kind-icon">CommonTaskModule</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.imultitask.html" class="tsd-kind-icon">IMultiTask</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.itask.html" class="tsd-kind-icon">ITask</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#args" class="tsd-kind-icon">args</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#errorcount" class="tsd-kind-icon">errorCount</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#flags" class="tsd-kind-icon">flags</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#name" class="tsd-kind-icon">name</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#nameargs" class="tsd-kind-icon">nameArgs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#async" class="tsd-kind-icon">async</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#options" class="tsd-kind-icon">options</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#requires" class="tsd-kind-icon">requires</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="grunt.task.itask.html#requiresconfig" class="tsd-kind-icon">requiresConfig</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.itaskcompactoptions.html" class="tsd-kind-icon">ITaskCompactOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.itaskoptions.html" class="tsd-kind-icon">ITaskOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="grunt.task.taskmodule.html" class="tsd-kind-icon">TaskModule</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

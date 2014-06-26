@@ -1,0 +1,2179 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UndoManager | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/go.html">go</a>
+    </li>
+
+    <li>
+        <a href="go.undomanager.html">UndoManager</a>
+    </li>
+
+            </ul>
+            <h1>Class UndoManager</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>A Transaction holds a list of ChangedEvents collected during a transaction,
+as the value of the read-only #changes} property.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="go.undomanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#currenttransaction" class="tsd-kind-icon">currentTransaction</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#hisotryindex" class="tsd-kind-icon">hisotryIndex</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#history" class="tsd-kind-icon">history</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#isenabled" class="tsd-kind-icon">isEnabled</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#isintransaction" class="tsd-kind-icon">isInTransaction</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#isundoingredoing" class="tsd-kind-icon">isUndoingRedoing</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#maxhistorylength" class="tsd-kind-icon">maxHistoryLength</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#models" class="tsd-kind-icon">models</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#nestedtransactionnames" class="tsd-kind-icon">nestedTransactionNames</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#transactionlevel" class="tsd-kind-icon">transactionLevel</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#transactiontoredo" class="tsd-kind-icon">transactionToRedo</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.undomanager.html#transactiontoundo" class="tsd-kind-icon">transactionToUndo</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#addmodel" class="tsd-kind-icon">addModel</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#canredo" class="tsd-kind-icon">canRedo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#canundo" class="tsd-kind-icon">canUndo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#clear" class="tsd-kind-icon">clear</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#committransaction" class="tsd-kind-icon">commitTransaction</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#handlechanged" class="tsd-kind-icon">handleChanged</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#redo" class="tsd-kind-icon">redo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#removemodel" class="tsd-kind-icon">removeModel</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#rollbacktransaction" class="tsd-kind-icon">rollbackTransaction</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#skipsevent" class="tsd-kind-icon">skipsEvent</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#starttransaction" class="tsd-kind-icon">startTransaction</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.undomanager.html#undo" class="tsd-kind-icon">undo</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.undomanager.html" class="tsd-signature-type">UndoManager</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4892</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The constructor produces an empty UndoManager with no transaction history.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.undomanager.html" class="tsd-signature-type">UndoManager</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="currenttransaction" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> currentTransaction<span class="tsd-signature-symbols">:</span> <a href="go.transaction.html" class="tsd-signature-type">Transaction</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4895</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the current Transaction for recording additional model change events.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="hisotryindex" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> hisotryIndex<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4901</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the index into #history for the current undoable Transaction.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="history" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> history<span class="tsd-signature-symbols">:</span> <a href="go.list.html" class="tsd-signature-type">List</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4898</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the whole history, a list of all of the Transactions, each representing a transaction with some number of ChangedEvents.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="isenabled" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isEnabled<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4904</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets whether this UndoManager records any changes.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="isintransaction" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isInTransaction<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4907</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This property is true after the first call to #startTransaction and before a corresponding call to #commitTransaction or #rollbackTransaction.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="isundoingredoing" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isUndoingRedoing<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4910</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This property is true during a call to #undo or #redo.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="maxhistorylength" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> maxHistoryLength<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4913</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the maximum number of transactions that this undo manager will remember.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="models" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> models<span class="tsd-signature-symbols">:</span> <a href="go.iterator.html" class="tsd-signature-type">Iterator</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4916</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets an iterator for all of the Models that this UndoManager is handling.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="nestedtransactionnames" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> nestedTransactionNames<span class="tsd-signature-symbols">:</span> <a href="go.list.html" class="tsd-signature-type">List</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4919</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets a stack of ongoing transaction names.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="transactionlevel" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> transactionLevel<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4922</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the current transaction level.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="transactiontoredo" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> transactionToRedo<span class="tsd-signature-symbols">:</span> <a href="go.transaction.html" class="tsd-signature-type">Transaction</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4925</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the Transaction in the #history to be redone next.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="transactiontoundo" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> transactionToUndo<span class="tsd-signature-symbols">:</span> <a href="go.transaction.html" class="tsd-signature-type">Transaction</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4928</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the Transaction in the #history to be undone next.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="addmodel" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addModel<span class="tsd-signature-symbols">(</span>model<span class="tsd-signature-symbols">: </span><a href="go.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4934</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make sure this UndoManager knows about a Model for which it may receive ChangedEvents when the given Model is changed.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>model: <a href="go.model.html" class="tsd-signature-type">Model</a></h5>
+                
+    
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canredo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canRedo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4939</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate returns true if you can call #redo.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canundo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canUndo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4944</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate returns true if you can call #undo.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="clear" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clear<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4949</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Clear all of the Transactions and clear all other state, including any ongoing transaction without rolling back.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="committransaction" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> commitTransaction<span class="tsd-signature-symbols">(</span>tname<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4964</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Commit the current transaction started by a call to #startTransaction.
+For convenience, this method is called by Model#commitTransaction and Diagram#commitTransaction.
+If this call stops a top-level transaction,
+we mark the #currentTransaction as complete (Transaction#isComplete),
+we add the Transaction to the #history list,
+and we return true.
+Committing a transaction when there have been some undos without corresponding
+redos will throw away the Transactions holding changes that happened
+after the current state, before adding the new Transaction to the</p>
+<h1 id="history-list-">history list.</h1>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tname: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>a short string describing the transaction.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="handlechanged" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> handleChanged<span class="tsd-signature-symbols">(</span>e<span class="tsd-signature-symbols">: </span><a href="go.changedevent.html" class="tsd-signature-type">ChangedEvent</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4977</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Maybe record a ChangedEvent in the #currentTransaction.
+This calls #skipsEvent to see if this should ignore the change.
+If #skipsEvent returns false, this creates a copy of the ChangedEvent
+and adds it to the #currentTransaction.
+If there is no #currentTransaction, this first creates and remembers it.
+This method always ignores all changes while performing
+an #undo or #redo.
+This method is also a no-op if #isEnabled is false.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>e: <a href="go.changedevent.html" class="tsd-signature-type">ChangedEvent</a></h5>
+                
+    <p>a ChangedEvent.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="redo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> redo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4982</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Re-perform this object change after an #undo.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="removemodel" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeModel<span class="tsd-signature-symbols">(</span>model<span class="tsd-signature-symbols">: </span><a href="go.model.html" class="tsd-signature-type">Model</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4993</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Inform this UndoManager that it will no longer be receiving ChangedEvents
+when the given Model is changed.
+The model will no longer receive notifications about transactions and undo or redo operations.
+You should not call this method during a transaction.
+If you call this method between transactions when there is a transaction history,
+you should be careful that there are no ChangedEvents referring to that model in any Transactions.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>model: <a href="go.model.html" class="tsd-signature-type">Model</a></h5>
+                
+    <p>A Model that this UndoManager should no longer manage.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="rollbacktransaction" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> rollbackTransaction<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4998</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Rollback the current transaction started by a call to #startTransaction, undoing any changes.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="skipsevent" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> skipsEvent<span class="tsd-signature-symbols">(</span>e<span class="tsd-signature-symbols">: </span><a href="go.changedevent.html" class="tsd-signature-type">ChangedEvent</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:5009</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate is called by #handleChanged to decide if a ChangedEvent
+is not interesting enough to be remembered.
+Transactional events (of change type ChangedEvent#Transaction) are always skipped.
+Changed events for GraphObjects that are in Layer#isTemporary layers are also skipped.
+Sometimes changed events do not even get to #handleChanged because
+Model#skipsUndoManager or Diagram#skipsUndoManager is true.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>e: <a href="go.changedevent.html" class="tsd-signature-type">ChangedEvent</a></h5>
+                
+    <p>the ChangedEvent received by #handleChanged.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="starttransaction" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startTransaction<span class="tsd-signature-symbols">(</span>tname<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:5023</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Begin a transaction, where the changes are held by a Transaction object
+as the value of #currentTransaction.
+You must call either #commitTransaction or #rollbackTransaction afterwards.
+For convenience, this method is called by Model#startTransaction and Diagram#startTransaction.
+Transactions can be nested.
+Starting or ending a nested transaction will return false.
+Nested transactions will share the same Transaction list of ChangedEvents.
+Starting a transaction will not necessarily cause #currentTransaction to be non-null.
+A Transaction object is usually only created by #handleChanged when a ChangedEvent first occurs.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tname?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>a short string describing the transaction.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="undo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> undo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:5028</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Reverse the effects of this object change.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/go.html">go</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.actiontool.html" class="tsd-kind-icon">ActionTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.adornment.html" class="tsd-kind-icon">Adornment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.binding.html" class="tsd-kind-icon">Binding</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.brush.html" class="tsd-kind-icon">Brush</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.changedevent.html" class="tsd-kind-icon">ChangedEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularedge.html" class="tsd-kind-icon">CircularEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularlayout.html" class="tsd-kind-icon">CircularLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularvertex.html" class="tsd-kind-icon">CircularVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickcreatingtool.html" class="tsd-kind-icon">ClickCreatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickselectingtool.html" class="tsd-kind-icon">ClickSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.commandhandler.html" class="tsd-kind-icon">CommandHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.contextmenutool.html" class="tsd-kind-icon">ContextMenuTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagram.html" class="tsd-kind-icon">Diagram</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagramevent.html" class="tsd-kind-icon">DiagramEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.dragselectingtool.html" class="tsd-kind-icon">DragSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.draggingtool.html" class="tsd-kind-icon">DraggingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.enumvalue.html" class="tsd-kind-icon">EnumValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectededge.html" class="tsd-kind-icon">ForceDirectedEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedlayout.html" class="tsd-kind-icon">ForceDirectedLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedvertex.html" class="tsd-kind-icon">ForceDirectedVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.geometry.html" class="tsd-kind-icon">Geometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphlinksmodel.html" class="tsd-kind-icon">GraphLinksModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphobject.html" class="tsd-kind-icon">GraphObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.gridlayout.html" class="tsd-kind-icon">GridLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.group.html" class="tsd-kind-icon">Group</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.inputevent.html" class="tsd-kind-icon">InputEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterable.html" class="tsd-kind-icon">Iterable</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterator.html" class="tsd-kind-icon">Iterator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layer.html" class="tsd-kind-icon">Layer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphedge.html" class="tsd-kind-icon">LayeredDigraphEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphlayout.html" class="tsd-kind-icon">LayeredDigraphLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphvertex.html" class="tsd-kind-icon">LayeredDigraphVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layout.html" class="tsd-kind-icon">Layout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutedge.html" class="tsd-kind-icon">LayoutEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutnetwork.html" class="tsd-kind-icon">LayoutNetwork</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutvertex.html" class="tsd-kind-icon">LayoutVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.link.html" class="tsd-kind-icon">Link</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkreshapingtool.html" class="tsd-kind-icon">LinkReshapingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingbasetool.html" class="tsd-kind-icon">LinkingBaseTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingtool.html" class="tsd-kind-icon">LinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.list.html" class="tsd-kind-icon">List</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.map.html" class="tsd-kind-icon">Map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.margin.html" class="tsd-kind-icon">Margin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.model.html" class="tsd-kind-icon">Model</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.node.html" class="tsd-kind-icon">Node</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.overview.html" class="tsd-kind-icon">Overview</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.palette.html" class="tsd-kind-icon">Palette</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panel.html" class="tsd-kind-icon">Panel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panningtool.html" class="tsd-kind-icon">PanningTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.part.html" class="tsd-kind-icon">Part</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathfigure.html" class="tsd-kind-icon">PathFigure</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathsegment.html" class="tsd-kind-icon">PathSegment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.picture.html" class="tsd-kind-icon">Picture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.placeholder.html" class="tsd-kind-icon">Placeholder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.point.html" class="tsd-kind-icon">Point</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rect.html" class="tsd-kind-icon">Rect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.relinkingtool.html" class="tsd-kind-icon">RelinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.resizingtool.html" class="tsd-kind-icon">ResizingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rotatingtool.html" class="tsd-kind-icon">RotatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rowcolumndefinition.html" class="tsd-kind-icon">RowColumnDefinition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.set.html" class="tsd-kind-icon">Set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.shape.html" class="tsd-kind-icon">Shape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.size.html" class="tsd-kind-icon">Size</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.spot.html" class="tsd-kind-icon">Spot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.textblock.html" class="tsd-kind-icon">TextBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.texteditingtool.html" class="tsd-kind-icon">TextEditingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.tool.html" class="tsd-kind-icon">Tool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.toolmanager.html" class="tsd-kind-icon">ToolManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.transaction.html" class="tsd-kind-icon">Transaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treeedge.html" class="tsd-kind-icon">TreeEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treelayout.html" class="tsd-kind-icon">TreeLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treemodel.html" class="tsd-kind-icon">TreeModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treevertex.html" class="tsd-kind-icon">TreeVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.undomanager.html" class="tsd-kind-icon">UndoManager</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#currenttransaction" class="tsd-kind-icon">currentTransaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#hisotryindex" class="tsd-kind-icon">hisotryIndex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#history" class="tsd-kind-icon">history</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#isenabled" class="tsd-kind-icon">isEnabled</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#isintransaction" class="tsd-kind-icon">isInTransaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#isundoingredoing" class="tsd-kind-icon">isUndoingRedoing</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#maxhistorylength" class="tsd-kind-icon">maxHistoryLength</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#models" class="tsd-kind-icon">models</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#nestedtransactionnames" class="tsd-kind-icon">nestedTransactionNames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#transactionlevel" class="tsd-kind-icon">transactionLevel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#transactiontoredo" class="tsd-kind-icon">transactionToRedo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.undomanager.html#transactiontoundo" class="tsd-kind-icon">transactionToUndo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#addmodel" class="tsd-kind-icon">addModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#canredo" class="tsd-kind-icon">canRedo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#canundo" class="tsd-kind-icon">canUndo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#clear" class="tsd-kind-icon">clear</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#committransaction" class="tsd-kind-icon">commitTransaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#handlechanged" class="tsd-kind-icon">handleChanged</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#redo" class="tsd-kind-icon">redo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#removemodel" class="tsd-kind-icon">removeModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#rollbacktransaction" class="tsd-kind-icon">rollbackTransaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#skipsevent" class="tsd-kind-icon">skipsEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#starttransaction" class="tsd-kind-icon">startTransaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.undomanager.html#undo" class="tsd-kind-icon">undo</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

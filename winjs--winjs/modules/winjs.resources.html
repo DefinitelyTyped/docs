@@ -1,0 +1,677 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resources | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="winjs.html">WinJS</a>
+    </li>
+
+    <li>
+        <a href="winjs.resources.html">Resources</a>
+    </li>
+
+            </ul>
+            <h1>Module Resources</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Functions</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#addeventlistener" class="tsd-kind-icon">addEventListener</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#dispatchevent" class="tsd-kind-icon">dispatchEvent</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#getstring" class="tsd-kind-icon">getString</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#oncontextchanged" class="tsd-kind-icon">oncontextchanged</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#processall" class="tsd-kind-icon">processAll</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.resources.html#removeeventlistener" class="tsd-kind-icon">removeEventListener</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Functions</h2>
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="addeventlistener" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">addEventListener<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span>, useCapture<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1552</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Registers an event handler for the specified event. Use this method to register for events that are related to resources, such as when the app&#39;s language, scale, or contrast changes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the event to handle.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>listener: <span class="tsd-signature-type">Function</span></h5>
+                
+    <p>The listener (event handler function) to associate with the event.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>useCapture?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Set to true to register the listener for the capturing phase; otherwise, set to false to register the listener for the bubbling phase.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="dispatchevent" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">dispatchEvent<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, details<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1559</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Raises an event of the specified type and with the specified additional properties.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the event to raise.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>details: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The set of additional properties to attach to the event object.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="getstring" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">getString<span class="tsd-signature-symbols">(</span>resourceId<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ value: string; empty?: boolean; lang?: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1566</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the resource string that has the specified resource identifier.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>resourceId: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The resource ID of the string to retrieve.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">{ value: string; empty?: boolean; lang?: string; }</span>
+    
+</p>
+    
+        <p>An object that can contain these properties: value, empty, lang.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="oncontextchanged" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">oncontextchanged<span class="tsd-signature-symbols">(</span>eventInfo<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">CustomEvent</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1590</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Occurs when the user changes the system&#39;s language or contrast, or the scale of the display, or when the user changes any of the items in the current context&#39;s qualifier values list. For more info about the current context&#39;s qualifier values list, see the Remarks section.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>eventInfo: <span class="tsd-signature-type">CustomEvent</span></h5>
+                
+    <p>An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.qualifier, detail.changed.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="processall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">processAll<span class="tsd-signature-symbols">(</span>rootElement<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1572</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Processes data-win-res attributes on elements and replaces attributes and properties with resource strings.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>rootElement?: <span class="tsd-signature-type">HTMLElement</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The element to process. The element and its child elements will be processed. If an element isn&#39;t specified, the entire document is processed.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="removeeventlistener" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">removeEventListener<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, listener<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span>, useCapture<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1580</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes an event listener that the addEventListener method registered.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the event that the event listener is registered for.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>listener: <span class="tsd-signature-type">Function</span></h5>
+                
+    <p>The listener (event handler function) to remove.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>useCapture?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Set to true to remove the capturing phase listener; set to false to remove the bubbling phase listener.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="winjs.html">WinJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.application.html">WinJS.Application</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.binding.html">WinJS.Binding</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.class.html">WinJS.Class</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.namespace.html">WinJS.Namespace</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.navigation.html">WinJS.Navigation</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.resources.html">WinJS.Resources</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.html">WinJS.UI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.animation.html">WinJS.UI.Animation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.fragments.html">WinJS.UI.Fragments</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.pages.html">WinJS.UI.Pages</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.tracktabbehavior.html">WinJS.UI.TrackTabBehavior</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.utilities.html">WinJS.Utilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.utilities.scheduler.html">WinJS.Utilities.Scheduler</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#addeventlistener" class="tsd-kind-icon">addEventListener</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#dispatchevent" class="tsd-kind-icon">dispatchEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#getstring" class="tsd-kind-icon">getString</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#oncontextchanged" class="tsd-kind-icon">oncontextchanged</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#processall" class="tsd-kind-icon">processAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.resources.html#removeeventlistener" class="tsd-kind-icon">removeEventListener</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

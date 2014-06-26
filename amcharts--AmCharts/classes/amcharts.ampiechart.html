@@ -1,0 +1,3329 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AmPieChart | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/amcharts.html">AmCharts</a>
+    </li>
+
+    <li>
+        <a href="amcharts.ampiechart.html">AmPieChart</a>
+    </li>
+
+            </ul>
+            <h1>Class AmPieChart</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>AmPieChart class creates pie/donut chart. In order to display pie chart you need to set at least three properties - dataProvider, titleField and valueField.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>example</dt>
+            <dd><p>var chartData = [{title:&quot;Pie I have eaten&quot;,value:70},{title:&quot;Pie I haven\&#39;t eaten&quot;,value:30}];
+var chart = new AmCharts.AmPieChart();
+chart.valueField = &quot;value&quot;;
+chart.titleField = &quot;title&quot;;
+chart.dataProvider = chartData;
+chart.write(&quot;chartdiv&quot;);</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#alphafield" class="tsd-kind-icon">alphaField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#angle" class="tsd-kind-icon">angle</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#balloontext" class="tsd-kind-icon">balloonText</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#chartdata" class="tsd-kind-icon">chartData</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#colorfield" class="tsd-kind-icon">colorField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#colors" class="tsd-kind-icon">colors</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#depth3d" class="tsd-kind-icon">depth3D</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#descriptionfield" class="tsd-kind-icon">descriptionField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#gradientratio" class="tsd-kind-icon">gradientRatio</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#grouppercent" class="tsd-kind-icon">groupPercent</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#groupedalpha" class="tsd-kind-icon">groupedAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#groupedcolor" class="tsd-kind-icon">groupedColor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#groupeddescription" class="tsd-kind-icon">groupedDescription</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#groupedpulled" class="tsd-kind-icon">groupedPulled</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#groupedtitle" class="tsd-kind-icon">groupedTitle</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#hidelabelspercent" class="tsd-kind-icon">hideLabelsPercent</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#hoveralpha" class="tsd-kind-icon">hoverAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#innerradius" class="tsd-kind-icon">innerRadius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labelradius" class="tsd-kind-icon">labelRadius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labelradiusfield" class="tsd-kind-icon">labelRadiusField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labeltext" class="tsd-kind-icon">labelText</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labeltickalpha" class="tsd-kind-icon">labelTickAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labeltickcolor" class="tsd-kind-icon">labelTickColor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#labelsenabled" class="tsd-kind-icon">labelsEnabled</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#marginbottom" class="tsd-kind-icon">marginBottom</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#marginleft" class="tsd-kind-icon">marginLeft</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#marginright" class="tsd-kind-icon">marginRight</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#margintop" class="tsd-kind-icon">marginTop</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#minradius" class="tsd-kind-icon">minRadius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#outlinealpha" class="tsd-kind-icon">outlineAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#outlinecolor" class="tsd-kind-icon">outlineColor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#outlinethickness" class="tsd-kind-icon">outlineThickness</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#piealpha" class="tsd-kind-icon">pieAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#piebasecolor" class="tsd-kind-icon">pieBaseColor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#piebrightnessstep" class="tsd-kind-icon">pieBrightnessStep</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#piex" class="tsd-kind-icon">pieX</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#piey" class="tsd-kind-icon">pieY</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#pulloutduration" class="tsd-kind-icon">pullOutDuration</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#pullouteffect" class="tsd-kind-icon">pullOutEffect</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#pulloutonlyone" class="tsd-kind-icon">pullOutOnlyOne</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#pulloutradius" class="tsd-kind-icon">pullOutRadius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#pulledfield" class="tsd-kind-icon">pulledField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#radius" class="tsd-kind-icon">radius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#sequencedanimation" class="tsd-kind-icon">sequencedAnimation</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#startalpha" class="tsd-kind-icon">startAlpha</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#startangle" class="tsd-kind-icon">startAngle</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#startduration" class="tsd-kind-icon">startDuration</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#starteffect" class="tsd-kind-icon">startEffect</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#startradius" class="tsd-kind-icon">startRadius</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#titlefield" class="tsd-kind-icon">titleField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#urlfield" class="tsd-kind-icon">urlField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#urltarget" class="tsd-kind-icon">urlTarget</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#valuefield" class="tsd-kind-icon">valueField</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="amcharts.ampiechart.html#visibleinlegendfield" class="tsd-kind-icon">visibleInLegendField</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#addlistener" class="tsd-kind-icon">addListener</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#animateagain" class="tsd-kind-icon">animateAgain</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#clickslice" class="tsd-kind-icon">clickSlice</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#hideslice" class="tsd-kind-icon">hideSlice</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#rolloutslice" class="tsd-kind-icon">rollOutSlice</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#rolloverslice" class="tsd-kind-icon">rollOverSlice</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="amcharts.ampiechart.html#showslice" class="tsd-kind-icon">showSlice</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="alphafield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> alphaField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:40</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds slice&#39;s alpha.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="angle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> angle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:42</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pie lean angle (for 3D effect). Valid range is 0 - 90.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="balloontext" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> balloonText<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:44</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Balloon text. The following tags can be used: <a href="amcharts.guide.html#value">value</a>, <a href="amcharts.slice.html#title">title</a>, <a href="amcharts.slice.html#percents">percents</a>, <a href="amcharts.slice.html#description">description</a>. <a href="amcharts.slice.html#title">title</a>: <a href="amcharts.slice.html#percents">percents</a>% (<a href="amcharts.guide.html#value">value</a>)\n<a href="amcharts.slice.html#description">description</a></p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="chartdata" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> chartData<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:46</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Read-only. Array of Slice objects.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="colorfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> colorField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:48</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds slice&#39;s color.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="colors" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> colors<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:50</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Specifies the colors of the slices, if the slice color is not set. If there are more slices than colors in this array, the chart picks random color. [&quot;#FF0F00&quot;, &quot;#FF6600&quot;, &quot;#FF9E01&quot;, &quot;#FCD202&quot;, &quot;#F8FF01&quot;, &quot;#B0DE09&quot;, &quot;#04D215&quot;, &quot;#0D8ECF&quot;, &quot;#0D52D1&quot;, &quot;#2A0CD0&quot;, &quot;#8A0CCF&quot;, &quot;#CD0D74&quot;, &quot;#754DEB&quot;, &quot;#DDDDDD&quot;, &quot;#999999&quot;, &quot;#333333&quot;, &quot;#000000&quot;, &quot;#57032A&quot;, &quot;#CA9726&quot;, &quot;#990000&quot;, &quot;#4B0C25&quot;]</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="depth3d" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> depth3D<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:52</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Depth of the pie (for 3D effect).</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="descriptionfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> descriptionField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:54</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds a string with description.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="gradientratio" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> gradientRatio<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Array&lt;number&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:56</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Example: [-0.2,0.2]. Will make slices to be filled with color gradients.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="grouppercent" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupPercent<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:70</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If there is more than one slice whose percentage of the pie is less than this number, those slices will be grouped together into one slice. This is the &quot;other&quot; slice. It will always be the last slice in a pie.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="groupedalpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupedAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:60</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Opacity of the group slice. Value range is 0 - 1.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="groupedcolor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupedColor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:62</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Color of the group slice. The default value is not set - this means the next available color from &quot;colors&quot; array will be used.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="groupeddescription" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupedDescription<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:64</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Description of the group slice.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="groupedpulled" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupedPulled<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:66</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If this is set to true, the group slice will be pulled out when the chart loads.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="groupedtitle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupedTitle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:68</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Title of the group slice. Other</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="hidelabelspercent" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> hideLabelsPercent<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:72</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Slices with percent less then hideLabelsPercent won&#39;t display labels This is useful to avoid cluttering up the chart, if you have a lot of small slices. 0 means all labels will be shown.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="hoveralpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> hoverAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:76</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Opacity of a hovered slice. Value range is 0 - 1.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="innerradius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> innerRadius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:78</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Inner radius of the pie, in pixels or percents.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labelradius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelRadius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:82</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The distance between the label and the slice, in pixels. You can use negative values to put the label on the slice.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>30</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labelradiusfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelRadiusField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:84</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in dataProvider which specifies the length of a tick. Note, the chart will not try to arrange labels automatically if this property is set.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labeltext" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelText<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:90</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Label text. The following tags can be used: <a href="amcharts.guide.html#value">value</a>, <a href="amcharts.slice.html#title">title</a>, <a href="amcharts.slice.html#percents">percents</a>, <a href="amcharts.slice.html#description">description</a>. <a href="amcharts.slice.html#title">title</a>: <a href="amcharts.slice.html#percents">percents</a>%</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labeltickalpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelTickAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:92</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Label tick opacity. Value range is 0 - 1. 0.2</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labeltickcolor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelTickColor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:94</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Label tick color. #000000</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="labelsenabled" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> labelsEnabled<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:88</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Specifies whether data labels are visible.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>true</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="marginbottom" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> marginBottom<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:98</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Bottom margin of the chart.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>5</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="marginleft" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> marginLeft<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:100</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Left margin of the chart.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="marginright" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> marginRight<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:102</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Right margin of the chart.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="margintop" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> marginTop<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:106</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Top margin of the chart.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>5</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="minradius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> minRadius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:110</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Minimum radius of the pie, in pixels.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>10</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="outlinealpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> outlineAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:112</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pie outline opacity. Value range is 0 - 1.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="outlinecolor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> outlineColor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:114</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pie outline color. #FFFFFF</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="outlinethickness" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> outlineThickness<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:118</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pie outline thickness.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="piealpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pieAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:122</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Opacity of the slices. You can set the opacity of individual slice too.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="piebasecolor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pieBaseColor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:124</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Color of the first slice. All the other will be colored with darker or brighter colors.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="piebrightnessstep" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pieBrightnessStep<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:127</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Lightness increase of each subsequent slice. This is only useful if pieBaseColor is set. Use negative values for darker colors. Value range is from -255 to 255.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>30</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="piex" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pieX<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:129</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can set fixed position of a pie center, in pixels or in percents.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="piey" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pieY<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:131</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can set fixed position of a pie center, in pixels or in percents.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="pulloutduration" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pullOutDuration<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:137</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pull out duration, in seconds.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="pullouteffect" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pullOutEffect<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:139</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pull out effect. Possible values are &quot;&gt;&quot;, &quot;&lt;&quot;, elastic&quot; and &quot;bounce&quot;. bounce</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="pulloutonlyone" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pullOutOnlyOne<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:141</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If this is set to true, only one slice can be pulled out at a time. If the viewer clicks on a slice, any other pulled-out slice will be pulled in.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="pulloutradius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pullOutRadius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:143</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Pull out radius, in pixels or percents 0.2</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="pulledfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pulledField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:133</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds a boolean value telling the chart whether this slice must be pulled or not.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="radius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> radius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:145</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Radius of a pie, in pixels or percents. By default, radius is calculated automatically.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="sequencedanimation" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sequencedAnimation<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:147</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Specifies whether the animation should be sequenced or all slices should appear at once.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="startalpha" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startAlpha<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:151</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Initial opacity of all slices. If you set startDuration higher than 0, slices will fade in from startAlpha.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="startangle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startAngle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:155</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Angle of the first slice, in degrees. This will work properly only if &quot;depth3D&quot; is set to 0. If &quot;depth3D&quot; is greater than 0, then there can be two angles only: 90 and 270. Value range is 0-360.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>90</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="startduration" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startDuration<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:159</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Duration of the animation, in seconds.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>default</dt>
+            <dd><p>1</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="starteffect" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startEffect<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:161</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Animation effect. Possible values are &quot;&gt;&quot;, &quot;&lt;&quot;, &quot;elastic&quot; and &quot;bounce&quot;. bounce</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="startradius" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> startRadius<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:165</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Radius of the positions from which the slices will fly in.
+default 5</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="titlefield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> titleField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:167</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds slice&#39;s title.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="urlfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> urlField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:169</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds url which would be accessed if the user clicks on a slice.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="urltarget" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> urlTarget<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:171</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If url is specified for a slice, it will be opened when user clicks on it. urlTarget specifies target of this url. Use _blank if you want url to be opened in a new window. _self</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="valuefield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> valueField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:173</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds slice&#39;s value.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="visibleinlegendfield" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> visibleInLegendField<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:175</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Name of the field in chart&#39;s dataProvider which holds boolean variable defining whether this data item should have an entry in the legend.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="addlistener" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addListener<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(e: { type: string; dataItem: AmCharts.Slice; }) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:199</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds event listener of the type &quot;clickSlice&quot; or &quot;pullInSlice&quot; or &quot;pullOutSlice&quot; to the object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>Always &quot;clickSlice&quot; or &quot;pullInSlice&quot; or &quot;pullOutSlice&quot;.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>handler: <span class="tsd-signature-type">(e: { type: string; dataItem: AmCharts.Slice; }) =&gt; void</span></h5>
+                
+    <p>If the type is &quot;clickSlice&quot;, dispatched when user clicks on a slice.
+If the type is &quot;pullInSlice&quot;, dispatched when user clicks on a slice and the slice is pulled-in.
+If the type is &quot;pullOutSlice&quot;, dispatched when user clicks on a slice and the slice is pulled-out.
+If the type is &quot;rollOutSlice&quot;, dispatched when user rolls-out of the slice.
+If the type is &quot;rollOverSlice&quot;, dispatched when user rolls-over the slice.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="animateagain" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> animateAgain<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:178</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can trigger the animation of the pie chart.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="clickslice" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clickSlice<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:180</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can trigger the click on a slice from outside. index - the number of a slice or Slice object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="hideslice" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> hideSlice<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:182</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Hides slice. index - the number of a slice or Slice object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="rolloutslice" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> rollOutSlice<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:184</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can simulate roll-out of a slice from outside. index - the number of a slice or Slice object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="rolloverslice" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> rollOverSlice<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:186</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>You can simulate roll-over a slice from outside. index - the number of a slice or Slice object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="showslice" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> showSlice<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in AmCharts.d.ts:188</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Shows slice. index - the number of a slice or Slice object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/amcharts.html">AmCharts</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#basehref" class="tsd-kind-icon">baseHref</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#daynames" class="tsd-kind-icon">dayNames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#monthnames" class="tsd-kind-icon">monthNames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#shortdaynames" class="tsd-kind-icon">shortDayNames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#shortmonthnames" class="tsd-kind-icon">shortMonthNames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#useutc" class="tsd-kind-icon">useUTC</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amballoon.html" class="tsd-kind-icon">AmBalloon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amchart.html" class="tsd-kind-icon">AmChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amcoordinatechart.html" class="tsd-kind-icon">AmCoordinateChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amgraph.html" class="tsd-kind-icon">AmGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amlegend.html" class="tsd-kind-icon">AmLegend</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.ampiechart.html" class="tsd-kind-icon">AmPieChart</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#alphafield" class="tsd-kind-icon">alphaField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#angle" class="tsd-kind-icon">angle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#balloontext" class="tsd-kind-icon">balloonText</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#chartdata" class="tsd-kind-icon">chartData</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#colorfield" class="tsd-kind-icon">colorField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#colors" class="tsd-kind-icon">colors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#depth3d" class="tsd-kind-icon">depth3D</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#descriptionfield" class="tsd-kind-icon">descriptionField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#gradientratio" class="tsd-kind-icon">gradientRatio</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#grouppercent" class="tsd-kind-icon">groupPercent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#groupedalpha" class="tsd-kind-icon">groupedAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#groupedcolor" class="tsd-kind-icon">groupedColor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#groupeddescription" class="tsd-kind-icon">groupedDescription</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#groupedpulled" class="tsd-kind-icon">groupedPulled</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#groupedtitle" class="tsd-kind-icon">groupedTitle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#hidelabelspercent" class="tsd-kind-icon">hideLabelsPercent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#hoveralpha" class="tsd-kind-icon">hoverAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#innerradius" class="tsd-kind-icon">innerRadius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labelradius" class="tsd-kind-icon">labelRadius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labelradiusfield" class="tsd-kind-icon">labelRadiusField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labeltext" class="tsd-kind-icon">labelText</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labeltickalpha" class="tsd-kind-icon">labelTickAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labeltickcolor" class="tsd-kind-icon">labelTickColor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#labelsenabled" class="tsd-kind-icon">labelsEnabled</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#marginbottom" class="tsd-kind-icon">marginBottom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#marginleft" class="tsd-kind-icon">marginLeft</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#marginright" class="tsd-kind-icon">marginRight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#margintop" class="tsd-kind-icon">marginTop</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#minradius" class="tsd-kind-icon">minRadius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#outlinealpha" class="tsd-kind-icon">outlineAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#outlinecolor" class="tsd-kind-icon">outlineColor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#outlinethickness" class="tsd-kind-icon">outlineThickness</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#piealpha" class="tsd-kind-icon">pieAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#piebasecolor" class="tsd-kind-icon">pieBaseColor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#piebrightnessstep" class="tsd-kind-icon">pieBrightnessStep</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#piex" class="tsd-kind-icon">pieX</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#piey" class="tsd-kind-icon">pieY</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#pulloutduration" class="tsd-kind-icon">pullOutDuration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#pullouteffect" class="tsd-kind-icon">pullOutEffect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#pulloutonlyone" class="tsd-kind-icon">pullOutOnlyOne</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#pulloutradius" class="tsd-kind-icon">pullOutRadius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#pulledfield" class="tsd-kind-icon">pulledField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#radius" class="tsd-kind-icon">radius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#sequencedanimation" class="tsd-kind-icon">sequencedAnimation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#startalpha" class="tsd-kind-icon">startAlpha</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#startangle" class="tsd-kind-icon">startAngle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#startduration" class="tsd-kind-icon">startDuration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#starteffect" class="tsd-kind-icon">startEffect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#startradius" class="tsd-kind-icon">startRadius</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#titlefield" class="tsd-kind-icon">titleField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#urlfield" class="tsd-kind-icon">urlField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#urltarget" class="tsd-kind-icon">urlTarget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#valuefield" class="tsd-kind-icon">valueField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#visibleinlegendfield" class="tsd-kind-icon">visibleInLegendField</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#addlistener" class="tsd-kind-icon">addListener</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#animateagain" class="tsd-kind-icon">animateAgain</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#clickslice" class="tsd-kind-icon">clickSlice</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#hideslice" class="tsd-kind-icon">hideSlice</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#rolloutslice" class="tsd-kind-icon">rollOutSlice</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#rolloverslice" class="tsd-kind-icon">rollOverSlice</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="amcharts.ampiechart.html#showslice" class="tsd-kind-icon">showSlice</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amradarchart.html" class="tsd-kind-icon">AmRadarChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amrectangularchart.html" class="tsd-kind-icon">AmRectangularChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amserialchart.html" class="tsd-kind-icon">AmSerialChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amstockchart.html" class="tsd-kind-icon">AmStockChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.amxychart.html" class="tsd-kind-icon">AmXYChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.areassettings.html" class="tsd-kind-icon">AreasSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.axisbase.html" class="tsd-kind-icon">AxisBase</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.categoryaxessettings.html" class="tsd-kind-icon">CategoryAxesSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.categoryaxis.html" class="tsd-kind-icon">CategoryAxis</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.chartcursor.html" class="tsd-kind-icon">ChartCursor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.chartcursorsettings.html" class="tsd-kind-icon">ChartCursorSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.chartscrollbar.html" class="tsd-kind-icon">ChartScrollbar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.chartscrollbarsettings.html" class="tsd-kind-icon">ChartScrollbarSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.dataset.html" class="tsd-kind-icon">DataSet</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.datasetselector.html" class="tsd-kind-icon">DataSetSelector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.graphdataitem.html" class="tsd-kind-icon">GraphDataItem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.guide.html" class="tsd-kind-icon">Guide</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.imagessettings.html" class="tsd-kind-icon">ImagesSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.legendsettings.html" class="tsd-kind-icon">LegendSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.panelssettings.html" class="tsd-kind-icon">PanelsSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.periodselector.html" class="tsd-kind-icon">PeriodSelector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.serialdataitem.html" class="tsd-kind-icon">SerialDataItem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.slice.html" class="tsd-kind-icon">Slice</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.stockevent.html" class="tsd-kind-icon">StockEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.stockgraph.html" class="tsd-kind-icon">StockGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.stocklegend.html" class="tsd-kind-icon">StockLegend</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.stockpanel.html" class="tsd-kind-icon">StockPanel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.trendline.html" class="tsd-kind-icon">TrendLine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.valueaxessettings.html" class="tsd-kind-icon">ValueAxesSettings</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="amcharts.valueaxis.html" class="tsd-kind-icon">ValueAxis</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/amcharts.html#clear" class="tsd-kind-icon">clear</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

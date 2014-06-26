@@ -1,0 +1,4576 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quaternion | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/three.html">THREE</a>
+    </li>
+
+    <li>
+        <a href="three.quaternion.html">Quaternion</a>
+    </li>
+
+            </ul>
+            <h1>Class Quaternion</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Implementation of a quaternion. This is used for rotating things without incurring in the dreaded gimbal lock issue, amongst other advantages.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>example</dt>
+            <dd><p>var quaternion = new THREE.Quaternion();
+quaternion.setFromAxisAngle( new THREE.Vector3( 0, 1, 0 ), Math.PI / 2 );
+var vector = new THREE.Vector3( 1, 0, 0 );
+vector.applyQuaternion( quaternion );</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="three.quaternion.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="three.quaternion.html#w" class="tsd-kind-icon">w</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="three.quaternion.html#x" class="tsd-kind-icon">x</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="three.quaternion.html#y" class="tsd-kind-icon">y</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="three.quaternion.html#z" class="tsd-kind-icon">z</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#clone" class="tsd-kind-icon">clone</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#conjugate" class="tsd-kind-icon">conjugate</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#copy" class="tsd-kind-icon">copy</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#equals" class="tsd-kind-icon">equals</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#fromarray" class="tsd-kind-icon">fromArray</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#inverse" class="tsd-kind-icon">inverse</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#length" class="tsd-kind-icon">length</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#lengthsq" class="tsd-kind-icon">lengthSq</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#multiply" class="tsd-kind-icon">multiply</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#multiplyquaternions" class="tsd-kind-icon">multiplyQuaternions</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#multiplyvector3" class="tsd-kind-icon">multiplyVector3</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#normalize" class="tsd-kind-icon">normalize</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#set" class="tsd-kind-icon">set</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#setfromaxisangle" class="tsd-kind-icon">setFromAxisAngle</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#setfromeuler" class="tsd-kind-icon">setFromEuler</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#setfromrotationmatrix" class="tsd-kind-icon">setFromRotationMatrix</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="three.quaternion.html#static-slerp" class="tsd-kind-icon">slerp</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#slerp" class="tsd-kind-icon">slerp</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="three.quaternion.html#toarray" class="tsd-kind-icon">toArray</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>x<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, w<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2922</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>x?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>x coordinate</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>y?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>y coordinate</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>z?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>z coordinate</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>w?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>w coordinate</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="w" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> w<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2927</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="x" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> x<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2924</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="y" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> y<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2925</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="z" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> z<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2926</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="clone" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clone<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2986</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Clones this quaternion.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="conjugate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> conjugate<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:3003</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="copy" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> copy<span class="tsd-signature-symbols">(</span>q<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2937</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Copies values of q to this quaternion.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>q: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="equals" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> equals<span class="tsd-signature-symbols">(</span>v<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2997</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>v: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="fromarray" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> fromArray<span class="tsd-signature-symbols">(</span>n<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:3001</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>n: <span class="tsd-signature-type">Array&lt;number&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="inverse" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> inverse<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2959</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Inverts this quaternion.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="length" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> length<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2963</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Computes length of this quaternion.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="lengthsq" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lengthSq<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2999</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="multiply" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> multiply<span class="tsd-signature-symbols">(</span>q<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2973</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Multiplies this quaternion by b.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>q: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="multiplyquaternions" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> multiplyQuaternions<span class="tsd-signature-symbols">(</span>a<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>, b<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2979</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets this quaternion to a x b
+Adapted from <a href="http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm">http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm</a>.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>a: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>b: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="multiplyvector3" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> multiplyVector3<span class="tsd-signature-symbols">(</span>vector<span class="tsd-signature-symbols">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, dest<span class="tsd-signature-symbols">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2981</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>vector: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="normalize" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> normalize<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2968</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Normalizes this quaternion.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="set" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> set<span class="tsd-signature-symbols">(</span>x<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, w<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2932</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets values of this quaternion.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>x: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>y: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>z: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>w: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setfromaxisangle" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setFromAxisAngle<span class="tsd-signature-symbols">(</span>axis<span class="tsd-signature-symbols">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, angle<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2949</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets this quaternion from rotation specified by axis and angle.
+Adapted from <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm">http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm</a>.
+Axis have to be normalized, angle is in radians.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>axis: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>angle: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setfromeuler" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setFromEuler<span class="tsd-signature-symbols">(</span>euler<span class="tsd-signature-symbols">: </span><a href="three.euler.html" class="tsd-signature-type">Euler</a>, update<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2938</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>euler: <a href="three.euler.html" class="tsd-signature-type">Euler</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>update?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setFromEuler<span class="tsd-signature-symbols">(</span>v<span class="tsd-signature-symbols">: </span><a href="three.vector3.html" class="tsd-signature-type">Vector3</a>, order<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2942</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets this quaternion from rotation specified by Euler angles.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>v: <a href="three.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>order: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setfromrotationmatrix" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setFromRotationMatrix<span class="tsd-signature-symbols">(</span>m<span class="tsd-signature-symbols">: </span><a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2954</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets this quaternion from rotation component of m. Adapted from <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm">http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm</a>.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>m: <a href="three.matrix4.html" class="tsd-signature-type">Matrix4</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-slerp" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> slerp<span class="tsd-signature-symbols">(</span>qa<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>, qb<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>, qm<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>, t<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2991</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adapted from <a href="http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/">http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/</a>.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>qa: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>qb: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>qm: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>t: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="slerp" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> slerp<span class="tsd-signature-symbols">(</span>qb<span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>, t<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2993</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>qb: <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>t: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="three.quaternion.html" class="tsd-signature-type">Quaternion</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="toarray" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> toArray<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in three.d.ts:2995</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Array&lt;number&gt;</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/three.html">THREE</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#addequation" class="tsd-kind-icon">AddEquation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#addoperation" class="tsd-kind-icon">AddOperation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#additiveblending" class="tsd-kind-icon">AdditiveBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#alphaformat" class="tsd-kind-icon">AlphaFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#animationhandler" class="tsd-kind-icon">AnimationHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#backside" class="tsd-kind-icon">BackSide</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#basicshadowmap" class="tsd-kind-icon">BasicShadowMap</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#bytetype" class="tsd-kind-icon">ByteType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#clamptoedgewrapping" class="tsd-kind-icon">ClampToEdgeWrapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cubereflectionmapping" class="tsd-kind-icon">CubeReflectionMapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cuberefractionmapping" class="tsd-kind-icon">CubeRefractionMapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cullfaceback" class="tsd-kind-icon">CullFaceBack</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cullfacefront" class="tsd-kind-icon">CullFaceFront</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cullfacefrontback" class="tsd-kind-icon">CullFaceFrontBack</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#cullfacenone" class="tsd-kind-icon">CullFaceNone</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#customblending" class="tsd-kind-icon">CustomBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#doubleside" class="tsd-kind-icon">DoubleSide</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#dstalphafactor" class="tsd-kind-icon">DstAlphaFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#dstcolorfactor" class="tsd-kind-icon">DstColorFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#facecolors" class="tsd-kind-icon">FaceColors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#flatshading" class="tsd-kind-icon">FlatShading</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#floattype" class="tsd-kind-icon">FloatType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#fontutils" class="tsd-kind-icon">FontUtils</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#frontfacedirectionccw" class="tsd-kind-icon">FrontFaceDirectionCCW</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#frontfacedirectioncw" class="tsd-kind-icon">FrontFaceDirectionCW</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#frontside" class="tsd-kind-icon">FrontSide</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#geometryutils" class="tsd-kind-icon">GeometryUtils</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#imageutils" class="tsd-kind-icon">ImageUtils</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#inttype" class="tsd-kind-icon">IntType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#linepieces" class="tsd-kind-icon">LinePieces</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#linestrip" class="tsd-kind-icon">LineStrip</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#linearfilter" class="tsd-kind-icon">LinearFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#linearmipmaplinearfilter" class="tsd-kind-icon">LinearMipMapLinearFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#linearmipmapnearestfilter" class="tsd-kind-icon">LinearMipMapNearestFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#luminancealphaformat" class="tsd-kind-icon">LuminanceAlphaFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#luminanceformat" class="tsd-kind-icon">LuminanceFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#math" class="tsd-kind-icon">Math</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#mirroredrepeatwrapping" class="tsd-kind-icon">MirroredRepeatWrapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#mixoperation" class="tsd-kind-icon">MixOperation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#multiplyblending" class="tsd-kind-icon">MultiplyBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#multiplyoperation" class="tsd-kind-icon">MultiplyOperation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#nearestfilter" class="tsd-kind-icon">NearestFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#nearestmipmaplinearfilter" class="tsd-kind-icon">NearestMipMapLinearFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#nearestmipmapnearestfilter" class="tsd-kind-icon">NearestMipMapNearestFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#noblending" class="tsd-kind-icon">NoBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#nocolors" class="tsd-kind-icon">NoColors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#noshading" class="tsd-kind-icon">NoShading</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#normalblending" class="tsd-kind-icon">NormalBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#onefactor" class="tsd-kind-icon">OneFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#oneminusdstalphafactor" class="tsd-kind-icon">OneMinusDstAlphaFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#oneminusdstcolorfactor" class="tsd-kind-icon">OneMinusDstColorFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#oneminussrcalphafactor" class="tsd-kind-icon">OneMinusSrcAlphaFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#oneminussrccolorfactor" class="tsd-kind-icon">OneMinusSrcColorFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#pcfshadowmap" class="tsd-kind-icon">PCFShadowMap</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#pcfsoftshadowmap" class="tsd-kind-icon">PCFSoftShadowMap</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#revision" class="tsd-kind-icon">REVISION</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgbaformat" class="tsd-kind-icon">RGBAFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgba_s3tc_dxt1_format" class="tsd-kind-icon">RGBA_S3TC_DXT1_Format</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgba_s3tc_dxt3_format" class="tsd-kind-icon">RGBA_S3TC_DXT3_Format</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgba_s3tc_dxt5_format" class="tsd-kind-icon">RGBA_S3TC_DXT5_Format</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgbformat" class="tsd-kind-icon">RGBFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#rgb_s3tc_dxt1_format" class="tsd-kind-icon">RGB_S3TC_DXT1_Format</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#repeatwrapping" class="tsd-kind-icon">RepeatWrapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#reversesubtractequation" class="tsd-kind-icon">ReverseSubtractEquation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#sceneutils" class="tsd-kind-icon">SceneUtils</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#shaderchunk" class="tsd-kind-icon">ShaderChunk</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#shaderflares" class="tsd-kind-icon">ShaderFlares</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#shaderlib" class="tsd-kind-icon">ShaderLib</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#shorttype" class="tsd-kind-icon">ShortType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#smoothshading" class="tsd-kind-icon">SmoothShading</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#sphericalreflectionmapping" class="tsd-kind-icon">SphericalReflectionMapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#sphericalrefractionmapping" class="tsd-kind-icon">SphericalRefractionMapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#srcalphafactor" class="tsd-kind-icon">SrcAlphaFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#srcalphasaturatefactor" class="tsd-kind-icon">SrcAlphaSaturateFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#srccolorfactor" class="tsd-kind-icon">SrcColorFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#subtractequation" class="tsd-kind-icon">SubtractEquation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#subtractiveblending" class="tsd-kind-icon">SubtractiveBlending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#uvmapping" class="tsd-kind-icon">UVMapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#uniformslib" class="tsd-kind-icon">UniformsLib</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#uniformsutils" class="tsd-kind-icon">UniformsUtils</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedbytetype" class="tsd-kind-icon">UnsignedByteType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedinttype" class="tsd-kind-icon">UnsignedIntType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedshort4444type" class="tsd-kind-icon">UnsignedShort4444Type</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedshort5551type" class="tsd-kind-icon">UnsignedShort5551Type</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedshort565type" class="tsd-kind-icon">UnsignedShort565Type</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#unsignedshorttype" class="tsd-kind-icon">UnsignedShortType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#vertexcolors" class="tsd-kind-icon">VertexColors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/three.html#zerofactor" class="tsd-kind-icon">ZeroFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.blending.html" class="tsd-kind-icon">Blending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.blendingdstfactor.html" class="tsd-kind-icon">BlendingDstFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.blendingequation.html" class="tsd-kind-icon">BlendingEquation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.blendingsrcfactor.html" class="tsd-kind-icon">BlendingSrcFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.colors.html" class="tsd-kind-icon">Colors</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.combine.html" class="tsd-kind-icon">Combine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.compressedpixelformat.html" class="tsd-kind-icon">CompressedPixelFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.cullface.html" class="tsd-kind-icon">CullFace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.frontfacedirection.html" class="tsd-kind-icon">FrontFaceDirection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.linetype.html" class="tsd-kind-icon">LineType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.mapping.html" class="tsd-kind-icon">Mapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.pathactions.html" class="tsd-kind-icon">PathActions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.pixelformat.html" class="tsd-kind-icon">PixelFormat</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.pixeltype.html" class="tsd-kind-icon">PixelType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.shading.html" class="tsd-kind-icon">Shading</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.shadowmaptype.html" class="tsd-kind-icon">ShadowMapType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.side.html" class="tsd-kind-icon">Side</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.texturedatatype.html" class="tsd-kind-icon">TextureDataType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.texturefilter.html" class="tsd-kind-icon">TextureFilter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/three.wrapping.html" class="tsd-kind-icon">Wrapping</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.animationdata.html" class="tsd-kind-icon">AnimationData</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.boundingbox.html" class="tsd-kind-icon">BoundingBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.boundingbox3d.html" class="tsd-kind-icon">BoundingBox3D</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.boundingsphere.html" class="tsd-kind-icon">BoundingSphere</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.canvasrendererparameters.html" class="tsd-kind-icon">CanvasRendererParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.hsl.html" class="tsd-kind-icon">HSL</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.ifog.html" class="tsd-kind-icon">IFog</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.intersection.html" class="tsd-kind-icon">Intersection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.keyframe.html" class="tsd-kind-icon">KeyFrame</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.keyframes.html" class="tsd-kind-icon">KeyFrames</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.lensflareproperty.html" class="tsd-kind-icon">LensFlareProperty</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.linebasicmaterialparameters.html" class="tsd-kind-icon">LineBasicMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.linedashedmaterialparameters.html" class="tsd-kind-icon">LineDashedMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.mappingconstructor.html" class="tsd-kind-icon">MappingConstructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.matrix.html" class="tsd-kind-icon">Matrix</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.meshbasicmaterialparameters.html" class="tsd-kind-icon">MeshBasicMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.meshdepthmaterialparameters.html" class="tsd-kind-icon">MeshDepthMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.meshlambertmaterialparameters.html" class="tsd-kind-icon">MeshLambertMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.meshnormalmaterialparameters.html" class="tsd-kind-icon">MeshNormalMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.meshphongmaterialparameters.html" class="tsd-kind-icon">MeshPhongMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.morphblendmeshanimation.html" class="tsd-kind-icon">MorphBlendMeshAnimation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.morphcolor.html" class="tsd-kind-icon">MorphColor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.morphnormals.html" class="tsd-kind-icon">MorphNormals</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.morphtarget.html" class="tsd-kind-icon">MorphTarget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.particlesystemmaterialparameters.html" class="tsd-kind-icon">ParticleSystemMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.progress.html" class="tsd-kind-icon">Progress</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.rendertarget.html" class="tsd-kind-icon">RenderTarget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.renderer.html" class="tsd-kind-icon">Renderer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.rendererplugin.html" class="tsd-kind-icon">RendererPlugin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.sceneloaderprogress.html" class="tsd-kind-icon">SceneLoaderProgress</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.sceneloaderresult.html" class="tsd-kind-icon">SceneLoaderResult</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.shader.html" class="tsd-kind-icon">Shader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.shadermaterialparameters.html" class="tsd-kind-icon">ShaderMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.splinecontrolpoint.html" class="tsd-kind-icon">SplineControlPoint</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.spritecanvasmaterialparameters.html" class="tsd-kind-icon">SpriteCanvasMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.spritematerialparameters.html" class="tsd-kind-icon">SpriteMaterialParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.textgeometryparameters.html" class="tsd-kind-icon">TextGeometryParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.typefacedata.html" class="tsd-kind-icon">TypefaceData</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.vector.html" class="tsd-kind-icon">Vector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.webglrendertargetoptions.html" class="tsd-kind-icon">WebGLRenderTargetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/three.webglrendererparameters.html" class="tsd-kind-icon">WebGLRendererParameters</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.ambientlight.html" class="tsd-kind-icon">AmbientLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.animation.html" class="tsd-kind-icon">Animation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.animationinterpolation.html" class="tsd-kind-icon">AnimationInterpolation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.arccurve.html" class="tsd-kind-icon">ArcCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.arealight.html" class="tsd-kind-icon">AreaLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.arrowhelper.html" class="tsd-kind-icon">ArrowHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.axishelper.html" class="tsd-kind-icon">AxisHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.bone.html" class="tsd-kind-icon">Bone</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.boundingboxhelper.html" class="tsd-kind-icon">BoundingBoxHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.box2.html" class="tsd-kind-icon">Box2</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.box3.html" class="tsd-kind-icon">Box3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.boxgeometry.html" class="tsd-kind-icon">BoxGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.boxhelper.html" class="tsd-kind-icon">BoxHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.bufferattribute.html" class="tsd-kind-icon">BufferAttribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.buffergeometry.html" class="tsd-kind-icon">BufferGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.buffergeometryloader.html" class="tsd-kind-icon">BufferGeometryLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cache.html" class="tsd-kind-icon">Cache</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.camera.html" class="tsd-kind-icon">Camera</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.camerahelper.html" class="tsd-kind-icon">CameraHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.canvasrenderer.html" class="tsd-kind-icon">CanvasRenderer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.circlegeometry.html" class="tsd-kind-icon">CircleGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.clock.html" class="tsd-kind-icon">Clock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.closedsplinecurve3.html" class="tsd-kind-icon">ClosedSplineCurve3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.color.html" class="tsd-kind-icon">Color</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.combinedcamera.html" class="tsd-kind-icon">CombinedCamera</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.compressedtexture.html" class="tsd-kind-icon">CompressedTexture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cubecamera.html" class="tsd-kind-icon">CubeCamera</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cubegeometry.html" class="tsd-kind-icon">CubeGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cubicbeziercurve.html" class="tsd-kind-icon">CubicBezierCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cubicbeziercurve3.html" class="tsd-kind-icon">CubicBezierCurve3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.curve.html" class="tsd-kind-icon">Curve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.curvepath.html" class="tsd-kind-icon">CurvePath</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.cylindergeometry.html" class="tsd-kind-icon">CylinderGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.datatexture.html" class="tsd-kind-icon">DataTexture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.depthpassplugin.html" class="tsd-kind-icon">DepthPassPlugin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.directionallight.html" class="tsd-kind-icon">DirectionalLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.directionallighthelper.html" class="tsd-kind-icon">DirectionalLightHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.edgeshelper.html" class="tsd-kind-icon">EdgesHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.ellipsecurve.html" class="tsd-kind-icon">EllipseCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.euler.html" class="tsd-kind-icon">Euler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.eventdispatcher.html" class="tsd-kind-icon">EventDispatcher</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.extrudegeometry.html" class="tsd-kind-icon">ExtrudeGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.face3.html" class="tsd-kind-icon">Face3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.facenormalshelper.html" class="tsd-kind-icon">FaceNormalsHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.float32attribute.html" class="tsd-kind-icon">Float32Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.float64attribute.html" class="tsd-kind-icon">Float64Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.fog.html" class="tsd-kind-icon">Fog</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.fogexp2.html" class="tsd-kind-icon">FogExp2</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.frustum.html" class="tsd-kind-icon">Frustum</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.geometry.html" class="tsd-kind-icon">Geometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.gridhelper.html" class="tsd-kind-icon">GridHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.gyroscope.html" class="tsd-kind-icon">Gyroscope</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.hemispherelight.html" class="tsd-kind-icon">HemisphereLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.hemispherelighthelper.html" class="tsd-kind-icon">HemisphereLightHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.icosahedrongeometry.html" class="tsd-kind-icon">IcosahedronGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.imageloader.html" class="tsd-kind-icon">ImageLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.immediaterenderobject.html" class="tsd-kind-icon">ImmediateRenderObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.int16attribute.html" class="tsd-kind-icon">Int16Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.int32attribute.html" class="tsd-kind-icon">Int32Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.int8attribute.html" class="tsd-kind-icon">Int8Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.jsonloader.html" class="tsd-kind-icon">JSONLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.keyframeanimation.html" class="tsd-kind-icon">KeyFrameAnimation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.lod.html" class="tsd-kind-icon">LOD</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.lathegeometry.html" class="tsd-kind-icon">LatheGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.lensflare.html" class="tsd-kind-icon">LensFlare</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.lensflareplugin.html" class="tsd-kind-icon">LensFlarePlugin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.light.html" class="tsd-kind-icon">Light</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.line.html" class="tsd-kind-icon">Line</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.line3.html" class="tsd-kind-icon">Line3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.linebasicmaterial.html" class="tsd-kind-icon">LineBasicMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.linecurve.html" class="tsd-kind-icon">LineCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.linecurve3.html" class="tsd-kind-icon">LineCurve3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.linedashedmaterial.html" class="tsd-kind-icon">LineDashedMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.loader.html" class="tsd-kind-icon">Loader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.loadingmanager.html" class="tsd-kind-icon">LoadingManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.material.html" class="tsd-kind-icon">Material</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.materialloader.html" class="tsd-kind-icon">MaterialLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.matrix3.html" class="tsd-kind-icon">Matrix3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.matrix4.html" class="tsd-kind-icon">Matrix4</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.mesh.html" class="tsd-kind-icon">Mesh</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshbasicmaterial.html" class="tsd-kind-icon">MeshBasicMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshdepthmaterial.html" class="tsd-kind-icon">MeshDepthMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshfacematerial.html" class="tsd-kind-icon">MeshFaceMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshlambertmaterial.html" class="tsd-kind-icon">MeshLambertMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshnormalmaterial.html" class="tsd-kind-icon">MeshNormalMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.meshphongmaterial.html" class="tsd-kind-icon">MeshPhongMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.morphanimmesh.html" class="tsd-kind-icon">MorphAnimMesh</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.morphanimation.html" class="tsd-kind-icon">MorphAnimation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.morphblendmesh.html" class="tsd-kind-icon">MorphBlendMesh</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.object3d.html" class="tsd-kind-icon">Object3D</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.objectloader.html" class="tsd-kind-icon">ObjectLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.octahedrongeometry.html" class="tsd-kind-icon">OctahedronGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.orthographiccamera.html" class="tsd-kind-icon">OrthographicCamera</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.parametricgeometry.html" class="tsd-kind-icon">ParametricGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.particlesystem.html" class="tsd-kind-icon">ParticleSystem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.particlesystemmaterial.html" class="tsd-kind-icon">ParticleSystemMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.path.html" class="tsd-kind-icon">Path</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.perspectivecamera.html" class="tsd-kind-icon">PerspectiveCamera</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.plane.html" class="tsd-kind-icon">Plane</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.planegeometry.html" class="tsd-kind-icon">PlaneGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.pointlight.html" class="tsd-kind-icon">PointLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.pointlighthelper.html" class="tsd-kind-icon">PointLightHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.polyhedrongeometry.html" class="tsd-kind-icon">PolyhedronGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.projector.html" class="tsd-kind-icon">Projector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.quadraticbeziercurve.html" class="tsd-kind-icon">QuadraticBezierCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.quadraticbeziercurve3.html" class="tsd-kind-icon">QuadraticBezierCurve3</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.quaternion.html" class="tsd-kind-icon">Quaternion</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="three.quaternion.html#w" class="tsd-kind-icon">w</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="three.quaternion.html#x" class="tsd-kind-icon">x</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="three.quaternion.html#y" class="tsd-kind-icon">y</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="three.quaternion.html#z" class="tsd-kind-icon">z</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#clone" class="tsd-kind-icon">clone</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#conjugate" class="tsd-kind-icon">conjugate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#copy" class="tsd-kind-icon">copy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#equals" class="tsd-kind-icon">equals</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#fromarray" class="tsd-kind-icon">fromArray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#inverse" class="tsd-kind-icon">inverse</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#length" class="tsd-kind-icon">length</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#lengthsq" class="tsd-kind-icon">lengthSq</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#multiply" class="tsd-kind-icon">multiply</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#multiplyquaternions" class="tsd-kind-icon">multiplyQuaternions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#multiplyvector3" class="tsd-kind-icon">multiplyVector3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#normalize" class="tsd-kind-icon">normalize</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#set" class="tsd-kind-icon">set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#setfromaxisangle" class="tsd-kind-icon">setFromAxisAngle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#setfromeuler" class="tsd-kind-icon">setFromEuler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#setfromrotationmatrix" class="tsd-kind-icon">setFromRotationMatrix</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="three.quaternion.html#static-slerp" class="tsd-kind-icon">slerp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#slerp" class="tsd-kind-icon">slerp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="three.quaternion.html#toarray" class="tsd-kind-icon">toArray</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.rawshadermaterial.html" class="tsd-kind-icon">RawShaderMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.ray.html" class="tsd-kind-icon">Ray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.raycaster.html" class="tsd-kind-icon">Raycaster</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.renderableface.html" class="tsd-kind-icon">RenderableFace</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.renderableline.html" class="tsd-kind-icon">RenderableLine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.renderableobject.html" class="tsd-kind-icon">RenderableObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.renderablesprite.html" class="tsd-kind-icon">RenderableSprite</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.renderablevertex.html" class="tsd-kind-icon">RenderableVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.ringgeometry.html" class="tsd-kind-icon">RingGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.scene.html" class="tsd-kind-icon">Scene</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.sceneloader.html" class="tsd-kind-icon">SceneLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.shadermaterial.html" class="tsd-kind-icon">ShaderMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.shadowmapplugin.html" class="tsd-kind-icon">ShadowMapPlugin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.shape.html" class="tsd-kind-icon">Shape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.shapegeometry.html" class="tsd-kind-icon">ShapeGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.skeleton.html" class="tsd-kind-icon">Skeleton</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.skeletonhelper.html" class="tsd-kind-icon">SkeletonHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.skinnedmesh.html" class="tsd-kind-icon">SkinnedMesh</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.sphere.html" class="tsd-kind-icon">Sphere</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spheregeometry.html" class="tsd-kind-icon">SphereGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spline.html" class="tsd-kind-icon">Spline</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.splinecurve.html" class="tsd-kind-icon">SplineCurve</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.splinecurve3.html" class="tsd-kind-icon">SplineCurve3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spotlight.html" class="tsd-kind-icon">SpotLight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spotlighthelper.html" class="tsd-kind-icon">SpotLightHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.sprite.html" class="tsd-kind-icon">Sprite</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spritecanvasmaterial.html" class="tsd-kind-icon">SpriteCanvasMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spritematerial.html" class="tsd-kind-icon">SpriteMaterial</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.spriteplugin.html" class="tsd-kind-icon">SpritePlugin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.tetrahedrongeometry.html" class="tsd-kind-icon">TetrahedronGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.textgeometry.html" class="tsd-kind-icon">TextGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.texture.html" class="tsd-kind-icon">Texture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.textureloader.html" class="tsd-kind-icon">TextureLoader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.torusgeometry.html" class="tsd-kind-icon">TorusGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.torusknotgeometry.html" class="tsd-kind-icon">TorusKnotGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.triangle.html" class="tsd-kind-icon">Triangle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.tubegeometry.html" class="tsd-kind-icon">TubeGeometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.uint16attribute.html" class="tsd-kind-icon">Uint16Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.uint32attribute.html" class="tsd-kind-icon">Uint32Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.uint8attribute.html" class="tsd-kind-icon">Uint8Attribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.uint8clampedattribute.html" class="tsd-kind-icon">Uint8ClampedAttribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.vector2.html" class="tsd-kind-icon">Vector2</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.vector3.html" class="tsd-kind-icon">Vector3</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.vector4.html" class="tsd-kind-icon">Vector4</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.vertexnormalshelper.html" class="tsd-kind-icon">VertexNormalsHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.vertextangentshelper.html" class="tsd-kind-icon">VertexTangentsHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.webglprogram.html" class="tsd-kind-icon">WebGLProgram</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.webglrendertarget.html" class="tsd-kind-icon">WebGLRenderTarget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.webglrendertargetcube.html" class="tsd-kind-icon">WebGLRenderTargetCube</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.webglrenderer.html" class="tsd-kind-icon">WebGLRenderer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.webglshader.html" class="tsd-kind-icon">WebGLShader</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.wireframehelper.html" class="tsd-kind-icon">WireframeHelper</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="three.xhrloader.html" class="tsd-kind-icon">XHRLoader</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

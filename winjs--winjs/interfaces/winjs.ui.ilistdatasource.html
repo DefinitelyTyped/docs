@@ -1,0 +1,2352 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IListDataSource | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/winjs.html">WinJS</a>
+    </li>
+
+    <li>
+        <a href="../modules/winjs.ui.html">UI</a>
+    </li>
+
+    <li>
+        <a href="winjs.ui.ilistdatasource.html">IListDataSource</a>
+    </li>
+
+            </ul>
+            <h1>Interface IListDataSource</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Provides access to a data source and enables you to bind, change, add, remove, and move items in that data source.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#beginedits" class="tsd-kind-icon">beginEdits</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#change" class="tsd-kind-icon">change</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#createlistbinding" class="tsd-kind-icon">createListBinding</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#endedits" class="tsd-kind-icon">endEdits</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#getcount" class="tsd-kind-icon">getCount</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#insertafter" class="tsd-kind-icon">insertAfter</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#insertatend" class="tsd-kind-icon">insertAtEnd</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#insertatstart" class="tsd-kind-icon">insertAtStart</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#insertbefore" class="tsd-kind-icon">insertBefore</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#invalidateall" class="tsd-kind-icon">invalidateAll</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#itemfromdescription" class="tsd-kind-icon">itemFromDescription</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#itemfromindex" class="tsd-kind-icon">itemFromIndex</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#itemfromkey" class="tsd-kind-icon">itemFromKey</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#moveafter" class="tsd-kind-icon">moveAfter</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#movebefore" class="tsd-kind-icon">moveBefore</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#movetoend" class="tsd-kind-icon">moveToEnd</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#movetostart" class="tsd-kind-icon">moveToStart</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#remove" class="tsd-kind-icon">remove</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="winjs.ui.ilistdatasource.html#statuschanged" class="tsd-kind-icon">statuschanged</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="beginedits" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> beginEdits<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3040</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies the IListDataSource that a sequence of edits is about to begin. The IListDataSource will defer notifications until endEdits is called.</p>
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="change" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> change<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, newData<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3048</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Overwrites the data of the specified item.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key for the item to replace.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>newData: <span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span></h5>
+                
+    <p>The new data for the item.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was updated or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="createlistbinding" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> createListBinding<span class="tsd-signature-symbols">(</span>notificationHandler<span class="tsd-signature-symbols">?: </span><a href="winjs.ui.ilistnotificationhandler.html" class="tsd-signature-type">IListNotificationHandler</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="winjs.ui.ilistbinding.html" class="tsd-signature-type">IListBinding</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3055</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates an IListBinding that can retrieve items from the IListDataSource, enumerate the contents of the IListDataSource object&#39;s data, and optionally register for change notifications.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>notificationHandler?: <a href="winjs.ui.ilistnotificationhandler.html" class="tsd-signature-type">IListNotificationHandler</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Enables the IListBinding to register for change notifications for individual items obtained from the IListDataSource. If you omit this parameter, change notifications won&#39;t be available.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="winjs.ui.ilistbinding.html" class="tsd-signature-type">IListBinding</a>
+    
+</p>
+    
+        <p>The new IListBinding.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="endedits" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> endEdits<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3060</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies the IListDataSource that the batch of edits that began with the last beginEdits call has completed. The IListDataSource will submit notifications for any changes that occurred between the beginEdits and endEdits calls as a batch and resume normal change notifications.</p>
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="getcount" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCount<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3066</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the number of items in the data source.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that provides a Number that is the number of items in the data source.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="insertafter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> insertAfter<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span>, previousKey<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3075</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Inserts a new item after another item.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that can be used to retrieve the new item, if known.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span></h5>
+                
+    <p>The data for the item to add.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>previousKey: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key for an item in the data source. The new item will be added after this item.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was added or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="insertatend" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> insertAtEnd<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3083</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds an item to the end of the data source.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that can be used to retrieve the new item, if known.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span></h5>
+                
+    <p>The data for the item to add.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was added or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="insertatstart" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> insertAtStart<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3091</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds an item to the beginning of the data source.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that can be used to retrieve the new item, if known.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span></h5>
+                
+    <p>The data for the item to add.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was added or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="insertbefore" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> insertBefore<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span>, nextKey<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3100</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Inserts an item before another item.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that can be used to retrieve the new item, if known.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">T in WinJS.UI.IListDataSource&lt;T&gt;</span></h5>
+                
+    <p>The data for the item to add.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>nextKey: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key of an item in the data source. The new item will be inserted before this item.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was added or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="invalidateall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> invalidateAll<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3106</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Indicates that all previous data obtained from the IListDataAdapter is invalid and should be refreshed.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that completes when the data has been completely refreshed and all notifications have been sent.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="itemfromdescription" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> itemFromDescription<span class="tsd-signature-symbols">(</span>description<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3113</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the item that has the specified description.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>description: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>Domain-specific information, to be interpreted by the IListDataAdapter, that describes the item to retrieve.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that provides an IItem that contains the requested item or a FetchError if an error was encountered. If the item wasn&#39;t found, the promise completes with a value of null.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="itemfromindex" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> itemFromIndex<span class="tsd-signature-symbols">(</span>index<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3120</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the item at the specified index.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>index: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>A value that is greater than or equal to zero that is the index of the item to retrieve.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that provides an IItem that contains the requested item or a FetchError if an error was encountered. If the item wasn&#39;t found, the promise completes with a value of null.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="itemfromkey" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> itemFromKey<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, description<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3128</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the item with the specified key.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key of the item to retrieve. It must be a non-empty string.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>description?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Domain-specific information that IListDataAdapter can use to improve the retrieval time.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that provides an IItem that contains the requested item or a FetchError if an error was encountered. If the item was not found, the promise completes with a null value.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="moveafter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> moveAfter<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, previousKey<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3136</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Moves an item to just after another item.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that identifies the item to move.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>previousKey: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key of another item in the data source. The item specified by the key parameter will be moved after this item.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was moved or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="movebefore" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> moveBefore<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, nextKey<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3144</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Moves an item before another item.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that identifies the item to move.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>nextKey: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key of another item in the data source. The item specified by the key parameter will be moved before this item.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was moved or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="movetoend" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> moveToEnd<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3151</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Moves an item to the end of the data source.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that identifies the item to move.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was moved or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="movetostart" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> moveToStart<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3158</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Moves the specified item to the beginning of the data source.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that identifies the item to move.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains the IItem that was moved or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="remove" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3165</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes the specified item from the data source.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The key that identifies the item to remove.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that contains nothing if the operation was successful or an EditError if an error was encountered.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="statuschanged" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> statuschanged<span class="tsd-signature-symbols">(</span>eventInfo<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">CustomEvent</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:3031</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Occurs when the status of the IListDataSource changes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>eventInfo: <span class="tsd-signature-type">CustomEvent</span></h5>
+                
+    <p>An object that contains information about the event. The detail property of this object contains the following sub-properties: status.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/winjs.html">WinJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.application.html">WinJS.Application</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.binding.html">WinJS.Binding</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.class.html">WinJS.Class</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.namespace.html">WinJS.Namespace</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.navigation.html">WinJS.Navigation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.resources.html">WinJS.Resources</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.ui.html">WinJS.UI</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.ui.animation.html">WinJS.UI.Animation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.ui.fragments.html">WinJS.UI.Fragments</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.ui.pages.html">WinJS.UI.Pages</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.ui.tracktabbehavior.html">WinJS.UI.TrackTabBehavior</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.utilities.html">WinJS.Utilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/winjs.utilities.scheduler.html">WinJS.Utilities.Scheduler</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.appbaricon.html" class="tsd-kind-icon">AppBarIcon</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.counterror.html" class="tsd-kind-icon">CountError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.countresult.html" class="tsd-kind-icon">CountResult</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.datasourcestatus.html" class="tsd-kind-icon">DataSourceStatus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.editerror.html" class="tsd-kind-icon">EditError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.fetcherror.html" class="tsd-kind-icon">FetchError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.groupheadertapbehavior.html" class="tsd-kind-icon">GroupHeaderTapBehavior</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.headerposition.html" class="tsd-kind-icon">HeaderPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.listviewanimationtype.html" class="tsd-kind-icon">ListViewAnimationType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.objecttype.html" class="tsd-kind-icon">ObjectType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.orientation.html" class="tsd-kind-icon">Orientation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.selectionmode.html" class="tsd-kind-icon">SelectionMode</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.swipebehavior.html" class="tsd-kind-icon">SwipeBehavior</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-enum tsd-parent-kind-container">
+                    <a href="../enums/winjs.ui.tapbehavior.html" class="tsd-kind-icon">TapBehavior</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ifetchresult.html" class="tsd-kind-icon">IFetchResult</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.iitem.html" class="tsd-kind-icon">IItem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.iitempromise.html" class="tsd-kind-icon">IItemPromise</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilayout.html" class="tsd-kind-icon">ILayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilayout2.html" class="tsd-kind-icon">ILayout2</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilayoutsite.html" class="tsd-kind-icon">ILayoutSite</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilayoutsite2.html" class="tsd-kind-icon">ILayoutSite2</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistbinding.html" class="tsd-kind-icon">IListBinding</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistdataadapter.html" class="tsd-kind-icon">IListDataAdapter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistdatanotificationhandler.html" class="tsd-kind-icon">IListDataNotificationHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistdatasource.html" class="tsd-kind-icon">IListDataSource</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#beginedits" class="tsd-kind-icon">beginEdits</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#change" class="tsd-kind-icon">change</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#createlistbinding" class="tsd-kind-icon">createListBinding</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#endedits" class="tsd-kind-icon">endEdits</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#getcount" class="tsd-kind-icon">getCount</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#insertafter" class="tsd-kind-icon">insertAfter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#insertatend" class="tsd-kind-icon">insertAtEnd</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#insertatstart" class="tsd-kind-icon">insertAtStart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#insertbefore" class="tsd-kind-icon">insertBefore</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#invalidateall" class="tsd-kind-icon">invalidateAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#itemfromdescription" class="tsd-kind-icon">itemFromDescription</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#itemfromindex" class="tsd-kind-icon">itemFromIndex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#itemfromkey" class="tsd-kind-icon">itemFromKey</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#moveafter" class="tsd-kind-icon">moveAfter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#movebefore" class="tsd-kind-icon">moveBefore</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#movetoend" class="tsd-kind-icon">moveToEnd</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#movetostart" class="tsd-kind-icon">moveToStart</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#remove" class="tsd-kind-icon">remove</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="winjs.ui.ilistdatasource.html#statuschanged" class="tsd-kind-icon">statuschanged</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistnotificationhandler.html" class="tsd-kind-icon">IListNotificationHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.ilistviewitem.html" class="tsd-kind-icon">IListViewItem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.iselection.html" class="tsd-kind-icon">ISelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.iselectionrange.html" class="tsd-kind-icon">ISelectionRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="winjs.ui.izoomableview.html" class="tsd-kind-icon">IZoomableView</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.appbar.html" class="tsd-kind-icon">AppBar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.appbarcommand.html" class="tsd-kind-icon">AppBarCommand</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.backbutton.html" class="tsd-kind-icon">BackButton</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.cellspanninglayout.html" class="tsd-kind-icon">CellSpanningLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.domeventmixin.html" class="tsd-kind-icon">DOMEventMixin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.datepicker.html" class="tsd-kind-icon">DatePicker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.flipview.html" class="tsd-kind-icon">FlipView</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.flyout.html" class="tsd-kind-icon">Flyout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.gridlayout.html" class="tsd-kind-icon">GridLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.htmlcontrol.html" class="tsd-kind-icon">HtmlControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.hub.html" class="tsd-kind-icon">Hub</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.hubsection.html" class="tsd-kind-icon">HubSection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.itemcontainer.html" class="tsd-kind-icon">ItemContainer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.layout.html" class="tsd-kind-icon">Layout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.listlayout.html" class="tsd-kind-icon">ListLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.listview.html" class="tsd-kind-icon">ListView</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.menu.html" class="tsd-kind-icon">Menu</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.menucommand.html" class="tsd-kind-icon">MenuCommand</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.navbar.html" class="tsd-kind-icon">NavBar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.navbarcommand.html" class="tsd-kind-icon">NavBarCommand</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.navbarcontainer.html" class="tsd-kind-icon">NavBarContainer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.rating.html" class="tsd-kind-icon">Rating</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.repeater.html" class="tsd-kind-icon">Repeater</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.searchbox.html" class="tsd-kind-icon">SearchBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.semanticzoom.html" class="tsd-kind-icon">SemanticZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.settingsflyout.html" class="tsd-kind-icon">SettingsFlyout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.storagedatasource.html" class="tsd-kind-icon">StorageDataSource</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.tabcontainer.html" class="tsd-kind-icon">TabContainer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.timepicker.html" class="tsd-kind-icon">TimePicker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.toggleswitch.html" class="tsd-kind-icon">ToggleSwitch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.tooltip.html" class="tsd-kind-icon">Tooltip</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.viewbox.html" class="tsd-kind-icon">ViewBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.ui.virtualizeddatasource.html" class="tsd-kind-icon">VirtualizedDataSource</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#computedatasourcegroups" class="tsd-kind-icon">computeDataSourceGroups</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#disableanimations" class="tsd-kind-icon">disableAnimations</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#enableanimations" class="tsd-kind-icon">enableAnimations</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#eventhandler" class="tsd-kind-icon">eventHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#executeanimation" class="tsd-kind-icon">executeAnimation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#executetransition" class="tsd-kind-icon">executeTransition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#getitemsfromranges" class="tsd-kind-icon">getItemsFromRanges</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#isanimationenabled" class="tsd-kind-icon">isAnimationEnabled</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#process" class="tsd-kind-icon">process</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#processall" class="tsd-kind-icon">processAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#scopedselect" class="tsd-kind-icon">scopedSelect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#setcontrol" class="tsd-kind-icon">setControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/winjs.ui.html#setoptions" class="tsd-kind-icon">setOptions</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

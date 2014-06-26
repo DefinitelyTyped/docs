@@ -1,0 +1,1137 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>elementPath | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/ckeditor.html">CKEDITOR</a>
+    </li>
+
+    <li>
+        <a href="../modules/ckeditor.dom.html">dom</a>
+    </li>
+
+    <li>
+        <a href="ckeditor.dom.elementpath.html">elementPath</a>
+    </li>
+
+            </ul>
+            <h1>Class elementPath</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#block" class="tsd-kind-icon">block</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#blocklimit" class="tsd-kind-icon">blockLimit</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#elements" class="tsd-kind-icon">elements</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#root" class="tsd-kind-icon">root</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#compare" class="tsd-kind-icon">compare</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#contains" class="tsd-kind-icon">contains</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#direction" class="tsd-kind-icon">direction</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="ckeditor.dom.elementpath.html#iscontextfor" class="tsd-kind-icon">isContextFor</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>startNode<span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>, root<span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.elementpath.html" class="tsd-signature-type">elementPath</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:263</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>startNode: <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>root: <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.elementpath.html" class="tsd-signature-type">elementPath</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="block" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> block<span class="tsd-signature-symbols">:</span> <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:264</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="blocklimit" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> blockLimit<span class="tsd-signature-symbols">:</span> <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:265</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="elements" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> elements<span class="tsd-signature-symbols">:</span> <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:267</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="root" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> root<span class="tsd-signature-symbols">:</span> <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:266</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="compare" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> compare<span class="tsd-signature-symbols">(</span>otherPath<span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.elementpath.html" class="tsd-signature-type">elementPath</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:268</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>otherPath: <a href="ckeditor.dom.elementpath.html" class="tsd-signature-type">elementPath</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="contains" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contains<span class="tsd-signature-symbols">(</span>query<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, excludeRoot<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span>, fromTop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:269</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>query: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>excludeRoot: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fromTop: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contains<span class="tsd-signature-symbols">(</span>query<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;string&gt;</span>, excludeRoot<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span>, fromTop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:270</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>query: <span class="tsd-signature-type">Array&lt;string&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>excludeRoot: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fromTop: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contains<span class="tsd-signature-symbols">(</span>query<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(element: CKEDITOR.dom.element) =&gt; boolean</span>, excludeRoot<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span>, fromTop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:271</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>query: <span class="tsd-signature-type">(element: CKEDITOR.dom.element) =&gt; boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>excludeRoot: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fromTop: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contains<span class="tsd-signature-symbols">(</span>query<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Object</span>, excludeRoot<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span>, fromTop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:272</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>query: <span class="tsd-signature-type">Object</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>excludeRoot: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fromTop: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contains<span class="tsd-signature-symbols">(</span>query<span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>, excludeRoot<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span>, fromTop<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:273</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>query: <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>excludeRoot: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>fromTop: <span class="tsd-signature-type">boolean</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="ckeditor.dom.element.html" class="tsd-signature-type">element</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="direction" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> direction<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:275</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="iscontextfor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isContextFor<span class="tsd-signature-symbols">(</span>tag<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in ckeditor.d.ts:274</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>tag: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/ckeditor.html">CKEDITOR</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.ajax.html">CKEDITOR.ajax</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-interface">
+    <a href="../interfaces/ckeditor.dialog.html#definition">CKEDITOR.dialog.definition</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.dom.html">CKEDITOR.dom</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.htmlparser.html">CKEDITOR.htmlParser</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.plugins.html">CKEDITOR.plugins</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.plugins.link.html">CKEDITOR.plugins.link</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/ckeditor.plugins.widget.html">CKEDITOR.plugins.widget</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/ckeditor.dom.position.html" class="tsd-kind-icon">position</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/ckeditor.dom.rangelistiterator.html" class="tsd-kind-icon">rangeListIterator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/ckeditor.dom.widthandheight.html" class="tsd-kind-icon">widthAndHeight</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.comment.html" class="tsd-kind-icon">comment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.document.html" class="tsd-kind-icon">document</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.documentfragment.html" class="tsd-kind-icon">documentFragment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.domobject.html" class="tsd-kind-icon">domObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.element.html" class="tsd-kind-icon">element</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.elementpath.html" class="tsd-kind-icon">elementPath</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#block" class="tsd-kind-icon">block</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#blocklimit" class="tsd-kind-icon">blockLimit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#elements" class="tsd-kind-icon">elements</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#root" class="tsd-kind-icon">root</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#compare" class="tsd-kind-icon">compare</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#contains" class="tsd-kind-icon">contains</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#direction" class="tsd-kind-icon">direction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="ckeditor.dom.elementpath.html#iscontextfor" class="tsd-kind-icon">isContextFor</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.event.html" class="tsd-kind-icon">event</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.iterator.html" class="tsd-kind-icon">iterator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.node.html" class="tsd-kind-icon">node</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.nodelist.html" class="tsd-kind-icon">nodeList</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.range.html" class="tsd-kind-icon">range</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.rangelist.html" class="tsd-kind-icon">rangeList</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.selection.html" class="tsd-kind-icon">selection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.text.html" class="tsd-kind-icon">text</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.walker.html" class="tsd-kind-icon">walker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="ckeditor.dom.window.html" class="tsd-kind-icon">window</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

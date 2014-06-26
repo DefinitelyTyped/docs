@@ -1,0 +1,1 @@
+﻿var tsd = tsd || {};tsd.search = tsd.search || {};tsd.search.data = {"kinds":{"512":"Variable"},"rows":[{"id":0,"kind":512,"name":"Rickshaw","url":"globals.html#rickshaw","classes":"tsd-kind-variable tsd-is-not-exported"}]};

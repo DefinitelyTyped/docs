@@ -1,0 +1,1569 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Binding | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/go.html">go</a>
+    </li>
+
+    <li>
+        <a href="go.binding.html">Binding</a>
+    </li>
+
+            </ul>
+            <h1>Class Binding</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>A Binding describes how to automatically set a property on a GraphObject}
+to a value of a property of data in the model.
+The target property name and the data source property name are strings.
+All name matching is case-sensitive.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="go.binding.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="go.binding.html#static-oneway" class="tsd-kind-icon">OneWay</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="go.binding.html#static-twoway" class="tsd-kind-icon">TwoWay</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#backconverter" class="tsd-kind-icon">backConverter</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#converter" class="tsd-kind-icon">converter</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#mode" class="tsd-kind-icon">mode</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#sourcename" class="tsd-kind-icon">sourceName</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#sourceproperty" class="tsd-kind-icon">sourceProperty</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.binding.html#targetproperty" class="tsd-kind-icon">targetProperty</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.binding.html#maketwoway" class="tsd-kind-icon">makeTwoWay</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.binding.html#ofobject" class="tsd-kind-icon">ofObject</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="go.binding.html#static-parseenum" class="tsd-kind-icon">parseEnum</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="go.binding.html#static-tostring" class="tsd-kind-icon">toString</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>targetprop<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">string</span>, sourceprop<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">string</span>, conv<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.binding.html" class="tsd-signature-type">Binding</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4100</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The constructor creates an empty one-way binding.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>targetprop?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>A string naming the target property on the target object.
+  If this is the empty string or not supplied, the whole GraphObject is used in the call to the conversion function,
+  which should modify the GraphObject directly.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceprop?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>A string naming the source property on the bound data object.
+  If this is the empty string, the whole Panel.data object is used.
+  If this argument is not supplied, the source property is assumed to be the same as the target property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>conv?: <span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>A function converting the data property value to the value to set the target property.
+  If the function is null or not supplied, no conversion takes place.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.binding.html" class="tsd-signature-type">Binding</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+    <a name="static-oneway" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> OneWay<span class="tsd-signature-symbols">:</span> <a href="go.enumvalue.html" class="tsd-signature-type">EnumValue</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4149</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This value for Binding#mode uses data source values and sets GraphObject properties.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+    <a name="static-twoway" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> TwoWay<span class="tsd-signature-symbols">:</span> <a href="go.enumvalue.html" class="tsd-signature-type">EnumValue</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4152</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This value for Binding#mode uses data source values and GraphObject properties and keeps them in sync.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="backconverter" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> backConverter<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4103</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets a converter function to apply to the GraphObject property value in order to produce the value to set to a data property.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="converter" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> converter<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4106</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets a converter function to apply to the data property value in order to produce the value to set to the target property.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="mode" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mode<span class="tsd-signature-symbols">:</span> <a href="go.enumvalue.html" class="tsd-signature-type">EnumValue</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4109</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the directions and frequency in which the binding may be evaluated.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="sourcename" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sourceName<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4112</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the name of the GraphObject that should act as a source object whose property should be gotten by this data binding.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="sourceproperty" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sourceProperty<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4115</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the name of the property to get from the bound data object, the value of Panel#data.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="targetproperty" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> targetProperty<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4118</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the name of the property to be set on the target GraphObject.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="maketwoway" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> makeTwoWay<span class="tsd-signature-symbols">(</span>backconv<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.binding.html" class="tsd-signature-type">Binding</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4128</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Modify this Binding to set its #mode to be Binding#TwoWay, and
+provide an optional conversion function to convert GraphObject property
+values back to data values.</p>
+
+
+
+
+    <p>You should not have a TwoWay binding on a node data object&#39;s key property.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>backconv?: <span class="tsd-signature-type">(a: any, b?: any) =&gt; any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.binding.html" class="tsd-signature-type">Binding</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="ofobject" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ofObject<span class="tsd-signature-symbols">(</span>srcname<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.binding.html" class="tsd-signature-type">Binding</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4136</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Modify this Binding to set its #sourceName property so as to identify
+a GraphObject in the visual tree of the bound Panel.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>srcname?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>the GraphObject#name of an element in the visual tree of the bound Panel;
+use an empty string to refer to the root panel of that visual tree.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.binding.html" class="tsd-signature-type">Binding</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-parseenum" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> parseEnum<span class="tsd-signature-symbols">(</span>ctor<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">new(...args: any[]) =&gt; Object</span>, defval<span class="tsd-signature-symbols">: </span><a href="go.enumvalue.html" class="tsd-signature-type">EnumValue</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(a: string) =&gt; go.EnumValue</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4141</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This static method can be used to create a function that parses a string into an enumerated value, given the class that the enumeration values are defined on and a default value if the string cannot be parsed successfully.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ctor: <span class="tsd-signature-type">new(...args: any[]) =&gt; Object</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>defval: <a href="go.enumvalue.html" class="tsd-signature-type">EnumValue</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">(a: string) =&gt; go.EnumValue</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-tostring" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> toString<span class="tsd-signature-symbols">(</span>val<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:4146</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This static method can be used to convert an object to a string, looking for commonly defined data properties, such as &quot;text&quot;, &quot;name&quot;, &quot;key&quot;, or &quot;id&quot;.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>val: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/go.html">go</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.actiontool.html" class="tsd-kind-icon">ActionTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.adornment.html" class="tsd-kind-icon">Adornment</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.binding.html" class="tsd-kind-icon">Binding</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="go.binding.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+                    <a href="go.binding.html#static-oneway" class="tsd-kind-icon">OneWay</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+                    <a href="go.binding.html#static-twoway" class="tsd-kind-icon">TwoWay</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#backconverter" class="tsd-kind-icon">backConverter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#converter" class="tsd-kind-icon">converter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#mode" class="tsd-kind-icon">mode</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#sourcename" class="tsd-kind-icon">sourceName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#sourceproperty" class="tsd-kind-icon">sourceProperty</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.binding.html#targetproperty" class="tsd-kind-icon">targetProperty</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.binding.html#maketwoway" class="tsd-kind-icon">makeTwoWay</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.binding.html#ofobject" class="tsd-kind-icon">ofObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="go.binding.html#static-parseenum" class="tsd-kind-icon">parseEnum</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="go.binding.html#static-tostring" class="tsd-kind-icon">toString</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.brush.html" class="tsd-kind-icon">Brush</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.changedevent.html" class="tsd-kind-icon">ChangedEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularedge.html" class="tsd-kind-icon">CircularEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularlayout.html" class="tsd-kind-icon">CircularLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularvertex.html" class="tsd-kind-icon">CircularVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickcreatingtool.html" class="tsd-kind-icon">ClickCreatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickselectingtool.html" class="tsd-kind-icon">ClickSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.commandhandler.html" class="tsd-kind-icon">CommandHandler</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.contextmenutool.html" class="tsd-kind-icon">ContextMenuTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagram.html" class="tsd-kind-icon">Diagram</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagramevent.html" class="tsd-kind-icon">DiagramEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.dragselectingtool.html" class="tsd-kind-icon">DragSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.draggingtool.html" class="tsd-kind-icon">DraggingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.enumvalue.html" class="tsd-kind-icon">EnumValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectededge.html" class="tsd-kind-icon">ForceDirectedEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedlayout.html" class="tsd-kind-icon">ForceDirectedLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedvertex.html" class="tsd-kind-icon">ForceDirectedVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.geometry.html" class="tsd-kind-icon">Geometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphlinksmodel.html" class="tsd-kind-icon">GraphLinksModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphobject.html" class="tsd-kind-icon">GraphObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.gridlayout.html" class="tsd-kind-icon">GridLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.group.html" class="tsd-kind-icon">Group</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.inputevent.html" class="tsd-kind-icon">InputEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterable.html" class="tsd-kind-icon">Iterable</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterator.html" class="tsd-kind-icon">Iterator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layer.html" class="tsd-kind-icon">Layer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphedge.html" class="tsd-kind-icon">LayeredDigraphEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphlayout.html" class="tsd-kind-icon">LayeredDigraphLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphvertex.html" class="tsd-kind-icon">LayeredDigraphVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layout.html" class="tsd-kind-icon">Layout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutedge.html" class="tsd-kind-icon">LayoutEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutnetwork.html" class="tsd-kind-icon">LayoutNetwork</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutvertex.html" class="tsd-kind-icon">LayoutVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.link.html" class="tsd-kind-icon">Link</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkreshapingtool.html" class="tsd-kind-icon">LinkReshapingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingbasetool.html" class="tsd-kind-icon">LinkingBaseTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingtool.html" class="tsd-kind-icon">LinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.list.html" class="tsd-kind-icon">List</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.map.html" class="tsd-kind-icon">Map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.margin.html" class="tsd-kind-icon">Margin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.model.html" class="tsd-kind-icon">Model</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.node.html" class="tsd-kind-icon">Node</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.overview.html" class="tsd-kind-icon">Overview</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.palette.html" class="tsd-kind-icon">Palette</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panel.html" class="tsd-kind-icon">Panel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panningtool.html" class="tsd-kind-icon">PanningTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.part.html" class="tsd-kind-icon">Part</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathfigure.html" class="tsd-kind-icon">PathFigure</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathsegment.html" class="tsd-kind-icon">PathSegment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.picture.html" class="tsd-kind-icon">Picture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.placeholder.html" class="tsd-kind-icon">Placeholder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.point.html" class="tsd-kind-icon">Point</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rect.html" class="tsd-kind-icon">Rect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.relinkingtool.html" class="tsd-kind-icon">RelinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.resizingtool.html" class="tsd-kind-icon">ResizingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rotatingtool.html" class="tsd-kind-icon">RotatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rowcolumndefinition.html" class="tsd-kind-icon">RowColumnDefinition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.set.html" class="tsd-kind-icon">Set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.shape.html" class="tsd-kind-icon">Shape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.size.html" class="tsd-kind-icon">Size</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.spot.html" class="tsd-kind-icon">Spot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.textblock.html" class="tsd-kind-icon">TextBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.texteditingtool.html" class="tsd-kind-icon">TextEditingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.tool.html" class="tsd-kind-icon">Tool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.toolmanager.html" class="tsd-kind-icon">ToolManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.transaction.html" class="tsd-kind-icon">Transaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treeedge.html" class="tsd-kind-icon">TreeEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treelayout.html" class="tsd-kind-icon">TreeLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treemodel.html" class="tsd-kind-icon">TreeModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treevertex.html" class="tsd-kind-icon">TreeVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.undomanager.html" class="tsd-kind-icon">UndoManager</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>auth | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="gapi.html">gapi</a>
+    </li>
+
+    <li>
+        <a href="gapi.auth.html">auth</a>
+    </li>
+
+            </ul>
+            <h1>Module auth</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-external">
+            <h3>Functions</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container tsd-is-external"><a href="gapi.auth.html#authorize" class="tsd-kind-icon">authorize</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container tsd-is-external"><a href="gapi.auth.html#gettoken" class="tsd-kind-icon">getToken</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container tsd-is-external"><a href="gapi.auth.html#init" class="tsd-kind-icon">init</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container tsd-is-external"><a href="gapi.auth.html#settoken" class="tsd-kind-icon">setToken</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-external">
+    <h2>Functions</h2>
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container tsd-is-external">
+    <a name="authorize" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">authorize<span class="tsd-signature-symbols">(</span>params<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ client_id?: string; immediate?: boolean; response_type?: string; scope?: any; }</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(token: GoogleApiOAuth2TokenObject) =&gt; any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gapi.d.ts:34</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Initiates the OAuth 2.0 authorization process. The browser displays a popup window prompting the user authenticate and authorize. After the user authorizes, the popup closes and the callback function fires.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>params: <span class="tsd-signature-type">{ client_id?: string; immediate?: boolean; response_type?: string; scope?: any; }</span></h5>
+                
+    <p>A key/value map of parameters for the request. If the key is not one of the expected OAuth 2.0 parameters, it is added to the URI as a query parameter.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(token: GoogleApiOAuth2TokenObject) =&gt; any</span></h5>
+                
+    <p>The function to call once the login process is complete. The function takes an OAuth 2.0 token object as its only parameter.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container tsd-is-external">
+    <a name="gettoken" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">getToken<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../interfaces/googleapioauth2tokenobject.html" class="tsd-signature-type">GoogleApiOAuth2TokenObject</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gapi.d.ts:61</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the OAuth 2.0 token for the application.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../interfaces/googleapioauth2tokenobject.html" class="tsd-signature-type">GoogleApiOAuth2TokenObject</a>
+    
+</p>
+    
+        <p>The OAuth 2.0 token.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container tsd-is-external">
+    <a name="init" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">init<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">() =&gt; any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gapi.d.ts:56</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Initializes the authorization feature. Call this when the client loads to prevent popup blockers from blocking the auth window on gapi.auth.authorize calls.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">() =&gt; any</span></h5>
+                
+    <p>A callback to execute when the auth feature is ready to make authorization calls.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container tsd-is-external">
+    <a name="settoken" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">setToken<span class="tsd-signature-symbols">(</span>token<span class="tsd-signature-symbols">: </span><a href="../interfaces/googleapioauth2tokenobject.html" class="tsd-signature-type">GoogleApiOAuth2TokenObject</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gapi.d.ts:66</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the OAuth 2.0 token for the application.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>token: <a href="../interfaces/googleapioauth2tokenobject.html" class="tsd-signature-type">GoogleApiOAuth2TokenObject</a></h5>
+                
+    <p>The token to set.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="gapi.html">gapi</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="gapi.auth.html">gapi.auth</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="gapi.client.html">gapi.client</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="gapi.client.pagespeedonline.html">gapi.client.pagespeedonline</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container tsd-is-external">
+                    <a href="gapi.auth.html#authorize" class="tsd-kind-icon">authorize</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container tsd-is-external">
+                    <a href="gapi.auth.html#gettoken" class="tsd-kind-icon">getToken</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container tsd-is-external">
+                    <a href="gapi.auth.html#init" class="tsd-kind-icon">init</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container tsd-is-external">
+                    <a href="gapi.auth.html#settoken" class="tsd-kind-icon">setToken</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

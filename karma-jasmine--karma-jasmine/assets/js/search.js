@@ -1,0 +1,1 @@
+﻿var tsd = tsd || {};tsd.search = tsd.search || {};tsd.search.data = {"kinds":{"16384":"Function"},"rows":[{"id":0,"kind":16384,"name":"ddescribe","url":"globals.html#ddescribe","classes":"tsd-kind-function tsd-is-not-exported"},{"id":1,"kind":16384,"name":"iit","url":"globals.html#iit","classes":"tsd-kind-function tsd-is-not-exported"}]};

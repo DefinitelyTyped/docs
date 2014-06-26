@@ -1,0 +1,911 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Function | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="function.html">Function</a>
+    </li>
+
+            </ul>
+            <h1>Interface Function</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#after" class="tsd-kind-icon">after</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#bind" class="tsd-kind-icon">bind</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#cancel" class="tsd-kind-icon">cancel</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#debounce" class="tsd-kind-icon">debounce</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#delay" class="tsd-kind-icon">delay</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#fill" class="tsd-kind-icon">fill</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#lazy" class="tsd-kind-icon">lazy</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#once" class="tsd-kind-icon">once</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="function.html#throttle" class="tsd-kind-icon">throttle</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="after" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> after<span class="tsd-signature-symbols">(</span>num<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3855</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a function that will execute after [num] calls.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>%after% is useful for running a final callback after a series of
+       asynchronous operations, when the order in which the operations will
+       complete is unknown.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  var fn = (function() {
+    // Will be executed once only
+  }).after(3); fn(); fn(); fn();</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>num?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Execute the function after this many calls, default = 1.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function that can only execute after it has been called <num> times.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="bind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> bind<span class="tsd-signature-symbols">(</span>scope<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3880</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Binds <scope> as the %this% object for the function when it is called.
+       Also allows currying an unlimited number of parameters.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>&quot;currying&quot; means setting parameters ([arg1], [arg2], etc.) ahead of
+        time so that they are passed when the function is called later.
+        If you pass additional parameters when the function is actually
+        called, they will be added will be added to the end of the curried
+        parameters. This method is provided for browsers that don&#39;t support
+        it internally.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  (function() {
+    return this;
+  }).bind(&#39;woof&#39;)(); -&gt; returns &#39;woof&#39;; function is bound with &#39;woof&#39; as the this object.
+  (function(a) {
+    return a;
+  }).bind(1, 2)();   -&gt; returns 2; function is bound with 1 as the this object and 2 curried as the first parameter
+  (function(a, b) {
+    return a + b;
+  }).bind(1, 2)(3);  -&gt; returns 5; function is bound with 1 as the this object, 2 curied as the first parameter and 3 passed as the second when calling the function</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>scope?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>this object during the function call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Curried parameters.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function with bound &#39;this&#39; and curried parameters.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="cancel" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> cancel<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3891</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Cancels a delayed function scheduled to be run.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>%delay%, %lazy%, %throttle%, and %debounce% can all set delays.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  (function() {
+    alert(&#39;hay&#39;); // Never called
+  }).delay(500).cancel();</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="debounce" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> debounce<span class="tsd-signature-symbols">(</span>ms<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3906</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a &quot;debounced&quot; function that postpones its execution until after <ms> milliseconds have passed.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>This method is useful to execute a function after things have
+       &quot;settled down&quot;. A good example of this is when a user tabs quickly
+       through form fields, execution of a heavy operation should happen
+       after a few milliseconds when they have &quot;settled&quot; on a field.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  var fn = (function(arg1) {
+    // called once 50ms later
+  }).debounce(50); fn() fn() fn();</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ms: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>Number of milliseconds to debounce the function.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Deboucned function by ms <ms>.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="delay" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> delay<span class="tsd-signature-symbols">(</span>ms<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3922</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Executes the function after <ms> milliseconds.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>Returns a reference to itself. %delay% is also a way to execute
+       non-blocking operations that will wait until the CPU is free.
+       Delayed functions can be canceled using the %cancel% method.
+       Can also curry arguments passed in after <ms>.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  (function(arg1) {
+    // called 1s later
+  }).delay(1000, &#39;arg1&#39;);</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ms?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Milliseconds to delay execution, default = 0.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Additional arguments.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Reference to itself.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="fill" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> fill<span class="tsd-signature-symbols">(</span>args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3941</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns a new version of the function which when called will have
+       some of its arguments pre-emptively filled in, also known as &quot;currying&quot;.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>Arguments passed to a &quot;filled&quot; function are generally appended to
+       the curried arguments. However, if %undefined% is passed as any of
+       the arguments to %fill%, it will be replaced, when the &quot;filled&quot;
+       function is executed. This allows currying of arguments even when
+       they occur toward the end of an argument list (the example
+       demonstrates this much more clearly).</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  var delayOneSecond = setTimeout.fill(undefined, 1000);
+  delayOneSecond(function() {
+    // Will be executed 1s later
+  });</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Pre-filled arguments.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function with pre-filled arguments.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="lazy" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> lazy<span class="tsd-signature-symbols">(</span>ms<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, limit<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3967</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a lazy function that, when called repeatedly, will queue execution and wait [ms] milliseconds to execute again.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>method</dt>
+            <dd><p>lazy([ms] = 1, [limit] = Infinity)</p>
+</dd>
+        
+            <dt>extra</dt>
+            <dd><p>Lazy functions will always execute as many times as they are called
+       up to [limit], after which point subsequent calls will be ignored
+       (if it is set to a finite number). Compare this to %throttle%, which
+       will execute only once per [ms] milliseconds. %lazy% is useful when
+       you need to be sure that every call to a function is executed, but
+       in a non-blocking manner. Calling %cancel% on a lazy function will
+      clear the entire queue. Note that [ms] can also be a fraction.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  (function() {
+    // Executes immediately.
+  }).lazy()();
+  (3).times(function() {
+    // Executes 3 times, with each execution 20ms later than the last.
+  }.lazy(20));
+  (100).times(function() {
+    // Executes 50 times, with each execution 20ms later than the last.
+  }.lazy(20, 50));</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ms?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Wait this long between successive calls, default = 1.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>limit?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Maximum number of times the function can execute, default = Infinity.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="once" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> once<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3981</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a function that will execute only once and store the result.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>%once% is useful for creating functions that will cache the result of
+       an expensive operation and use it on subsequent calls. Also it can be
+       useful for creating initialization functions that only need to be run
+       once.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  var fn = (function() {
+    // Will be executed once only
+  }).once(); fn(); fn(); fn();</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="throttle" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> throttle<span class="tsd-signature-symbols">(</span>ms<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in sugar.d.ts:3997</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a &quot;throttled&quot; version of the function that will only be executed once per <ms> milliseconds.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extra</dt>
+            <dd><p>This is functionally equivalent to calling %lazy% with a [limit]
+       of %1%. %throttle% is appropriate when you want to make sure a
+       function is only executed at most once for a given duration.
+       Compare this to %lazy%, which will queue rapid calls and execute
+       them later.</p>
+</dd>
+        
+            <dt>example</dt>
+            <dd><p>  (3).times(function() {
+    // called only once. will wait 50ms until it responds again
+  }.throttle(50));</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ms: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>Execute only once in this time span.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>Function</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

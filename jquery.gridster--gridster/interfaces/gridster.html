@@ -1,0 +1,812 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gridster | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="gridster.html">Gridster</a>
+    </li>
+
+            </ul>
+            <h1>Interface Gridster</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#add_widget" class="tsd-kind-icon">add_widget</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#disable" class="tsd-kind-icon">disable</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#enable" class="tsd-kind-icon">enable</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#remove_widget" class="tsd-kind-icon">remove_widget</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#resize_widget" class="tsd-kind-icon">resize_widget</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#serialize" class="tsd-kind-icon">serialize</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="gridster.html#serialize_changed" class="tsd-kind-icon">serialize_changed</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="add_widget" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add_widget<span class="tsd-signature-symbols">(</span>html<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, size_x<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, size_y<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, col<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="jquery.html" class="tsd-signature-type">JQuery</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:180</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Create a new widget with the given html and add it to the grid.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>html: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The string representing the HTML of the widget or the HTMLElement.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_x?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of rows the widget occupies horizontally.  Defaults to 1.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_y?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of columns the widget occupies vertically.  Defaults to 1.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>col?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The column the widget should start in.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>row?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The row the widget should start in.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="jquery.html" class="tsd-signature-type">JQuery</a>
+    
+</p>
+    
+        <p>Returns the jQuery wrapped HTMLElement representing the widget that was just created.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add_widget<span class="tsd-signature-symbols">(</span>html<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">HTMLElement</span>, size_x<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, size_y<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, col<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="jquery.html" class="tsd-signature-type">JQuery</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:185</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>see</dt>
+            <dd><p>add_widget</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>html: <span class="tsd-signature-type">HTMLElement</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_x?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_y?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>col?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>row?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="jquery.html" class="tsd-signature-type">JQuery</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="disable" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> disable<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="gridster.html" class="tsd-signature-type">Gridster</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:234</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Disables dragging.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="gridster.html" class="tsd-signature-type">Gridster</a>
+    
+</p>
+    
+        <p>Returns the instance of the Gridster class.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="enable" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> enable<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="gridster.html" class="tsd-signature-type">Gridster</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:228</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Enables dragging.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="gridster.html" class="tsd-signature-type">Gridster</a>
+    
+</p>
+    
+        <p>Returns the instance of the Gridster class.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="remove_widget" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove_widget<span class="tsd-signature-symbols">(</span>el<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">HTMLElement</span>, silent<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(el: HTMLElement) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="gridster.html" class="tsd-signature-type">Gridster</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:204</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Remove a widget from the grid.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>el: <span class="tsd-signature-type">HTMLElement</span></h5>
+                
+    <p>The jQuery wrapped HTMLElement you want to remove.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>silent?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Boolean If true widgets below the removed one will not move up.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(el: HTMLElement) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Callback function executed when the widget is removed.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="gridster.html" class="tsd-signature-type">Gridster</a>
+    
+</p>
+    
+        <p>Returns the instance of the Gridster class.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove_widget<span class="tsd-signature-symbols">(</span>el<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">HTMLElement</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(el: HTMLElement) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="gridster.html" class="tsd-signature-type">Gridster</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:209</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>see</dt>
+            <dd><p>remove_widget</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>el: <span class="tsd-signature-type">HTMLElement</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(el: HTMLElement) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="gridster.html" class="tsd-signature-type">Gridster</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="resize_widget" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resize_widget<span class="tsd-signature-symbols">(</span>$widget<span class="tsd-signature-symbols">: </span><a href="jquery.html" class="tsd-signature-type">JQuery</a>, size_x<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, size_y<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(size_x: number, size_y: number) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="jquery.html" class="tsd-signature-type">JQuery</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:195</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Change the size of a widget.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>$widget: <a href="jquery.html" class="tsd-signature-type">JQuery</a></h5>
+                
+    <p>The jQuery wrapped HTMLElement that represents the widget is going to be resized.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_x?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of rows that the widget is going to span.  Defaults to current size_x.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>size_y?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of columns that the widget is going to span.  Defaults to current size_y.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(size_x: number, size_y: number) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Callback function wehn the widget is finished resizing.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="jquery.html" class="tsd-signature-type">JQuery</a>
+    
+</p>
+    
+        <p>Returns $widget.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="serialize" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> serialize<span class="tsd-signature-symbols">(</span>$widgets<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;HTMLElement&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;T&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:216</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns a serialized array of the widgets in the grid.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>$widgets?: <span class="tsd-signature-type">Array&lt;HTMLElement&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The collection of jQuery wrap ed HTMLElements you want to serialize.  If no argument is passed a l widgets will be serialized.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Array&lt;T&gt;</span>
+    
+</p>
+    
+        <p>Returns an array of objects with the data specified in the serialized_params option.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="serialize_changed" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> serialize_changed<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;T&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in gridster/gridster.d.ts:222</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns a serialized array of the widgets that have changed their position.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Array&lt;T&gt;</span>
+    
+</p>
+    
+        <p>Returns an array of objects with the data specified in the serialized_params option.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/jquery.html">jquery</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

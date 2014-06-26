@@ -1,0 +1,3828 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Binding | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="winjs.html">WinJS</a>
+    </li>
+
+    <li>
+        <a href="winjs.binding.html">Binding</a>
+    </li>
+
+            </ul>
+            <h1>Module Binding</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Variables</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-container"><a href="winjs.binding.html#dynamicobservablemixin" class="tsd-kind-icon">dynamicObservableMixin</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-container"><a href="winjs.binding.html#mixin" class="tsd-kind-icon">mixin</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-container"><a href="winjs.binding.html#observablemixin" class="tsd-kind-icon">observableMixin</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-container"><a href="winjs.binding.html#optimizebindingreferences" class="tsd-kind-icon">optimizeBindingReferences</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Interfaces</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-interface tsd-parent-kind-container"><a href="../interfaces/winjs.binding.ikeydatapair.html" class="tsd-kind-icon">IKeyDataPair</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Classes</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.filteredlistprojection.html" class="tsd-kind-icon">FilteredListProjection</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.groupedsortedlistprojection.html" class="tsd-kind-icon">GroupedSortedListProjection</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.groupslistprojection.html" class="tsd-kind-icon">GroupsListProjection</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.list.html" class="tsd-kind-icon">List</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.listbase.html" class="tsd-kind-icon">ListBase</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.listbasewithmutators.html" class="tsd-kind-icon">ListBaseWithMutators</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.listprojection.html" class="tsd-kind-icon">ListProjection</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.sortedlistprojection.html" class="tsd-kind-icon">SortedListProjection</a></li>
+                
+                    <li class="tsd-kind-class tsd-parent-kind-container"><a href="../classes/winjs.binding.template.html" class="tsd-kind-icon">Template</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Functions</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#addclassonetime" class="tsd-kind-icon">addClassOneTime</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#as" class="tsd-kind-icon">as</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#bind" class="tsd-kind-icon">bind</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#converter" class="tsd-kind-icon">converter</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#defaultbind" class="tsd-kind-icon">defaultBind</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#define" class="tsd-kind-icon">define</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#expandproperties" class="tsd-kind-icon">expandProperties</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#initializer" class="tsd-kind-icon">initializer</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#notify" class="tsd-kind-icon">notify</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#onetime" class="tsd-kind-icon">oneTime</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#processall" class="tsd-kind-icon">processAll</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#setattribute" class="tsd-kind-icon">setAttribute</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#setattributeonetime" class="tsd-kind-icon">setAttributeOneTime</a></li>
+                
+                    <li class="tsd-kind-function tsd-parent-kind-container"><a href="winjs.binding.html#unwrap" class="tsd-kind-icon">unwrap</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Variables</h2>
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-container">
+    <a name="dynamicobservablemixin" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">dynamicObservableMixin<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ addProperty(name: string, value: any): void; bind(name: string, action: any): Function; getProperty(name: string): any; notify(name: string, newValue: string, oldValue: string): WinJS.Promise&lt;any&gt;; removeProperty(name: string): any; setProperty(name: string, value: any): any; unbind(name: string, action: Function): any; updateProperty(name: string, value: any): WinJS.Promise&lt;any&gt;; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:206</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Allows you to add bindable properties dynamically.</p>
+
+
+
+
+
+
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.addproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:214</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds a property with change notification to this object, including a ECMAScript5 property definition.</p>
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:214</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:214</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.bind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> bind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:222</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:222</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:222</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.getproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:229</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets a property value by name.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>The value of the property as an observable object.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:229</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.notify" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> notify<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:238</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies listeners that a property value was updated.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that is completed when the notifications are complete.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:238</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.newValue.newValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:238</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.oldValue.oldValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:238</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.removeproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:245</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes a property value.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:245</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.setproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:253</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Updates a property value and notifies any listeners.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:253</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:253</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.unbind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unbind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:261</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes one or more listeners from the notification list for a given property.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:261</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:261</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="dynamicobservablemixin.dynamicobservablemixin.updateproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> updateProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:269</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Updates a property value and notifies any listeners.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that completes when the notifications for this property change have been processed. If multiple notifications are coalesced, the promise may be canceled or the value of the promise may be updated. The fulfilled value of the promise is the new value of the property for which the notifications have been completed.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:269</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:269</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-container">
+    <a name="mixin" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">mixin<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ addProperty(name: string, value: any): any; bind(name: string, action: any): Function; getProperty(name: string): any; notify(name: string, newValue: string, oldValue: string): WinJS.Promise&lt;any&gt;; removeProperty(name: string): any; setProperty(name: string, value: any): any; unbind(name: string, action: Function): any; updateProperty(name: string, value: any): WinJS.Promise&lt;any&gt;; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:783</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Provides a standard implementation of the bindable contract, as well as a basic storage mechanism that participates in change notification and an asynchronous notification implementation.</p>
+
+
+
+
+
+
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.addproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:792</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds a property to the object. The property includes change notification and an ECMAScript 5 property definition .</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:792</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:792</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.bind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> bind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:800</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:800</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:800</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.getproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:807</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets a property value by name.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>The value of the property as an observable object.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:807</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.notify" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> notify<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:816</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies listeners that a property value was updated.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that is completed when the notifications are complete.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:816</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.newValue.newValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:816</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.oldValue.oldValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:816</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.removeproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:823</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes a property value.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:823</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.setproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:831</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Updates a property value and notifies any listeners.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:831</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:831</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.unbind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unbind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:839</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes one or more listeners from the notification list for a given property.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:839</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:839</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="mixin.mixin.updateproperty" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> updateProperty<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:847</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Updates a property value and notifies any listeners.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that completes when the notifications for this property change have been processed. If multiple notifications are coalesced, the promise may be canceled or the value of the promise may be updated. The fulfilled value of the promise is the new value of the property for which the notifications have been completed.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:847</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.value.value<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:847</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-container">
+    <a name="observablemixin" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">observableMixin<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ bind(name: string, action: Function): any; notify(name: string, newValue: any, oldValue: any): WinJS.Promise&lt;any&gt;; unbind(name: string, action: Function): any; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:856</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Provides functions that can make an object observable.</p>
+
+
+
+
+
+
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="observablemixin.observablemixin.bind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> bind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:865</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>A reference to this observableMixin object.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:865</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:865</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="observablemixin.observablemixin.notify" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> notify<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:874</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies listeners that a property value was updated.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that is completed when the notifications are complete.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:874</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.newValue.newValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:874</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.oldValue.oldValue<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:874</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-method tsd-parent-kind-variable">
+    <a name="observablemixin.observablemixin.unbind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unbind<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:882</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes one or more listeners from the notification list for a given property.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>This object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.action.action<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:882</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-parameter tsd-parent-kind-method">
+    <a name="" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">.name.name<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:882</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+            
+        
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-container">
+    <a name="optimizebindingreferences" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">optimizeBindingReferences<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:197</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Determines whether or not binding should automatically set the ID of an element. This property should be set to true in apps that use WinJS (WinJS) binding.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Functions</h2>
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="addclassonetime" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">addClassOneTime<span class="tsd-signature-symbols">(</span>source<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, sourceProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span>, dest<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1019</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds a CSS class from the specified path of the source object to a destination object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>source: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The source object that has the class to copy.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceProperties: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>The path on the source object to the source class.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <span class="tsd-signature-type">HTMLElement</span></h5>
+                
+    <p>The destination object.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="as" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">as<span class="tsd-signature-symbols">(</span>data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">U</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1026</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns an observable object. This may be an observable proxy for the specified object, an existing proxy, or the specified object itself if it directly supports observation.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">U</span></h5>
+                
+    <p>The object to observe.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">U</span>
+    
+</p>
+    
+        <p>The observable object.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="bind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">bind<span class="tsd-signature-symbols">(</span>observable<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, bindingDescriptor<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1034</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Binds to one or more properties on the observable object or or on child values of that object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>observable: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The object to bind to.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>bindingDescriptor: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>An object literal containing the binding declarations. Binding declarations take the form: { propertyName: (function | bindingDeclaration), ... }.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>An object that contains at least a &quot;cancel&quot; field, which is a function that removes all bindings associated with this bind request.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="converter" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">converter<span class="tsd-signature-symbols">(</span>convert<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1041</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a default binding initializer for binding between a source property and a destination property with the specified converter function that is executed on the value of the source property.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>convert: <span class="tsd-signature-type">Function</span></h5>
+                
+    <p>The conversion function that takes the source property and produces a value that is set to the destination property. This function must be accessible from the global namespace.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>The binding initializer.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="defaultbind" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">defaultBind<span class="tsd-signature-symbols">(</span>source<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, sourceProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, dest<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, destProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1051</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a one-way binding between the source object and the destination object. Warning Do not attempt to bind data to the ID of an HTML element.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>source: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The source object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceProperties: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The path on the source object to the source property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The destination object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>destProperties: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The path on the destination object to the destination property.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>An object with a cancel method that is used to coalesce bindings.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="define" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">define<span class="tsd-signature-symbols">(</span>data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1058</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a new constructor function that supports observability with the specified set of properties.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The object to use as the pattern for defining the set of properties.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>A constructor function with 1 optional argument that is the initial state of the properties.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="expandproperties" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">expandProperties<span class="tsd-signature-symbols">(</span>shape<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1065</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Wraps the specified object so that all its properties are instrumented for binding. This is meant to be used in conjunction with the binding mixin.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>shape: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The specification for the bindable object.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>An object with a set of properties all of which are wired for binding.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="initializer" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">initializer<span class="tsd-signature-symbols">(</span>customInitializer<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Function</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1072</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Marks a custom initializer function as being compatible with declarative data binding.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>customInitializer: <span class="tsd-signature-type">Function</span></h5>
+                
+    <p>The custom initializer to be marked as compatible with declarative data binding.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Function</span>
+    
+</p>
+    
+        <p>The input customInitializer.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="notify" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">notify<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, newValue<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, oldValue<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1081</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Notifies listeners that a property value was updated.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the property that is being updated.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>newValue: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The new value for the property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>oldValue: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The old value for the property.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that is completed when the notifications are complete.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="onetime" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">oneTime<span class="tsd-signature-symbols">(</span>source<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, sourceProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, dest<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, destProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1091</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the destination property to the value of the source property.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>source: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The source object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceProperties: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The path on the source object to the source property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The destination object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>destProperties: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The path on the destination object to the destination property.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>An object with a cancel method that is used to coalesce bindings.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="processall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">processAll<span class="tsd-signature-symbols">(</span>rootElement<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Element</span>, dataContext<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, skipRoot<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span>, bindingCache<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, defaultInitializer<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1102</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Binds the values of an object to the values of a DOM element that has the data-win-bind attribute. If multiple DOM elements are to be bound, you must set the attribute on all of them. See the example below for details.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>rootElement?: <span class="tsd-signature-type">Element</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. The element at which to start traversing to find elements to bind to. If this parameter is omitted, the entire document is searched.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dataContext?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object that contains the values to which the DOM element should be bound.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>skipRoot?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>If true, specifies that only the children of rootElement should be bound, otherwise rootElement should be bound as well.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>bindingCache?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The cached binding data.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>defaultInitializer?: <span class="tsd-signature-type">Function</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The binding initializer to use in the case that one is not specified in a binding expression. If not provided, the behavior is the same as Binding.defaultBind.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="../classes/winjs.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A Promise that completes when every item that contains the data-win-bind attribute has been processed and the update has started.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="setattribute" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">setAttribute<span class="tsd-signature-symbols">(</span>source<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, sourceProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span>, dest<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Element</span>, destProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1112</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a one-way binding between the source object and an attribute on the destination element.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>source: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The source object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceProperties: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>The path on the source object to the source property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <span class="tsd-signature-type">Element</span></h5>
+                
+    <p>The destination object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>destProperties: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>The path on the destination object to the destination property. This must be a single name.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>An object with a cancel() method that is used to coalesce bindings.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="setattributeonetime" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">setAttributeOneTime<span class="tsd-signature-symbols">(</span>source<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, sourceProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span>, dest<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Element</span>, destProperties<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1121</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets an attribute on the destination element to the value of the source property.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>source: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The source object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sourceProperties: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>The path on the source object to the source property.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>dest: <span class="tsd-signature-type">Element</span></h5>
+                
+    <p>The destination object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>destProperties: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>The path on the destination object to the destination property. This must be a single name.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-function tsd-parent-kind-container">
+    <a name="unwrap" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">unwrap<span class="tsd-signature-symbols">(</span>data<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in winjs.d.ts:1128</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns the original (non-observable) object is returned if the specified object is an observable proxy,</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>data: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The object for which to retrieve the original value.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+        <p>If the specified object is an observable proxy, the original object is returned, otherwise the same object is returned.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="winjs.html">WinJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.application.html">WinJS.Application</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.binding.html">WinJS.Binding</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.class.html">WinJS.Class</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.namespace.html">WinJS.Namespace</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.navigation.html">WinJS.Navigation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.resources.html">WinJS.Resources</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.html">WinJS.UI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.animation.html">WinJS.UI.Animation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.fragments.html">WinJS.UI.Fragments</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.pages.html">WinJS.UI.Pages</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.ui.tracktabbehavior.html">WinJS.UI.TrackTabBehavior</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.utilities.html">WinJS.Utilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="winjs.utilities.scheduler.html">WinJS.Utilities.Scheduler</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="winjs.binding.html#dynamicobservablemixin" class="tsd-kind-icon">dynamicObservableMixin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="winjs.binding.html#mixin" class="tsd-kind-icon">mixin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="winjs.binding.html#observablemixin" class="tsd-kind-icon">observableMixin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="winjs.binding.html#optimizebindingreferences" class="tsd-kind-icon">optimizeBindingReferences</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/winjs.binding.ikeydatapair.html" class="tsd-kind-icon">IKeyDataPair</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.filteredlistprojection.html" class="tsd-kind-icon">FilteredListProjection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.groupedsortedlistprojection.html" class="tsd-kind-icon">GroupedSortedListProjection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.groupslistprojection.html" class="tsd-kind-icon">GroupsListProjection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.list.html" class="tsd-kind-icon">List</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.listbase.html" class="tsd-kind-icon">ListBase</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.listbasewithmutators.html" class="tsd-kind-icon">ListBaseWithMutators</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.listprojection.html" class="tsd-kind-icon">ListProjection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.sortedlistprojection.html" class="tsd-kind-icon">SortedListProjection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="../classes/winjs.binding.template.html" class="tsd-kind-icon">Template</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#addclassonetime" class="tsd-kind-icon">addClassOneTime</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#as" class="tsd-kind-icon">as</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#bind" class="tsd-kind-icon">bind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#converter" class="tsd-kind-icon">converter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#defaultbind" class="tsd-kind-icon">defaultBind</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#define" class="tsd-kind-icon">define</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#expandproperties" class="tsd-kind-icon">expandProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#initializer" class="tsd-kind-icon">initializer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#notify" class="tsd-kind-icon">notify</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#onetime" class="tsd-kind-icon">oneTime</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#processall" class="tsd-kind-icon">processAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#setattribute" class="tsd-kind-icon">setAttribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#setattributeonetime" class="tsd-kind-icon">setAttributeOneTime</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="winjs.binding.html#unwrap" class="tsd-kind-icon">unwrap</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

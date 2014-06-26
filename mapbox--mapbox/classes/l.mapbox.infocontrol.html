@@ -1,0 +1,1203 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InfoControl | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/l.html">L</a>
+    </li>
+
+    <li>
+        <a href="../modules/l.mapbox.html">mapbox</a>
+    </li>
+
+    <li>
+        <a href="l.mapbox.infocontrol.html">InfoControl</a>
+    </li>
+
+            </ul>
+            <h1>Class InfoControl</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>L.Class powers the OOP facilities of Leaflet and is used to create
+almost all of the Leaflet classes documented.</p>
+
+
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="l.control.html" class="tsd-signature-type">Control</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        InfoControl
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="l.mapbox.infocontrol.html#addinfo" class="tsd-kind-icon">addInfo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#addto" class="tsd-kind-icon">addTo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#getcontainer" class="tsd-kind-icon">getContainer</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#getposition" class="tsd-kind-icon">getPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="l.mapbox.infocontrol.html#onadd" class="tsd-kind-icon">onAdd</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="l.mapbox.infocontrol.html#onremove" class="tsd-kind-icon">onRemove</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#removefrom" class="tsd-kind-icon">removeFrom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="l.mapbox.infocontrol.html#removeinfo" class="tsd-kind-icon">removeInfo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="l.mapbox.infocontrol.html#setposition" class="tsd-kind-icon">setPosition</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">?: </span><a href="../interfaces/l.controloptions.html" class="tsd-signature-type">ControlOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="l.control.html" class="tsd-signature-type">Control</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#constructor">constructor</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:309</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a control with the given options.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options?: <a href="../interfaces/l.controloptions.html" class="tsd-signature-type">ControlOptions</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="l.control.html" class="tsd-signature-type">Control</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="addinfo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addInfo<span class="tsd-signature-symbols">(</span>info<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in mapbox/mapbox.d.ts:244</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds an info string to infoControl.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>info: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="addto" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addTo<span class="tsd-signature-symbols">(</span>map<span class="tsd-signature-symbols">: </span><a href="l.map.html" class="tsd-signature-type">Map</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="l.control.html" class="tsd-signature-type">Control</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#addto">addTo</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:324</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds the control to the map.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>map: <a href="l.map.html" class="tsd-signature-type">Map</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="l.control.html" class="tsd-signature-type">Control</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getcontainer" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getContainer<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">HTMLElement</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#getcontainer">getContainer</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:334</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns the HTML container of the control.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">HTMLElement</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getPosition<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#getposition">getPosition</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:319</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns the current position of the control.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">string</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="onadd" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> onAdd<span class="tsd-signature-symbols">(</span>map<span class="tsd-signature-symbols">: </span><a href="l.mapbox.map.html" class="tsd-signature-type">Map</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#onadd">onAdd</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in mapbox/mapbox.d.ts:238</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>map: <a href="l.mapbox.map.html" class="tsd-signature-type">Map</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="onremove" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> onRemove<span class="tsd-signature-symbols">(</span>map<span class="tsd-signature-symbols">: </span><a href="l.mapbox.map.html" class="tsd-signature-type">Map</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#onremove">onRemove</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in mapbox/mapbox.d.ts:239</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>map: <a href="l.mapbox.map.html" class="tsd-signature-type">Map</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="removefrom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeFrom<span class="tsd-signature-symbols">(</span>map<span class="tsd-signature-symbols">: </span><a href="l.map.html" class="tsd-signature-type">Map</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="l.control.html" class="tsd-signature-type">Control</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#removefrom">removeFrom</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:329</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes the control from the map.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>map: <a href="l.map.html" class="tsd-signature-type">Map</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="l.control.html" class="tsd-signature-type">Control</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="removeinfo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeInfo<span class="tsd-signature-symbols">(</span>info<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in mapbox/mapbox.d.ts:249</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes an info string from infoControl</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>info: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="setposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setPosition<span class="tsd-signature-symbols">(</span>position<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="l.control.html" class="tsd-signature-type">Control</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="l.control.html">Control</a>.<a href="l.control.html#setposition">setPosition</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in leaflet/leaflet.d.ts:314</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the position of the control. See control positions.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>position: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="l.control.html" class="tsd-signature-type">Control</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/l.html">L</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/l.mapbox.html">L.mapbox</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/l.mapbox.marker.html">L.mapbox.marker</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/l.mapbox.simplestyle.html">L.mapbox.simplestyle</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.controloptions.html" class="tsd-kind-icon">ControlOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.featurelayeroptions.html" class="tsd-kind-icon">FeatureLayerOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.filterfunction.html" class="tsd-kind-icon">FilterFunction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.geocoder.html" class="tsd-kind-icon">Geocoder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.geocodercontrol.html" class="tsd-kind-icon">GeocoderControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.geocodercontroloptions.html" class="tsd-kind-icon">GeocoderControlOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.gridcontroloptions.html" class="tsd-kind-icon">GridControlOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.gridlayer.html" class="tsd-kind-icon">GridLayer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.mapoptions.html" class="tsd-kind-icon">MapOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.sharecontroloptions.html" class="tsd-kind-icon">ShareControlOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/l.mapbox.tilelayeroptions.html" class="tsd-kind-icon">TileLayerOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.featurelayer.html" class="tsd-kind-icon">FeatureLayer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.gridcontrol.html" class="tsd-kind-icon">GridControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.infocontrol.html" class="tsd-kind-icon">InfoControl</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="l.mapbox.infocontrol.html#addinfo" class="tsd-kind-icon">addInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#addto" class="tsd-kind-icon">addTo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#getcontainer" class="tsd-kind-icon">getContainer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#getposition" class="tsd-kind-icon">getPosition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="l.mapbox.infocontrol.html#onadd" class="tsd-kind-icon">onAdd</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="l.mapbox.infocontrol.html#onremove" class="tsd-kind-icon">onRemove</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#removefrom" class="tsd-kind-icon">removeFrom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="l.mapbox.infocontrol.html#removeinfo" class="tsd-kind-icon">removeInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="l.mapbox.infocontrol.html#setposition" class="tsd-kind-icon">setPosition</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.legendcontrol.html" class="tsd-kind-icon">LegendControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.map.html" class="tsd-kind-icon">Map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.sharecontrol.html" class="tsd-kind-icon">ShareControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.tilelayer.html" class="tsd-kind-icon">TileLayer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="l.mapbox.config.html" class="tsd-kind-icon">config</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#featurelayer" class="tsd-kind-icon">featureLayer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#geocoder" class="tsd-kind-icon">geocoder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#geocodercontrol" class="tsd-kind-icon">geocoderControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#gridcontrol" class="tsd-kind-icon">gridControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#gridlayer" class="tsd-kind-icon">gridLayer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#infocontrol" class="tsd-kind-icon">infoControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#legendcontrol" class="tsd-kind-icon">legendControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#map" class="tsd-kind-icon">map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#sanitize" class="tsd-kind-icon">sanitize</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#sharecontrol" class="tsd-kind-icon">shareControl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#template" class="tsd-kind-icon">template</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/l.mapbox.html#tilelayer" class="tsd-kind-icon">tileLayer</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

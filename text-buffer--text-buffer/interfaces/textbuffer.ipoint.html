@@ -1,0 +1,1557 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IPoint | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/textbuffer.html">TextBuffer</a>
+    </li>
+
+    <li>
+        <a href="textbuffer.ipoint.html">IPoint</a>
+    </li>
+
+            </ul>
+            <h1>Interface IPoint</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#column" class="tsd-kind-icon">column</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#row" class="tsd-kind-icon">row</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#add" class="tsd-kind-icon">add</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#compare" class="tsd-kind-icon">compare</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#copy" class="tsd-kind-icon">copy</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#freeze" class="tsd-kind-icon">freeze</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#isequal" class="tsd-kind-icon">isEqual</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#isgreaterthan" class="tsd-kind-icon">isGreaterThan</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#isgreaterthanorequal" class="tsd-kind-icon">isGreaterThanOrEqual</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#islessthan" class="tsd-kind-icon">isLessThan</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#islessthanorequal" class="tsd-kind-icon">isLessThanOrEqual</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#serialize" class="tsd-kind-icon">serialize</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#splitat" class="tsd-kind-icon">splitAt</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#toarray" class="tsd-kind-icon">toArray</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="textbuffer.ipoint.html#translate" class="tsd-kind-icon">translate</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="column" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> column<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:36</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="constructor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> constructor<span class="tsd-signature-symbols">:</span> <a href="textbuffer.ipointstatic.html" class="tsd-signature-type">IPointStatic</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:33</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="row" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> row<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:35</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="add" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:45</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:46</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <span class="tsd-signature-type">Array&lt;number&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> add<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ row: number; column: number; }</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:47</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <span class="tsd-signature-type">{ row: number; column: number; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="compare" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> compare<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:50</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="copy" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> copy<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:38</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="freeze" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> freeze<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:39</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="isequal" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isEqual<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:51</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="isgreaterthan" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isGreaterThan<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:54</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="isgreaterthanorequal" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isGreaterThanOrEqual<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:55</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="islessthan" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isLessThan<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:52</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="islessthanorequal" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isLessThanOrEqual<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:53</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="serialize" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> serialize<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:57</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Array&lt;number&gt;</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="splitat" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> splitAt<span class="tsd-signature-symbols">(</span>column<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:49</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>column: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="toarray" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> toArray<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:56</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">Array&lt;number&gt;</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="translate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> translate<span class="tsd-signature-symbols">(</span>delta<span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:41</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>delta: <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> translate<span class="tsd-signature-symbols">(</span>delta<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;number&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:42</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>delta: <span class="tsd-signature-type">Array&lt;number&gt;</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> translate<span class="tsd-signature-symbols">(</span>delta<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ row: number; column: number; }</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in text-buffer/text-buffer.d.ts:43</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>delta: <span class="tsd-signature-type">{ row: number; column: number; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="textbuffer.ipoint.html" class="tsd-signature-type">IPoint</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/atomcore.html">AtomCore</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/emissary.html">Emissary</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/mixto.html">Mixto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/nodejs.html">NodeJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/pathwatcher.html">PathWatcher</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/statusbar.html">StatusBar</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/textbuffer.html">TextBuffer</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/assert.html">assert</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/atom.html">atom</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/buffer.html">buffer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/child_process.html">child_process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/cluster.html">cluster</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/crypto.html">crypto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dgram.html">dgram</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dns.html">dns</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/domain.html">domain</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/emissary.html">emissary</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/events.html">events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/fs.html">fs</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/http.html">http</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/https.html">https</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/jquery.html">jquery</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/mixto.html">mixto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/net.html">net</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/os.html">os</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/path.html">path</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/pathwatcher.html">pathwatcher</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/punycode.html">punycode</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/q.html">q</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/querystring.html">querystring</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/readline.html">readline</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/repl.html">repl</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/space-pen.html">space-pen</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/stream.html">stream</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/string_decoder.html">string_decoder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/text-buffer.html">text-buffer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tls.html">tls</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tty.html">tty</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/url.html">url</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/util.html">util</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/vm.html">vm</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/zlib.html">zlib</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.ibufferpatch.html" class="tsd-kind-icon">IBufferPatch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.ihistory.html" class="tsd-kind-icon">IHistory</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.imarker.html" class="tsd-kind-icon">IMarker</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.imarkermanager.html" class="tsd-kind-icon">IMarkerManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.ipoint.html" class="tsd-kind-icon">IPoint</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#column" class="tsd-kind-icon">column</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#row" class="tsd-kind-icon">row</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#add" class="tsd-kind-icon">add</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#compare" class="tsd-kind-icon">compare</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#copy" class="tsd-kind-icon">copy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#freeze" class="tsd-kind-icon">freeze</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#isequal" class="tsd-kind-icon">isEqual</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#isgreaterthan" class="tsd-kind-icon">isGreaterThan</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#isgreaterthanorequal" class="tsd-kind-icon">isGreaterThanOrEqual</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#islessthan" class="tsd-kind-icon">isLessThan</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#islessthanorequal" class="tsd-kind-icon">isLessThanOrEqual</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#serialize" class="tsd-kind-icon">serialize</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#splitat" class="tsd-kind-icon">splitAt</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#toarray" class="tsd-kind-icon">toArray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="textbuffer.ipoint.html#translate" class="tsd-kind-icon">translate</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.ipointstatic.html" class="tsd-kind-icon">IPointStatic</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.irange.html" class="tsd-kind-icon">IRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.irangestatic.html" class="tsd-kind-icon">IRangeStatic</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.itextbuffer.html" class="tsd-kind-icon">ITextBuffer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="textbuffer.itextbufferstatic.html" class="tsd-kind-icon">ITextBufferStatic</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

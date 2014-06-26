@@ -1,0 +1,2487 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/microsoft.html">Microsoft</a>
+    </li>
+
+    <li>
+        <a href="../modules/microsoft.live.html">Live</a>
+    </li>
+
+    <li>
+        <a href="microsoft.live.api.html">API</a>
+    </li>
+
+            </ul>
+            <h1>Interface API</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>The Live Connect JavaScript API (Windows 8 and web), together with the
+REST API, enables apps to read, update, and share user data by using the
+JavaScript programming language. The JavaScript API (Windows 8 and web)
+provides methods for signing users in and out, getting user status,
+subscribing to events, creating UI controls, and calling the
+Representational State Transfer (REST) API.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="microsoft.live.api.html#event" class="tsd-kind-icon">Event</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#api" class="tsd-kind-icon">api</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#backgrounddownload" class="tsd-kind-icon">backgroundDownload</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#backgroundupload" class="tsd-kind-icon">backgroundUpload</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#canlogout" class="tsd-kind-icon">canLogout</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#download" class="tsd-kind-icon">download</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#filedialog" class="tsd-kind-icon">fileDialog</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#getloginstatus" class="tsd-kind-icon">getLoginStatus</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#getsession" class="tsd-kind-icon">getSession</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#init" class="tsd-kind-icon">init</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#login" class="tsd-kind-icon">login</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#logout" class="tsd-kind-icon">logout</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#ui" class="tsd-kind-icon">ui</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="microsoft.live.api.html#upload" class="tsd-kind-icon">upload</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="event" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> Event<span class="tsd-signature-symbols">:</span> <a href="microsoft.live.ieventapi.html" class="tsd-signature-type">IEventAPI</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2174</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="api" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> api<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.iapiproperties.html" class="tsd-signature-type">IAPIProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2093</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Makes a call to the Live Connect Representational State Transfer
+(REST) API. This method encapsulates a REST API request, and then
+calls a callback function to process the response.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.iapiproperties.html" class="tsd-signature-type">IAPIProperties</a></h5>
+                
+    <p>Required. A JSON object that contains properties
+  that are necessary to make the REST API call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Specifies a callback function that is executed when
+  the REST API call is complete. The callback function takes the API
+  response object as a parameter. The response object exposes the
+  data returned from Live Connect, or, if an error occurs, an error
+  property that contains the error code.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess, onError, and onProgress parameters to enable your
+  code to handle a successful, failed, and in-progress call to the
+  corresponding WL.api method, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="backgrounddownload" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> backgroundDownload<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.ibackgrounddownloadproperties.html" class="tsd-signature-type">IBackgroundDownloadProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2116</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Makes a call to download a file from Microsoft SkyDrive.</p>
+
+
+
+
+    <p><strong>Important</strong>:  WL.backgroundDownload is supported only for use with
+Windows Store apps using JavaScript. If you are writing a web app,
+use WL.download instead.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.ibackgrounddownloadproperties.html" class="tsd-signature-type">IBackgroundDownloadProperties</a></h5>
+                
+    <p>Required. A JSON object that contains properties
+  that are necessary to make the REST API call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method accepts
+  callback functions for onSuccess, onError, and onProgress to enable
+  your code to handle a successful, failed, and in-progress call to
+  the corresponding WL.download method, respectively.
+  The onSuccess callback is passed a response object that contains
+  content_type and stream properties, representing the downloaded
+  file&#39;s content type and file stream, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="backgroundupload" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> backgroundUpload<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.ibackgrounduploadproperties.html" class="tsd-signature-type">IBackgroundUploadProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2137</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Makes a call to upload a file to Microsoft SkyDrive.</p>
+
+
+
+
+    <p><strong>Important</strong>: WL.backgroundUpload is supported only for use with
+Windows Store apps using JavaScript. If you are writing a web app,
+use WL.upload instead.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.ibackgrounduploadproperties.html" class="tsd-signature-type">IBackgroundUploadProperties</a></h5>
+                
+    <p>Required. A JSON object that contains properties
+  that are necessary to make the REST API call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. Specifies a callback function that is
+  executed when the REST API call is complete. The callback function
+  takes the API response object as a parameter. The response object
+  exposes the data returned from Live Connect, or if an error occurs,
+  an error property that contains the error code.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. For Windows Store apps using
+  JavaScript, this object&#39;s then method accepts callback functions
+  for onSuccess, onError, and onProgress to enable your code to
+  handle a successful, failed, and in-progress call to the
+  corresponding WL.backgroudUpload method, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="canlogout" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canLogout<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2154</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Specifies whether the current user can be signed out of his or her
+Microsoft account.</p>
+
+
+
+
+    <p>For Windows Store apps using JavaScript, you can use this function to
+determine whether you should display a control to the user to enable
+him or her to sign out of his or her Microsoft account. If this
+function returns true, you should display the control. However, if
+this function returns false, you should not display this control, as
+attempting to sign out the user in this case will have no effect.</p>
+<p>For web apps, this function always returns true.</p>
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Returns true if the user can be signed out; otherwise,
+  returns false if the user can&#39;t be signed out.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="download" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> download<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.idownloadproperties.html" class="tsd-signature-type">IDownloadProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2172</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Makes a call to download a file from Microsoft SkyDrive.</p>
+
+
+
+
+    <p><strong>Important</strong>: WL.download is supported only for use with web apps.
+If you are writing a Windows Store app using JavaScript, use
+WL.backgroundDownload instead.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.idownloadproperties.html" class="tsd-signature-type">IDownloadProperties</a></h5>
+                
+    <p>Required. A JSON object that contains properties
+  that are necessary to make the REST API call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Specifies a callback function that is executed when
+  the REST API call is complete. The callback function takes the API
+  response object as a parameter. The response object exposes the
+  data that is returned from Live Connect, or, if an error occurs, an
+  error property that contains the error code.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onError parameter to enable your code to handle a failed call
+  to the corresponding WL.download method.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="filedialog" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> fileDialog<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.ifiledialogproperties.html" class="tsd-signature-type">IFileDialogProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2189</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Displays the Microsoft SkyDrive file picker, which enables
+JavaScript-based web apps to display a pre-built, consistent user
+interface that enables a user to select files to upload and download
+to and from his or her SkyDrive storage location.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.ifiledialogproperties.html" class="tsd-signature-type">IFileDialogProperties</a></h5>
+                
+    <p>Required. A JSON object containing properties for
+  displaying the button.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. A callback function that is executed after
+  the user finishes interacting with the SkyDrive file picker.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess and onError parameters to enable your code to handle
+  a successful and failed call to the corresponding WL.fileDialog
+  method, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="getloginstatus" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getLoginStatus<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(status: Microsoft.Live.ILoginStatus) =&gt; void</span>, force<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2215</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns the sign-in status of the current user. If the user is signed
+in and connected to your app, this function returns the session
+object. This is an asynchronous function that returns the user&#39;s
+status by contacting the Live Connect authentication web service.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(status: Microsoft.Live.ILoginStatus) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Returns the sign-in status of the current user. If
+  the user is signed in and connected to your app, this function
+  returns the session object. This is an asynchronous function that
+  returns the user&#39;s status by contacting the Live Connect
+  authentication web service.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>force?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. If set to &quot;true&quot;, the function contacts the
+  Live Connect authentication web service to determine the user&#39;s
+  status. If set to &quot;false&quot; (the default), the function can return
+  the user status that is currently in memory, if there is one. If
+  the user&#39;s status has already been retrieved, the library can
+  return the cached value. However, you can force the library to
+  retrieve current status by setting the force parameter to &quot;true&quot;.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess and onError parameters to enable your code to handle
+  a successful and failed call to the corresponding WL.getLoginStatus
+  method, respectively.
+  In the body of the onSuccess function, a status object is returned,
+  which contains the user&#39;s sign-in status and the session object.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="getsession" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSession<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.isession.html" class="tsd-signature-type">ISession</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2223</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the current session object synchronously, if a session
+object exists. For situations in which performance is critical, such
+as page loads, use the asynchronous WL.getLoginStatus method instead.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.isession.html" class="tsd-signature-type">ISession</a>
+    
+</p>
+    
+        <p>Returns the current session as a session object instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="init" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> init<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.iinitproperties.html" class="tsd-signature-type">IInitProperties</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2241</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Initializes the JavaScript library. An app must call this function on
+every page before making other function calls in the library. The app
+should call this function before making function calls that subscribe
+to events. If the JavaScript library has already been initialized on
+the page, calling this function succeeds silently; the client_id and
+redirect_uri parameters are not validated.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.iinitproperties.html" class="tsd-signature-type">IInitProperties</a></h5>
+                
+    <p>Required. A JSON object with initialization
+  properties.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess and onError parameters to enable your code to handle
+  a successful and failed call to the corresponding WL.init method,
+  respectively.
+  When the onSuccess callback is invoked, a login status object is
+  passed in as parameter that indicates the current user&#39;s login
+  status.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="login" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> login<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.iloginproperties.html" class="tsd-signature-type">ILoginProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(status: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2270</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Signs in the user or expands the user&#39;s list of scopes. Because this
+function can result in launching the consent page prompt, you should
+call it only in response to a user action, such as clicking a button.
+Otherwise, the user&#39;s web browser might block the popup.</p>
+
+
+
+
+    <p>Typically, this function is used by apps that define their own
+sign-in controls, or by apps that ask users to grant additional
+permissions during an activity. For example, to enable a user to post
+his or her status to Live Connect, your app may have to prompt the
+user for permission and call this function with an expanded scope.</p>
+<p>If you call this function when the user has already consented to the
+requested scope and is already signed in, the callback function is
+invoked immediately with the current session.
+This function logs errors to the web browser console.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.iloginproperties.html" class="tsd-signature-type">ILoginProperties</a></h5>
+                
+    <p>Required. A JSON object with login properties.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(status: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. Specifies a callback function to execute
+  when sign-in is complete. The callback function takes the status
+  object as a parameter. For a description of the status object, see
+  WL.getLoginStatus. If you do not specify a callback function, your
+  app can still get the sign-in callback info by listening for an
+  auth.sessionChange or auth.statusChange event.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess, onError, and onProgress parameters to enable your
+  code to handle a successful, failed, and in-progress call to the
+  corresponding WL.login method, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="logout" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> logout<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(status: Microsoft.Live.ILoginStatus) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2289</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Signs the user out of Live Connect and clears any user state that is
+maintained by the JavaScript library, such as cookies. If the user
+account is connected, this function logs out the user from the app,
+but not from the PC. This function is useful primarily for websites
+that do not use the sign-in control.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(status: Microsoft.Live.ILoginStatus) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. Specifies a callback function that is
+  executed when sign-out is complete. The callback function takes the
+  status object as a parameter. For a description of the status
+  object, see WL.getLoginStatus. If you do not specify a callback
+  function, your app can still get the sign-out callback info by
+  listening for an auth.sessionChange or auth.statusChange event.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess, onError, and onProgress parameters to enable your
+  code to handle a successful, failed, and in-progress call to the
+  corresponding WL.logout method, respectively.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="ui" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ui<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.iuiproperties.html" class="tsd-signature-type">IUIProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">() =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2307</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Displays either the Live Connect sign-in button or the Microsoft
+SkyDrive file picker button. The sign-in button either prompts the
+user for his or her Microsoft account credentials if he or she is not
+signed in or else signs out the user if he or she is signed in. The
+file picker button displays the SkyDrive file picker to help the user
+select files to upload or download to or from his or her SkyDrive
+storage location.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.iuiproperties.html" class="tsd-signature-type">IUIProperties</a></h5>
+                
+    <p>Required. A JSON object containing properties for
+  displaying the button.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">() =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. A callback function that is executed after
+  the sign-in button or file picker button is displayed.
+  Note: Do not use the callback parameter to run code after the user
+  finishes interacting with the sign-in button or file picker. Use a
+  combination of the onselected, onloggedin, onloggedout, and onerror
+  properties as previously described.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="upload" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> upload<span class="tsd-signature-symbols">(</span>properties<span class="tsd-signature-symbols">: </span><a href="microsoft.live.iuploadproperties.html" class="tsd-signature-type">IUploadProperties</a>, callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(response: any) =&gt; void</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in oft-live-connect/microsoft-live-connect.d.ts:2328</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Makes a call to upload a file to Microsoft SkyDrive.</p>
+
+
+
+
+    <p><strong>Important</strong>: WL.upload is supported only for use with web apps. If
+you are writing a Windows Store app using JavaScript, use
+WL.backgroundUpload instead.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>properties: <a href="microsoft.live.iuploadproperties.html" class="tsd-signature-type">IUploadProperties</a></h5>
+                
+    <p>Required. A JSON object that contains properties
+  that are necessary to make the REST API call.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback?: <span class="tsd-signature-type">(response: any) =&gt; void</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Optional. Specifies a callback function that is
+  executed when the REST API call is complete. The callback function
+  takes the API response object as a parameter. The response object
+  exposes the data returned from Live Connect, or if an error occurs,
+  an error property that contains the error code.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="microsoft.live.ipromise.html" class="tsd-signature-type">IPromise</a>
+    
+</p>
+    
+        <p>Returns a Promise object. This object&#39;s then method provides
+  the onSuccess, onError, and onProgress parameters to enable your
+  code to handle a successful, failed, and in-progress call to the
+  corresponding WL.upload method, respectively; however, the
+  onProgress parameter applies to newer web browsers such as Internet
+  Explorer 10 only.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/microsoft.html">Microsoft</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/microsoft.live.html">Microsoft.Live</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/winjs.html">WinJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.application.html">WinJS.Application</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.binding.html">WinJS.Binding</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.class.html">WinJS.Class</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.namespace.html">WinJS.Namespace</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.navigation.html">WinJS.Navigation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.resources.html">WinJS.Resources</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.ui.html">WinJS.UI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.ui.animation.html">WinJS.UI.Animation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.ui.fragments.html">WinJS.UI.Fragments</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.ui.pages.html">WinJS.UI.Pages</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.ui.tracktabbehavior.html">WinJS.UI.TrackTabBehavior</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.utilities.html">WinJS.Utilities</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/winjs.utilities.scheduler.html">WinJS.Utilities.Scheduler</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/windows.html">Windows</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.html">Windows.ApplicationModel</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.activation.html">Windows.ApplicationModel.Activation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.background.html">Windows.ApplicationModel.Background</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.contacts.html">Windows.ApplicationModel.Contacts</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.contacts.provider.html">Windows.ApplicationModel.Contacts.Provider</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.core.html">Windows.ApplicationModel.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.datatransfer.html">Windows.ApplicationModel.DataTransfer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.datatransfer.sharetarget.html">Windows.ApplicationModel.DataTransfer.ShareTarget</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.resources.html">Windows.ApplicationModel.Resources</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.resources.core.html">Windows.ApplicationModel.Resources.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.resources.management.html">Windows.ApplicationModel.Resources.Management</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.search.html">Windows.ApplicationModel.Search</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.applicationmodel.store.html">Windows.ApplicationModel.Store</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.html">Windows.Data</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.html.html">Windows.Data.Html</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.json.html">Windows.Data.Json</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.xml.html">Windows.Data.Xml</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.xml.dom.html">Windows.Data.Xml.Dom</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.data.xml.xsl.html">Windows.Data.Xml.Xsl</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.html">Windows.Devices</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.enumeration.html">Windows.Devices.Enumeration</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.enumeration.pnp.html">Windows.Devices.Enumeration.Pnp</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.geolocation.html">Windows.Devices.Geolocation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.input.html">Windows.Devices.Input</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.portable.html">Windows.Devices.Portable</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.printers.html">Windows.Devices.Printers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.printers.extensions.html">Windows.Devices.Printers.Extensions</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.sensors.html">Windows.Devices.Sensors</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.devices.sms.html">Windows.Devices.Sms</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.foundation.html">Windows.Foundation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.foundation.collections.html">Windows.Foundation.Collections</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.foundation.diagnostics.html">Windows.Foundation.Diagnostics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.foundation.metadata.html">Windows.Foundation.Metadata</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.globalization.html">Windows.Globalization</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.globalization.collation.html">Windows.Globalization.Collation</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.globalization.datetimeformatting.html">Windows.Globalization.DateTimeFormatting</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.globalization.fonts.html">Windows.Globalization.Fonts</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.globalization.numberformatting.html">Windows.Globalization.NumberFormatting</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.graphics.html">Windows.Graphics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.graphics.display.html">Windows.Graphics.Display</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.graphics.imaging.html">Windows.Graphics.Imaging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.graphics.printing.html">Windows.Graphics.Printing</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.graphics.printing.optiondetails.html">Windows.Graphics.Printing.OptionDetails</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.management.html">Windows.Management</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.management.core.html">Windows.Management.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.management.deployment.html">Windows.Management.Deployment</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.html">Windows.Media</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.capture.html">Windows.Media.Capture</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.devices.html">Windows.Media.Devices</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.mediaproperties.html">Windows.Media.MediaProperties</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.playto.html">Windows.Media.PlayTo</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.playlists.html">Windows.Media.Playlists</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.protection.html">Windows.Media.Protection</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.media.transcoding.html">Windows.Media.Transcoding</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.html">Windows.Networking</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.backgroundtransfer.html">Windows.Networking.BackgroundTransfer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.connectivity.html">Windows.Networking.Connectivity</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.networkoperators.html">Windows.Networking.NetworkOperators</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.proximity.html">Windows.Networking.Proximity</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.pushnotifications.html">Windows.Networking.PushNotifications</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.networking.sockets.html">Windows.Networking.Sockets</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.html">Windows.Security</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.authentication.html">Windows.Security.Authentication</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.authentication.onlineid.html">Windows.Security.Authentication.OnlineId</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.authentication.web.html">Windows.Security.Authentication.Web</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.credentials.html">Windows.Security.Credentials</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.credentials.ui.html">Windows.Security.Credentials.UI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.cryptography.html">Windows.Security.Cryptography</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.cryptography.certificates.html">Windows.Security.Cryptography.Certificates</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.cryptography.core.html">Windows.Security.Cryptography.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.cryptography.dataprotection.html">Windows.Security.Cryptography.DataProtection</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.security.exchangeactivesyncprovisioning.html">Windows.Security.ExchangeActiveSyncProvisioning</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.html">Windows.Storage</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.accesscache.html">Windows.Storage.AccessCache</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.bulkaccess.html">Windows.Storage.BulkAccess</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.compression.html">Windows.Storage.Compression</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.fileproperties.html">Windows.Storage.FileProperties</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.pickers.html">Windows.Storage.Pickers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.pickers.provider.html">Windows.Storage.Pickers.Provider</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.provider.html">Windows.Storage.Provider</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.search.html">Windows.Storage.Search</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.storage.streams.html">Windows.Storage.Streams</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.html">Windows.System</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.display.html">Windows.System.Display</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.profile.html">Windows.System.Profile</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.remotedesktop.html">Windows.System.RemoteDesktop</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.threading.html">Windows.System.Threading</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.threading.core.html">Windows.System.Threading.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.system.userprofile.html">Windows.System.UserProfile</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.html">Windows.UI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.applicationsettings.html">Windows.UI.ApplicationSettings</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.core.html">Windows.UI.Core</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.core.animationmetrics.html">Windows.UI.Core.AnimationMetrics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.input.html">Windows.UI.Input</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.input.inking.html">Windows.UI.Input.Inking</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.notifications.html">Windows.UI.Notifications</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.popups.html">Windows.UI.Popups</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.startscreen.html">Windows.UI.StartScreen</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.text.html">Windows.UI.Text</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.viewmanagement.html">Windows.UI.ViewManagement</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.ui.webui.html">Windows.UI.WebUI</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.web.html">Windows.Web</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.web.atompub.html">Windows.Web.AtomPub</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/windows.web.syndication.html">Windows.Web.Syndication</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.api.html" class="tsd-kind-icon">API</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#event" class="tsd-kind-icon">Event</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#api" class="tsd-kind-icon">api</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#backgrounddownload" class="tsd-kind-icon">backgroundDownload</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#backgroundupload" class="tsd-kind-icon">backgroundUpload</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#canlogout" class="tsd-kind-icon">canLogout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#download" class="tsd-kind-icon">download</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#filedialog" class="tsd-kind-icon">fileDialog</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#getloginstatus" class="tsd-kind-icon">getLoginStatus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#getsession" class="tsd-kind-icon">getSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#init" class="tsd-kind-icon">init</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#login" class="tsd-kind-icon">login</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#logout" class="tsd-kind-icon">logout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#ui" class="tsd-kind-icon">ui</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="microsoft.live.api.html#upload" class="tsd-kind-icon">upload</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iapiproperties.html" class="tsd-kind-icon">IAPIProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ialbum.html" class="tsd-kind-icon">IAlbum</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iaudio.html" class="tsd-kind-icon">IAudio</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ibackgrounddownloadproperties.html" class="tsd-kind-icon">IBackgroundDownloadProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ibackgrounduploadproperties.html" class="tsd-kind-icon">IBackgroundUploadProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.icalendar.html" class="tsd-kind-icon">ICalendar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.icomment.html" class="tsd-kind-icon">IComment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.icontact.html" class="tsd-kind-icon">IContact</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.idownloadproperties.html" class="tsd-kind-icon">IDownloadProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ierror.html" class="tsd-kind-icon">IError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ievent.html" class="tsd-kind-icon">IEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ieventapi.html" class="tsd-kind-icon">IEventAPI</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifile.html" class="tsd-kind-icon">IFile</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifiledialogproperties.html" class="tsd-kind-icon">IFileDialogProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifiledownloadlink.html" class="tsd-kind-icon">IFileDownloadLink</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifilepickerresult.html" class="tsd-kind-icon">IFilePickerResult</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifolder.html" class="tsd-kind-icon">IFolder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ifriend.html" class="tsd-kind-icon">IFriend</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iimageinfo.html" class="tsd-kind-icon">IImageInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iinitproperties.html" class="tsd-kind-icon">IInitProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ijserror.html" class="tsd-kind-icon">IJSError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ilocation.html" class="tsd-kind-icon">ILocation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iloginproperties.html" class="tsd-kind-icon">ILoginProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iloginstatus.html" class="tsd-kind-icon">ILoginStatus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewalbum.html" class="tsd-kind-icon">INewAlbum</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewaudio.html" class="tsd-kind-icon">INewAudio</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewcalendar.html" class="tsd-kind-icon">INewCalendar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewcalendarsubscription.html" class="tsd-kind-icon">INewCalendarSubscription</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewcomment.html" class="tsd-kind-icon">INewComment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewcontact.html" class="tsd-kind-icon">INewContact</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewevent.html" class="tsd-kind-icon">INewEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ineweventresponse.html" class="tsd-kind-icon">INewEventResponse</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewfileresponse.html" class="tsd-kind-icon">INewFileResponse</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.inewfolder.html" class="tsd-kind-icon">INewFolder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iobject.html" class="tsd-kind-icon">IObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iobjectcollection.html" class="tsd-kind-icon">IObjectCollection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ipermissions.html" class="tsd-kind-icon">IPermissions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iphoto.html" class="tsd-kind-icon">IPhoto</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ipostaladdress.html" class="tsd-kind-icon">IPostalAddress</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ipromise.html" class="tsd-kind-icon">IPromise</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.isearch.html" class="tsd-kind-icon">ISearch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.isession.html" class="tsd-kind-icon">ISession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.isharedwith.html" class="tsd-kind-icon">ISharedWith</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.isigninproperties.html" class="tsd-kind-icon">ISignInProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iskydrivepickerproperies.html" class="tsd-kind-icon">ISkyDrivePickerProperies</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.itag.html" class="tsd-kind-icon">ITag</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iuiproperties.html" class="tsd-kind-icon">IUIProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iuploadproperties.html" class="tsd-kind-icon">IUploadProperties</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iuser.html" class="tsd-kind-icon">IUser</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iuserinfo.html" class="tsd-kind-icon">IUserInfo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.ivideo.html" class="tsd-kind-icon">IVideo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="microsoft.live.iworkinfo.html" class="tsd-kind-icon">IWorkInfo</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,2210 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>b2PolygonShape | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    
+    <li>
+        <a href="../modules/box2d.html">Box2D</a>
+    </li>
+
+    <li>
+        <a href="../modules/box2d.collision.html">Collision</a>
+    </li>
+
+    <li>
+        <a href="../modules/box2d.collision.shapes.html">Shapes</a>
+    </li>
+
+    <li>
+        <a href="box2d.collision.shapes.b2polygonshape.html">b2PolygonShape</a>
+    </li>
+
+            </ul>
+            <h1>Class b2PolygonShape</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Convex polygon. The vertices must be in CCW order for a right-handed coordinate system with the z-axis coming out of the screen.</p>
+
+
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="box2d.collision.shapes.b2shape.html" class="tsd-signature-type">b2Shape</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        b2PolygonShape
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited"><a href="box2d.collision.shapes.b2polygonshape.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="box2d.collision.shapes.b2polygonshape.html#static-asarray" class="tsd-kind-icon">AsArray</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="box2d.collision.shapes.b2polygonshape.html#static-asbox" class="tsd-kind-icon">AsBox</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="box2d.collision.shapes.b2polygonshape.html#static-asedge" class="tsd-kind-icon">AsEdge</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="box2d.collision.shapes.b2polygonshape.html#static-asorientedbox" class="tsd-kind-icon">AsOrientedBox</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="box2d.collision.shapes.b2polygonshape.html#static-asvector" class="tsd-kind-icon">AsVector</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#computeaabb" class="tsd-kind-icon">ComputeAABB</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#computemass" class="tsd-kind-icon">ComputeMass</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#computesubmergedarea" class="tsd-kind-icon">ComputeSubmergedArea</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#copy" class="tsd-kind-icon">Copy</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#getnormals" class="tsd-kind-icon">GetNormals</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#getsupport" class="tsd-kind-icon">GetSupport</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#getsupportvertex" class="tsd-kind-icon">GetSupportVertex</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="box2d.collision.shapes.b2polygonshape.html#gettype" class="tsd-kind-icon">GetType</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#getvertexcount" class="tsd-kind-icon">GetVertexCount</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#getvertices" class="tsd-kind-icon">GetVertices</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#raycast" class="tsd-kind-icon">RayCast</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#set" class="tsd-kind-icon">Set</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#setasarray" class="tsd-kind-icon">SetAsArray</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#setasbox" class="tsd-kind-icon">SetAsBox</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#setasedge" class="tsd-kind-icon">SetAsEdge</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#setasorientedbox" class="tsd-kind-icon">SetAsOrientedBox</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="box2d.collision.shapes.b2polygonshape.html#setasvector" class="tsd-kind-icon">SetAsVector</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="box2d.collision.shapes.b2polygonshape.html#testpoint" class="tsd-kind-icon">TestPoint</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2shape.html" class="tsd-signature-type">b2Shape</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#constructor">constructor</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2460</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a new b2Shape.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2shape.html" class="tsd-signature-type">b2Shape</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-asarray" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> AsArray<span class="tsd-signature-symbols">(</span>vertices<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span>, vertexCount<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2258</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a b2PolygonShape from a vertices list. This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>vertices: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span></h5>
+                
+    <p>List of vertices to create the polygon shape from.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>vertexCount?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Number of vertices in the shape, default value is 0 and in the box2dweb.js code it is ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+        <p>Convex polygon shape.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-asbox" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> AsBox<span class="tsd-signature-symbols">(</span>hx<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, hy<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2266</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Build vertices to represent an axis-aligned box.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hx: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-width.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>hy: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-height.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+        <p>Box polygon shape.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-asedge" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> AsEdge<span class="tsd-signature-symbols">(</span>v1<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>, b2<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2274</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a single edge from two vertices.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>v1: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>First vertex.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>b2: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+        <p>Edge polygon shape.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-asorientedbox" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> AsOrientedBox<span class="tsd-signature-symbols">(</span>hx<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, hy<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, center<span class="tsd-signature-symbols">?: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>, angle<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2284</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Build vertices to represent an oriented box.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hx: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-width.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>hy: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-height.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>center?: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The center of the box in local coordinates, default is null (no center?)</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>angle?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The rotation of the box in local coordinates, default is 0.0.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+        <p>Oriented box shape.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="static-asvector" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> AsVector<span class="tsd-signature-symbols">(</span>vertices<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span>, vertexCount<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2292</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>vertices: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span></h5>
+                
+    <p>List of vertices to create the polygon shape from.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>vertexCount?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of vertices, default is 0 and in the box2dweb.js code it is ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+        <p>Convex polygon shape.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="computeaabb" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ComputeAABB<span class="tsd-signature-symbols">(</span>aabb<span class="tsd-signature-symbols">: </span><a href="box2d.collision.b2aabb.html" class="tsd-signature-type">b2AABB</a>, xf<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#computeaabb">ComputeAABB</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2299</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Given a transform, compute the associated axis aligned bounding box for this shape.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>aabb: <a href="box2d.collision.b2aabb.html" class="tsd-signature-type">b2AABB</a></h5>
+                
+    <p>Calculated AABB, this argument is <code>out</code>.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>xf: <a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a></h5>
+                
+    <p>Transform to calculate the AABB.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="computemass" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ComputeMass<span class="tsd-signature-symbols">(</span>massData<span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2massdata.html" class="tsd-signature-type">b2MassData</a>, density<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#computemass">ComputeMass</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2305</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Compute the mass properties of this shape using its dimensions and density. The inertia tensor is computed about the local origin, not the centroid.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>massData: <a href="box2d.collision.shapes.b2massdata.html" class="tsd-signature-type">b2MassData</a></h5>
+                
+    <p>Calculate the mass, this argument is <code>out</code>.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>density: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="computesubmergedarea" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ComputeSubmergedArea<span class="tsd-signature-symbols">(</span>normal<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>, offset<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, xf<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a>, c<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#computesubmergedarea">ComputeSubmergedArea</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2314</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Compute the volume and centroid of this shape intersected with a half plane</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>normal: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>The surface normal.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>offset: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The surface offset along the normal.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>xf: <a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a></h5>
+                
+    <p>The shape transform.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>c: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>The centroid, this argument is <code>out</code>.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="copy" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> Copy<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#copy">Copy</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2323</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Clone the shape.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-signature-type">b2PolygonShape</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getnormals" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetNormals<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2329</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the edge normal vectors. There is one for each vertex.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+        <p>List of edge normal vectors for each vertex.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsupport" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetSupport<span class="tsd-signature-symbols">(</span>d<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2336</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the supporting vertex index in the given direction.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>d: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>Direction to look.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+        <p>Vertex index supporting the direction.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getsupportvertex" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetSupportVertex<span class="tsd-signature-symbols">(</span>d<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2343</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the supporting vertex in the given direction.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>d: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>Direciton to look.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>
+    
+</p>
+    
+        <p>Vertex supporting the direction.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="gettype" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetType<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#gettype">GetType</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2497</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the type of this shape. You can use this to down cast to the concrete shape.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getvertexcount" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetVertexCount<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2349</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the vertex count.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">number</span>
+    
+</p>
+    
+        <p>Vertex count.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="getvertices" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> GetVertices<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2355</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the vertices in local coordinates.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span>
+    
+</p>
+    
+        <p>List of the vertices in local coordinates.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="raycast" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> RayCast<span class="tsd-signature-symbols">(</span>output<span class="tsd-signature-symbols">: </span><a href="box2d.collision.b2raycastoutput.html" class="tsd-signature-type">b2RayCastOutput</a>, input<span class="tsd-signature-symbols">: </span><a href="box2d.collision.b2raycastinput.html" class="tsd-signature-type">b2RayCastInput</a>, transform<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#raycast">RayCast</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2364</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Cast a ray against this shape.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>output: <a href="box2d.collision.b2raycastoutput.html" class="tsd-signature-type">b2RayCastOutput</a></h5>
+                
+    <p>Ray cast results, this argument is <code>out</code>.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>input: <a href="box2d.collision.b2raycastinput.html" class="tsd-signature-type">b2RayCastInput</a></h5>
+                
+    <p>Ray cast input parameters.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>transform: <a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a></h5>
+                
+    <p>The transform to be applied to the shape.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>True if the ray hits the shape, otherwise false.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="set" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> Set<span class="tsd-signature-symbols">(</span>other<span class="tsd-signature-symbols">: </span><a href="box2d.collision.shapes.b2shape.html" class="tsd-signature-type">b2Shape</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#set">Set</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2373</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Set the shape values from another shape.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>other: <a href="box2d.collision.shapes.b2shape.html" class="tsd-signature-type">b2Shape</a></h5>
+                
+    <p>The other shape to copy values from.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setasarray" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SetAsArray<span class="tsd-signature-symbols">(</span>vertices<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span>, vertexCount<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2381</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Copy vertices. This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>vertices: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">[]</span></h5>
+                
+    <p>List of vertices to create the polygon shape from.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>vertexCount?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Number of vertices in the shape, default value is 0 and in the box2dweb.js code it is ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setasbox" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SetAsBox<span class="tsd-signature-symbols">(</span>hx<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, hy<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2389</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Build vertices to represent an axis-aligned box.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hx: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-width.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>hy: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-height.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setasedge" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SetAsEdge<span class="tsd-signature-symbols">(</span>v1<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>, b2<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2397</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a single edge from two vertices.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>v1: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>First vertex.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>b2: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setasorientedbox" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SetAsOrientedBox<span class="tsd-signature-symbols">(</span>hx<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, hy<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, center<span class="tsd-signature-symbols">?: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a>, angle<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2407</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Build vertices to represent an oriented box.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hx: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-width.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>hy: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The half-height.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>center?: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The center of the box in local coordinates, default is null (no center?)</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>angle?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The rotation of the box in local coordinates, default is 0.0.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="setasvector" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> SetAsVector<span class="tsd-signature-symbols">(</span>vertices<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Array&lt;any&gt;</span>, vertexCount<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2415</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>vertices: <span class="tsd-signature-type">Array&lt;any&gt;</span></h5>
+                
+    <p>List of vertices to create the polygon shape from.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>vertexCount?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The number of vertices, default is 0 and in the box2dweb.js code it is ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="testpoint" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> TestPoint<span class="tsd-signature-symbols">(</span>xf<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a>, p<span class="tsd-signature-symbols">: </span><a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="box2d.collision.shapes.b2shape.html">b2Shape</a>.<a href="box2d.collision.shapes.b2shape.html#testpoint">TestPoint</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in box2dweb.d.ts:2423</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Test a point for containment in this shape. This only works for convex shapes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>xf: <a href="box2d.common.math.b2transform.html" class="tsd-signature-type">b2Transform</a></h5>
+                
+    <p>Shape world transform.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>p: <a href="box2d.common.math.b2vec2.html" class="tsd-signature-type">b2Vec2</a></h5>
+                
+    <p>Point to test against, in world coordinates.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>True if the point is in this shape, otherwise false.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/box2d.html">Box2D</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.collision.html">Box2D.Collision</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.collision.shapes.html">Box2D.Collision.Shapes</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.common.html">Box2D.Common</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.common.math.html">Box2D.Common.Math</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.dynamics.html">Box2D.Dynamics</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.dynamics.contacts.html">Box2D.Dynamics.Contacts</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.dynamics.controllers.html">Box2D.Dynamics.Controllers</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/box2d.dynamics.joints.html">Box2D.Dynamics.Joints</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2circleshape.html" class="tsd-kind-icon">b2CircleShape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2edgechaindef.html" class="tsd-kind-icon">b2EdgeChainDef</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2edgeshape.html" class="tsd-kind-icon">b2EdgeShape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2massdata.html" class="tsd-kind-icon">b2MassData</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2polygonshape.html" class="tsd-kind-icon">b2PolygonShape</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#static-asarray" class="tsd-kind-icon">AsArray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#static-asbox" class="tsd-kind-icon">AsBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#static-asedge" class="tsd-kind-icon">AsEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#static-asorientedbox" class="tsd-kind-icon">AsOrientedBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#static-asvector" class="tsd-kind-icon">AsVector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#computeaabb" class="tsd-kind-icon">ComputeAABB</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#computemass" class="tsd-kind-icon">ComputeMass</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#computesubmergedarea" class="tsd-kind-icon">ComputeSubmergedArea</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#copy" class="tsd-kind-icon">Copy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#getnormals" class="tsd-kind-icon">GetNormals</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#getsupport" class="tsd-kind-icon">GetSupport</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#getsupportvertex" class="tsd-kind-icon">GetSupportVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#gettype" class="tsd-kind-icon">GetType</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#getvertexcount" class="tsd-kind-icon">GetVertexCount</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#getvertices" class="tsd-kind-icon">GetVertices</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#raycast" class="tsd-kind-icon">RayCast</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#set" class="tsd-kind-icon">Set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#setasarray" class="tsd-kind-icon">SetAsArray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#setasbox" class="tsd-kind-icon">SetAsBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#setasedge" class="tsd-kind-icon">SetAsEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#setasorientedbox" class="tsd-kind-icon">SetAsOrientedBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#setasvector" class="tsd-kind-icon">SetAsVector</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="box2d.collision.shapes.b2polygonshape.html#testpoint" class="tsd-kind-icon">TestPoint</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="box2d.collision.shapes.b2shape.html" class="tsd-kind-icon">b2Shape</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

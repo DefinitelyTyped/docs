@@ -1,0 +1,672 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TimeSeries | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/smoothie.html">smoothie</a>
+    </li>
+
+    <li>
+        <a href="smoothie.timeseries.html">TimeSeries</a>
+    </li>
+
+            </ul>
+            <h1>Class TimeSeries</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="smoothie.timeseries.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="smoothie.timeseries.html#append" class="tsd-kind-icon">append</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="smoothie.timeseries.html#dropolddata" class="tsd-kind-icon">dropOldData</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="smoothie.timeseries.html#resetbounds" class="tsd-kind-icon">resetBounds</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">?: </span><a href="../interfaces/smoothie.itimeseriesoptions.html" class="tsd-signature-type">ITimeSeriesOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="smoothie.timeseries.html" class="tsd-signature-type">TimeSeries</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in hie/smoothie.d.ts:41</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Initialises a new <code>TimeSeries</code> with optional data options.</p>
+
+
+
+
+    <p>Options are of the form (defaults shown):</p>
+<pre>
+{
+  resetBounds: true,        // enables/disables automatic scaling of the y-axis
+  resetBoundsInterval: 3000 // the period between scaling calculations, in millis
+}
+</pre>
+
+<p>Presentation options for TimeSeries are specified as an argument to <code>SmoothieChart.addTimeSeries</code>.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options?: <a href="../interfaces/smoothie.itimeseriesoptions.html" class="tsd-signature-type">ITimeSeriesOptions</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="smoothie.timeseries.html" class="tsd-signature-type">TimeSeries</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="append" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> append<span class="tsd-signature-symbols">(</span>timestamp<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, sumRepeatedTimeStampValues<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in hie/smoothie.d.ts:58</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Adds a new data point to the <code>TimeSeries</code>, preserving chronological order.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>timestamp: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>the position, in time, of this data point</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>the value of this data point</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sumRepeatedTimeStampValues?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if <code>timestamp</code> has an exact match in the series, this flag controls
+whether it is replaced, or the values summed (defaults to false.)</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="dropolddata" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> dropOldData<span class="tsd-signature-symbols">(</span>oldestValidTime<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, maxDataSetLength<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in hie/smoothie.d.ts:60</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>oldestValidTime: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>maxDataSetLength: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="resetbounds" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resetBounds<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in hie/smoothie.d.ts:48</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Recalculate the min/max values for this <code>TimeSeries</code> object.</p>
+
+
+
+
+    <p>This causes the graph to scale itself in the y-axis.</p>
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/nodejs.html">NodeJS</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/assert.html">assert</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/buffer.html">buffer</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/child_process.html">child_process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/cluster.html">cluster</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/crypto.html">crypto</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dgram.html">dgram</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/dns.html">dns</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/domain.html">domain</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/events.html">events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/fs.html">fs</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/http.html">http</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/https.html">https</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/net.html">net</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/os.html">os</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/path.html">path</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/punycode.html">punycode</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/querystring.html">querystring</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/readline.html">readline</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/repl.html">repl</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-dynamic-module">
+    <a href="../modules/smoothie.html">smoothie</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/stream.html">stream</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/string_decoder.html">string_decoder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tls.html">tls</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/tty.html">tty</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/url.html">url</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/util.html">util</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/vm.html">vm</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/zlib.html">zlib</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.ichartoptions.html" class="tsd-kind-icon">IChartOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.igridoptions.html" class="tsd-kind-icon">IGridOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.ihorizontalline.html" class="tsd-kind-icon">IHorizontalLine</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.ilabeloptions.html" class="tsd-kind-icon">ILabelOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.irange.html" class="tsd-kind-icon">IRange</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.itimeseriesoptions.html" class="tsd-kind-icon">ITimeSeriesOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-dynamic-module">
+                    <a href="../interfaces/smoothie.itimeseriespresentationoptions.html" class="tsd-kind-icon">ITimeSeriesPresentationOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-dynamic-module">
+                    <a href="smoothie.smoothiechart.html" class="tsd-kind-icon">SmoothieChart</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-dynamic-module">
+                    <a href="smoothie.timeseries.html" class="tsd-kind-icon">TimeSeries</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="smoothie.timeseries.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="smoothie.timeseries.html#append" class="tsd-kind-icon">append</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="smoothie.timeseries.html#dropolddata" class="tsd-kind-icon">dropOldData</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="smoothie.timeseries.html#resetbounds" class="tsd-kind-icon">resetBounds</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,2232 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoogleApiYouTubeActivityResource | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="googleapiyoutubeactivityresource.html">GoogleApiYouTubeActivityResource</a>
+    </li>
+
+            </ul>
+            <h1>Interface GoogleApiYouTubeActivityResource</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="googleapiyoutubeactivityresource.html#contentdetails" class="tsd-kind-icon">contentDetails</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="googleapiyoutubeactivityresource.html#etag" class="tsd-kind-icon">etag</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="googleapiyoutubeactivityresource.html#id" class="tsd-kind-icon">id</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="googleapiyoutubeactivityresource.html#kind" class="tsd-kind-icon">kind</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="googleapiyoutubeactivityresource.html#snippet" class="tsd-kind-icon">snippet</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="contentdetails" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ upload: { videoId: string; }; like: { resourceId: { kind: string; videoId: string; }; }; favorite: { resourceId: { kind: string; videoId: string; }; }; comment: { resourceId: { kind: string; videoId: string; channelId: string; }; }; subscription: { resourceId: { kind: string; channelId: string; }; }; playlistItem: { resourceId: { kind: string; videoId: string; }; playlistId: string; playlistItemId: string; }; recommendation: { resourceId: { kind: string; videoId: string; channelId: string; }; reason: string; seedResourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; }; bulletin: { resourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; }; social: { type: string; resourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; author: string; referenceUrl: string; imageUrl: string; }; channelItem: { resourceId: {}; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:797</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The contentDetails object contains information about the content associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.bulletin.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> bulletin.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; channelId: string; playlistId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:963</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the resource associated with a bulletin post.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.channelitem.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> channelItem.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{}</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1031</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the resource that was added to the channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.comment.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> comment.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; channelId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:850</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the resource associated with the comment.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.bulletin" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.bulletin<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:959</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.channelitem" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.channelItem<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: {}; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1027</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The channelItem object contains details about a resource that was added to a channel. This property is only present if the snippet.type is channelItem.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.comment" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.comment<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; channelId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:846</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The comment object contains information about a resource that received a comment. This property is only present if the snippet.type is comment.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.favorite" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.favorite<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:828</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The favorite object contains information about a video that was marked as a favorite video. This property is only present if the snippet.type is favorite.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.like" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.like<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:810</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The like object contains information about a resource that received a positive (like) rating. This property is only present if the snippet.type is like.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.playlistitem" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.playlistItem<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; }; playlistId: string; playlistItemId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:886</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The playlistItem object contains information about an item that was added to a playlist. This property is only present if the snippet.type is playlistItem.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.recommendation" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.recommendation<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; videoId: string; channelId: string; }; reason: string; seedResourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:912</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The recommendation object contains information about a recommended resource. This property is only present if the snippet.type is recommendation.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.social" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.social<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ type: string; resourceId: { kind: string; videoId: string; channelId: string; playlistId: string; }; author: string; referenceUrl: string; imageUrl: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:985</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The social object contains details about a social network post. This property is only present if the snippet.type is social.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.subscription" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.subscription<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ resourceId: { kind: string; channelId: string; }; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:868</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The subscription object contains information about a channel that a user subscribed to. This property is only present if the snippet.type is subscription.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.contentdetails.upload" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> contentDetails.upload<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ videoId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:801</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The upload object contains information about the uploaded video. This property is only present if the snippet.type is upload.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.favorite.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> favorite.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:832</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the resource that was marked as a favorite.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.like.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> like.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:814</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the rated resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.playlistitem.playlistid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> playlistItem.playlistId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:903</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The value that YouTube uses to uniquely identify the playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.playlistitem.playlistitemid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> playlistItem.playlistItemId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:907</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The value that YouTube uses to uniquely identify the item in the playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.playlistitem.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> playlistItem.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:890</li>
+            
+        </ul>
+    
+</aside>
+
+    <p> The resourceId object contains information that identifies the resource that was added to the playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.recommendation.reason" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> recommendation.reason<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:933</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The reason that the resource is recommended to the user.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.recommendation.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> recommendation.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; channelId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:916</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the recommended resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.recommendation.seedresourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> recommendation.seedResourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; channelId: string; playlistId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:937</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The seedResourceId object contains information about the resource that caused the recommendation.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:928</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel, if the recommended resource is a channel. This property is only present if the resourceId.kind is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:975</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel featured in a bulletin post, if the post refers to a channel. This property will only be present if the value of the bulletin.resourceId.kind property is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1005</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel featured in a social network post, if the post refers to a channel. This property will only be present if the value of the social.resourceId.kind property is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:862</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel associated with a comment. This property is only present if the resourceId.kind is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:880</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel that the user subscribed to. This property is only present if the resourceId.kind is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:920</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:836</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:894</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:854</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:997</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:818</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:967</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:876</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.playlistid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.playlistId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:979</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the playlist featured in a bulletin post, if the post refers to a playlist. This property will only be present if the value of the bulletin.resourceId.kind property is youtube#playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.playlistid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.playlistId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1009</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the playlist featured in a social network post, if the post refers to a playlist. This property will only be present if the value of the social.resourceId.kind property is youtube#playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:840</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the favorite video. This property is only present if the resourceId.kind is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:822</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video, if the rated resource is a video. This property is only present if the resourceId.kind is youtube#video</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:924</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video, if the recommended resource is a video. This property is only present if the resourceId.kind is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:971</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video featured in a bulletin post, if the post refers to a video. This property will only be present if the value of the bulletin.resourceId.kind property is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:898</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video that was added to the playlist. This property is only present if the resourceId.kind is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1001</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video featured in a social network post, if the post refers to a video. This property will only be present if the value of the social.resourceId.kind property is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.resourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:858</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video associated with a comment. This property is only present if the resourceId.kind is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.seedresourceid.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> seedResourceId.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:949</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel, if the recommendation was caused by a particular channel. This property is only present if the seedResourceId.kind is youtube#channel.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.seedresourceid.kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> seedResourceId.kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:941</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.seedresourceid.playlistid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> seedResourceId.playlistId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:953</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the playlist, if the recommendation was caused by a particular playlist. This property is only present if the seedResourceId.kind is youtube#playlist.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.seedresourceid.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> seedResourceId.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:945</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the video, if the recommendation was caused by a particular video. This property is only present if the seedResourceId.kind is youtube#video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.social.author" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> social.author<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1014</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The author of the social network post.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.social.imageurl" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> social.imageUrl<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1022</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>An image of the posts author.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.social.referenceurl" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> social.referenceUrl<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:1018</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The URL of the social network post.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.social.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> social.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; videoId: string; channelId: string; playlistId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:993</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object encapsulates information that identifies the resource associated with a social network post.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.social.type" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> social.type<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:989</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The name of the social network.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.subscription.resourceid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> subscription.resourceId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ kind: string; channelId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:872</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The resourceId object contains information that identifies the resource that the user subscribed to.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="contentdetails.upload.videoid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> upload.videoId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:805</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the uploaded video.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="etag" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> etag<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:752</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ETag of the activity resource.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="id" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> id<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:756</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="kind" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> kind<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:748</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of the API resource. For activity resources, the value will be youtube#activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="snippet" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">{ publishedAt: string; channelId: string; title: string; description: string; thumbnails: GoogleApiYouTubeThumbnailItemResource[]; channelTitle: string; type: string; groupId: string; }</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:760</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The snippet object contains basic details about the activity, including the activitys type and group ID.</p>
+
+
+
+
+
+
+    
+
+    
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.channelid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.channelId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:768</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The ID that YouTube uses to uniquely identify the channel associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.channeltitle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.channelTitle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:784</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Channel title for the channel responsible for this activity</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.description" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.description<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:776</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The description of the resource primarily associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.groupid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.groupId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:792</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The group ID associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.publishedat" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.publishedAt<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:764</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The date and time that the activity occurred. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.thumbnails" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.thumbnails<span class="tsd-signature-symbols">:</span> <a href="googleapiyoutubethumbnailitemresource.html" class="tsd-signature-type">GoogleApiYouTubeThumbnailItemResource</a><span class="tsd-signature-symbols">[]</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:780</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>A map of thumbnail images associated with the resource that is primarily associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.title" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.title<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:772</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The title of the resource primarily associated with the activity.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+            
+                <section class="tsd-member tsd-kind-property tsd-parent-kind-property tsd-is-not-exported">
+    <a name="snippet.snippet.type" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> snippet.type<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in youtube/gapi.youtube.d.ts:788</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The type of activity that the resource describes.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+            
+        
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/gapi.html">gapi</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/gapi.auth.html">gapi.auth</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/gapi.client.html">gapi.client</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/gapi.client.youtube.html">gapi.client.youtube</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

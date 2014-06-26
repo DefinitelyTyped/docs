@@ -1,0 +1,368 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>http | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="http.html">http</a>
+    </li>
+
+            </ul>
+            <h1>Dynamic module http</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Variables</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="http.html#defaultjsonpcallbackparam" class="tsd-kind-icon">defaultJSONPCallbackParam</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="http.html#get" class="tsd-kind-icon">get</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="http.html#jsonp" class="tsd-kind-icon">jsonp</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="http.html#post" class="tsd-kind-icon">post</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Variables</h2>
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="defaultjsonpcallbackparam" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">defaultJSONPCallbackParam<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:136</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>the default is &#39;callback&#39;</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="get" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">get<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(url: string, query: Object) =&gt; JQueryPromise&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:140</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Performs an HTTP GET request on the specified URL. This function returns a promise which resolves with the returned response data. You can optionally return a query object whose properties will be used to construct a query string.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="jsonp" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">jsonp<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(url: string, query: Object, callbackParam: string) =&gt; JQueryPromise&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:144</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Performs a JSONP request to the specified url. You can optionally include a query object whose properties will be used to construct the query string. Also, you can pass the name of the API&#39;s callback parameter. If none is specified, it defaults to &quot;callback&quot;. This api returns a promise. If you are using a callback parameter other than &quot;callback&quot; consistently throughout your application, then you may want to set the http module&#39;s defaultJSONPCallbackParam so that you don&#39;t need to specify it on every request.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="post" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">post<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(url: string, data: Object) =&gt; JQueryPromise&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:148</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Performs an HTTP POST request on the specified URL with the supplied data. The data object is converted to JSON and the request is sent with an application/json content type. Thie function returns a promise which resolves with the returned response data.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="app.html">app</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="composition.html">composition</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-dynamic-module">
+    <a href="http.html">http</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="jquery.html">jquery</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="knockout.html">knockout</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="modaldialog.html">modalDialog</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="plugins-router.html">plugins/router</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="system.html">system</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewengine.html">viewEngine</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewlocator.html">viewLocator</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewmodel.html">viewModel</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewmodelbinder.html">viewModelBinder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="widget.html">widget</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="http.html#defaultjsonpcallbackparam" class="tsd-kind-icon">defaultJSONPCallbackParam</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="http.html#get" class="tsd-kind-icon">get</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="http.html#jsonp" class="tsd-kind-icon">jsonp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="http.html#post" class="tsd-kind-icon">post</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,1028 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PannerNode | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="pannernode.html">PannerNode</a>
+    </li>
+
+            </ul>
+            <h1>Interface PannerNode</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>This interface represents a processing node which positions / spatializes an incoming audio stream in three-dimensional space. The spatialization is in relation to the AudioContext&#39;s AudioListener (listener attribute).</p>
+
+
+
+
+    <pre><code>numberOfInputs  : 1
+numberOfOutputs : 1
+</code></pre><p>The audio stream from the input will be either mono or stereo, depending on the connection(s) to the input.</p>
+<p>The output of this node is hard-coded to stereo (2 channels) and currently cannot be configured.</p>
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="audionode.html" class="tsd-signature-type">AudioNode</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        PannerNode
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#coneinnerangle" class="tsd-kind-icon">coneInnerAngle</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#coneouterangle" class="tsd-kind-icon">coneOuterAngle</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#coneoutergain" class="tsd-kind-icon">coneOuterGain</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="pannernode.html#context" class="tsd-kind-icon">context</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#distancemodel" class="tsd-kind-icon">distanceModel</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#maxdistance" class="tsd-kind-icon">maxDistance</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="pannernode.html#numberofinputs" class="tsd-kind-icon">numberOfInputs</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="pannernode.html#numberofoutputs" class="tsd-kind-icon">numberOfOutputs</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#panningmodel" class="tsd-kind-icon">panningModel</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#refdistance" class="tsd-kind-icon">refDistance</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#rollofffactor" class="tsd-kind-icon">rolloffFactor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-not-exported">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="pannernode.html#connect" class="tsd-kind-icon">connect</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="pannernode.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#setorientation" class="tsd-kind-icon">setOrientation</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#setposition" class="tsd-kind-icon">setPosition</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported"><a href="pannernode.html#setvelocity" class="tsd-kind-icon">setVelocity</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="coneinnerangle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> coneInnerAngle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:726</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>A parameter for directional audio sources, this is an angle, inside of which there will be no volume reduction. The default value is 360.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="coneouterangle" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> coneOuterAngle<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:731</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>A parameter for directional audio sources, this is an angle, outside of which the volume will be reduced to a constant value of coneOuterGain. The default value is 360.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="coneoutergain" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> coneOuterGain<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:736</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>A parameter for directional audio sources, this is the amount of volume reduction outside of the coneOuterAngle. The default value is 0.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+    <a name="context" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> context<span class="tsd-signature-symbols">:</span> <a href="../globals.html#audiocontext" class="tsd-signature-type">AudioContext</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#context">context</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:260</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The AudioContext which owns this AudioNode.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="distancemodel" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> distanceModel<span class="tsd-signature-symbols">:</span> <a href="../enums/distancemodeltype.html" class="tsd-signature-type">DistanceModelType</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:706</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Determines which algorithm will be used to reduce the volume of an audio source as it moves away from the listener. The default is &quot;inverse&quot;.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="maxdistance" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> maxDistance<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:716</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The maximum distance between source and listener, after which the volume will not be reduced any further. The default value is 10000.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+    <a name="numberofinputs" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> numberOfInputs<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#numberofinputs">numberOfInputs</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:265</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The number of inputs feeding into the AudioNode. This will be 0 for an AudioSourceNode.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+    <a name="numberofoutputs" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> numberOfOutputs<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#numberofoutputs">numberOfOutputs</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:270</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The number of outputs coming out of the AudioNode. This will be 0 for an AudioDestinationNode.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="panningmodel" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> panningModel<span class="tsd-signature-symbols">:</span> <a href="../enums/panningmodeltype.html" class="tsd-signature-type">PanningModelType</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:668</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Determines which spatialization algorithm will be used to position the audio in 3D space. The default is &quot;HRTF&quot;.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="refdistance" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> refDistance<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:711</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>A reference distance for reducing volume as source move further from the listener. The default value is 1.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="rollofffactor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> rolloffFactor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:721</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Describes how quickly the volume is reduced as source moves away from listener. The default value is 1.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-not-exported">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+    <a name="connect" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> connect<span class="tsd-signature-symbols">(</span>destination<span class="tsd-signature-symbols">: </span><a href="audionode.html" class="tsd-signature-type">AudioNode</a>, output<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span>, input<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#connect">connect</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:226</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Connects the AudioNode to another AudioNode.</p>
+
+
+
+
+    <p> It is possible to connect an AudioNode output to more than one input with multiple calls to connect(). Thus, &quot;fanout&quot; is supported.</p>
+<p> It is possible to connect an AudioNode to another AudioNode which creates a cycle. In other words, an AudioNode may connect to another AudioNode, which in turn connects back to the first AudioNode. This is allowed only if there is at least one DelayNode in the cycle or an exception will be thrown.</p>
+<p>There can only be one connection between a given output of one specific node and a given input of another specific node. Multiple connections with the same termini are ignored. For example:</p>
+<pre><code>nodeA.<span class="hljs-keyword">connect</span>(nodeB);
+nodeA.<span class="hljs-keyword">connect</span>(nodeB);
+</code></pre><p>will have the same effect as</p>
+<pre><code>nodeA.<span class="hljs-keyword">connect</span>(nodeB);
+</code></pre>
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>destination: <a href="audionode.html" class="tsd-signature-type">AudioNode</a></h5>
+                
+    <p>the AudioNode to connect to.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>output?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>an index describing which output of the AudioNode from which to connect. An out-of-bound value throws an exception.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>input?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>an index describing which input of the destination AudioNode to connect to. An out-of-bound value throws an exception.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> connect<span class="tsd-signature-symbols">(</span>destination<span class="tsd-signature-symbols">: </span><a href="audioparam.html" class="tsd-signature-type">AudioParam</a>, output<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#connect">connect</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:249</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Connects the AudioNode to an AudioParam, controlling the parameter value with an audio-rate signal.</p>
+
+
+
+
+    <p>It is possible to connect an AudioNode output to more than one AudioParam with multiple calls to connect(). Thus, &quot;fanout&quot; is supported.</p>
+<p>It is possible to connect more than one AudioNode output to a single AudioParam with multiple calls to connect(). Thus, &quot;fanin&quot; is supported.</p>
+<p>An AudioParam will take the rendered audio data from any AudioNode output connected to it and convert it to mono by down-mixing if it is not already mono, then mix it together with other such outputs and finally will mix with the intrinsic parameter value (the value the AudioParam would normally have without any audio connections), including any timeline changes scheduled for the parameter.</p>
+<p>There can only be one connection between a given output of one specific node and a specific AudioParam. Multiple connections with the same termini are ignored. For example:</p>
+<pre><code>nodeA.<span class="hljs-keyword">connect</span>(param);
+nodeA.<span class="hljs-keyword">connect</span>(param);
+</code></pre><p>will have the same effect as</p>
+<pre><code>nodeA.<span class="hljs-keyword">connect</span>(param);
+</code></pre>
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>destination: <a href="audioparam.html" class="tsd-signature-type">AudioParam</a></h5>
+                
+    <p>the AudioParam to connect to.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>output?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>an index describing which output of the AudioNode from which to connect. An out-of-bound value throws an exception.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+    <a name="disconnect" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> disconnect<span class="tsd-signature-symbols">(</span>output<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="audionode.html">AudioNode</a>.<a href="audionode.html#disconnect">disconnect</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:255</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Disconnects an AudioNode&#39;s output.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>output?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>an index describing which output of the AudioNode to disconnect. An out-of-bound value throws an exception.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="setorientation" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setOrientation<span class="tsd-signature-symbols">(</span>x<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:690</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Describes which direction the audio source is pointing in the 3D cartesian coordinate space. Depending on how directional the sound is (controlled by the cone attributes), a sound pointing away from the listener can be very quiet or completely silent.</p>
+
+
+
+
+    <p>The default value is (1,0,0)</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>x: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>y: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>z: <span class="tsd-signature-type">number</span></h5>
+                
+    
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="setposition" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setPosition<span class="tsd-signature-symbols">(</span>x<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:679</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the position of the audio source relative to the listener attribute. A 3D cartesian coordinate system is used.</p>
+
+
+
+
+    <p>The default value is (0,0,0)</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>x: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>the x coordinates in 3D space.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>y: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>the y coordinates in 3D space.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>z: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>the z coordinates in 3D space.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-not-exported">
+    <a name="setvelocity" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setVelocity<span class="tsd-signature-symbols">(</span>x<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in waa.d.ts:701</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the velocity vector of the audio source. This vector controls both the direction of travel and the speed in 3D space. This velocity relative to the listener&#39;s velocity is used to determine how much doppler shift (pitch change) to apply. The units used for this vector is meters / second and is independent of the units used for position and orientation vectors.</p>
+
+
+
+
+    <p>The default value is (0,0,0)</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>x: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>a direction vector indicating direction of travel and intensity.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>y: <span class="tsd-signature-type">number</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>z: <span class="tsd-signature-type">number</span></h5>
+                
+    
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

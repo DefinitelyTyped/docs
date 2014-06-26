@@ -1,0 +1,1846 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DateBox | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    
+    <li>
+        <a href="../modules/devexpress.html">DevExpress</a>
+    </li>
+
+    <li>
+        <a href="../modules/devexpress.ui.html">ui</a>
+    </li>
+
+    <li>
+        <a href="devexpress.ui.datebox.html">DateBox</a>
+    </li>
+
+            </ul>
+            <h1>Class DateBox</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="devexpress.ui.editbox.html" class="tsd-signature-type">EditBox</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        DateBox
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite"><a href="devexpress.ui.datebox.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#disposing" class="tsd-kind-icon">disposing</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#optionchanged" class="tsd-kind-icon">optionChanged</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#beginupdate" class="tsd-kind-icon">beginUpdate</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#endupdate" class="tsd-kind-icon">endUpdate</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#focus" class="tsd-kind-icon">focus</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#init" class="tsd-kind-icon">init</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#instance" class="tsd-kind-icon">instance</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#option" class="tsd-kind-icon">option</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="devexpress.ui.datebox.html#repaint" class="tsd-kind-icon">repaint</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>element<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Element</span>, options<span class="tsd-signature-symbols">?: </span><a href="../interfaces/devexpress.ui.dateboxoptions.html" class="tsd-signature-type">DateBoxOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="devexpress.ui.datebox.html" class="tsd-signature-type">DateBox</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:847</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>element: <span class="tsd-signature-type">Element</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options?: <a href="../interfaces/devexpress.ui.dateboxoptions.html" class="tsd-signature-type">DateBoxOptions</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="devexpress.ui.datebox.html" class="tsd-signature-type">DateBox</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>element<span class="tsd-signature-symbols">: </span><a href="../interfaces/jquery.html" class="tsd-signature-type">JQuery</a>, options<span class="tsd-signature-symbols">?: </span><a href="../interfaces/devexpress.ui.dateboxoptions.html" class="tsd-signature-type">DateBoxOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="devexpress.ui.datebox.html" class="tsd-signature-type">DateBox</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:848</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>element: <a href="../interfaces/jquery.html" class="tsd-signature-type">JQuery</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>options?: <a href="../interfaces/devexpress.ui.dateboxoptions.html" class="tsd-signature-type">DateBoxOptions</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="devexpress.ui.datebox.html" class="tsd-signature-type">DateBox</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+    <a name="disposing" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> disposing<span class="tsd-signature-symbols">:</span> <a href="../interfaces/jquerycallback.html" class="tsd-signature-type">JQueryCallback</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#disposing">disposing</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:751</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+    <a name="optionchanged" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> optionChanged<span class="tsd-signature-symbols">:</span> <a href="../interfaces/jquerycallback.html" class="tsd-signature-type">JQueryCallback</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#optionchanged">optionChanged</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:752</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="beginupdate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> beginUpdate<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#beginupdate">beginUpdate</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:754</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="endupdate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> endUpdate<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#endupdate">endUpdate</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:755</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="focus" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> focus<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.editbox.html">EditBox</a>.<a href="devexpress.ui.editbox.html#focus">focus</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:884</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="init" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> init<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.widget.html">Widget</a>.<a href="devexpress.ui.widget.html#init">init</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:789</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="instance" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> instance<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="devexpress.ui.component.html" class="tsd-signature-type">Component</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#instance">instance</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:753</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="devexpress.ui.component.html" class="tsd-signature-type">Component</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="option" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:756</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:757</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">T</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:758</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">T</span>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:759</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">{ [key: string]: any; }</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:760</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options: <span class="tsd-signature-type">{ [key: string]: any; }</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> option<span class="tsd-signature-symbols">(</span>options<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.component.html">Component</a>.<a href="devexpress.ui.component.html#option">option</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:761</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>options?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="repaint" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> repaint<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="devexpress.ui.widget.html">Widget</a>.<a href="devexpress.ui.widget.html#repaint">repaint</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in /dx.phonejs.d.ts:790</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/devexpress.html">DevExpress</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.data.html">DevExpress.data</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.data.queryadapters.html">DevExpress.data.queryAdapters</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.data.utils.html">DevExpress.data.utils</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.data.utils.odata.html">DevExpress.data.utils.odata</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.devices.html">DevExpress.devices</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.framework.html">DevExpress.framework</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.framework.html.html">DevExpress.framework.html</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.framework.utils.html">DevExpress.framework.utils</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.ui.html">DevExpress.ui</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/devexpress.ui.dialog.html">DevExpress.ui.dialog</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/jquery.html">jquery</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.actionsheetoptions.html" class="tsd-kind-icon">ActionSheetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.autocompleteoptions.html" class="tsd-kind-icon">AutocompleteOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.buttonoptions.html" class="tsd-kind-icon">ButtonOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.checkboxoptions.html" class="tsd-kind-icon">CheckBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.collectioncontainerwidgetoptions.html" class="tsd-kind-icon">CollectionContainerWidgetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.componentoptions.html" class="tsd-kind-icon">ComponentOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.containerwidgetoptions.html" class="tsd-kind-icon">ContainerWidgetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.dateboxoptions.html" class="tsd-kind-icon">DateBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.dropdownmenuoptions.html" class="tsd-kind-icon">DropDownMenuOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.editboxoptions.html" class="tsd-kind-icon">EditBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.itemplate.html" class="tsd-kind-icon">ITemplate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.listoptions.html" class="tsd-kind-icon">ListOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.loadpaneloptions.html" class="tsd-kind-icon">LoadPanelOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.lookupoptions.html" class="tsd-kind-icon">LookupOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.mapoptions.html" class="tsd-kind-icon">MapOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.navbaroptions.html" class="tsd-kind-icon">NavBarOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.notifyoptions.html" class="tsd-kind-icon">NotifyOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.numberboxoptions.html" class="tsd-kind-icon">NumberBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.overlayoptions.html" class="tsd-kind-icon">OverlayOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.panoramaoptions.html" class="tsd-kind-icon">PanoramaOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.pivotoptions.html" class="tsd-kind-icon">PivotOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.popoveroptions.html" class="tsd-kind-icon">PopoverOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.popupoptions.html" class="tsd-kind-icon">PopupOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.radiogroupoptions.html" class="tsd-kind-icon">RadioGroupOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.rangeslideroptions.html" class="tsd-kind-icon">RangeSliderOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.scrollviewoptions.html" class="tsd-kind-icon">ScrollViewOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.scrollableoptions.html" class="tsd-kind-icon">ScrollableOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.selectboxoptions.html" class="tsd-kind-icon">SelectBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.selectablecollectionwidgetoptions.html" class="tsd-kind-icon">SelectableCollectionWidgetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.slideroptions.html" class="tsd-kind-icon">SliderOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.switchoptions.html" class="tsd-kind-icon">SwitchOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.tabsoptions.html" class="tsd-kind-icon">TabsOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.templatestatic.html" class="tsd-kind-icon">TemplateStatic</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.textareaoptions.html" class="tsd-kind-icon">TextAreaOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.textboxoptions.html" class="tsd-kind-icon">TextBoxOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.tileviewoptions.html" class="tsd-kind-icon">TileViewOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.toastoptions.html" class="tsd-kind-icon">ToastOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.toolbaroptions.html" class="tsd-kind-icon">ToolbarOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.viewportoptions.html" class="tsd-kind-icon">ViewportOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/devexpress.ui.widgetoptions.html" class="tsd-kind-icon">WidgetOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.actionsheet.html" class="tsd-kind-icon">ActionSheet</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.autocomplete.html" class="tsd-kind-icon">Autocomplete</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.button.html" class="tsd-kind-icon">Button</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.checkbox.html" class="tsd-kind-icon">CheckBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.collectioncontainerwidget.html" class="tsd-kind-icon">CollectionContainerWidget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.component.html" class="tsd-kind-icon">Component</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.containerwidget.html" class="tsd-kind-icon">ContainerWidget</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.datebox.html" class="tsd-kind-icon">DateBox</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="devexpress.ui.datebox.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#disposing" class="tsd-kind-icon">disposing</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#optionchanged" class="tsd-kind-icon">optionChanged</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#beginupdate" class="tsd-kind-icon">beginUpdate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#endupdate" class="tsd-kind-icon">endUpdate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#focus" class="tsd-kind-icon">focus</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#init" class="tsd-kind-icon">init</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#instance" class="tsd-kind-icon">instance</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#option" class="tsd-kind-icon">option</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="devexpress.ui.datebox.html#repaint" class="tsd-kind-icon">repaint</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.dropdownmenu.html" class="tsd-kind-icon">DropDownMenu</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.editbox.html" class="tsd-kind-icon">EditBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.list.html" class="tsd-kind-icon">List</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.loadpanel.html" class="tsd-kind-icon">LoadPanel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.lookup.html" class="tsd-kind-icon">Lookup</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.map.html" class="tsd-kind-icon">Map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.navbar.html" class="tsd-kind-icon">NavBar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.numberbox.html" class="tsd-kind-icon">NumberBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.overlay.html" class="tsd-kind-icon">Overlay</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.panorama.html" class="tsd-kind-icon">Panorama</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.pivot.html" class="tsd-kind-icon">Pivot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.popover.html" class="tsd-kind-icon">Popover</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.popup.html" class="tsd-kind-icon">Popup</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.radiogroup.html" class="tsd-kind-icon">RadioGroup</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.rangeslider.html" class="tsd-kind-icon">RangeSlider</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.scrollview.html" class="tsd-kind-icon">ScrollView</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.scrollable.html" class="tsd-kind-icon">Scrollable</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.selectbox.html" class="tsd-kind-icon">SelectBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.selectablecollectionwidget.html" class="tsd-kind-icon">SelectableCollectionWidget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.slider.html" class="tsd-kind-icon">Slider</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.switch.html" class="tsd-kind-icon">Switch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.tabs.html" class="tsd-kind-icon">Tabs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.template.html" class="tsd-kind-icon">Template</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.templateprovider.html" class="tsd-kind-icon">TemplateProvider</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.textarea.html" class="tsd-kind-icon">TextArea</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.textbox.html" class="tsd-kind-icon">TextBox</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.tileview.html" class="tsd-kind-icon">TileView</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.toast.html" class="tsd-kind-icon">Toast</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.toolbar.html" class="tsd-kind-icon">Toolbar</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="devexpress.ui.widget.html" class="tsd-kind-icon">Widget</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/devexpress.ui.html#initviewport" class="tsd-kind-icon">initViewport</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/devexpress.ui.html#notify" class="tsd-kind-icon">notify</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/devexpress.ui.html#notyfy" class="tsd-kind-icon">notyfy</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Accelerometer | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="accelerometer.html">Accelerometer</a>
+    </li>
+
+            </ul>
+            <h1>Interface Accelerometer</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>This plugin provides access to the device&#39;s accelerometer. The accelerometer is a motion sensor
+that detects the change (delta) in movement relative to the current device orientation,
+in three dimensions along the x, y, and z axis.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-external tsd-is-not-exported">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported"><a href="accelerometer.html#clearwatch" class="tsd-kind-icon">clearWatch</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported"><a href="accelerometer.html#getcurrentacceleration" class="tsd-kind-icon">getCurrentAcceleration</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported"><a href="accelerometer.html#watchacceleration" class="tsd-kind-icon">watchAcceleration</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-external tsd-is-not-exported">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported">
+    <a name="clearwatch" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clearWatch<span class="tsd-signature-symbols">(</span>watchID<span class="tsd-signature-symbols">: </span><a href="watchhandle.html" class="tsd-signature-type">WatchHandle</a><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in plugins/DeviceMotion.d.ts:27</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Stop watching the Acceleration referenced by the watchID parameter.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>watchID: <a href="watchhandle.html" class="tsd-signature-type">WatchHandle</a></h5>
+                
+    <p>The ID returned by navigator.accelerometer.watchAcceleration.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported">
+    <a name="getcurrentacceleration" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCurrentAcceleration<span class="tsd-signature-symbols">(</span>accelerometerSuccess<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(acceleration: Acceleration) =&gt; void</span>, accelerometerError<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">() =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in plugins/DeviceMotion.d.ts:34</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the current acceleration along the x, y, and z axes.
+These acceleration values are returned to the accelerometerSuccess callback function.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>accelerometerSuccess: <span class="tsd-signature-type">(acceleration: Acceleration) =&gt; void</span></h5>
+                
+    <p>Success callback that gets the Acceleration object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>accelerometerError: <span class="tsd-signature-type">() =&gt; void</span></h5>
+                
+    <p>Success callback</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external tsd-is-not-exported">
+    <a name="watchacceleration" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> watchAcceleration<span class="tsd-signature-symbols">(</span>accelerometerSuccess<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(acceleration: Acceleration) =&gt; void</span>, accelerometerError<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">() =&gt; void</span>, accelerometerOptions<span class="tsd-signature-symbols">?: </span><a href="accelerometeroptions.html" class="tsd-signature-type">AccelerometerOptions</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="watchhandle.html" class="tsd-signature-type">WatchHandle</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in plugins/DeviceMotion.d.ts:47</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Retrieves the device&#39;s current Acceleration at a regular interval, executing the
+accelerometerSuccess callback function each time. Specify the interval in milliseconds
+via the acceleratorOptions object&#39;s frequency parameter.
+The returned watch ID references the accelerometer&#39;s watch interval, and can be used
+with navigator.accelerometer.clearWatch to stop watching the accelerometer.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>accelerometerSuccess: <span class="tsd-signature-type">(acceleration: Acceleration) =&gt; void</span></h5>
+                
+    <p>Callback, that called at every time interval and passes an Acceleration object.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>accelerometerError: <span class="tsd-signature-type">() =&gt; void</span></h5>
+                
+    <p>Error callback.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>accelerometerOptions?: <a href="accelerometeroptions.html" class="tsd-signature-type">AccelerometerOptions</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Object with options for watchAcceleration</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="watchhandle.html" class="tsd-signature-type">WatchHandle</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

@@ -1,0 +1,3964 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CommandHandler | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/go.html">go</a>
+    </li>
+
+    <li>
+        <a href="go.commandhandler.html">CommandHandler</a>
+    </li>
+
+            </ul>
+            <h1>Class CommandHandler</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>The Diagram#commandHandler implements various
+commands such as CommandHandler#deleteSelection or CommandHandler#redo.
+The CommandHandler includes keyboard event handling to interpret
+key presses as commands.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class"><a href="go.commandhandler.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#archetypegroupdata" class="tsd-kind-icon">archetypeGroupData</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#copiestree" class="tsd-kind-icon">copiesTree</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#deletestree" class="tsd-kind-icon">deletesTree</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#diagram" class="tsd-kind-icon">diagram</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#membervalidation" class="tsd-kind-icon">memberValidation</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="go.commandhandler.html#zoomfactor" class="tsd-kind-icon">zoomFactor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#addtoplevelparts" class="tsd-kind-icon">addTopLevelParts</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cancollapsesubgraph" class="tsd-kind-icon">canCollapseSubGraph</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cancollapsetree" class="tsd-kind-icon">canCollapseTree</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cancopyselection" class="tsd-kind-icon">canCopySelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cancutselection" class="tsd-kind-icon">canCutSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#candecreasezoom" class="tsd-kind-icon">canDecreaseZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#candeleteselection" class="tsd-kind-icon">canDeleteSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canedittextblock" class="tsd-kind-icon">canEditTextBlock</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canexpandsubgraph" class="tsd-kind-icon">canExpandSubGraph</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canexpandtree" class="tsd-kind-icon">canExpandTree</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cangroupselection" class="tsd-kind-icon">canGroupSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canincreasezoom" class="tsd-kind-icon">canIncreaseZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canpasteselection" class="tsd-kind-icon">canPasteSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canredo" class="tsd-kind-icon">canRedo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canresetzoom" class="tsd-kind-icon">canResetZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canselectall" class="tsd-kind-icon">canSelectAll</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canstopcommand" class="tsd-kind-icon">canStopCommand</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canundo" class="tsd-kind-icon">canUndo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canungroupselection" class="tsd-kind-icon">canUngroupSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#canzoomtofit" class="tsd-kind-icon">canZoomToFit</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#collapsesubgraph" class="tsd-kind-icon">collapseSubGraph</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#collapsetree" class="tsd-kind-icon">collapseTree</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#copyselection" class="tsd-kind-icon">copySelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#copytoclipboard" class="tsd-kind-icon">copyToClipboard</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#cutselection" class="tsd-kind-icon">cutSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#decreasezoom" class="tsd-kind-icon">decreaseZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#deleteselection" class="tsd-kind-icon">deleteSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#dokeydown" class="tsd-kind-icon">doKeyDown</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#dokeyup" class="tsd-kind-icon">doKeyUp</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#edittextblock" class="tsd-kind-icon">editTextBlock</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#expandsubgraph" class="tsd-kind-icon">expandSubGraph</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#expandtree" class="tsd-kind-icon">expandTree</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#groupselection" class="tsd-kind-icon">groupSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#increasezoom" class="tsd-kind-icon">increaseZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#isvalidmember" class="tsd-kind-icon">isValidMember</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#pastefromclipboard" class="tsd-kind-icon">pasteFromClipboard</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#pasteselection" class="tsd-kind-icon">pasteSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#redo" class="tsd-kind-icon">redo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#resetzoom" class="tsd-kind-icon">resetZoom</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#selectall" class="tsd-kind-icon">selectAll</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#stopcommand" class="tsd-kind-icon">stopCommand</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#undo" class="tsd-kind-icon">undo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#ungroupselection" class="tsd-kind-icon">ungroupSelection</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="go.commandhandler.html#zoomtofit" class="tsd-kind-icon">zoomToFit</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.commandhandler.html" class="tsd-signature-type">CommandHandler</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:49</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The constructor produces a CommandHandler with the default key bindings.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.commandhandler.html" class="tsd-signature-type">CommandHandler</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="archetypegroupdata" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> archetypeGroupData<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Object</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:52</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets a data object that is copied by #groupSelection when creating a new Group.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="copiestree" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> copiesTree<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:55</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets whether #copySelection should also copy subtrees.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="deletestree" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> deletesTree<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:58</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets whether #deleteSelection should also delete subtrees.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="diagram" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> diagram<span class="tsd-signature-symbols">:</span> <a href="go.diagram.html" class="tsd-signature-type">Diagram</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:61</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets the Diagram that is using this CommandHandler.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="membervalidation" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> memberValidation<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(g: go.Group, p: go.Part) =&gt; boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:64</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the predicate that determines whether or not a node may become a member of a group.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="zoomfactor" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> zoomFactor<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:67</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Gets or sets the amount by which #decreaseZoom and #increaseZoom change the Diagram#scale; default is 1.05.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="addtoplevelparts" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addTopLevelParts<span class="tsd-signature-symbols">(</span>coll<span class="tsd-signature-symbols">: </span><a href="go.iterable.html" class="tsd-signature-type">Iterable</a>, check<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:74</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Make sure all of the unnested Parts in the given collection are removed from any containing Groups.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>coll: <a href="go.iterable.html" class="tsd-signature-type">Iterable</a></h5>
+                
+    <p>a collection of Parts.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>check?: <span class="tsd-signature-type">boolean</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>whether to call #isValidMember to confirm that changing the Part to be a top-level Part is valid.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cancollapsesubgraph" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canCollapseSubGraph<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:80</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether the user can collapse expanded Groups.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider collapsing this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cancollapsetree" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canCollapseTree<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">?: </span><a href="go.node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:86</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether the user can collapse expanded subtrees of Nodes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node?: <a href="go.node.html" class="tsd-signature-type">Node</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider collapsing this particular Node.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cancopyselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canCopySelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:91</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #copySelection command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cancutselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canCutSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:96</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #cutSelection command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="candecreasezoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canDecreaseZoom<span class="tsd-signature-symbols">(</span>factor<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:102</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #decreaseZoom command.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>factor?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to 1/#zoomFactor.  The value should be less than one.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="candeleteselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canDeleteSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:107</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #deleteSelection command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canedittextblock" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canEditTextBlock<span class="tsd-signature-symbols">(</span>textblock<span class="tsd-signature-symbols">?: </span><a href="go.textblock.html" class="tsd-signature-type">TextBlock</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:113</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #editTextBlock command.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>textblock?: <a href="go.textblock.html" class="tsd-signature-type">TextBlock</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>the TextBlock to consider editing.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canexpandsubgraph" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canExpandSubGraph<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:119</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether the user can expand collapsed Groups.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider expanding this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canexpandtree" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canExpandTree<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">?: </span><a href="go.node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:125</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether the user can expand collapsed subtrees of Nodes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node?: <a href="go.node.html" class="tsd-signature-type">Node</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider expanding this particular Node.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cangroupselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canGroupSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:130</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #groupSelection command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canincreasezoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canIncreaseZoom<span class="tsd-signature-symbols">(</span>factor<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:136</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #increaseZoom command.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>factor?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to #zoomFactor.  The value should be greater than one.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canpasteselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canPasteSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:141</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #pasteSelection command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canredo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canRedo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:146</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #redo command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canresetzoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canResetZoom<span class="tsd-signature-symbols">(</span>newscale<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:152</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #resetZoom command.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>newscale?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to 1.  The value should be greater than zero.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canselectall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canSelectAll<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:157</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #selectAll command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canstopcommand" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canStopCommand<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:162</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether the user may stop the current tool.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canundo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canUndo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:167</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #undo command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canungroupselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canUngroupSelection<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:173</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #ungroupSelection command.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider ungrouping this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="canzoomtofit" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> canZoomToFit<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:178</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate controls whether or not the user can invoke the #zoomToFit command.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="collapsesubgraph" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> collapseSubGraph<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:184</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Collapse all expanded selected Groups.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and collapse this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="collapsetree" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> collapseTree<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">?: </span><a href="go.node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:190</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Collapse all expanded selected Nodes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node?: <a href="go.node.html" class="tsd-signature-type">Node</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and collapse this particular Node subtree.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="copyselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> copySelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:195</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Copy the currently selected parts, Diagram#selection, from the Diagram into the clipboard.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="copytoclipboard" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> copyToClipboard<span class="tsd-signature-symbols">(</span>coll<span class="tsd-signature-symbols">: </span><a href="go.iterable.html" class="tsd-signature-type">Iterable</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:201</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This makes a copy of the given collection of Parts and stores it in a static variable acting as the clipboard.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>coll: <a href="go.iterable.html" class="tsd-signature-type">Iterable</a></h5>
+                
+    <p>A collection of Parts.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="cutselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> cutSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:206</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Execute a #copySelection followed by a #deleteSelection.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="decreasezoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> decreaseZoom<span class="tsd-signature-symbols">(</span>factor<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:212</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Decrease the Diagram#scale by a given factor.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>factor?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to 1/#zoomFactor.  The value should be less than one.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="deleteselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> deleteSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:217</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Delete the currently selected parts from the diagram.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="dokeydown" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> doKeyDown<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:222</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This is called by tools to handle keyboard commands.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="dokeyup" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> doKeyUp<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:227</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This is called by tools to handle keyboard commands.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="edittextblock" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> editTextBlock<span class="tsd-signature-symbols">(</span>textblock<span class="tsd-signature-symbols">?: </span><a href="go.textblock.html" class="tsd-signature-type">TextBlock</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:233</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Start in-place editing of a TextBlock in the selected Part.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>textblock?: <a href="go.textblock.html" class="tsd-signature-type">TextBlock</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>the TextBlock to start editing.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="expandsubgraph" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> expandSubGraph<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:239</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Expand all collapsed selected Groups.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and expand this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="expandtree" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> expandTree<span class="tsd-signature-symbols">(</span>node<span class="tsd-signature-symbols">?: </span><a href="go.node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:245</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Expand all collapsed selected Nodes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>node?: <a href="go.node.html" class="tsd-signature-type">Node</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and collapse this particular Node subtree.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="groupselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> groupSelection<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:250</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Add a copy of #archetypeGroupData and add it to the diagram&#39;s model to create a new Group and then add the selected Parts to that new group.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="increasezoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> increaseZoom<span class="tsd-signature-symbols">(</span>factor<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:256</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Increase the Diagram#scale by a given factor.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>factor?: <span class="tsd-signature-type">Number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to #zoomFactor.  The value should be greater than one.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="isvalidmember" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isValidMember<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">: </span><a href="go.group.html" class="tsd-signature-type">Group</a>, part<span class="tsd-signature-symbols">: </span><a href="go.part.html" class="tsd-signature-type">Part</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:263</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This predicate is called to determine whether a Node may be added as a member of a Group.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group: <a href="go.group.html" class="tsd-signature-type">Group</a></h5>
+                
+    <p>this may be null if the node is being added as a top-level node.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>part: <a href="go.part.html" class="tsd-signature-type">Part</a></h5>
+                
+    <p>a Part, usually a Node, possibly another Group, but not a Link or an Adornment.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="pastefromclipboard" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pasteFromClipboard<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="go.set.html" class="tsd-signature-type">Set</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:268</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>If the clipboard holds a collection of Parts, and if the Model#dataFormat matches that stored in the clipboard, this makes a copy of the clipboard&#39;s parts and adds the copies to this Diagram.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="go.set.html" class="tsd-signature-type">Set</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="pasteselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pasteSelection<span class="tsd-signature-symbols">(</span>pos<span class="tsd-signature-symbols">?: </span><a href="go.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:274</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Copy the contents of the clipboard into this diagram, and make those new parts the new selection.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>pos?: <a href="go.point.html" class="tsd-signature-type">Point</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Point at which to center the newly pasted parts; if not present the parts are not moved.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="redo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> redo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:279</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Call UndoManager#redo.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="resetzoom" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resetZoom<span class="tsd-signature-symbols">(</span>newscale<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:285</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Set the Diagram#scale to a new scale value, by default 1.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>newscale?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>This defaults to 1.  The value should be greater than zero.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="selectall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> selectAll<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:290</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Select all of the selectable Parts in the diagram.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="stopcommand" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> stopCommand<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:295</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Cancel the operation of the current tool.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="undo" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> undo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:300</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Call UndoManager#undo.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="ungroupselection" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> ungroupSelection<span class="tsd-signature-symbols">(</span>group<span class="tsd-signature-symbols">?: </span><a href="go.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:306</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Remove the group from the diagram without removing its members from the diagram.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>group?: <a href="go.group.html" class="tsd-signature-type">Group</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>if supplied, ignore the selection and consider ungrouping this particular Group.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="zoomtofit" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> zoomToFit<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in goJS.d.ts:311</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Change the Diagram#scale so that the Diagram#documentBounds fits within the viewport.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/go.html">go</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.actiontool.html" class="tsd-kind-icon">ActionTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.adornment.html" class="tsd-kind-icon">Adornment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.binding.html" class="tsd-kind-icon">Binding</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.brush.html" class="tsd-kind-icon">Brush</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.changedevent.html" class="tsd-kind-icon">ChangedEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularedge.html" class="tsd-kind-icon">CircularEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularlayout.html" class="tsd-kind-icon">CircularLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.circularvertex.html" class="tsd-kind-icon">CircularVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickcreatingtool.html" class="tsd-kind-icon">ClickCreatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.clickselectingtool.html" class="tsd-kind-icon">ClickSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.commandhandler.html" class="tsd-kind-icon">CommandHandler</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#archetypegroupdata" class="tsd-kind-icon">archetypeGroupData</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#copiestree" class="tsd-kind-icon">copiesTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#deletestree" class="tsd-kind-icon">deletesTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#diagram" class="tsd-kind-icon">diagram</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#membervalidation" class="tsd-kind-icon">memberValidation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#zoomfactor" class="tsd-kind-icon">zoomFactor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#addtoplevelparts" class="tsd-kind-icon">addTopLevelParts</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cancollapsesubgraph" class="tsd-kind-icon">canCollapseSubGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cancollapsetree" class="tsd-kind-icon">canCollapseTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cancopyselection" class="tsd-kind-icon">canCopySelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cancutselection" class="tsd-kind-icon">canCutSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#candecreasezoom" class="tsd-kind-icon">canDecreaseZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#candeleteselection" class="tsd-kind-icon">canDeleteSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canedittextblock" class="tsd-kind-icon">canEditTextBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canexpandsubgraph" class="tsd-kind-icon">canExpandSubGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canexpandtree" class="tsd-kind-icon">canExpandTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cangroupselection" class="tsd-kind-icon">canGroupSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canincreasezoom" class="tsd-kind-icon">canIncreaseZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canpasteselection" class="tsd-kind-icon">canPasteSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canredo" class="tsd-kind-icon">canRedo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canresetzoom" class="tsd-kind-icon">canResetZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canselectall" class="tsd-kind-icon">canSelectAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canstopcommand" class="tsd-kind-icon">canStopCommand</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canundo" class="tsd-kind-icon">canUndo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canungroupselection" class="tsd-kind-icon">canUngroupSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#canzoomtofit" class="tsd-kind-icon">canZoomToFit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#collapsesubgraph" class="tsd-kind-icon">collapseSubGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#collapsetree" class="tsd-kind-icon">collapseTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#copyselection" class="tsd-kind-icon">copySelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#copytoclipboard" class="tsd-kind-icon">copyToClipboard</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#cutselection" class="tsd-kind-icon">cutSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#decreasezoom" class="tsd-kind-icon">decreaseZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#deleteselection" class="tsd-kind-icon">deleteSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#dokeydown" class="tsd-kind-icon">doKeyDown</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#dokeyup" class="tsd-kind-icon">doKeyUp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#edittextblock" class="tsd-kind-icon">editTextBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#expandsubgraph" class="tsd-kind-icon">expandSubGraph</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#expandtree" class="tsd-kind-icon">expandTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#groupselection" class="tsd-kind-icon">groupSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#increasezoom" class="tsd-kind-icon">increaseZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#isvalidmember" class="tsd-kind-icon">isValidMember</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#pastefromclipboard" class="tsd-kind-icon">pasteFromClipboard</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#pasteselection" class="tsd-kind-icon">pasteSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#redo" class="tsd-kind-icon">redo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#resetzoom" class="tsd-kind-icon">resetZoom</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#selectall" class="tsd-kind-icon">selectAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#stopcommand" class="tsd-kind-icon">stopCommand</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#undo" class="tsd-kind-icon">undo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#ungroupselection" class="tsd-kind-icon">ungroupSelection</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="go.commandhandler.html#zoomtofit" class="tsd-kind-icon">zoomToFit</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.contextmenutool.html" class="tsd-kind-icon">ContextMenuTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagram.html" class="tsd-kind-icon">Diagram</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.diagramevent.html" class="tsd-kind-icon">DiagramEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.dragselectingtool.html" class="tsd-kind-icon">DragSelectingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.draggingtool.html" class="tsd-kind-icon">DraggingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.enumvalue.html" class="tsd-kind-icon">EnumValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectededge.html" class="tsd-kind-icon">ForceDirectedEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedlayout.html" class="tsd-kind-icon">ForceDirectedLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.forcedirectedvertex.html" class="tsd-kind-icon">ForceDirectedVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.geometry.html" class="tsd-kind-icon">Geometry</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphlinksmodel.html" class="tsd-kind-icon">GraphLinksModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.graphobject.html" class="tsd-kind-icon">GraphObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.gridlayout.html" class="tsd-kind-icon">GridLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.group.html" class="tsd-kind-icon">Group</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.inputevent.html" class="tsd-kind-icon">InputEvent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterable.html" class="tsd-kind-icon">Iterable</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.iterator.html" class="tsd-kind-icon">Iterator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layer.html" class="tsd-kind-icon">Layer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphedge.html" class="tsd-kind-icon">LayeredDigraphEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphlayout.html" class="tsd-kind-icon">LayeredDigraphLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layereddigraphvertex.html" class="tsd-kind-icon">LayeredDigraphVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layout.html" class="tsd-kind-icon">Layout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutedge.html" class="tsd-kind-icon">LayoutEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutnetwork.html" class="tsd-kind-icon">LayoutNetwork</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.layoutvertex.html" class="tsd-kind-icon">LayoutVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.link.html" class="tsd-kind-icon">Link</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkreshapingtool.html" class="tsd-kind-icon">LinkReshapingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingbasetool.html" class="tsd-kind-icon">LinkingBaseTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.linkingtool.html" class="tsd-kind-icon">LinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.list.html" class="tsd-kind-icon">List</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.map.html" class="tsd-kind-icon">Map</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.margin.html" class="tsd-kind-icon">Margin</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.model.html" class="tsd-kind-icon">Model</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.node.html" class="tsd-kind-icon">Node</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.overview.html" class="tsd-kind-icon">Overview</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.palette.html" class="tsd-kind-icon">Palette</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panel.html" class="tsd-kind-icon">Panel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.panningtool.html" class="tsd-kind-icon">PanningTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.part.html" class="tsd-kind-icon">Part</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathfigure.html" class="tsd-kind-icon">PathFigure</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.pathsegment.html" class="tsd-kind-icon">PathSegment</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.picture.html" class="tsd-kind-icon">Picture</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.placeholder.html" class="tsd-kind-icon">Placeholder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.point.html" class="tsd-kind-icon">Point</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rect.html" class="tsd-kind-icon">Rect</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.relinkingtool.html" class="tsd-kind-icon">RelinkingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.resizingtool.html" class="tsd-kind-icon">ResizingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rotatingtool.html" class="tsd-kind-icon">RotatingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.rowcolumndefinition.html" class="tsd-kind-icon">RowColumnDefinition</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.set.html" class="tsd-kind-icon">Set</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.shape.html" class="tsd-kind-icon">Shape</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.size.html" class="tsd-kind-icon">Size</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.spot.html" class="tsd-kind-icon">Spot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.textblock.html" class="tsd-kind-icon">TextBlock</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.texteditingtool.html" class="tsd-kind-icon">TextEditingTool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.tool.html" class="tsd-kind-icon">Tool</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.toolmanager.html" class="tsd-kind-icon">ToolManager</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.transaction.html" class="tsd-kind-icon">Transaction</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treeedge.html" class="tsd-kind-icon">TreeEdge</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treelayout.html" class="tsd-kind-icon">TreeLayout</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treemodel.html" class="tsd-kind-icon">TreeModel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.treevertex.html" class="tsd-kind-icon">TreeVertex</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="go.undomanager.html" class="tsd-kind-icon">UndoManager</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

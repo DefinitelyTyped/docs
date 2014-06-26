@@ -1,0 +1,1 @@
+﻿var tsd = tsd || {};tsd.search = tsd.search || {};tsd.search.data = {"kinds":{"16":"Interface","512":"Variable"},"rows":[{"id":0,"kind":16,"name":"UrlStatic","url":"interfaces/urlstatic.html","classes":"tsd-kind-interface tsd-is-not-exported"},{"id":1,"kind":512,"name":"url","url":"globals.html#url","classes":"tsd-kind-variable tsd-is-not-exported"}]};

@@ -1,0 +1,1296 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Repo | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/jsgit.html">JSGit</a>
+    </li>
+
+    <li>
+        <a href="jsgit.repo.html">Repo</a>
+    </li>
+
+            </ul>
+            <h1>Interface Repo</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#fetch" class="tsd-kind-icon">fetch</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#gethead" class="tsd-kind-icon">getHead</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#load" class="tsd-kind-icon">load</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#loadas" class="tsd-kind-icon">loadAs</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#logwalk" class="tsd-kind-icon">logWalk</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#remove" class="tsd-kind-icon">remove</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#resolvehashish" class="tsd-kind-icon">resolveHashish</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#save" class="tsd-kind-icon">save</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#saveas" class="tsd-kind-icon">saveAs</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#sethead" class="tsd-kind-icon">setHead</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#treewalk" class="tsd-kind-icon">treeWalk</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#unpack" class="tsd-kind-icon">unpack</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#updatehead" class="tsd-kind-icon">updateHead</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="jsgit.repo.html#walk" class="tsd-kind-icon">walk</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="fetch" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> fetch<span class="tsd-signature-symbols">(</span>remote<span class="tsd-signature-symbols">: </span><a href="jsgit.remote.html" class="tsd-signature-type">Remote</a>, opts<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Object</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:185</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Convenience wrapper that fetches from a remote instance and calls repo.unpack with the resulting packfile stream for you.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>remote: <a href="jsgit.remote.html" class="tsd-signature-type">Remote</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opts: <span class="tsd-signature-type">Object</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="gethead" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getHead<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, ref_name: string) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:175</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Read the current active branch.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, ref_name: string) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="load" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> load<span class="tsd-signature-symbols">(</span>hashish<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, git_object: JSGit.GitObject) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:97</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Load a git object from the database. You can pass in either a hash or a symbolic name like HEAD or refs/tags/v3.1.4.</p>
+
+
+
+
+    <p>The object will be of the form:
+{
+  type: &quot;commit&quot;, // Or &quot;tag&quot;, &quot;tree&quot;, or &quot;blob&quot;
+  body: { ... } // Or an array for tree and a binary value for blob.
+}</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hashish: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, git_object: JSGit.GitObject) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="loadas" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> loadAs<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, hash<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, body: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:112</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This convenience wrapper will call repo.load for you and then check if the type is what you expected. If it is, it will return the body directly. If it&#39;s not, it will error.</p>
+
+
+
+
+    <p>var commit = yield repo.loadAs(&quot;commit&quot;, &quot;HEAD&quot;);
+var tree = yield repo.loadAs(&quot;tree&quot;, commit.tree);</p>
+<p>I&#39;m using yield syntax because it&#39;s simpler, you can use callbacks instead if you prefer.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>hash: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, body: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="logwalk" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> logWalk<span class="tsd-signature-symbols">(</span>hashish<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, log_stream: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:149</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This convenience wrapper creates a readable stream of the history sorted by author date.
+If you want full history, pass in HEAD for the hash.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hashish: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, log_stream: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="remove" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> remove<span class="tsd-signature-symbols">(</span>hash<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:132</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Remove an object.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hash: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="resolvehashish" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> resolveHashish<span class="tsd-signature-symbols">(</span>hashish<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:164</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Resolve a ref, branch, or tag to a real hash.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hashish: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="save" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> save<span class="tsd-signature-symbols">(</span>git_object<span class="tsd-signature-symbols">: </span><a href="jsgit.gitobject.html" class="tsd-signature-type">GitObject</a>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:102</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Save an object to the database. This will give you back the hash of the cotent by which you can retrieve the value back.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>git_object: <a href="jsgit.gitobject.html" class="tsd-signature-type">GitObject</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="saveas" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> saveAs<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, body<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:127</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Another convenience wrapper, this time to save objects as a specefic type. The body must be in the right format.</p>
+
+
+
+
+    <p>var blobHash = yield repo.saveAs(&quot;blob&quot;, binaryData);
+var treeHash = yield repo.saveAs(&quot;tree&quot;, [
+  { mode: 0100644, name: &quot;file.dat&quot;, hash: blobHash }
+]);
+var commitHash = yield repo.saveAs(&quot;commit&quot;, {
+  tree: treeHash,
+  author: { name: &quot;Tim Caswell&quot;, email: &quot;tim@creationix.com&quot;, date: new Date },
+  message: &quot;Save the blob&quot;
+});</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>type: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>body: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, hash: string) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="sethead" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> setHead<span class="tsd-signature-symbols">(</span>ref<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:180</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Set the current active branch.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ref: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="treewalk" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> treeWalk<span class="tsd-signature-symbols">(</span>hashish<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any, file_stream: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:154</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This helper will return a stream of files suitable for traversing a file tree as a linear stream. The hash can be a ref to a commit, a commit hash or a tree hash directly.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hashish: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any, file_stream: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="unpack" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> unpack<span class="tsd-signature-symbols">(</span>packFileStream<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, opts<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">Object</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:143</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Import a packfile stream (simple-stream format) into the current database. This is used mostly for clone and fetch operations where the stream comes from a remote repo.</p>
+
+
+
+
+    <p>opts is a hash of optional configs.</p>
+<p>opts.onProgress(progress) - listen to the git progress channel by passing in a event listener.
+opts.onError(error) - same thing, but for the error channel.
+opts.deline - If this is truthy, the progress and error messages will be rechunked to be whole lines. They usually come jumbled in the internal sidechannel.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>packFileStream: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opts: <span class="tsd-signature-type">Object</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="updatehead" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> updateHead<span class="tsd-signature-symbols">(</span>hash<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(err: any) =&gt; void</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:170</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Update whatever branch HEAD is pointing to so that it points to hash.
+You&#39;ll usually want to do this after creating a new commint in the HEAD branch.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>hash: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(err: any) =&gt; void</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="walk" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> walk<span class="tsd-signature-symbols">(</span>seed<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, scan<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, loadKey<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, compare<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in js-git.d.ts:159</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>This is the generic helper that logWalk and treeWalk use. See js-git.js source for usage.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>seed: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>scan: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>loadKey: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>compare: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">any</span>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/jsgit.html">JSGit</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.db.html" class="tsd-kind-icon">DB</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.gitauthor.html" class="tsd-kind-icon">GitAuthor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.gitcommit.html" class="tsd-kind-icon">GitCommit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.gitobject.html" class="tsd-kind-icon">GitObject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.gittree.html" class="tsd-kind-icon">GitTree</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.gittreeelem.html" class="tsd-kind-icon">GitTreeElem</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.remote.html" class="tsd-kind-icon">Remote</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.repo.html" class="tsd-kind-icon">Repo</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#fetch" class="tsd-kind-icon">fetch</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#gethead" class="tsd-kind-icon">getHead</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#load" class="tsd-kind-icon">load</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#loadas" class="tsd-kind-icon">loadAs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#logwalk" class="tsd-kind-icon">logWalk</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#remove" class="tsd-kind-icon">remove</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#resolvehashish" class="tsd-kind-icon">resolveHashish</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#save" class="tsd-kind-icon">save</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#saveas" class="tsd-kind-icon">saveAs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#sethead" class="tsd-kind-icon">setHead</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#treewalk" class="tsd-kind-icon">treeWalk</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#unpack" class="tsd-kind-icon">unpack</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#updatehead" class="tsd-kind-icon">updateHead</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-interface">
+                    <a href="jsgit.repo.html#walk" class="tsd-kind-icon">walk</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jsgit.stringmap.html" class="tsd-kind-icon">StringMap</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

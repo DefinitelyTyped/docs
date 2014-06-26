@@ -1,0 +1,536 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>system | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    <li>
+        <a href="system.html">system</a>
+    </li>
+
+            </ul>
+            <h1>Dynamic module system</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Variables</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#acquire" class="tsd-kind-icon">acquire</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#debug" class="tsd-kind-icon">debug</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#defer" class="tsd-kind-icon">defer</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#getmoduleid" class="tsd-kind-icon">getModuleId</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#guid" class="tsd-kind-icon">guid</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#isarray" class="tsd-kind-icon">isArray</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#log" class="tsd-kind-icon">log</a></li>
+                
+                    <li class="tsd-kind-variable tsd-parent-kind-dynamic-module"><a href="system.html#setmoduleid" class="tsd-kind-icon">setModuleId</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Variables</h2>
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="acquire" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">acquire<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(...modules: string[]) =&gt; JQueryPromise&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:40</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Uses require.js to obtain a module. This function returns a promise which resolves with the module instance. You can pass more than one module id to this function. If more than one is passed, then the promise will resolve with one callback parameter per module.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="debug" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">debug<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(debug?: boolean) =&gt; boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:20</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Call this function to enable or disable Durandal&#39;s debug mode. Calling it with no parameters will return true if the framework is currently in debug mode, false otherwise.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="defer" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">defer<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(action?: Function) =&gt; JQueryDeferred&lt;any&gt;</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:32</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a deferred object which can be used to create a promise. Optionally pass a function action to perform which will be passed an object used in resolving the promise.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="getmoduleid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">getModuleId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(obj: any) =&gt; string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:12</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Returns the module id associated with the specified object</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="guid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">guid<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">() =&gt; string</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:36</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a simple V4 UUID. This should not be used as a PK in your database. It can be used to generate internal, unique ids.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="isarray" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">isArray<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(obj: any) =&gt; boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:24</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Checks if the obj is an array</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="log" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">log<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(...msgs: any[]) =&gt; void</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:28</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Logs data to the console. Pass any number of parameters to be logged. Log output is not processed if the framework is not running in debug mode.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-variable tsd-parent-kind-dynamic-module">
+    <a name="setmoduleid" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon">setModuleId<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">(obj: any, id: string) =&gt; void</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in l/durandal-1.x.d.ts:16</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Sets the module id on the module.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="app.html">app</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="composition.html">composition</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="http.html">http</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="jquery.html">jquery</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="knockout.html">knockout</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="modaldialog.html">modalDialog</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="plugins-router.html">plugins/router</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-dynamic-module">
+    <a href="system.html">system</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewengine.html">viewEngine</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewlocator.html">viewLocator</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewmodel.html">viewModel</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="viewmodelbinder.html">viewModelBinder</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="widget.html">widget</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#acquire" class="tsd-kind-icon">acquire</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#debug" class="tsd-kind-icon">debug</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#defer" class="tsd-kind-icon">defer</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#getmoduleid" class="tsd-kind-icon">getModuleId</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#guid" class="tsd-kind-icon">guid</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#isarray" class="tsd-kind-icon">isArray</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#log" class="tsd-kind-icon">log</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-dynamic-module">
+                    <a href="system.html#setmoduleid" class="tsd-kind-icon">setModuleId</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>
