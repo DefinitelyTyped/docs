@@ -82,8 +82,7 @@ module.exports = function (grunt) {
 				return /^node/.test(dir);
 			}
 			return /^jquery\.d\.ts$/.test(path.basename(dir));
-		}).then(function(defs) {
-			console.log(defs);
+		}).then(function() {
 			done();
 		}).catch(function(err) {
 			console.log(err);
