@@ -81,7 +81,15 @@ module.exports = function (grunt) {
 			if (all) {
 				return /^node/.test(dir);
 			}
-			return /^jquery\.d\.ts$/.test(path.basename(dir));
+			var allow = [
+				/^angular/,
+				/^jquery/,
+				/^node/
+			];
+			var base = path.basename(dir);
+			return allow.some(function(exp) {
+				return exp.test(base);
+			});
 		}).then(function() {
 			done();
 		}).catch(function(err) {

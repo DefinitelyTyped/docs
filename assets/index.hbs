@@ -1,23 +1,102 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{title}}</title>
-    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
 
-<div class="container container-main">
-    <div class="row">
-        <ol>
-        {{#each chapters}}
-            <li><a href="{{page}}">{{label}}</a></li>
-        {{/each}}
-        </ol>
+    <title>Docs | DefinitelyTyped</title>
+    <meta name="description" content="The repository for high quality TypeScript type definitions" />
+    <meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
+
+    <link  rel="stylesheet" href="http://definitelytyped.org/styles/semantic.min.css" />
+    <link  rel="stylesheet" href="http://definitelytyped.org/styles/highlight.css" />
+    <link  rel="stylesheet" href="http://definitelytyped.org/styles/style.css" />
+
+    <link rel="shortcut icon" href="/favicon.ico" >
+</head>
+<body class="ui">
+<a href="https://github.com/DefinitelyTyped/definitelytyped.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" class="ribbon" src="/images/forkme-blue.png" alt="Fork me on GitHub"></a>
+<div class="outer">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="ui one column grid">
+        <div class="column centeroid">
+            <div class="ui menu">
+                <a class="item" href="/"><i class="home icon"></i> Home</a>
+                <a class="item" href="/guides.html"><i class="wrench icon"></i> Guides</a>
+                <a class="item" href="/directory.html"><i class="unordered list icon"></i> Directory</a>
+                <a class="item" href="https://github.com/borisyankov/DefinitelyTyped"><i class="github icon"></i> Repository</a>
+                <a class="item" href="http://www.tsdpm.com"><i class="terminal icon"></i> TSD</a>
+                <a class="item" href="http://nuget.org/packages?q=DefinitelyTyped"><i class="download disk icon"></i> NuGet</a>
+            </div>
+
+            <div class="ui row">
+                <a class="logo" href="/"><img src="http://definitelytyped.org/images/dt-logo-smallish.png" title="DefinitelyTyped"/></a>
+
+                <h1 class="ui header">DefinitelyTyped</h1>
+                <p>The repository for high quality TypeScript type definitions</p>
+            </div>
+
+
+            <div class="ui row">
+                <h2 class="header">
+                    Usage
+                </h2>
+                <p>Include a line like this:</p>
+            </div>
+
+            <div class="ui {{colName}} column stackable grid">
+
+                {{#each columns}}
+                <div class="ui column">
+                    <div class="ui list">
+                        <ol>
+                            {{#each chapters}}
+                                <a class="item" href="{{page}}">{{label}}</a>
+                            {{/each}}
+                        </ol>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="ui horizontal icon divider">
+                <i class="heart icon"></i>
+            </div>
+
+            <div class="ui center aligned one column grid">
+                <div class="row">
+                    <div class="column">
+                        <a href="/">Home</a>
+                        - <a href="https://github.com/borisyankov/DefinitelyTyped">Github</a>
+                        - <a href="http://www.tsdpm.com">TSD</a>
+                        - <a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
+<script defer="defer" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script defer="defer" src="http://definitelytyped.org/scripts/semantic.min.js"></script>
+<script defer="defer" src="http://definitelytyped.org/scripts/script.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47495295-3', 'definitelytyped.org');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
