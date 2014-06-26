@@ -97,6 +97,10 @@ module.exports = function (grunt) {
 		}
 	});
 
+	grunt.registerTask('lint', [
+		'jshint'
+	]);
+
 	grunt.registerTask('prep', [
 		'clean:tmp',
 		'jshint:support',
