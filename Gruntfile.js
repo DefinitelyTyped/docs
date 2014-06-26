@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 				options: {
 					repo: 'https://' + process.env.GH_TOKEN + '@github.com/DefinitelyTyped/docs.git',
 					message: 'publish (auto)' + getDeployMessage(),
-					silent: false,
+					silent: true,
 					user: {
 						name: 'dt-bot',
 						email: 'definitelytypedbot@gmail.com'

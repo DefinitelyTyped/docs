@@ -13,4 +13,4 @@ notifications:
   - bartvanderschoor@gmail.com
 env:
   global:
-    secure: Mh83owYpIvOOYGLzEZq7394n0ZEnGGnhJbdauYgH4vZaoQumjU9JXIDZaE/OYeWyERGcT2F8q+tvzMJ4fbUFzd4Xt9aUbo5R8GTv/WxrCarjtRK4az4cYaDsOwzSWjy+lOIjmPoKyO9ivpwXKlPExQiDW+HACVOzlR5gljz1a10=
+    secure: kp+wTYmwjllbbRfmDGOE7NbgAAouMjYJWDoTqFPVR74H01aViBKZeX19nhtgdYu6rL/XIR5dNf4Lm36O+rstOGKY9NYv0H0qWI0XbMXaV67nmqQ5gbEHsV3coAGiAp+xoKTwpw2xsgeu49XFVxS2mu31NstdBNxQ2IWxLSgCeAQ=
