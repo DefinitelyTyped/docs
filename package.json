@@ -32,7 +32,6 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "prepublish": "grunt prepublish",
     "build": "grunt build",
     "test": "grunt test"
   },

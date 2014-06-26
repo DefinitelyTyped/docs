@@ -85,6 +85,18 @@ module.exports = function (grunt) {
 		});
 	});
 
+	grunt.registerTask('check-deploy', function() {
+		this.requires(['build']);
+
+		if (process.env.TRAVIS === 'true' && process.env.TRAVIS_SECURE_ENV_VARS === 'true' && process.env.TRAVIS_PULL_REQUEST === 'false') {
+			grunt.log.writeln('executing deployment');
+			grunt.task.run('gh-pages:deploy');
+		}
+		else {
+			grunt.log.writeln('skipping deployment');
+		}
+	});
+
 	grunt.registerTask('prep', [
 		'clean:tmp',
 		'jshint:support',
@@ -97,8 +109,14 @@ module.exports = function (grunt) {
 		'exec'
 	]);
 
-	grunt.registerTask('prepublish', [
-		'prep'
+	grunt.registerTask('publish', 'Build and push to master using CLI.', [
+		'build',
+		'gh-pages:publish'
+	]);
+
+	grunt.registerTask('deploy', 'Build with production env for bot.', [
+		'build',
+		'check-deploy'
 	]);
 
 	grunt.registerTask('sweep', [
