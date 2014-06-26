@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQueryFingerOptions | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/jqueryfinger.html">JQueryFinger</a>
+    </li>
+
+    <li>
+        <a href="jqueryfinger.jqueryfingeroptions.html">JQueryFingerOptions</a>
+    </li>
+
+            </ul>
+            <h1>Interface JQueryFingerOptions</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+
+
+
+
+
+
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="jqueryfinger.jqueryfingeroptions.html#doubletapinterval" class="tsd-kind-icon">doubleTapInterval</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="jqueryfinger.jqueryfingeroptions.html#flickduration" class="tsd-kind-icon">flickDuration</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="jqueryfinger.jqueryfingeroptions.html#motionthreshhold" class="tsd-kind-icon">motionThreshhold</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="jqueryfinger.jqueryfingeroptions.html#pressduration" class="tsd-kind-icon">pressDuration</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="jqueryfinger.jqueryfingeroptions.html#preventdefault" class="tsd-kind-icon">preventDefault</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group ">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="doubletapinterval" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> doubleTapInterval<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in finger/jquery.finger.d.ts:21</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The maximum time between two tap events to fire a doubletap event.
+If this time is reached, two distinct tap events will be fired instead.
+    Default: 300(ms).</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="flickduration" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> flickDuration<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in finger/jquery.finger.d.ts:29</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The maximum time the user will have to swipe in order to fire a flick
+event. If this time is reached, only drag events will continue to be
+fired.
+    Default: 150(ms).</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="motionthreshhold" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> motionThreshhold<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in finger/jquery.finger.d.ts:37</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The number of pixels the user will have to move in order to fire motion
+events (drag or flick). If this time is not reached, no motion will
+be handled and tap, doubletap or press event will be fired.
+    Default: 5(px).</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="pressduration" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> pressDuration<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">number</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in finger/jquery.finger.d.ts:14</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The time the user must hold in order to fire a press event. If this
+time is not reached, a tap event will be fired instead.
+    Default: 300(ms).</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="preventdefault" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> preventDefault<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in finger/jquery.finger.d.ts:43</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Globally prevents every native default behavior.
+    Default: undefined.</p>
+
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/jqueryfinger.html">JQueryFinger</a>
+    
+        
+            <ul>
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/jquery.html">jquery</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class="current tsd-kind-interface tsd-parent-kind-container">
+                    <a href="jqueryfinger.jqueryfingeroptions.html" class="tsd-kind-icon">JQueryFingerOptions</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="jqueryfinger.jqueryfingeroptions.html#doubletapinterval" class="tsd-kind-icon">doubleTapInterval</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="jqueryfinger.jqueryfingeroptions.html#flickduration" class="tsd-kind-icon">flickDuration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="jqueryfinger.jqueryfingeroptions.html#motionthreshhold" class="tsd-kind-icon">motionThreshhold</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="jqueryfinger.jqueryfingeroptions.html#pressduration" class="tsd-kind-icon">pressDuration</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-interface">
+                    <a href="jqueryfinger.jqueryfingeroptions.html#preventdefault" class="tsd-kind-icon">preventDefault</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

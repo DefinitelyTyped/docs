@@ -1,0 +1,3655 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebElement | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/protractor.html">protractor</a>
+    </li>
+
+    <li>
+        <a href="protractor.webelement.html">WebElement</a>
+    </li>
+
+            </ul>
+            <h1>Class WebElement</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Represents a DOM element. WebElements can be found by searching from the
+document root using a {@code webdriver.WebDriver} instance, or by searching
+under another {@code webdriver.WebElement}:</p>
+
+
+
+
+    <p>  driver.get(&#39;<a href="http://www.google.com">http://www.google.com</a>&#39;);
+  var searchForm = driver.findElement(By.tagName(&#39;form&#39;));
+  var searchBox = searchForm.findElement(By.name(&#39;q&#39;));
+  searchBox.sendKeys(&#39;webdriver&#39;);</p>
+<p>The WebElement is implemented as a promise for compatibility with the promise
+API. It will always resolve itself when its internal state has been fully
+resolved and commands may be issued against the element. This can be used to
+catch errors when an element cannot be located on the page:</p>
+<p>  driver.findElement(By.id(&#39;not-there&#39;)).then(function(element) {
+    alert(&#39;Found an element that was not expected to be there!&#39;);
+  }, function(error) {
+    alert(&#39;The element was not found, as expected&#39;);
+  });</p>
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>extends</dt>
+            <dd><p>{webdriver.promise.Deferred}</p>
+</dd>
+        
+    </dl>
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        WebElement
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="protractor.webelement.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#promise" class="tsd-kind-icon">promise</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group ">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="protractor.webelement.html#$" class="tsd-kind-icon">$</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="protractor.webelement.html#$$" class="tsd-kind-icon">$$</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#addboth" class="tsd-kind-icon">addBoth</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#addcallback" class="tsd-kind-icon">addCallback</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#addcallbacks" class="tsd-kind-icon">addCallbacks</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#adderrback" class="tsd-kind-icon">addErrback</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="protractor.webelement.html#cancel" class="tsd-kind-icon">cancel</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#clear" class="tsd-kind-icon">clear</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#click" class="tsd-kind-icon">click</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#errback" class="tsd-kind-icon">errback</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="protractor.webelement.html#evaluate" class="tsd-kind-icon">evaluate</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="protractor.webelement.html#findelement" class="tsd-kind-icon">findElement</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#findelements" class="tsd-kind-icon">findElements</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#fulfill" class="tsd-kind-icon">fulfill</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getattribute" class="tsd-kind-icon">getAttribute</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getcssvalue" class="tsd-kind-icon">getCssValue</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getdriver" class="tsd-kind-icon">getDriver</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getinnerhtml" class="tsd-kind-icon">getInnerHtml</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getlocation" class="tsd-kind-icon">getLocation</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getouterhtml" class="tsd-kind-icon">getOuterHtml</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#getsize" class="tsd-kind-icon">getSize</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#gettagname" class="tsd-kind-icon">getTagName</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#gettext" class="tsd-kind-icon">getText</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#isdisplayed" class="tsd-kind-icon">isDisplayed</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#iselementpresent" class="tsd-kind-icon">isElementPresent</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#isenabled" class="tsd-kind-icon">isEnabled</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#ispending" class="tsd-kind-icon">isPending</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#isselected" class="tsd-kind-icon">isSelected</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#reject" class="tsd-kind-icon">reject</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#removeall" class="tsd-kind-icon">removeAll</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#sendkeys" class="tsd-kind-icon">sendKeys</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#submit" class="tsd-kind-icon">submit</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#then" class="tsd-kind-icon">then</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.webelement.html#towirevalue" class="tsd-kind-icon">toWireValue</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>driver<span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>, id<span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <p>Overwrites 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2718</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>constructor</dt>
+            <dd></dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>driver: <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h5>
+                
+    <p>The parent WebDriver instance for this
+    element.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>id: <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h5>
+                
+    <p>Either the opaque ID for the
+    underlying DOM element assigned by the server, or a promise that will
+    resolve to that ID or another WebElement.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>driver<span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>, id<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <p>Overwrites 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#constructor">constructor</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2719</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>driver: <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>id: <span class="tsd-signature-type">string</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+    <a name="promise" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> promise<span class="tsd-signature-symbols">:</span> <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#promise">promise</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:428</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>The consumer promise for this instance. Provides protected access to the
+callback registering functions.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>type</dt>
+            <dd><p>{!webdriver.promise.Promise}</p>
+</dd>
+        
+    </dl>
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group ">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="$" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> $<span class="tsd-signature-symbols">(</span>selector<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in angular-protractor.d.ts:36</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Shortcut for querying the document directly with css.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>see</dt>
+            <dd><p>webdriver.WebElement.findElement</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>selector: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>a css selector</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+        
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="$$" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> $$<span class="tsd-signature-symbols">(</span>selector<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in angular-protractor.d.ts:46</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Shortcut for querying the document directly with css.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>see</dt>
+            <dd><p>webdriver.WebElement.findElements</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>selector: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>a css selector</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved to an
+    array of the located {@link webdriver.WebElement}s.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="addboth" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addBoth<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: any) =&gt; any</span>, opt_self<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#addboth">addBoth</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:365</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Registers a function to be invoked when this promise is either rejected or
+resolved. This function is provided for backwards compatibility with the
+Dojo Deferred API.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(value: any) =&gt; any</span></h5>
+                
+    <p>The function to call when this promise is
+    either resolved or rejected. The function should expect a single
+    argument: the resolved value or rejection error.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_self?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object which |this| should refer to when the
+    function is invoked.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A new promise which will be resolved
+    with the result of the invoked callback.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="addcallback" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addCallback<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: any) =&gt; any</span>, opt_self<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#addcallback">addCallback</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:334</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Registers a function to be invoked when this promise is successfully
+resolved. This function is provided for backwards compatibility with the
+Dojo Deferred API.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(value: any) =&gt; any</span></h5>
+                
+    <p>The function to call if this promise is
+    successfully resolved. The function should expect a single argument: the
+    promise&#39;s resolved value.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_self?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object which |this| should refer to when the
+    function is invoked.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A new promise which will be resolved
+    with the result of the invoked callback.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="addcallbacks" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addCallbacks<span class="tsd-signature-symbols">(</span>callback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(value: any) =&gt; any</span>, errback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(error: any) =&gt; any</span>, opt_self<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#addcallbacks">addCallbacks</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:383</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>An alias for {@code webdriver.promise.Promise.prototype.then} that permits
+the scope of the invoked function to be specified. This function is provided
+for backwards compatibility with the Dojo Deferred API.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>callback: <span class="tsd-signature-type">(value: any) =&gt; any</span></h5>
+                
+    <p>The function to call if this promise is
+    successfully resolved. The function should expect a single argument: the
+    promise&#39;s resolved value.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>errback: <span class="tsd-signature-type">(error: any) =&gt; any</span></h5>
+                
+    <p>The function to call if this promise is
+    rejected. The function should expect a single argument: the rejection
+    reason.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_self?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object which |this| should refer to when the
+    function is invoked.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A new promise which will be resolved
+    with the result of the invoked callback.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="adderrback" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> addErrback<span class="tsd-signature-symbols">(</span>errback<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">(error: any) =&gt; any</span>, opt_self<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#adderrback">addErrback</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:350</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Registers a function to be invoked when this promise is rejected.
+This function is provided for backwards compatibility with the
+Dojo Deferred API.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>errback: <span class="tsd-signature-type">(error: any) =&gt; any</span></h5>
+                
+    <p>The function to call if this promise is
+    rejected. The function should expect a single argument: the rejection
+    reason.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_self?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object which |this| should refer to when the
+    function is invoked.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A new promise which will be resolved
+    with the result of the invoked callback.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+    <a name="cancel" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> cancel<span class="tsd-signature-symbols">(</span>opt_reason<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#cancel">cancel</a>
+    
+</p>
+    
+    
+        <p>Overwrites 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#cancel">cancel</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:456</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Cancels the computation of this promise&#39;s value and flags the promise as a
+rejected value.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_reason?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The reason for cancelling this promise.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="clear" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> clear<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#clear">clear</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2971</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to clear the {@code value} of this element. This command
+has no effect if the underlying DOM element is neither a text INPUT element
+nor a TEXTAREA element.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when
+    the element has been cleared.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="click" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> click<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#click">click</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2820</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to click on this element.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when
+    the click command has completed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="errback" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> errback<span class="tsd-signature-symbols">(</span>opt_error<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#errback">errback</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:441</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_error?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="evaluate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> evaluate<span class="tsd-signature-symbols">(</span>expression<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in angular-protractor.d.ts:58</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Evalates the input as if it were on the scope of the current element.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>expression: <span class="tsd-signature-type">string</span></h5>
+                
+    
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will resolve to the
+    evaluated expression. The result will be resolved as in
+    {@link webdriver.WebDriver.executeScript}. In summary - primitives will
+    be resolved as is, functions will be converted to string, and elements
+    will be returned as a WebElement.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="findelement" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElement<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#findelement">findElement</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in angular-protractor.d.ts:89</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedule a command to find a descendant of this element. If the element
+cannot be found, a {@code bot.ErrorCode.NO_SUCH_ELEMENT} result will
+be returned by the driver. Unlike other commands, this error cannot be
+suppressed. In other words, scheduling a command to find an element doubles
+as an assert that the element is present on the page. To test whether an
+element is present on the page, use {@code #isElementPresent} instead.</p>
+<p><p/>
+The search criteria for find an element may either be a
+{@code webdriver.Locator} object, or a simple JSON object whose sole key
+is one of the accepted locator strategies, as defined by
+{@code webdriver.Locator.Strategy}. For example, the following two
+statements are equivalent:
+<code><pre>
+var e1 = element.findElement(By.id(&#39;foo&#39;));
+var e2 = element.findElement({id:&#39;foo&#39;});
+</pre></code></p>
+<p><p/>
+Note that JS locator searches cannot be restricted to a subtree. All such
+searches are delegated to this instance&#39;s parent WebDriver.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The locator
+    strategy to use when searching for the element.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code WebDriver#executeScript} if
+    using a JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+        <p>A WebElement that can be used to issue
+    commands against the located element. If the element is not found, the
+    element will be invalidated and all scheduled commands aborted.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElement<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+        <p>Overwrites 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#findelement">findElement</a>
+    
+</p>
+    
+    
+        <ul>
+            
+                <li>Defined in angular-protractor.d.ts:90</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="protractor.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="findelements" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElements<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#findelements">findElements</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2812</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to find all of the descendants of this element that match
+the given search criteria.</p>
+<p><p/>
+Note that JS locator searches cannot be restricted to a subtree. All such
+searches are delegated to this instance&#39;s parent WebDriver.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The locator
+    strategy to use when searching for the elements.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code WebDriver#executeScript} if
+    using a JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with an
+    array of located {@link webdriver.WebElement}s.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElements<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#findelements">findElements</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2813</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="fulfill" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> fulfill<span class="tsd-signature-symbols">(</span>opt_value<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#fulfill">fulfill</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:449</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Resolves this promise with the given value. If the value is itself a
+promise and not a reference to this deferred, this instance will wait for
+it before resolving.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_value?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The resolved value.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getattribute" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getAttribute<span class="tsd-signature-symbols">(</span>attributeName<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getattribute">getAttribute</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2915</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to query for the value of the given attribute of the
+element. Will return the current value even if it has been modified after the
+page has been loaded. More exactly, this method will return the value of the
+given attribute, unless that attribute is not present, in which case the
+value of the property with the same name is returned. If neither value is
+set, null is returned. The &quot;style&quot; attribute is converted as best can be to a
+text representation with a trailing semi-colon. The following are deemed to
+be &quot;boolean&quot; attributes and will be returned as thus:</p>
+
+
+
+
+    <p><p>async, autofocus, autoplay, checked, compact, complete, controls, declare,
+defaultchecked, defaultselected, defer, disabled, draggable, ended,
+formnovalidate, hidden, indeterminate, iscontenteditable, ismap, itemscope,
+loop, multiple, muted, nohref, noresize, noshade, novalidate, nowrap, open,
+paused, pubdate, readonly, required, reversed, scoped, seamless, seeking,
+selected, spellcheck, truespeed, willvalidate</p>
+<p><p>Finally, the following commonly mis-capitalized attribute/property names
+are evaluated as expected:</p>
+<ul>
+  <li>&quot;class&quot;
+  <li>&quot;readonly&quot;
+</ul>
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>attributeName: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the attribute to query.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    attribute&#39;s value.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getcssvalue" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCssValue<span class="tsd-signature-symbols">(</span>cssStyleProperty<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getcssvalue">getCssValue</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2886</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to query for the computed style of the element
+represented by this instance. If the element inherits the named style from
+its parent, the parent will be queried for its value.  Where possible, color
+values will be converted to their hex representation (e.g. #00ff00 instead of
+rgb(0, 255, 0)).</p>
+<p><p/>
+<em>Warning:</em> the value returned will be as the browser interprets it, so
+it may be tricky to form a proper assertion.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>cssStyleProperty: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The name of the CSS style property to look
+    up.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    requested CSS value.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getdriver" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getDriver<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getdriver">getDriver</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2740</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+</p>
+    
+        <p>The parent driver for this instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getinnerhtml" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getInnerHtml<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getinnerhtml">getInnerHtml</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2992</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the inner HTML of this element.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    element&#39;s inner HTML.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getlocation" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getLocation<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getlocation">getLocation</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2938</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to compute the location of this element in page space.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved to the
+    element&#39;s location as a {@code {x:number, y:number}} object.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getouterhtml" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getOuterHtml<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getouterhtml">getOuterHtml</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2985</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the outer HTML of this element.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    the element&#39;s outer HTML.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="getsize" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSize<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#getsize">getSize</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2931</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to compute the size of this element&#39;s bounding box, in
+pixels.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    element&#39;s size as a {@code {width:number, height:number}} object.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="gettagname" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getTagName<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#gettagname">getTagName</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2869</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to query for the tag/node name of this element.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    element&#39;s tag name.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="gettext" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getText<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#gettext">getText</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2923</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Get the visible (i.e. not hidden by CSS) innerText of this element, including
+sub-elements, without any leading or trailing whitespace.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    element&#39;s visible text.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="isdisplayed" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isDisplayed<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#isdisplayed">isDisplayed</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2978</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to test whether this element is currently displayed.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    whether this element is currently visible on the page.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="iselementpresent" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isElementPresent<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#iselementpresent">isElementPresent</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2795</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to test if there is at least one descendant of this
+element that matches the given search criteria.</p>
+
+
+
+
+    <p><p>Note that JS locator searches cannot be restricted to a subtree of the
+DOM. All such searches are delegated to this instance&#39;s parent WebDriver.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The locator
+    strategy to use when searching for the element.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code WebDriver#executeScript} if
+    using a JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    whether an element could be located on the page.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isElementPresent<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#iselementpresent">isElementPresent</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2796</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="isenabled" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isEnabled<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#isenabled">isEnabled</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2946</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to query whether the DOM element represented by this
+instance is enabled, as dicted by the {@code disabled} attribute.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    whether this element is currently enabled.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="ispending" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isPending<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">boolean</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#ispending">isPending</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:304</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <span class="tsd-signature-type">boolean</span>
+    
+</p>
+    
+        <p>Whether this promise&#39;s value is still being computed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="isselected" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isSelected<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#isselected">isSelected</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2953</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to query whether this element is selected.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    whether this element is currently selected.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="reject" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> reject<span class="tsd-signature-symbols">(</span>opt_error<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#reject">reject</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:440</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Rejects this promise. If the error is itself a promise, this instance will
+be chained to it and be rejected with the error&#39;s resolved value.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_error?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The rejection reason, typically either a
+    {@code Error} or a {@code string}.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="removeall" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> removeAll<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.deferred.html">Deferred</a>.<a href="webdriver.promise.deferred.html#removeall">removeAll</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:462</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Removes all of the listeners previously registered on this deferred.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>throws</dt>
+            <dd><p>{Error} If this deferred has already been resolved.</p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="sendkeys" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sendKeys<span class="tsd-signature-symbols">(</span>var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;string&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#sendkeys">sendKeys</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2862</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to type a sequence on the DOM element represented by this
+instance.</p>
+<p><p/>
+Modifier keys (SHIFT, CONTROL, ALT, META) are stateful; once a modifier is
+processed in the keysequence, that key state is toggled until one of the
+following occurs:</p>
+<p><ul></p>
+<p><li>The modifier key is encountered again in the sequence. At this point the
+state of the key is toggled (along with the appropriate keyup/down events).
+</li></p>
+<p><li>The {@code webdriver.Key.NULL} key is encountered in the sequence. When
+this key is encountered, all modifier keys current in the down state are
+released (with accompanying keyup events). The NULL key can be used to
+simulate common keyboard shortcuts:
+<code>
+    element.sendKeys(&quot;text was&quot;,
+                     webdriver.Key.CONTROL, &quot;a&quot;, webdriver.Key.NULL,
+                     &quot;now text is&quot;);
+    // Alternatively:
+    element.sendKeys(&quot;text was&quot;,
+                     webdriver.Key.chord(webdriver.Key.CONTROL, &quot;a&quot;),
+                     &quot;now text is&quot;);
+</code></li></p>
+<p><li>The end of the keysequence is encountered. When there are no more keys
+to type, all depressed modifier keys are released (with accompanying keyup
+events).
+</li>
+</ul>
+<strong>Note:</strong> On browsers where native keyboard events are not yet
+supported (e.g. Firefox on OS X), key events will be synthesized. Special
+punctionation keys will be synthesized according to a standard QWERTY en-us
+keyboard layout.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;string&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The sequence of keys to
+    type. All arguments will be joined into a single sequence (var_args is
+    permitted for convenience).</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when all
+    keys have been typed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="submit" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> submit<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#submit">submit</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2962</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to submit the form containing this element (or this
+element if it is a FORM element). This command is a no-op if the element is
+not contained in a form.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when
+    the form has been submitted.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="then" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> then<span class="tsd-signature-symbols">(</span>opt_callback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(value: any) =&gt; any</span>, opt_errback<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">(error: any) =&gt; any</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.promise.promise.html">Promise</a>.<a href="webdriver.promise.promise.html#then">then</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:319</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Registers listeners for when this instance is resolved. This function most
+overridden by subtypes.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_callback?: <span class="tsd-signature-type">(value: any) =&gt; any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The function to call if this promise is
+    successfully resolved. The function should expect a single argument: the
+    promise&#39;s resolved value.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_errback?: <span class="tsd-signature-type">(error: any) =&gt; any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The function to call if this promise is
+    rejected. The function should expect a single argument: the rejection
+    reason.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A new promise which will be resolved
+    with the result of the invoked callback.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="towirevalue" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> toWireValue<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.webelement.html">WebElement</a>.<a href="webdriver.webelement.html#towirevalue">toWireValue</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2747</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>see</dt>
+            <dd><p><a href="http://code.google.com/p/selenium/wiki/JsonWireProtocol">http://code.google.com/p/selenium/wiki/JsonWireProtocol</a></p>
+</dd>
+        
+    </dl>
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that resolves to this
+    element&#39;s JSON representation as defined by the WebDriver wire protocol.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/protractor.html">protractor</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/protractor.html">protractor</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.command.html">protractor.command</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.error.html">protractor.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.events.html">protractor.events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.logging.html">protractor.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.process.html">protractor.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.promise.html">protractor.promise</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/selenium-webdriver.html">selenium-webdriver</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/webdriver.html">webdriver</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.error.html">webdriver.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.logging.html">webdriver.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.process.html">webdriver.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.promise.html">webdriver.promise</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#by" class="tsd-kind-icon">By</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.element.html" class="tsd-kind-icon">Element</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.elementarrayfinder.html" class="tsd-kind-icon">ElementArrayFinder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.elementfinder.html" class="tsd-kind-icon">ElementFinder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.iprotractorlocatorstrategy.html" class="tsd-kind-icon">IProtractorLocatorStrategy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.abstractbuilder.html" class="tsd-kind-icon">AbstractBuilder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.actionsequence.html" class="tsd-kind-icon">ActionSequence</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.alert.html" class="tsd-kind-icon">Alert</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.browser.html" class="tsd-kind-icon">Browser</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.builder.html" class="tsd-kind-icon">Builder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.button.html" class="tsd-kind-icon">Button</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.capabilities.html" class="tsd-kind-icon">Capabilities</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.capability.html" class="tsd-kind-icon">Capability</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.command.html" class="tsd-kind-icon">Command</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.commandname.html" class="tsd-kind-icon">CommandName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.eventemitter.html" class="tsd-kind-icon">EventEmitter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.firefoxdomexecutor.html" class="tsd-kind-icon">FirefoxDomExecutor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.key.html" class="tsd-kind-icon">Key</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.locator.html" class="tsd-kind-icon">Locator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.protractor.html" class="tsd-kind-icon">Protractor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.session.html" class="tsd-kind-icon">Session</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.unhandledalerterror.html" class="tsd-kind-icon">UnhandledAlertError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.webdriver.html" class="tsd-kind-icon">WebDriver</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.webelement.html" class="tsd-kind-icon">WebElement</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+                    <a href="protractor.webelement.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#promise" class="tsd-kind-icon">promise</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="protractor.webelement.html#$" class="tsd-kind-icon">$</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="protractor.webelement.html#$$" class="tsd-kind-icon">$$</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#addboth" class="tsd-kind-icon">addBoth</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#addcallback" class="tsd-kind-icon">addCallback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#addcallbacks" class="tsd-kind-icon">addCallbacks</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#adderrback" class="tsd-kind-icon">addErrback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+                    <a href="protractor.webelement.html#cancel" class="tsd-kind-icon">cancel</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#clear" class="tsd-kind-icon">clear</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#click" class="tsd-kind-icon">click</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#errback" class="tsd-kind-icon">errback</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class">
+                    <a href="protractor.webelement.html#evaluate" class="tsd-kind-icon">evaluate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+                    <a href="protractor.webelement.html#findelement" class="tsd-kind-icon">findElement</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#findelements" class="tsd-kind-icon">findElements</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#fulfill" class="tsd-kind-icon">fulfill</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getattribute" class="tsd-kind-icon">getAttribute</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getcssvalue" class="tsd-kind-icon">getCssValue</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getdriver" class="tsd-kind-icon">getDriver</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getinnerhtml" class="tsd-kind-icon">getInnerHtml</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getlocation" class="tsd-kind-icon">getLocation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getouterhtml" class="tsd-kind-icon">getOuterHtml</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#getsize" class="tsd-kind-icon">getSize</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#gettagname" class="tsd-kind-icon">getTagName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#gettext" class="tsd-kind-icon">getText</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#isdisplayed" class="tsd-kind-icon">isDisplayed</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#iselementpresent" class="tsd-kind-icon">isElementPresent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#isenabled" class="tsd-kind-icon">isEnabled</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#ispending" class="tsd-kind-icon">isPending</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#isselected" class="tsd-kind-icon">isSelected</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#reject" class="tsd-kind-icon">reject</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#removeall" class="tsd-kind-icon">removeAll</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#sendkeys" class="tsd-kind-icon">sendKeys</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#submit" class="tsd-kind-icon">submit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#then" class="tsd-kind-icon">then</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.webelement.html#towirevalue" class="tsd-kind-icon">toWireValue</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#getinstance" class="tsd-kind-icon">getInstance</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#setinstance" class="tsd-kind-icon">setInstance</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#wrapdriver" class="tsd-kind-icon">wrapDriver</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

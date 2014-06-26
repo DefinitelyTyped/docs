@@ -1,0 +1,3302 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebDriver | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/webdriver.html">webdriver</a>
+    </li>
+
+    <li>
+        <a href="webdriver.webdriver.html">WebDriver</a>
+    </li>
+
+            </ul>
+            <h1>Class WebDriver</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Creates a new WebDriver client, which provides control over a browser.</p>
+
+
+
+
+    <p>Every WebDriver command returns a {@code webdriver.promise.Promise} that
+represents the result of that command. Callbacks may be registered on this
+object to manipulate the command result or catch an expected error. Any
+commands scheduled with a callback are considered sub-commands and will
+execute before the next command in the current frame. For example:</p>
+<p>  var message = [];
+  driver.call(message.push, message, &#39;a&#39;).then(function() {
+    driver.call(message.push, message, &#39;b&#39;);
+  });
+  driver.call(message.push, message, &#39;c&#39;);
+  driver.call(function() {
+    alert(&#39;message is abc? &#39; + (message.join(&#39;&#39;) == &#39;abc&#39;));
+  });</p>
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li class="target">
+    
+        WebDriver
+    
+
+    
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="protractor.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+
+    
+
+    
+</li>
+            
+                <li >
+    
+        
+    
+        <a href="protractor.protractor.html" class="tsd-signature-type">Protractor</a>
+    
+
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-external">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-external">
+            <h3>Properties</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-logs" class="tsd-kind-icon">Logs</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-navigation" class="tsd-kind-icon">Navigation</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-options" class="tsd-kind-icon">Options</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-targetlocator" class="tsd-kind-icon">TargetLocator</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-timeouts" class="tsd-kind-icon">Timeouts</a></li>
+                
+                    <li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-window" class="tsd-kind-icon">Window</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-external">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#actions" class="tsd-kind-icon">actions</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-attachtosession" class="tsd-kind-icon">attachToSession</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#call" class="tsd-kind-icon">call</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#close" class="tsd-kind-icon">close</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#controlflow" class="tsd-kind-icon">controlFlow</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="webdriver.webdriver.html#static-createsession" class="tsd-kind-icon">createSession</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#executeasyncscript" class="tsd-kind-icon">executeAsyncScript</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#executescript" class="tsd-kind-icon">executeScript</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#findelement" class="tsd-kind-icon">findElement</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#findelements" class="tsd-kind-icon">findElements</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#get" class="tsd-kind-icon">get</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getallwindowhandles" class="tsd-kind-icon">getAllWindowHandles</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getcapabilities" class="tsd-kind-icon">getCapabilities</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getcurrenturl" class="tsd-kind-icon">getCurrentUrl</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getpagesource" class="tsd-kind-icon">getPageSource</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getsession" class="tsd-kind-icon">getSession</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#gettitle" class="tsd-kind-icon">getTitle</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#getwindowhandle" class="tsd-kind-icon">getWindowHandle</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#iselementpresent" class="tsd-kind-icon">isElementPresent</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#manage" class="tsd-kind-icon">manage</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#navigate" class="tsd-kind-icon">navigate</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#quit" class="tsd-kind-icon">quit</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#schedule" class="tsd-kind-icon">schedule</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#sleep" class="tsd-kind-icon">sleep</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#switchto" class="tsd-kind-icon">switchTo</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#takescreenshot" class="tsd-kind-icon">takeScreenshot</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="webdriver.webdriver.html#wait" class="tsd-kind-icon">wait</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-external">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-external">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>session<span class="tsd-signature-symbols">: </span><a href="webdriver.session.html" class="tsd-signature-type">Session</a>, executor<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a>, opt_flow<span class="tsd-signature-symbols">?: </span><a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2279</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>constructor</dt>
+            <dd></dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>session: <a href="webdriver.session.html" class="tsd-signature-type">Session</a></h5>
+                
+    <p>Either a
+    known session or a promise that will be resolved to a session.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>executor: <a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a></h5>
+                
+    <p>The executor to use when
+    sending commands to the browser.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_flow?: <a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The flow to
+    schedule commands through. Defaults to the active flow object.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+</p>
+    
+
+
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>session<span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>, executor<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a>, opt_flow<span class="tsd-signature-symbols">?: </span><a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2280</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>session: <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>executor: <a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_flow?: <a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-external">
+    <h2>Properties</h2>
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-logs" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> Logs<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdriverlogs.html" class="tsd-signature-type">WebDriverLogs</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2290</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-navigation" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> Navigation<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdrivernavigation.html" class="tsd-signature-type">WebDriverNavigation</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2286</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-options" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> Options<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdriveroptions.html" class="tsd-signature-type">WebDriverOptions</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2287</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-targetlocator" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> TargetLocator<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdrivertargetlocator.html" class="tsd-signature-type">WebDriverTargetLocator</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2291</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-timeouts" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> Timeouts<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdrivertimeouts.html" class="tsd-signature-type">WebDriverTimeouts</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2288</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-window" class="anchor"></a>
+    
+        <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> Window<span class="tsd-signature-symbols">:</span> <a href="webdriver.webdriverwindow.html" class="tsd-signature-type">WebDriverWindow</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2289</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-external">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="actions" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> actions<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2369</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a new action sequence using this driver. The sequence will not be
+scheduled for execution until {@link webdriver.ActionSequence#perform} is
+called. Example:</p>
+<pre><code>
+  driver.actions().
+      mouseDown(element1).
+      mouseMove(element2).
+      mouseUp().
+      perform();
+</code></pre>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A new action sequence for this instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-attachtosession" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> attachToSession<span class="tsd-signature-symbols">(</span>executor<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a>, sessionId<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2304</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a new WebDriver client for an existing session.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>executor: <a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a></h5>
+                
+    <p>Command executor to use when
+    querying for session details.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>sessionId: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>ID of the session to attach to.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+</p>
+    
+        <p>A new client for the specified session.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="call" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> call<span class="tsd-signature-symbols">(</span>fn<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, opt_scope<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2501</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to execute a custom function.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fn: <span class="tsd-signature-type">any</span></h5>
+                
+    <p>The function to execute.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_scope?: <span class="tsd-signature-type">any</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The object in whose scope to execute the function.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Any arguments to pass to the function.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    function&#39;s result.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="close" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> close<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2554</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to close the current window.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when
+    this command has completed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="controlflow" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> controlFlow<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2324</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.controlflow.html" class="tsd-signature-type">ControlFlow</a>
+    
+</p>
+    
+        <p>The control flow used by this
+    instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+    <a name="static-createsession" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> <span class="tsd-flag ts-flagstatic">static</span> createSession<span class="tsd-signature-symbols">(</span>executor<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a>, desiredCapabilities<span class="tsd-signature-symbols">: </span><a href="webdriver.capabilities.html" class="tsd-signature-type">Capabilities</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2314</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Creates a new WebDriver session.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>executor: <a href="../interfaces/webdriver.commandexecutor.html" class="tsd-signature-type">CommandExecutor</a></h5>
+                
+    <p>The executor to create the new
+    session with.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>desiredCapabilities: <a href="webdriver.capabilities.html" class="tsd-signature-type">Capabilities</a></h5>
+                
+    <p>The desired
+    capabilities for the new session.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a>
+    
+</p>
+    
+        <p>The driver for the newly created session.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="executeasyncscript" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> executeAsyncScript<span class="tsd-signature-symbols">(</span>script<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2490</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to execute asynchronous JavaScript in the context of the
+currently selected frame or window. The script fragment will be executed as
+the body of an anonymous function. If the script is provided as a function
+object, that function will be converted to a string for injection into the
+target window.</p>
+
+
+
+
+    <p>Any arguments provided in addition to the script will be included as script
+arguments and may be referenced using the {@code arguments} object.
+Arguments may be a boolean, number, string, or {@code webdriver.WebElement}.
+Arrays and objects may also be used as script arguments as long as each item
+adheres to the types previously mentioned.</p>
+<p>Unlike executing synchronous JavaScript with
+{@code webdriver.WebDriver.prototype.executeScript}, scripts executed with
+this function must explicitly signal they are finished by invoking the
+provided callback. This callback will always be injected into the
+executed function as the last argument, and thus may be referenced with
+{@code arguments[arguments.length - 1]}. The following steps will be taken
+for resolving this functions return value against the first argument to the
+script&#39;s callback function:</p>
+<ul>
+<li>For a HTML element, the value will resolve to a
+    {@code webdriver.WebElement}</li>
+<li>Null and undefined return values will resolve to null</li>
+<li>Booleans, numbers, and strings will resolve as is</li>
+<li>Functions will resolve to their string representation</li>
+<li>For arrays and objects, each member item will be converted according to
+    the rules above</li>
+</ul>
+
+<p>Example #1: Performing a sleep that is synchronized with the currently
+selected window:
+<code><pre>
+var start = new Date().getTime();
+driver.executeAsyncScript(
+    &#39;window.setTimeout(arguments[arguments.length - 1], 500);&#39;).
+    then(function() {
+      console.log(&#39;Elapsed time: &#39; + (new Date().getTime() - start) + &#39; ms&#39;);
+    });
+</pre></code></p>
+<p>Example #2: Synchronizing a test with an AJAX application:
+<code><pre>
+var button = driver.findElement(By.id(&#39;compose-button&#39;));
+button.click();
+driver.executeAsyncScript(
+    &#39;var callback = arguments[arguments.length - 1];&#39; +
+    &#39;mailClient.getComposeWindowWidget().onload(callback);&#39;);
+driver.switchTo().frame(&#39;composeWidget&#39;);
+driver.findElement(By.id(&#39;to&#39;)).sendKEys(&#39;dog@example.com&#39;);
+</pre></code></p>
+<p>Example #3: Injecting a XMLHttpRequest and waiting for the result. In this
+example, the inject script is specified with a function literal. When using
+this format, the function is converted to a string for injection, so it
+should not reference any symbols not defined in the scope of the page under
+test.
+<code><pre>
+driver.executeAsyncScript(function() {
+  var callback = arguments[arguments.length - 1];
+  var xhr = new XMLHttpRequest();
+  xhr.open(&quot;GET&quot;, &quot;/resource/data.json&quot;, true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+      callback(xhr.resposneText);
+    }
+  }
+  xhr.send(&#39;&#39;);
+}).then(function(str) {
+  console.log(JSON.parse(str)[&#39;food&#39;]);
+});
+</pre></code></p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>script: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The script to execute.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The arguments to pass to the script.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will resolve to the
+   scripts return value.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> executeAsyncScript<span class="tsd-signature-symbols">(</span>script<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2491</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>script: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="executescript" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> executeScript<span class="tsd-signature-symbols">(</span>script<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2408</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to execute JavaScript in the context of the currently
+selected frame or window. The script fragment will be executed as the body
+of an anonymous function. If the script is provided as a function object,
+that function will be converted to a string for injection into the target
+window.</p>
+
+
+
+
+    <p>Any arguments provided in addition to the script will be included as script
+arguments and may be referenced using the {@code arguments} object.
+Arguments may be a boolean, number, string, or {@code webdriver.WebElement}.
+Arrays and objects may also be used as script arguments as long as each item
+adheres to the types previously mentioned.</p>
+<p>The script may refer to any variables accessible from the current window.
+Furthermore, the script will execute in the window&#39;s context, thus
+{@code document} may be used to refer to the current document. Any local
+variables will not be available once the script has finished executing,
+though global variables will persist.</p>
+<p>If the script has a return value (i.e. if the script contains a return
+statement), then the following steps will be taken for resolving this
+functions return value:</p>
+<ul>
+<li>For a HTML element, the value will resolve to a
+    {@code webdriver.WebElement}</li>
+<li>Null and undefined return values will resolve to null</li>
+<li>Booleans, numbers, and strings will resolve as is</li>
+<li>Functions will resolve to their string representation</li>
+<li>For arrays and objects, each member item will be converted according to
+    the rules above</li>
+</ul>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>script: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The script to execute.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The arguments to pass to the script.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will resolve to the
+   scripts return value.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> executeScript<span class="tsd-signature-symbols">(</span>script<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2409</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>script: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="findelement" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElement<span class="tsd-signature-symbols">(</span>locatorOrElement<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2614</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedule a command to find an element on the page. If the element cannot be
+found, a {@code bot.ErrorCode.NO_SUCH_ELEMENT} result will be returned
+by the driver. Unlike other commands, this error cannot be suppressed. In
+other words, scheduling a command to find an element doubles as an assert
+that the element is present on the page. To test whether an element is
+present on the page, use {@code #isElementPresent} instead.</p>
+
+
+
+
+    <p><p>The search criteria for find an element may either be a
+{@code webdriver.Locator} object, or a simple JSON object whose sole key
+is one of the accepted locator strategies, as defined by
+{@code webdriver.Locator.Strategy}. For example, the following two statements
+are equivalent:
+<code><pre>
+var e1 = driver.findElement(By.id(&#39;foo&#39;));
+var e2 = driver.findElement({id:&#39;foo&#39;});
+</pre></code></p>
+<p><p>When running in the browser, a WebDriver cannot manipulate DOM elements
+directly; it may do so only through a {@link webdriver.WebElement} reference.
+This function may be used to generate a WebElement from a DOM element. A
+reference to the DOM element will be stored in a known location and this
+driver will attempt to retrieve it through {@link #executeScript}. If the
+element cannot be found (eg, it belongs to a different document than the
+one this instance is currently focused on), a
+{@link bot.ErrorCode.NO_SUCH_ELEMENT} error will be returned.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locatorOrElement: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The
+    locator strategy to use when searching for the element, or the actual
+    DOM element to be located by the server.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code #executeScript} if using a
+    JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+        <p>A WebElement that can be used to issue
+    commands against the located element. If the element is not found, the
+    element will be invalidated and all scheduled commands aborted.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElement<span class="tsd-signature-symbols">(</span>locatorOrElement<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2615</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locatorOrElement: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="findelements" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElements<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2645</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedule a command to search for multiple elements on the page.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The locator
+    strategy to use when searching for the element.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code #executeScript} if using a
+    JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved to an
+    array of the located {@link webdriver.WebElement}s.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> findElements<span class="tsd-signature-symbols">(</span>locator<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2646</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locator: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="get" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> get<span class="tsd-signature-symbols">(</span>url<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2562</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to navigate to the given URL.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>url: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The fully qualified URL to open.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when the
+    document has finished loading.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getallwindowhandles" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getAllWindowHandles<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2537</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the current list of available window handles.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with an
+    array of window handles.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getcapabilities" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCapabilities<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2345</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will resolve with the
+    this instance&#39;s capabilities.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getcurrenturl" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getCurrentUrl<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2569</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the URL of the current page.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    current URL.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getpagesource" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getPageSource<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2547</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the current page&#39;s source. The page source
+returned is a representation of the underlying DOM: do not expect it to be
+formatted or escaped in the same way as the response sent from the web
+server.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    current page source.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getsession" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getSession<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2339</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise for this client&#39;s session.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="gettitle" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getTitle<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2576</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve the current page&#39;s title.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    current page&#39;s title.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="getwindowhandle" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> getWindowHandle<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2530</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to retrieve they current window handle.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with the
+    current window handle.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="iselementpresent" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isElementPresent<span class="tsd-signature-symbols">(</span>locatorOrElement<span class="tsd-signature-symbols">: </span><a href="webdriver.locator.html" class="tsd-signature-type">Locator</a>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2632</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to test if an element is present on the page.</p>
+
+
+
+
+    <p><p>If given a DOM element, this function will check if it belongs to the
+document the driver is currently focused on. Otherwise, the function will
+test if at least one element can be found with the given search criteria.</p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locatorOrElement: <a href="webdriver.locator.html" class="tsd-signature-type">Locator</a></h5>
+                
+    <p>The
+    locator strategy to use when searching for the element, or the actual
+    DOM element to be located by the server.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Arguments to pass to {@code #executeScript} if using a
+    JavaScript locator.  Otherwise ignored.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will resolve to whether
+    the element is present on the page.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> isElementPresent<span class="tsd-signature-symbols">(</span>locatorOrElement<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">any</span>, var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2633</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>locatorOrElement: <span class="tsd-signature-type">any</span></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="manage" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> manage<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdriveroptions.html" class="tsd-signature-type">WebDriverOptions</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2667</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdriveroptions.html" class="tsd-signature-type">WebDriverOptions</a>
+    
+</p>
+    
+        <p>The options interface for this
+    instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="navigate" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> navigate<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdrivernavigation.html" class="tsd-signature-type">WebDriverNavigation</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2673</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdrivernavigation.html" class="tsd-signature-type">WebDriverNavigation</a>
+    
+</p>
+    
+        <p>The navigation interface for this
+    instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="quit" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> quit<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2354</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to quit the current session. After calling quit, this
+instance will be invalidated and may no longer be used to issue commands
+against the browser.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when
+    the command has completed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="schedule" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> schedule<span class="tsd-signature-symbols">(</span>command<span class="tsd-signature-symbols">: </span><a href="webdriver.command.html" class="tsd-signature-type">Command</a>, description<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2334</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a {@code webdriver.Command} to be executed by this driver&#39;s
+{@code webdriver.CommandExecutor}.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>command: <a href="webdriver.command.html" class="tsd-signature-type">Command</a></h5>
+                
+    <p>The command to schedule.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>description: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>A description of the command for debugging.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved with
+    the command result.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="sleep" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sleep<span class="tsd-signature-symbols">(</span>ms<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2523</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to make the driver sleep for the given amount of time.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>ms: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>The amount of time, in milliseconds, to sleep.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when the
+    sleep has finished.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="switchto" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> switchTo<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.webdrivertargetlocator.html" class="tsd-signature-type">WebDriverTargetLocator</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2679</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.webdrivertargetlocator.html" class="tsd-signature-type">WebDriverTargetLocator</a>
+    
+</p>
+    
+        <p>The target locator interface for
+    this instance.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="takescreenshot" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> takeScreenshot<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2661</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedule a command to take a screenshot. The driver makes a best effort to
+return a screenshot of the following, in order of preference:</p>
+<ol>
+  <li>Entire page
+  <li>Current window
+  <li>Visible portion of the current frame
+  <li>The screenshot of the entire display containing the browser
+</ol>
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved to the
+    screenshot as a base-64 encoded PNG.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+    <a name="wait" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> wait<span class="tsd-signature-symbols">(</span>fn<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">() =&gt; any</span>, timeout<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">number</span>, opt_message<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:2515</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Schedules a command to wait for a condition to hold, as defined by some
+user supplied function. If any errors occur while evaluating the wait, they
+will be allowed to propagate.</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>fn: <span class="tsd-signature-type">() =&gt; any</span></h5>
+                
+    <p>The function to
+     evaluate as a wait condition.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>timeout: <span class="tsd-signature-type">number</span></h5>
+                
+    <p>How long to wait for the condition to be true.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_message?: <span class="tsd-signature-type">string</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>An optional message to use if the wait times
+    out.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved when the
+    wait condition has been satisfied.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container">
+    <a href="../modules/protractor.html">protractor</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/protractor.html">protractor</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.command.html">protractor.command</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.error.html">protractor.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.events.html">protractor.events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.logging.html">protractor.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.process.html">protractor.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.promise.html">protractor.promise</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/selenium-webdriver.html">selenium-webdriver</a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container tsd-is-external">
+    <a href="../modules/webdriver.html">webdriver</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.error.html">webdriver.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.logging.html">webdriver.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.process.html">webdriver.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.promise.html">webdriver.promise</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container tsd-is-external">
+                    <a href="../modules/webdriver.html#by" class="tsd-kind-icon">By</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container tsd-is-external">
+                    <a href="../interfaces/webdriver.commandexecutor.html" class="tsd-kind-icon">CommandExecutor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container tsd-is-external">
+                    <a href="../interfaces/webdriver.ilocation.html" class="tsd-kind-icon">ILocation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container tsd-is-external">
+                    <a href="../interfaces/webdriver.ilocatorstrategy.html" class="tsd-kind-icon">ILocatorStrategy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.abstractbuilder.html" class="tsd-kind-icon">AbstractBuilder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.actionsequence.html" class="tsd-kind-icon">ActionSequence</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.alert.html" class="tsd-kind-icon">Alert</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.browser.html" class="tsd-kind-icon">Browser</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.builder.html" class="tsd-kind-icon">Builder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.button.html" class="tsd-kind-icon">Button</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.capabilities.html" class="tsd-kind-icon">Capabilities</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.capability.html" class="tsd-kind-icon">Capability</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.command.html" class="tsd-kind-icon">Command</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.commandname.html" class="tsd-kind-icon">CommandName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.eventemitter.html" class="tsd-kind-icon">EventEmitter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.firefoxdomexecutor.html" class="tsd-kind-icon">FirefoxDomExecutor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.key.html" class="tsd-kind-icon">Key</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.locator.html" class="tsd-kind-icon">Locator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.session.html" class="tsd-kind-icon">Session</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.unhandledalerterror.html" class="tsd-kind-icon">UnhandledAlertError</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdriver.html" class="tsd-kind-icon">WebDriver</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-logs" class="tsd-kind-icon">Logs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-navigation" class="tsd-kind-icon">Navigation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-options" class="tsd-kind-icon">Options</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-targetlocator" class="tsd-kind-icon">TargetLocator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-timeouts" class="tsd-kind-icon">Timeouts</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-window" class="tsd-kind-icon">Window</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#actions" class="tsd-kind-icon">actions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-attachtosession" class="tsd-kind-icon">attachToSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#call" class="tsd-kind-icon">call</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#close" class="tsd-kind-icon">close</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#controlflow" class="tsd-kind-icon">controlFlow</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+                    <a href="webdriver.webdriver.html#static-createsession" class="tsd-kind-icon">createSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#executeasyncscript" class="tsd-kind-icon">executeAsyncScript</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#executescript" class="tsd-kind-icon">executeScript</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#findelement" class="tsd-kind-icon">findElement</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#findelements" class="tsd-kind-icon">findElements</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#get" class="tsd-kind-icon">get</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getallwindowhandles" class="tsd-kind-icon">getAllWindowHandles</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getcapabilities" class="tsd-kind-icon">getCapabilities</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getcurrenturl" class="tsd-kind-icon">getCurrentUrl</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getpagesource" class="tsd-kind-icon">getPageSource</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getsession" class="tsd-kind-icon">getSession</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#gettitle" class="tsd-kind-icon">getTitle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#getwindowhandle" class="tsd-kind-icon">getWindowHandle</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#iselementpresent" class="tsd-kind-icon">isElementPresent</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#manage" class="tsd-kind-icon">manage</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#navigate" class="tsd-kind-icon">navigate</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#quit" class="tsd-kind-icon">quit</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#schedule" class="tsd-kind-icon">schedule</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#sleep" class="tsd-kind-icon">sleep</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#switchto" class="tsd-kind-icon">switchTo</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#takescreenshot" class="tsd-kind-icon">takeScreenshot</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+                    <a href="webdriver.webdriver.html#wait" class="tsd-kind-icon">wait</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdriverlogs.html" class="tsd-kind-icon">WebDriverLogs</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdrivernavigation.html" class="tsd-kind-icon">WebDriverNavigation</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdriveroptions.html" class="tsd-kind-icon">WebDriverOptions</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdrivertargetlocator.html" class="tsd-kind-icon">WebDriverTargetLocator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdrivertimeouts.html" class="tsd-kind-icon">WebDriverTimeouts</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webdriverwindow.html" class="tsd-kind-icon">WebDriverWindow</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container tsd-is-external">
+                    <a href="webdriver.webelement.html" class="tsd-kind-icon">WebElement</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>

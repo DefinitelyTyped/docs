@@ -1,0 +1,1867 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ActionSequence | DefinitelyTyped</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<header>
+    <div class="tsd-page-toolbar">
+        <div class="container">
+            <div class="table-wrap">
+                <div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field">Search</label>
+                        <input id="tsd-search-field" type="text" />
+                    </div>
+
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+
+                    <a href="../index.html" class="title">DefinitelyTyped</a>
+                </div>
+
+                <div class="table-cell" id="tsd-filter">
+                    <input type="checkbox" id="tsd-filter-inherited" checked />
+                    <label for="tsd-filter-inherited">Inherited</label>
+
+                    <input type="checkbox" id="tsd-filter-private" checked />
+                    <label for="tsd-filter-private">Private</label>
+
+                    <input type="checkbox" id="tsd-filter-externals" checked />
+                    <label for="tsd-filter-externals">Externals</label>
+
+                    <input type="checkbox" id="tsd-filter-only-exported" />
+                    <label for="tsd-filter-only-exported">Only exported</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tsd-page-title">
+        <div class="container">
+            <ul class="breadcrumb">
+                
+    
+    
+    <li>
+        <a href="../modules/protractor.html">protractor</a>
+    </li>
+
+    <li>
+        <a href="protractor.actionsequence.html">ActionSequence</a>
+    </li>
+
+            </ul>
+            <h1>Class ActionSequence</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container container-main">
+    <div class="row">
+        <div class="col-8">
+            
+    
+    <p>Class for defining sequences of complex user interactions. Each sequence
+will not be executed until {@link #perform} is called.</p>
+
+
+
+
+    <p><p>Example:<pre><code>
+  new webdriver.ActionSequence(driver).
+      keyDown(webdriver.Key.SHIFT).
+      click(element1).
+      click(element2).
+      dragAndDrop(element3, element4).
+      keyUp(webdriver.Key.SHIFT).
+      perform();
+</pre></code></p>
+
+
+
+
+
+
+
+    <section class="tsd-hierarchy">
+        <h2>Hierarchy</h2>
+        <ul>
+            
+                <li >
+    
+        
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+
+    
+
+    
+        <ul>
+            
+                <li class="target">
+    
+        ActionSequence
+    
+
+    
+</li>
+            
+        </ul>
+    
+</li>
+            
+        </ul>
+    </section>
+
+
+
+    <section class="tsd-member-index">
+    <h2>Index</h2>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Constructor methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                
+            </ul>
+        </section>
+    
+        <section class="tsd-member-index-group tsd-is-inherited">
+            <h3>Methods</h3>
+            <ul class="tsd-member-index">
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#click" class="tsd-kind-icon">click</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#doubleclick" class="tsd-kind-icon">doubleClick</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#draganddrop" class="tsd-kind-icon">dragAndDrop</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#keydown" class="tsd-kind-icon">keyDown</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#keyup" class="tsd-kind-icon">keyUp</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#mousedown" class="tsd-kind-icon">mouseDown</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#mousemove" class="tsd-kind-icon">mouseMove</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#mouseup" class="tsd-kind-icon">mouseUp</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#perform" class="tsd-kind-icon">perform</a></li>
+                
+                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="protractor.actionsequence.html#sendkeys" class="tsd-kind-icon">sendKeys</a></li>
+                
+            </ul>
+        </section>
+    
+</section>
+    
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Constructor methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="constructor" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>driver<span class="tsd-signature-symbols">: </span><a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#constructor">constructor</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1034</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>constructor</dt>
+            <dd></dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>driver: <a href="webdriver.webdriver.html" class="tsd-signature-type">WebDriver</a></h5>
+                
+    <p>The driver instance to use.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+    
+        <section class="tsd-member-group tsd-is-inherited">
+    <h2>Methods</h2>
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="click" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> click<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, opt_button<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#click">click</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1136</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Clicks a mouse button.</p>
+
+
+
+
+    <p><p>If an element is provided, the mouse will first be moved to the center
+of that element. This is equivalent to:</p>
+<pre><code>sequence.mouseMove(element).click()</code></pre>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Either
+    the element to interact with or the button to click with.
+    Defaults to {@link webdriver.Button.LEFT} if neither an element nor
+    button is specified.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_button?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The button to use. Defaults to
+    {@link webdriver.Button.LEFT}. Ignored if a button is provided as the
+    first argument.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> click<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#click">click</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1137</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="doubleclick" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> doubleClick<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, opt_button<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#doubleclick">doubleClick</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1158</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Double-clicks a mouse button.</p>
+
+
+
+
+    <p><p>If an element is provided, the mouse will first be moved to the center of
+that element. This is equivalent to:</p>
+<pre><code>sequence.mouseMove(element).doubleClick()</code></pre>
+
+<p><p>Warning: this method currently only supports the left mouse button. See
+<a href="http://code.google.com/p/selenium/issues/detail?id=4047">http://code.google.com/p/selenium/issues/detail?id=4047</a></p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Either
+    the element to interact with or the button to click with.
+    Defaults to {@link webdriver.Button.LEFT} if neither an element nor
+    button is specified.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_button?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The button to use. Defaults to
+    {@link webdriver.Button.LEFT}. Ignored if a button is provided as the
+    first argument.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> doubleClick<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#doubleclick">doubleClick</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1159</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="draganddrop" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> dragAndDrop<span class="tsd-signature-symbols">(</span>element<span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, location<span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#draganddrop">dragAndDrop</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1117</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Convenience function for performing a &quot;drag and drop&quot; manuever. The target
+element may be moved to the location of another element, or by an offset (in
+pixels).</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>element: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h5>
+                
+    <p>The element to drag.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>location: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> dragAndDrop<span class="tsd-signature-symbols">(</span>element<span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, location<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#draganddrop">dragAndDrop</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1118</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>element: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>location: <a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="keydown" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> keyDown<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#keydown">keyDown</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1170</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Performs a modifier key press. The modifier key is <em>not released</em>
+until {@link #keyUp} or {@link #sendKeys} is called. The key press will be
+targetted at the currently focused element.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>throws</dt>
+            <dd><p>{Error} If the key is not a valid modifier key.</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The modifier key to push. Must be one of
+    {ALT, CONTROL, SHIFT, COMMAND, META}.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="keyup" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> keyUp<span class="tsd-signature-symbols">(</span>key<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#keyup">keyUp</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1180</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Performs a modifier key release. The release is targetted at the currently
+focused element.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>throws</dt>
+            <dd><p>{Error} If the key is not a valid modifier key.</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>key: <span class="tsd-signature-type">string</span></h5>
+                
+    <p>The modifier key to release. Must be one of
+    {ALT, CONTROL, SHIFT, COMMAND, META}.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="mousedown" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseDown<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, opt_button<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mousedown">mouseDown</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1082</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Presses a mouse button. The mouse button will not be released until
+{@link #mouseUp} is called, regardless of whether that call is made in this
+sequence or another. The behavior for out-of-order events (e.g. mouseDown,
+click) is undefined.</p>
+
+
+
+
+    <p><p>If an element is provided, the mouse will first be moved to the center
+of that element. This is equivalent to:</p>
+<pre><code>sequence.mouseMove(element).mouseDown()</code></pre>
+
+<p><p>Warning: this method currently only supports the left mouse button. See
+<a href="http://code.google.com/p/selenium/issues/detail?id=4047">http://code.google.com/p/selenium/issues/detail?id=4047</a></p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Either
+    the element to interact with or the button to click with.
+    Defaults to {@link webdriver.Button.LEFT} if neither an element nor
+    button is specified.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_button?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The button to use. Defaults to
+    {@link webdriver.Button.LEFT}. Ignored if a button is provided as the
+    first argument.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseDown<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mousedown">mouseDown</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1083</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="mousemove" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseMove<span class="tsd-signature-symbols">(</span>location<span class="tsd-signature-symbols">: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, opt_offset<span class="tsd-signature-symbols">?: </span><a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mousemove">mouseMove</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1057</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Moves the mouse.  The location to move to may be specified in terms of the
+mouse&#39;s current location, an offset relative to the top-left corner of an
+element, or an element (in which case the middle of the element is used).</p>
+
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>location: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a></h5>
+                
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_offset?: <a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseMove<span class="tsd-signature-symbols">(</span>location<span class="tsd-signature-symbols">: </span><a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mousemove">mouseMove</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1058</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>location: <a href="../interfaces/webdriver.ilocation.html" class="tsd-signature-type">ILocation</a></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="mouseup" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseUp<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a>, opt_button<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mouseup">mouseUp</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1105</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Releases a mouse button. Behavior is undefined for calling this function
+without a previous call to {@link #mouseDown}.</p>
+
+
+
+
+    <p><p>If an element is provided, the mouse will first be moved to the center
+of that element. This is equivalent to:</p>
+<pre><code>sequence.mouseMove(element).mouseUp()</code></pre>
+
+<p><p>Warning: this method currently only supports the left mouse button. See
+<a href="http://code.google.com/p/selenium/issues/detail?id=4047">http://code.google.com/p/selenium/issues/detail?id=4047</a></p>
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <a href="webdriver.webelement.html" class="tsd-signature-type">WebElement</a> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>Either
+    the element to interact with or the button to click with.
+    Defaults to {@link webdriver.Button.LEFT} if neither an element nor
+    button is specified.</p>
+
+
+
+
+
+
+            </li>
+        
+            <li>
+                <h5>opt_button?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <p>The button to use. Defaults to
+    {@link webdriver.Button.LEFT}. Ignored if a button is provided as the
+    first argument.</p>
+
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> mouseUp<span class="tsd-signature-symbols">(</span>opt_elementOrButton<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#mouseup">mouseUp</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1106</li>
+            
+        </ul>
+    
+</aside>
+
+
+
+
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>opt_elementOrButton?: <span class="tsd-signature-type">number</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="perform" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> perform<span class="tsd-signature-symbols">(</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#perform">perform</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1045</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Executes this action sequence.</p>
+
+
+
+
+
+
+
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.promise.promise.html" class="tsd-signature-type">Promise</a>
+    
+</p>
+    
+        <p>A promise that will be resolved once
+    this sequence has completed.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+        
+            <section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="sendkeys" class="anchor"></a>
+    
+        
+            <h3 class="tsd-kind-icon"><span class="tsd-flag ts-flagpublic">public</span> sendKeys<span class="tsd-signature-symbols">(</span>var_args<span class="tsd-signature-symbols">?: </span><span class="tsd-signature-type">Array&lt;any&gt;</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a></h3>
+
+<aside class="tsd-sources">
+    
+        <p>Inherited from 
+    
+        <a href="webdriver.actionsequence.html">ActionSequence</a>.<a href="webdriver.actionsequence.html#sendkeys">sendKeys</a>
+    
+</p>
+    
+    
+    
+        <ul>
+            
+                <li>Defined in selenium-webdriver.d.ts:1191</li>
+            
+        </ul>
+    
+</aside>
+
+    <p>Simulates typing multiple keys. Each modifier key encountered in the
+sequence will not be released until it is encountered again. All key events
+will be targetted at the currently focused element.</p>
+
+
+
+
+
+
+    <dl class="tsd-comment-tags">
+        
+            <dt>throws</dt>
+            <dd><p>{Error} If the key is not a valid modifier key.</p>
+</dd>
+        
+    </dl>
+
+
+
+    <h4>Parameters</h4>
+    <ul>
+        
+            <li>
+                <h5>var_args?: <span class="tsd-signature-type">Array&lt;any&gt;</span> <span class="tsd-flag ts-flagoptional">optional</span></h5>
+                
+    <pre><code>The keys <span class="hljs-keyword">to</span> <span class="hljs-class"><span class="hljs-keyword">type</span>.</span>
+</code></pre>
+
+
+
+
+
+            </li>
+        
+    </ul>
+
+
+
+    <h4>Returns</h4>
+    <p>
+    
+        <a href="webdriver.actionsequence.html" class="tsd-signature-type">ActionSequence</a>
+    
+</p>
+    
+        <p>A self reference.</p>
+
+    
+
+
+        
+    
+
+    
+</section>
+        
+    
+</section>
+    
+
+
+        </div>
+        <div class="offset-1 col-3">
+            <nav class="tsd-navigation primary">
+                <ul>
+                    
+                        <li class=" ">
+    <a href="../globals.html"><em>Globals</em></a>
+    
+</li>
+                    
+                        <li class="current tsd-kind-container">
+    <a href="../modules/protractor.html">protractor</a>
+    
+        
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module">
+    <a href="../modules/protractor.html">protractor</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.command.html">protractor.command</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.error.html">protractor.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.events.html">protractor.events</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.logging.html">protractor.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.process.html">protractor.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container">
+    <a href="../modules/protractor.promise.html">protractor.promise</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-dynamic-module tsd-is-external">
+    <a href="../modules/selenium-webdriver.html">selenium-webdriver</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-is-external">
+    <a href="../modules/webdriver.html">webdriver</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.error.html">webdriver.error</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.logging.html">webdriver.logging</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.process.html">webdriver.process</a>
+    
+</li>
+                    
+                        <li class=" tsd-kind-container tsd-parent-kind-container tsd-is-external">
+    <a href="../modules/webdriver.promise.html">webdriver.promise</a>
+    
+</li>
+                    
+                </ul>
+            </nav>
+
+            <nav class="tsd-navigation secondary">
+                
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-variable tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#by" class="tsd-kind-icon">By</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.element.html" class="tsd-kind-icon">Element</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.elementarrayfinder.html" class="tsd-kind-icon">ElementArrayFinder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.elementfinder.html" class="tsd-kind-icon">ElementFinder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-interface tsd-parent-kind-container">
+                    <a href="../interfaces/protractor.iprotractorlocatorstrategy.html" class="tsd-kind-icon">IProtractorLocatorStrategy</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.abstractbuilder.html" class="tsd-kind-icon">AbstractBuilder</a>
+                    
+                </li>
+            
+        
+            
+                <li class="current tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.actionsequence.html" class="tsd-kind-icon">ActionSequence</a>
+                    
+
+    <ul>
+        
+            
+                <li class=" tsd-kind-constructor-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#constructor" class="tsd-kind-icon">constructor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#click" class="tsd-kind-icon">click</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#doubleclick" class="tsd-kind-icon">doubleClick</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#draganddrop" class="tsd-kind-icon">dragAndDrop</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#keydown" class="tsd-kind-icon">keyDown</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#keyup" class="tsd-kind-icon">keyUp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#mousedown" class="tsd-kind-icon">mouseDown</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#mousemove" class="tsd-kind-icon">mouseMove</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#mouseup" class="tsd-kind-icon">mouseUp</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#perform" class="tsd-kind-icon">perform</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+                    <a href="protractor.actionsequence.html#sendkeys" class="tsd-kind-icon">sendKeys</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.alert.html" class="tsd-kind-icon">Alert</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.browser.html" class="tsd-kind-icon">Browser</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.builder.html" class="tsd-kind-icon">Builder</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.button.html" class="tsd-kind-icon">Button</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.capabilities.html" class="tsd-kind-icon">Capabilities</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.capability.html" class="tsd-kind-icon">Capability</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.command.html" class="tsd-kind-icon">Command</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.commandname.html" class="tsd-kind-icon">CommandName</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.eventemitter.html" class="tsd-kind-icon">EventEmitter</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.firefoxdomexecutor.html" class="tsd-kind-icon">FirefoxDomExecutor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.key.html" class="tsd-kind-icon">Key</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.locator.html" class="tsd-kind-icon">Locator</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.protractor.html" class="tsd-kind-icon">Protractor</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.session.html" class="tsd-kind-icon">Session</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.unhandledalerterror.html" class="tsd-kind-icon">UnhandledAlertError</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.webdriver.html" class="tsd-kind-icon">WebDriver</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-class tsd-parent-kind-container">
+                    <a href="protractor.webelement.html" class="tsd-kind-icon">WebElement</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#getinstance" class="tsd-kind-icon">getInstance</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#setinstance" class="tsd-kind-icon">setInstance</a>
+                    
+                </li>
+            
+        
+            
+                <li class=" tsd-kind-function tsd-parent-kind-container">
+                    <a href="../modules/protractor.html#wrapdriver" class="tsd-kind-icon">wrapDriver</a>
+                    
+                </li>
+            
+        
+    </ul>
+
+
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+
+</body>
+</html>
