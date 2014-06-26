@@ -8,6 +8,7 @@
 /scratch
 /tsd-cache
 /test/tmp
+/docs
 
 /tscommand*
 ignoreBaseDirFile.*

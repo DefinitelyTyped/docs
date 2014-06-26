@@ -1,5 +1,9 @@
+/* jshint -W098 */
+
 module.exports = function (grunt) {
 	'use strict';
+
+	var path = require('path');
 
 	function getDeployMessage() {
 		var ret = '\n\n';
@@ -72,13 +76,14 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('exec', function() {
 		var done = this.async();
-		var all = (process.env.TRAVIS !== 'true');
+		var all = (process.env.TRAVIS === 'true');
 		runner.bulk('./repo', './docs', function(dir) {
 			if (all) {
-				return /$a/.test(dir) || /$j/.test(dir) || /$node/.test(dir);
+				return /^a/.test(dir) || /^j/.test(dir) || /^node/.test(dir);
 			}
-			return /node\.d\.ts$/.test(dir) || /jquery\.d\.ts$/.test(dir);
-		}).then(function() {
+			return /^jquery\.d\.ts$/.test(path.basename(dir));
+		}).then(function(defs) {
+			console.log(defs);
 			done();
 		}).catch(function(err) {
 			console.log(err);
@@ -104,12 +109,11 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('prep', [
 		'clean:tmp',
-		'jshint:support',
-		'jshint:lib'
+		'jshint'
 	]);
 
 	grunt.registerTask('build', [
-		'clean:tmp',
+		'prep',
 		'jshint:support',
 		'exec'
 	]);
